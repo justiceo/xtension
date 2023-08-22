@@ -328,6 +328,7 @@ export class WinBox {
       this.shadowdom = se;
       (root || body).appendChild(se);
     } else {
+      console.warn("shadowel not specified, UI may be broken");
       (root || body).appendChild(this.dom);
     }
     (oncreate = params["oncreate"]) && oncreate.call(this, params);

@@ -146,3 +146,26 @@ Staying up-to-date with this repo after a fork:
 7. Fix any changes then commit
 `git commit -m "merged updates from xtension"`.
 
+### Integrating changes
+
+1. Add xtension as a remote.
+`git remote add xtension git@github.com:justiceo/xtension.git`
+
+2. Avoid pushing to it.
+`git remote set-url --push xtension do-not-push`
+
+3. Create new branch to track xtension
+`git checkout -b base`
+
+4. Pull changess from xtension and rebase onto it.
+`git pull xtension main --rebase -X theirs`
+
+5. Push changes from base to origin
+`git push --set-upstream origin base`
+
+6. Merge the changes from base into main
+`git merge base -X theirs --allow-unrelated-histories --no-commit --no-ff`
+
+7. Review the diff and commit.
+`git commit -m "up-to-date with xtension"`
+

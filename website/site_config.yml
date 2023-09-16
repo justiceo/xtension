@@ -1,4 +1,4 @@
-theme: jekyll-theme-leap-day
+theme: minima
 bool: true
 number: 12334
 array: [a,b,c,d]

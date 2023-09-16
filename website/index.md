@@ -1,8 +1,8 @@
 # ![logo](assets/logo-24x24.png) Browser Extension Starter
 
-[![Xtension](https://circleci.com/gh/justiceo/xtension/tree/main.svg?style=svg)](https://circleci.com/gh/justiceo/xtension/?branch=main)
+[![Xtension](https://circleci.com/gh/essentialkit/xtension/tree/main.svg?style=svg)](https://circleci.com/gh/essentialkit/xtension/?branch=main)
 
-Browser extension example. Typescript, E2E tests, icon generation, automatic i18n and ESBuild
+Browser extension starter kit with Typescript, E2E tests, icon generation, automatic i18n, Github pages automation and ESBuild
 
 ![Screenshot](assets/screenshot.png "Screenshot")
 
@@ -42,13 +42,6 @@ Browser extension example. Typescript, E2E tests, icon generation, automatic i18
   </tr>
 </table>
 
-## Features
-
-* Privacy-friendly.
-* Highly configurable options page.
-* Disable for specific sites.
-* Sync settings across browsers.
-
 ## Project setup
 
 ```bash
@@ -77,6 +70,9 @@ node tools/esbuild.js build --prod  --browser=firefox
 
 # Run tests
 npm run test
+
+# Update static Github pages config and assets
+node website/config_generator.js
 ```
 
 ### Install Locally
@@ -86,16 +82,12 @@ npm run test
 2. Enable the "Developer mode".
 3. Click "Load unpacked extension" button, browse the `build/chrome-dev` directory and select it.
 
-### Firefox
+#### Firefox
 1. Open firefox and navigate to `about:debugging#/runtime/this-firefox`.
 2. Click the "Load Temporary Add-on" button.
 3. Browse the `build/firefox-dev` directory and select the `manifest.json` file.
 
-<br>
-<br>
 
-
-############# DEV README ##############
 
 ### Features
 * **Automatic Github Pages generation**: Files added in the `gh-pages` sub-directory are branched to create a Github page automatically. This is useful for static pages like help, welcome and feedback pages.
@@ -110,7 +102,7 @@ npm run test
 
 ### Notes
 
-1. E2E testing with Firefox.
+<details><summary>E2E testing with Firefox.</summary>
 
 By default, puppeteer only downloads Chromium, run the command below to install Firefox's equivalent of chromium:
 
@@ -124,14 +116,15 @@ PUPPETEER_PRODUCT=firefox npm i -D puppeteer --prefix ./node_modules/firefox-pup
 `--prefix ./node_modules/firefox-puppeteer` forces a new fetch of puppeteer. This is necessary since `node_modules/puppeteer` already exists (for chromium). The actual value of the prefix doesn't matter, just don't overwrite an actual package. 
 
 *NB:* After running the above command, they will no be update to package.json or package-lock.json... since package "puppeteer" already exists.
+</details>
 
+<details><summary>Open-source chrome extensions built using this template</summary>
+1. https://github.com/essentialkit/floating-calculator
+2. https://github.com/essentialkit/better-previews
+3. https://github.com/essentialkit/e-dictionary
+</details>
 
-### Examples of chrome extensions for inspirations
-1. https://github.com/mdn/webextensions-examples
-2. https://github.com/orbitbot/chrome-extensions-examples
-
-
-### Keeping up with changes.
+<details><summary>Keeping up with changes in this repo</summary>
 Staying up-to-date with this repo after a fork:
 1. Create a new repository by either forking/copying this one.
 2. Add this repository as a remote to the new repo
@@ -145,8 +138,9 @@ Staying up-to-date with this repo after a fork:
 `git checkout xtension -- .` 
 7. Fix any changes then commit
 `git commit -m "merged updates from xtension"`.
+</details>
 
-### Integrating changes
+<details><summary>Integrating changes into this repo</summary>
 
 1. Add xtension as a remote.
 `git remote add xtension git@github.com:justiceo/xtension.git`
@@ -168,4 +162,4 @@ Staying up-to-date with this repo after a fork:
 
 7. Review the diff and commit.
 `git commit -m "up-to-date with xtension"`
-
+</details>

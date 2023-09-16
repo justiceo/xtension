@@ -119,23 +119,32 @@ PUPPETEER_PRODUCT=firefox npm i -D puppeteer --prefix ./node_modules/firefox-pup
 </details>
 
 <details><summary>Open-source chrome extensions built using this template</summary>
+
 1. https://github.com/essentialkit/floating-calculator
 2. https://github.com/essentialkit/better-previews
 3. https://github.com/essentialkit/e-dictionary
+
 </details>
 
 <details><summary>Keeping up with changes in this repo</summary>
 Staying up-to-date with this repo after a fork:
+
 1. Create a new repository by either forking/copying this one.
+
 2. Add this repository as a remote to the new repo
 `git remote add xtension git@github.com:justiceo/xtension.git`
+
 3. Fetch the latest updates from the xtension repo (template).
 `git fetch xtension`
+
 4. Create a local branch to track xtension repo.
 `git checkout -B xtension && git branch -u xtension/master`
+
 5. There should be two divergent histories now. `master -> origin/master` and `xtension -> xtension/master`.
+
 6. Copy the changes from xtension to master without a commit.
 `git checkout xtension -- .` 
+
 7. Fix any changes then commit
 `git commit -m "merged updates from xtension"`.
 </details>

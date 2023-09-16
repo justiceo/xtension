@@ -107,6 +107,13 @@ class ConfigGenerator {
         }
       }
     );
+
+    // Copy README.md to Index.md
+    const readme = await fs.readFileSync("README.md", "utf8");
+    fs.writeFile("website/index.md", readme, () => {});
+
+    // Copy assets.
+    await this.copyDir("assets", "website/assets");
   }
 
   parseJson(filename) {
@@ -165,6 +172,17 @@ class ConfigGenerator {
       }
     }
     return lines;
+  }
+
+  async copyDir(sourceDir, destinationDir) {
+    // Copy the directory recursively.
+    fs.cp(sourceDir, destinationDir, { recursive: true }, (err) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(sourceDir + " directory copied successfully!");
+      }
+    });
   }
 }
 new ConfigGenerator();

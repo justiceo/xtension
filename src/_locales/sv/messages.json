@@ -1,6 +1,6 @@
 {
     "appName": {
-        "message": "Webbläsarförlängningsstarter",
+        "message": "Webbläsarförlängningsstart",
         "description": "The name of the extension"
     },
     "appShortName": {
@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "appDesc": {
-        "message": "Exempel på webbläsarförlängning. TypeScript, E2E -test, ikongenerering, automatisk I18N och ESBUILD",
+        "message": "Exempel på webbläsarförlängning. TypeScript, E2E -test, ikongenerering, automatisk i18N och ESBUILD",
         "description": "The description of your extension"
     }
 }

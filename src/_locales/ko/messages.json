@@ -8,7 +8,7 @@
         "description": "The short-version name of the extension name"
     },
     "appDesc": {
-        "message": "브라우저 확장 예제. TypeScript, E2E 테스트, 아이콘 생성, 자동 I18N 및 Esbuild",
+        "message": "브라우저 확장 예제. TypeScript, E2E 테스트, 아이콘 생성, 자동 i18N 및 Esbuild",
         "description": "The description of your extension"
     }
 }

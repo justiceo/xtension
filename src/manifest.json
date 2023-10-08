@@ -41,8 +41,8 @@
   ],
   "options_page": "options-page/options.html",
   "background": {
-    "service_worker": "background-script/background.js",
-    "__firefox__persistent": "false"
+    "__chrome__service_worker": "background-script/background.js",
+    "__firefox__scripts": ["background-script/background.js"]
   },
   "__firefox__key": "",
   "__firefox__browser_specific_settings": {

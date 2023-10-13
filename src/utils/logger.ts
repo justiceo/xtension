@@ -13,13 +13,14 @@ enum LogLevel {
   DEBUG,
 }
 declare var IS_DEV_BUILD: boolean;
+const EXTENSION_NAME = "xtension";
+
 export class Logger {
   tag = "";
 
   constructor(tag: string) {
-    this.tag = tag;
+    this.tag = EXTENSION_NAME + "." + tag;
 
-    console.error(tag, ": is_dev_build? ", IS_DEV_BUILD);
     if(!IS_DEV_BUILD) {
       this.initSentry();
     }
@@ -97,7 +98,7 @@ export class RemoteLogger {
   tag = "";
 
   constructor(tag: string) {
-    this.tag = tag;
+    this.tag = EXTENSION_NAME + "." + tag;
   }
 
   debug = (...messages: unknown[]) => this.internalLog(LogLevel.DEBUG, ...messages);

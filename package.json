@@ -37,7 +37,7 @@
     "google-translate-api-x": "^10.6.7",
     "jasmine": "^5.1.0",
     "jimp": "^0.22.10",
-    "puppeteer": "^21.3.8"
+    "puppeteer": "19.4.0"
   },
   "dependencies": {
     "@sentry/browser": "^7.73.0",

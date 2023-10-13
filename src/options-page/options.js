@@ -1,6 +1,5 @@
 import './options.css'
 import { SettingsUI } from '../utils/options/settings';
-import '../utils/translate';
 import {WinBox} from '../utils/winbox/winbox';
 
 class OptionsPage {

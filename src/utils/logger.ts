@@ -75,7 +75,6 @@ export class Logger {
     if (!IS_DEV_BUILD) {
       switch (level) {
         case LogLevel.WARNING:
-        case LogLevel.INFO:
           Sentry.captureMessage(output.join(" "));
           break;
         case LogLevel.ERROR:

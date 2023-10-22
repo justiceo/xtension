@@ -1,4 +1,5 @@
 import * as Sentry from "@sentry/browser";
+import manifest from "../manifest.json";
 
 /**
  * Simple util for logging to console.
@@ -13,7 +14,7 @@ enum LogLevel {
   DEBUG,
 }
 declare var IS_DEV_BUILD: boolean;
-const EXTENSION_NAME = "xtension";
+const EXTENSION_NAME = manifest.__package_name__;
 
 export class Logger {
   tag = "";
@@ -29,9 +30,9 @@ export class Logger {
 
   initSentry() {
     Sentry.init({
-      dsn: "https://b1d81a9e5f1546f79885a473ce33128c@o526305.ingest.sentry.io/6244539",
+      dsn: manifest.__sentry_dsn__,
       tracesSampleRate: 0.1,
-      release: "xtension@23.01.10",
+      release: EXTENSION_NAME + "@" + manifest.version,
       environment: "PROD",
     });
   }

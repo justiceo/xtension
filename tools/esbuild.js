@@ -328,6 +328,10 @@ class Build {
       "src/welcome": "welcome",
     };
 
+    return this.copy(fileMap);
+  }
+
+  copy(fileMap) {
     return new Promise((resolve, reject) => {
       let copied = 0;
       for (const [src, dest] of Object.entries(fileMap)) {

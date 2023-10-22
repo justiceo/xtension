@@ -47,7 +47,7 @@ describe("Browser test suite", () => {
         fail("Welcome page should be open")
         return
       }
-      await extPage.screenshot({ path: "assets/screenshot.png" });
+      await extPage.screenshot({ path: "src/assets/screenshot.png" });
       await extPage.close();
     });
   });

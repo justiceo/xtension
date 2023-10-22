@@ -1,3 +1,4 @@
+/// <reference types="chrome"/>
 import * as Sentry from "@sentry/browser";
 import manifest from "../manifest.json";
 

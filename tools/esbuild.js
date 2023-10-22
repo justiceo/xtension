@@ -15,7 +15,7 @@ class Build {
 
   testSpecs = ["spec/e2e-spec.ts"];
   compiledTestSpecs = ["spec/e2e-spec.js"];
-  originalIconPath = "assets/logo.jpeg";
+  originalIconPath = "src/assets/logo.jpeg";
 
   constructor() {
     const args = this.parse(process.argv);
@@ -243,12 +243,12 @@ class Build {
             icon
               .clone()
               .resize(size, size)
-              .write(`assets/logo-${size}x${size}.png`);
+              .write(`src/assets/logo-${size}x${size}.png`);
             icon
               .clone()
               .resize(size, size)
               .greyscale()
-              .write(`assets/logo-gray-${size}x${size}.png`);
+              .write(`src/assets/logo-gray-${size}x${size}.png`);
           });
         }
 
@@ -261,7 +261,7 @@ class Build {
               800,
               Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
             )
-            .write(`assets/screenshot-contain-1280x800.JPEG`);
+            .write(`src/assets/screenshot-contain-1280x800.JPEG`);
           icon
             .clone()
             .cover(
@@ -269,7 +269,7 @@ class Build {
               800,
               Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
             )
-            .write(`assets/screenshot-cover-1280x800.JPEG`);
+            .write(`src/assets/screenshot-cover-1280x800.JPEG`);
         }
 
         if (this.args.tile) {
@@ -280,7 +280,7 @@ class Build {
               280,
               Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
             )
-            .write(`assets/tile-contain-440x280.JPEG`);
+            .write(`src/assets/tile-contain-440x280.JPEG`);
           icon
             .clone()
             .cover(
@@ -288,7 +288,7 @@ class Build {
               280,
               Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
             )
-            .write(`assets/tile-cover-440x280.JPEG`);
+            .write(`src/assets/tile-cover-440x280.JPEG`);
         }
 
         if (this.args.marquee) {
@@ -299,7 +299,7 @@ class Build {
               560,
               Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
             )
-            .write(`assets/marquee-contain-1400x560.JPEG`);
+            .write(`src/assets/marquee-contain-1400x560.JPEG`);
           icon
             .clone()
             .cover(
@@ -307,7 +307,7 @@ class Build {
               560,
               Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
             )
-            .write(`assets/marquee-cover-1400x560.JPEG`);
+            .write(`src/assets/marquee-cover-1400x560.JPEG`);
         }
 
         resolve();
@@ -319,7 +319,7 @@ class Build {
   copyAssets() {
     // Map of static files/directories to destinations we want to copy them to.
     const fileMap = {
-      "assets/": "assets",
+      "src/assets/": "assets",
       "src/_locales": "_locales",
       "src/popup/popup.html": "popup/popup.html",
       "src/content-script/content-script.css":

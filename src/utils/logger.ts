@@ -21,7 +21,7 @@ export class Logger {
   constructor(tag: string) {
     this.tag = EXTENSION_NAME + "." + tag;
 
-    if(!IS_DEV_BUILD) {
+    if (!IS_DEV_BUILD) {
       this.initSentry();
     }
     this.listenForBgLogs();
@@ -38,17 +38,25 @@ export class Logger {
 
   listenForBgLogs() {
     chrome.runtime.onMessage.addListener((message, sender) => {
-      if(sender.id !== chrome.runtime.id || message.action != "log") {
+      if (sender.id !== chrome.runtime.id || message.action != "log") {
         return;
       }
-      this.internalLogTagOverride(message.data.level, message.data.tag, ...message.data.messages)
+      this.internalLogTagOverride(
+        message.data.level,
+        message.data.tag,
+        ...message.data.messages
+      );
     });
   }
 
-  debug = (...messages: unknown[]) => this.internalLog(LogLevel.DEBUG, ...messages);
-  log = (...messages: unknown[]) => this.internalLog(LogLevel.INFO, ...messages); 
-  warn = (...messages: unknown[]) => this.internalLog(LogLevel.WARNING, ...messages);
-  error = (...messages: unknown[]) => this.internalLog(LogLevel.ERROR, ...messages);
+  debug = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.DEBUG, ...messages);
+  log = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.INFO, ...messages);
+  warn = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.WARNING, ...messages);
+  error = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.ERROR, ...messages);
 
   internalLog(level: LogLevel, ...messages: unknown[]) {
     this.internalLogTagOverride(level, this.tag, ...messages);
@@ -101,17 +109,24 @@ export class RemoteLogger {
     this.tag = EXTENSION_NAME + "." + tag;
   }
 
-  debug = (...messages: unknown[]) => this.internalLog(LogLevel.DEBUG, ...messages);
-  log = (...messages: unknown[]) => this.internalLog(LogLevel.INFO, ...messages); 
-  warn = (...messages: unknown[]) => this.internalLog(LogLevel.WARNING, ...messages);
-  error = (...messages: unknown[]) => this.internalLog(LogLevel.ERROR, ...messages);
+  debug = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.DEBUG, ...messages);
+  log = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.INFO, ...messages);
+  warn = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.WARNING, ...messages);
+  error = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.ERROR, ...messages);
 
   internalLog(level: LogLevel, ...messages: unknown[]): void {
-    chrome.tabs.query({active: true, currentWindow: true}, tabs => {
-      if(tabs.length !== 1) {
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      if (tabs.length !== 1) {
         return;
       }
-      chrome.tabs.sendMessage(tabs[0].id!, {action: "log", data: {level: level, tag: this.tag, messages: messages}});
+      chrome.tabs.sendMessage(tabs[0].id!, {
+        action: "log",
+        data: { level: level, tag: this.tag, messages: messages },
+      });
     });
   }
 }

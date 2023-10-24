@@ -1,3 +1,4 @@
+import Analytics from "../utils/analytics";
 /*
  * Set up context menu (right-click menu) for different conexts.
  * See reference https://developer.chrome.com/docs/extensions/reference/contextMenus/#method-create.
@@ -18,7 +19,7 @@ interface MenuItem {
 class ContextMenu {
   RELOAD_ACTION: MenuItem = {
     menu: {
-      id: 'audate-reload',
+      id: 'reload-action',
       title: 'Reload Extension',
       visible: true,
       contexts: ['action'],
@@ -57,6 +58,7 @@ class ContextMenu {
       (item) => item.menu.id === info.menuItemId
     );
     if (menuItem) {
+      Analytics.fireEvent("context_menu_click", {"menu_id": menuItem.menu.id})
       menuItem.handler(info, tab);
     } else {
       console.error('Unable to find menu item: ', info);

@@ -2,6 +2,14 @@ import { Logger } from "./logger";
 import * as enMessage from "../_locales/en/messages.json";
 
 const logger = new Logger("i18n");
+
+/**
+ * Gets the localized string for the specific message.
+ * Use en-US as fallback when chrome.i18n is not available.
+ *
+ * @param key The name of the message as specified in messages.json file.
+ * @returns The translated value in browser locale (or en-US outside chrome context).
+ */
 export const i18n = (key: string): string => {
   if (!key) {
     logger.error("A valid key is required for i18n, got", key);

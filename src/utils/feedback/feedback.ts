@@ -1,6 +1,7 @@
 import '@webcomponents/custom-elements';
 import markup from './feedback.txt.html';
 import css from './feedback.txt.css';
+import { i18n } from '../i18n';
 
 /* A simple inline form that supports three sizes: inline, small and medium.
 
@@ -50,9 +51,9 @@ class FeedbackForm extends HTMLElement {
     shadow.append(style, documentFragment);
 
     const size = elem.getAttribute("size") ?? "inline";
-    const app = elem.getAttribute("app-name") ?? chrome.i18n.getMessage("appName");
+    const app = elem.getAttribute("app-name") ?? i18n("appName");
     const logo = elem.getAttribute("logo-url") ?? chrome.runtime.getURL("assets/logo-128x128.png");
-    const storeLink = elem.getAttribute("store-link") ?? "https://chrome.google.com/webstore/detail/" + chrome.i18n.getMessage("@@extension_id");
+    const storeLink = elem.getAttribute("store-link") ?? "https://chrome.google.com/webstore/detail/" + i18n("@@extension_id");
     const formLink = elem.getAttribute("form-link") ?? "https://formspree.io/f/mayzdndj";
     console.log(`Attributes: size=${size}, app=${app}, logo=${logo}`);
 

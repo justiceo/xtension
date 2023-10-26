@@ -1,7 +1,8 @@
-import '@webcomponents/custom-elements';
-import markup from './feedback.txt.html';
-import css from './feedback.txt.css';
-import { i18n } from '../i18n';
+import "@webcomponents/custom-elements";
+import markup from "./feedback.txt.html";
+import css from "./feedback.txt.css";
+import { i18n } from "../i18n";
+import Analytics from "../analytics";
 
 /* A simple inline form that supports three sizes: inline, small and medium.
 
@@ -52,9 +53,14 @@ class FeedbackForm extends HTMLElement {
 
     const size = elem.getAttribute("size") ?? "inline";
     const app = elem.getAttribute("app-name") ?? i18n("appName");
-    const logo = elem.getAttribute("logo-url") ?? chrome.runtime.getURL("assets/logo-128x128.png");
-    const storeLink = elem.getAttribute("store-link") ?? "https://chrome.google.com/webstore/detail/" + i18n("@@extension_id");
-    const formLink = elem.getAttribute("form-link") ?? "https://formspree.io/f/mayzdndj";
+    const logo =
+      elem.getAttribute("logo-url") ??
+      chrome.runtime.getURL("assets/logo-128x128.png");
+    const storeLink =
+      elem.getAttribute("store-link") ??
+      "https://chrome.google.com/webstore/detail/" + i18n("@@extension_id");
+    const formLink =
+      elem.getAttribute("form-link") ?? "https://formspree.io/f/mayzdndj";
     console.log(`Attributes: size=${size}, app=${app}, logo=${logo}`);
 
     const multiStepForm = shadow.querySelector("[data-multi-step]");
@@ -89,6 +95,10 @@ class FeedbackForm extends HTMLElement {
 
       const handleStarClick = (event) => {
         const starIndex = event.target.getAttribute("data-star-index");
+        Analytics.fireEvent("user_feedback", {
+          action: "rate_experience",
+          star_rating: starIndex,
+        });
 
         currentStep = starIndex < 5 ? 3 : 2;
 
@@ -109,7 +119,10 @@ class FeedbackForm extends HTMLElement {
 
         // Handle click on "rate on webstore".
         if (button.id === "rate-on-store") {
+          Analytics.fireEvent("user_feedback", { action: "rate_on_webstore" });
           window.open(storeLink);
+        } else if(button.id == "decline-rate-on-rate") {
+          Analytics.fireEvent("user_feedback", { action: "decline_rate_on_webstore" });
         }
 
         // Handle feedback submission.
@@ -118,6 +131,11 @@ class FeedbackForm extends HTMLElement {
             feedback: multiStepForm.querySelector("input").value,
             appName: app,
           };
+
+          Analytics.fireEvent("user_feedback", {
+            action: "submit_feedback",
+            feedback_text: data.feedback,
+          });
           fetch(formLink, {
             method: "POST",
             body: JSON.stringify(data),
@@ -131,7 +149,7 @@ class FeedbackForm extends HTMLElement {
         }
 
         // Auto-close at the end.
-        if(currentStep == 4) {
+        if (currentStep == 4) {
           setTimeout(() => {
             multiStepForm.style.display = "none";
           }, 1300);

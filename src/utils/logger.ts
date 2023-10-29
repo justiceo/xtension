@@ -20,8 +20,8 @@ const EXTENSION_NAME = manifest.__package_name__;
 export class Logger {
   tag = "";
 
-  constructor(tag: string) {
-    this.tag = EXTENSION_NAME + "." + tag;
+  constructor(tag: string|Object) {
+    this.tag = EXTENSION_NAME + "." + (typeof tag === 'string' ? tag : tag.constructor.name);
 
     if (!IS_DEV_BUILD) {
       this.initSentry();

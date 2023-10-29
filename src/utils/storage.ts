@@ -1,5 +1,8 @@
 /* A light wrapper around chrome storage API. */
-export class Storage {
+export const FEEDBACK_DATA_KEY = "feedback_data";
+export const INSTALL_TIME_MS = "install_time_ms";
+export const SUCCESSFUL_INTERACTIONS = "successful_interactions";
+class Storage {
   storageService: chrome.storage.SyncStorageArea;
   constructor() {
     // Works like chrome.storage.local if syncing is disabled. Max holding of 100Kb.
@@ -35,3 +38,4 @@ export class Storage {
     return this.put(key, updateFn(data));
   }
 }
+export default new Storage();

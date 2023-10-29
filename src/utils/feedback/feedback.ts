@@ -3,6 +3,10 @@ import markup from "./feedback.txt.html";
 import css from "./feedback.txt.css";
 import { i18n } from "../i18n";
 import Analytics from "../analytics";
+import Storage from "../storage";
+import { FEEDBACK_DATA_KEY } from "../storage";
+import { FeedbackData } from "../../background-script/feedback-checker";
+import { Logger } from "../logger";
 
 /* A simple inline form that supports three sizes: inline, small and medium.
 
@@ -17,6 +21,7 @@ Usage:
 </feedback-form>
 */
 class FeedbackForm extends HTMLElement {
+  logger = new Logger("feedback-form");
   constructor() {
     super();
 
@@ -29,15 +34,26 @@ class FeedbackForm extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log("Custom form element added to page.");
+    this.logger.debug("Feedback form added to page.");
     this.updateStyle(this);
+    this.shouldShowFeedbackForm().then(val => {
+      this.logger.debug("Should show feedback form:", val);
+      if(!val) {
+        this.style.display = "none";
+      }
+    });
   }
   disconnectedCallback() {
-    console.log("Custom square element removed from page.");
+    this.logger.debug("Feedback form removed from page.");
   }
 
   adoptedCallback() {
-    console.log("Custom square element moved to new page.");
+    this.logger.debug("Feedback form moved to new page.");
+  }
+
+  async shouldShowFeedbackForm() {
+    const feedbackData: FeedbackData = await Storage.get(FEEDBACK_DATA_KEY);
+    return feedbackData.status == "eligible";
   }
 
   updateStyle(elem) {
@@ -61,7 +77,7 @@ class FeedbackForm extends HTMLElement {
       "https://chrome.google.com/webstore/detail/" + i18n("@@extension_id");
     const formLink =
       elem.getAttribute("form-link") ?? "https://formspree.io/f/mayzdndj";
-    console.log(`Attributes: size=${size}, app=${app}, logo=${logo}`);
+    this.logger.debug(`Attributes: size=${size}, app=${app}, logo=${logo}`);
 
     const multiStepForm = shadow.querySelector("[data-multi-step]");
     multiStepForm.classList.remove("inline", "small", "medium");
@@ -141,10 +157,10 @@ class FeedbackForm extends HTMLElement {
             body: JSON.stringify(data),
           })
             .then(function (response) {
-              return console.log("response", response.json());
+              return this.logger.debug("response", response.json());
             })
             .then(function (response) {
-              console.log("response 2", response.json());
+              this.logger.debug("response 2", response.json());
             });
         }
 

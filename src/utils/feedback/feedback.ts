@@ -36,12 +36,6 @@ class FeedbackForm extends HTMLElement {
   connectedCallback() {
     this.logger.debug("Feedback form added to page.");
     this.updateStyle(this);
-    this.shouldShowFeedbackForm().then(val => {
-      this.logger.debug("Should show feedback form:", val);
-      if(!val) {
-        this.style.display = "none";
-      }
-    });
   }
   disconnectedCallback() {
     this.logger.debug("Feedback form removed from page.");
@@ -49,11 +43,6 @@ class FeedbackForm extends HTMLElement {
 
   adoptedCallback() {
     this.logger.debug("Feedback form moved to new page.");
-  }
-
-  async shouldShowFeedbackForm() {
-    const feedbackData: FeedbackData = await Storage.get(FEEDBACK_DATA_KEY);
-    return feedbackData.status == "eligible";
   }
 
   updateStyle(elem) {
@@ -115,6 +104,12 @@ class FeedbackForm extends HTMLElement {
           action: "rate_experience",
           star_rating: starIndex,
         });
+        const feedbackUpdate: FeedbackData = {
+          status: "honored",
+          timestamp: Date.now(),
+          rating: starIndex
+        }
+        Storage.put(FEEDBACK_DATA_KEY, feedbackUpdate);
 
         currentStep = starIndex < 5 ? 3 : 2;
 

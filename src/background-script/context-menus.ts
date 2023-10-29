@@ -16,6 +16,8 @@ interface MenuItem {
  * Prefer arrow method names -
  * https://www.typescriptlang.org/docs/handbook/2/classes.html#arrow-functions.
  */
+
+declare var IS_DEV_BUILD: boolean;
 class ContextMenu {
   RELOAD_ACTION: MenuItem = {
     menu: {
@@ -29,11 +31,26 @@ class ContextMenu {
     },
   };
 
-  browserActionContextMenu: MenuItem[] = [
-    this.RELOAD_ACTION,
-  ];
+  CLEAR_STORAGE: MenuItem = {
+    menu: {
+      id: 'clear-storage',
+      title: 'Clear Storage',
+      visible: true,
+      contexts: ['action'],
+    },
+    handler: (unusedInfo) => {
+      chrome.storage.sync.clear();
+      chrome.storage.local.clear();
+    },
+  };
+
+  browserActionContextMenu: MenuItem[] = [];
 
   init = () => {
+    if(IS_DEV_BUILD) {
+      this.browserActionContextMenu.push(this.RELOAD_ACTION, this.CLEAR_STORAGE);
+    }
+
     // Check if we can access context menus.
     if (!chrome || !chrome.contextMenus) {
       console.warn('No access to chrome.contextMenus');

@@ -8,6 +8,7 @@ const puppeteer = require("puppeteer");
 class Build {
   outputBase = "build";
   browser = "chrome";
+  // Prod build removes context menu items like "Reload", "Clear Storage".
   isProd = false;
   outDir = "build/chrome-dev";
   maybeTask = "build";

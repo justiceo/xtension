@@ -13,7 +13,7 @@ interface MenuItem {
 }
 
 /*
- * Prefer arrow method names -
+ * Prefer arrow method names here -
  * https://www.typescriptlang.org/docs/handbook/2/classes.html#arrow-functions.
  */
 
@@ -47,6 +47,7 @@ class ContextMenu {
   browserActionContextMenu: MenuItem[] = [];
 
   init = () => {
+    // Maybe add dev-only actions.
     if(IS_DEV_BUILD) {
       this.browserActionContextMenu.push(this.RELOAD_ACTION, this.CLEAR_STORAGE);
     }

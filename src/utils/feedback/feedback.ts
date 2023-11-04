@@ -4,10 +4,6 @@ import markup from "./feedback.txt.html";
 // @ts-ignore: This CSS is loaded as plain text.
 import css from "./feedback.txt.css";
 import { i18n } from "../i18n";
-import Analytics from "../analytics";
-import Storage from "../storage";
-import { FEEDBACK_DATA_KEY } from "../storage";
-import { FeedbackData } from "../../background-script/feedback-checker";
 import { Logger } from "../logger";
 
 /* A simple inline form that supports three sizes: inline, small and medium.
@@ -24,11 +20,16 @@ Usage:
 */
 class FeedbackForm extends HTMLElement {
   logger = new Logger("feedback-form");
+  progressHandler;
   constructor() {
     super();
 
     // Create a shadow root
     this.attachShadow({ mode: "open" }); // sets and returns 'this.shadowRoot'
+  }
+
+  setProgressHandler(fn) {
+    this.progressHandler = fn;
   }
 
   static get observedAttributes() {
@@ -102,16 +103,9 @@ class FeedbackForm extends HTMLElement {
 
       const handleStarClick = (event) => {
         const starIndex = event.target.getAttribute("data-star-index");
-        Analytics.fireEvent("user_feedback", {
-          action: "rate_experience",
-          star_rating: starIndex,
-        });
-        const feedbackUpdate: FeedbackData = {
-          status: "honored",
-          timestamp: Date.now(),
-          rating: starIndex
+        if (this.progressHandler) {
+          this.progressHandler("started", starIndex);
         }
-        Storage.put(FEEDBACK_DATA_KEY, feedbackUpdate);
 
         currentStep = starIndex < 5 ? 3 : 2;
 
@@ -132,23 +126,17 @@ class FeedbackForm extends HTMLElement {
 
         // Handle click on "rate on webstore".
         if (button.id === "rate-on-store") {
-          Analytics.fireEvent("user_feedback", { action: "rate_on_webstore" });
           window.open(storeLink);
-        } else if(button.id == "decline-rate-on-rate") {
-          Analytics.fireEvent("user_feedback", { action: "decline_rate_on_webstore" });
         }
+
+        // TODO: Fix this section to send comprehensive and correct data.
+        const data = {
+          feedback: multiStepForm.querySelector("input").value,
+          appName: app,
+        };
 
         // Handle feedback submission.
         if (button.id === "submit-form") {
-          const data = {
-            feedback: multiStepForm.querySelector("input").value,
-            appName: app,
-          };
-
-          Analytics.fireEvent("user_feedback", {
-            action: "submit_feedback",
-            feedback_text: data.feedback,
-          });
           fetch(formLink, {
             method: "POST",
             body: JSON.stringify(data),
@@ -164,7 +152,9 @@ class FeedbackForm extends HTMLElement {
         // Auto-close at the end.
         if (currentStep == 4) {
           setTimeout(() => {
-            this.dispatchEvent(new CustomEvent("feedback-form-completed", {bubbles: true, composed: true}));
+            if (this.progressHandler) {
+              this.progressHandler("completed", data);
+            }
           }, 1300);
         }
       })

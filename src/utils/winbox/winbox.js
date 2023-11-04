@@ -328,7 +328,6 @@ export class WinBox {
       this.shadowdom = se;
       (root || body).appendChild(se);
     } else {
-      console.warn("shadowel not specified, UI may be broken");
       (root || body).appendChild(this.dom);
     }
     (oncreate = params["oncreate"]) && oncreate.call(this, params);
@@ -673,7 +672,7 @@ export class WinBox {
     return this;
   }
   /**
-   * @param {{ class:string?, image:string?, click:Function?, index:number? }} control
+   * @param {{ class:string?, title:string?, image:string?, click:Function?, index:number? }} control
    * @this WinBox
    */
   addControl(control) {

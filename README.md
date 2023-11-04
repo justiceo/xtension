@@ -1,46 +1,18 @@
-# ![logo](assets/logo-24x24.png) Browser Extension Starter
+# ![logo](src/assets/logo-24x24.png) Browser Extension Starter
 
 [![Xtension](https://circleci.com/gh/essentialkit/xtension/tree/main.svg?style=svg)](https://circleci.com/gh/essentialkit/xtension/?branch=main)
 
 Browser extension starter kit with Typescript, E2E tests, icon generation, automatic i18n, Github pages automation and ESBuild
 
-![Screenshot](assets/screenshot.png "Screenshot")
+![Screenshot](src/assets/screenshot.png "Screenshot")
 
-## Downloads
-<table cellspacing="0" cellpadding="0">
-  <tr style="text-align: center">
-    <td valign="center">
-      <a align="center" href="https://chrome.google.com/webstore/">
-        <img src="assets/browser-chrome.png" alt="Chrome web store" width="50" />
-        <p align="center">Chrome Web Store</p>
-      </a>
-    </td>
-    <td valign="center">
-      <a href="https://addons.mozilla.org/firefox/extensions/">
-        <img src="assets/browser-firefox.png" alt="Firefox add-ons" width="50" />
-        <p align="center">Firefox Add-ons</p>
-      </a>
-    </td>
-        <td valign="center">
-      <a href="https://addons.opera.com/en/extensions/">
-        <img src="assets/browser-opera.png" alt="Opera add-ons" width="50"/>
-        <p align="center">Opera Add-ons</p>
-      </a>
-    </td>
-        <td valign="center">
-      <a href="https://microsoftedge.microsoft.com/addons">
-        <img src="assets/browser-ms-edge.png" alt="MS Edge add-ons" width="50" />
-        <p align="center">Ms Edge Add-ons</p>
-      </a>
-    </td>
-        <td valign="center">
-      <a href="https://apps.apple.com/app/apple-store/">
-        <img src="assets/browser-safari.png" alt="Safari add-ons" width="50" />
-        <p align="center">Safari Extensions</p>
-      </a>
-    </td>
-  </tr>
-</table>
+## Used by
+
+* [Floating Scientific Calculator](https://chrome.google.com/webstore/detail/floating-scientific-calcu/mbfnbhfjnjeedaknilkfegfnnmmmmpmn) - 8K+ users, 5 ⭐ (84 ratings), 🏆 Featured extension.
+* [Search & Link Previews](https://chrome.google.com/webstore/detail/search-link-preview/mmmfofondapflhgbdidadejnechhjocm) - 1K+ users, 5 ⭐ (55 ratings), 🏆 Featured extension.
+* [Voice Search](https://chrome.google.com/webstore/detail/voice-search/agmgoemhckhccgibmoigonndjhjllcoh) - 11K+ users, 5 ⭐ (112 ratings)
+* [Dictionary](https://chrome.google.com/webstore/detail/nhbchcfeodkcblfpdjdhelcfbefefmag) - 4K+ users, 5 ⭐ (22 ratings), 🏆 Featured extension.
+
 
 ## Project setup
 
@@ -52,7 +24,7 @@ npm install
 npm run build
 npm run watch
 
-# Generate compliant images assets for logo (default logo location assets/logo.png)
+# Generate compliant images assets for logo (default logo location src/assets/logo.png)
 npm run generateIcons
 
 # Translate app strings to all supported chrome locales
@@ -60,7 +32,7 @@ npm run translate
 
 # Start an instance of Chromium with extension installed (using puppeteer)
 # For Firefox, pass --browser=firefox as argument.
-npm run build start 
+npm run start 
 
 # Build and package extension into a store-ready upload
 node tools/esbuild.js build --prod 
@@ -70,37 +42,7 @@ node tools/esbuild.js build --prod  --browser=firefox
 
 # Run tests
 npm run test
-
-# Update static Github pages config and assets
-node website/config_generator.js
 ```
-
-### Install Locally
-
-#### Chrome
-1. Open chrome and navigate to extensions page using this URL: chrome://extensions.
-2. Enable the "Developer mode".
-3. Click "Load unpacked extension" button, browse the `build/chrome-dev` directory and select it.
-
-#### Firefox
-1. Open firefox and navigate to `about:debugging#/runtime/this-firefox`.
-2. Click the "Load Temporary Add-on" button.
-3. Browse the `build/firefox-dev` directory and select the `manifest.json` file.
-
-
-
-### Features
-* **Automatic Github Pages generation**: Files added in the `gh-pages` sub-directory are branched to create a Github page automatically. This is useful for static pages like help, welcome and feedback pages.
-* **Typescript to Js**: Write your entire chrome extension in Typescript and have it transpiled to JavaScript.
-* **E2E extension test**: Start up a chrome browser with your extension installed, write your tests in Jasmine.
-* **Generate extension icons**: Forget the pain of generating icons of different size to meet icons requirements.
-* **Manifest V3 Compatible**: Easier submission to the Chrome Webstore.
-* **Automatic translation**: The messages for all supported i18n locales are auto-generated from the English version.
-* **Zero Dependencies**: This starter is minimal to avoid [supply-chain attacks](https://www.bleepingcomputer.com/news/security/npm-supply-chain-attack-impacts-hundreds-of-websites-and-apps/) which is rampant with Js projects.
-* **Welcome and Uninstall pages**: To give your project a head start, welcome pages are great for demos and uninstall pages provide a thoughtful exit.
-* **Utilities for common tasks**: Comes with helpers logging, storage, and requesting feedback.
-
-### Notes
 
 <details><summary>E2E testing with Firefox.</summary>
 
@@ -118,13 +60,32 @@ PUPPETEER_PRODUCT=firefox npm i -D puppeteer --prefix ./node_modules/firefox-pup
 *NB:* After running the above command, they will no be update to package.json or package-lock.json... since package "puppeteer" already exists.
 </details>
 
-<details><summary>Open-source chrome extensions built using this template</summary>
+## Install extension locally
 
-1. https://github.com/essentialkit/floating-calculator
-2. https://github.com/essentialkit/better-previews
-3. https://github.com/essentialkit/e-dictionary
+#### Chrome
+1. Open chrome and navigate to extensions page using this URL: chrome://extensions.
+2. Enable the "Developer mode".
+3. Click "Load unpacked extension" button, browse to `build/chrome-prod` or the `build/chrome-dev` directory and select it.
 
-</details>
+#### Firefox
+1. Open firefox and navigate to `about:debugging#/runtime/this-firefox`.
+2. Click the "Load Temporary Add-on" button.
+3. Browse to the `build/firefox-prod` or the `build/firefox-dev` directory and select the `manifest.json` file.
+
+
+
+## Features
+* **Typescript to Js**: Write your entire chrome extension in Typescript and have it transpiled to JavaScript.
+* **E2E extension test**: Start up a chrome browser with your extension installed, write your tests in Jasmine.
+* **Generate extension icons**: Forget the pain of generating icons of different size to meet icons requirements.
+* **Manifest V3 Compatible**: Easier submission to the Chrome Webstore.
+* **Automatic translation**: The messages for all supported i18n locales are auto-generated from the English version.
+* **Zero Dependencies**: This starter is minimal to avoid [supply-chain attacks](https://www.bleepingcomputer.com/news/security/npm-supply-chain-attack-impacts-hundreds-of-websites-and-apps/) which is rampant with Js projects.
+* **Welcome and Uninstall pages**: To give your project a head start, welcome pages are great for demos and uninstall pages provide a thoughtful exit.
+* **Utilities for common tasks**: Comes with helpers logging, storage, and requesting feedback.
+
+### Notes
+
 
 <details><summary>Keeping up with changes in this repo</summary>
 Staying up-to-date with this repo after a fork:

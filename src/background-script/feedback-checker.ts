@@ -11,10 +11,10 @@ export type FeedbackData = {
 // This checker runs in the service worker and determines the appropriate time to show the feedback form.
 // It marks this determination by setting feedback_status="is_eligible_for_feedback" in the Storage area.
 // Considerations: call #shouldRequestFeedback directly from feedback form: FeedbackForm maybe embedded in page context, which has no access to some Chrome APIs
-// Ideally, feedback should be shown after one of many successful interactions, to a long-term user, who is not in Incognito .
+// Ideally, feedback should be shown after one of many successful interactions, to a long-term user, who is not in Incognito.
 class FeedbackChecker {
   DAY_MS = 86_400_000;
-  logger = new Logger("feedback-checker");
+  logger = new Logger(this);
 
   // Runs a check to determine if the trigger for showing feedback form should be set.
   async runFeedbackCheck(tabInfo?: chrome.tabs.Tab) {
@@ -29,7 +29,7 @@ class FeedbackChecker {
 
     // Reset to ineligible if already marked as eligible (otherwise it might be honored).
     const feedbackData = await Storage.get(FEEDBACK_DATA_KEY);
-    if(feedbackData.status == "eligible") {
+    if(feedbackData?.status == "eligible") {
       const newFeedbackStatus: FeedbackData = {
         status: "ineligible",
         timestamp: Date.now(),

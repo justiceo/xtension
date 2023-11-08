@@ -1,4 +1,6 @@
 import Analytics from "../utils/analytics";
+import { Logger } from "../utils/logger";
+import Storage from "../utils/storage";
 /*
  * Set up context menu (right-click menu) for different conexts.
  * See reference https://developer.chrome.com/docs/extensions/reference/contextMenus/#method-create.
@@ -19,6 +21,8 @@ interface MenuItem {
 
 declare var IS_DEV_BUILD: boolean;
 class ContextMenu {
+  logger = new Logger(this);
+
   RELOAD_ACTION: MenuItem = {
     menu: {
       id: 'reload-action',
@@ -44,17 +48,29 @@ class ContextMenu {
     },
   };
 
+  PRINT_STORAGE: MenuItem = {
+    menu: {
+      id: 'print-storage',
+      title: 'Print Storage',
+      visible: true,
+      contexts: ['action'],
+    },
+    handler: async (unusedInfo) => {
+      this.logger.log("Storage contents:", await Storage.getAll())
+    },
+  };
+
   browserActionContextMenu: MenuItem[] = [];
 
   init = () => {
     // Maybe add dev-only actions.
     if(IS_DEV_BUILD) {
-      this.browserActionContextMenu.push(this.RELOAD_ACTION, this.CLEAR_STORAGE);
+      this.browserActionContextMenu.push(this.RELOAD_ACTION, this.CLEAR_STORAGE, this.PRINT_STORAGE);
     }
 
     // Check if we can access context menus.
     if (!chrome || !chrome.contextMenus) {
-      console.warn('No access to chrome.contextMenus');
+      this.logger.warn('No access to chrome.contextMenus');
       return;
     }
 
@@ -79,14 +95,14 @@ class ContextMenu {
       Analytics.fireEvent("context_menu_click", {"menu_id": menuItem.menu.id})
       menuItem.handler(info, tab);
     } else {
-      console.error('Unable to find menu item: ', info);
+      this.logger.error('Unable to find menu item: ', info);
     }
   };
 
   sendMessage(message: any): void {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       chrome.tabs.sendMessage(tabs[0].id!, message, (response) => {
-        console.debug('ack:', response);
+        this.logger.debug('ack:', response);
       });
     });
   }

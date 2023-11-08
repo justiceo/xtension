@@ -1,11 +1,15 @@
-import '@webcomponents/custom-elements';
+import "@webcomponents/custom-elements";
 import bootstrap from "./bootstrap.bundle.min.js";
 import bootstrapCSS from "./bootstrap5.txt.css";
-import formHtml from './settings.txt.html';
+import formHtml from "./settings.txt.html";
+import Storage from "../storage.js";
+import { Logger } from "../logger.js";
 
 export class SettingsUI extends HTMLElement {
-  configItems: any[]
+  configItems: any[];
   template!: HTMLElement;
+  logger = new Logger(this);
+
   constructor(configItems: any[]) {
     // Always call super first in constructor
     super();
@@ -16,20 +20,33 @@ export class SettingsUI extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log("SettingsUI added to page.");
-    this.render(this.configItems);
+    this.logger.debug("SettingsUI added to page.");
+
+    this.fetchAndSetConfigValues(this.configItems).then((options) => {
+      this.render(options);
+    });
   }
   disconnectedCallback() {
-    console.log("SettingsUI element removed from page.");
+    this.logger.debug("SettingsUI element removed from page.");
   }
 
   adoptedCallback() {
-    console.log("SettingsUI element moved to new page.");
+    this.logger.debug("SettingsUI element moved to new page.");
   }
 
+  // Fetch value of each option from storage, set to default_value otherwise.
+  async fetchAndSetConfigValues(options: any[]) {
+    for (const option of options) {
+      const val = await Storage.get(option.id);
+      if (val == null || val === undefined) {
+        option.value = option.default_value;
+      } else {
+        option.value = val;
+      }
+    }
+    return options;
+  }
 
-  // See https://netbasal.com/supercharge-your-forms-in-web-components-with-lit-5df42430907a
-  // as potential alternative using lit.
   render(options: any[]): HTMLElement {
     const style = document.createElement("style");
     style.textContent = `
@@ -51,24 +68,24 @@ export class SettingsUI extends HTMLElement {
       min-width: 400px;
       min-height: 400px;
     }
+
+    .toast {
+      width: auto;
+    }
   `;
 
-    this.template = document.createElement('div');
-    this.template.innerHTML= formHtml;
+    this.template = document.createElement("div");
+    this.template.innerHTML = formHtml;
 
     const output = document.createElement("ul");
     output.className = "list-group";
     options.forEach((o) => output.appendChild(this.cloneInput(o)));
-
     this.shadowRoot?.append(style, output);
   }
 
   async saveChange(option, updatedValue) {
-    console.debug("saving: ", option.id, updatedValue);
-    let configToSave =  {}
-    option.value = updatedValue;
-    configToSave[option.id] = option;
-    await chrome.storage.sync.set(configToSave);
+    this.logger.debug("saving: ", option.id, updatedValue);
+    await Storage.put(option.id, updatedValue);
     this.showToast();
   }
 
@@ -83,24 +100,28 @@ export class SettingsUI extends HTMLElement {
 
     const eventHandler = (e: Event) => {
       const data =
-        ["checkbox", "switch"].indexOf(option.type) >= 0 ? e.target?.checked : e.target?.value;
+        ["checkbox", "switch"].indexOf(option.type) >= 0
+          ? e.target?.checked
+          : e.target?.value;
       this.saveChange(option, data);
     };
 
     const actualInput = input.getElementsByClassName(
       "control-input"
     )[0] as HTMLInputElement;
-    ["checkbox", "switch"].indexOf(option.type) >= 0 ? actualInput.checked = !!option.value: actualInput.value = option.value;
+    ["checkbox", "switch"].indexOf(option.type) >= 0
+      ? (actualInput.checked = !!option.value)
+      : (actualInput.value = option.value);
 
     option.type === "select"
       ? actualInput.addEventListener("change", eventHandler)
       : actualInput.addEventListener("input", eventHandler);
 
-    if(option.type === "range") {
+    if (option.type === "range") {
       actualInput.min = option.min;
       actualInput.max = option.max;
     }
-    if(option.type === "select") {
+    if (option.type === "select") {
       // option.options.forEach(e => {
       //   (actualInput as unknown as HTMLSelectElement).add(new Option(e, e));
       // });
@@ -112,12 +133,14 @@ export class SettingsUI extends HTMLElement {
   showToast() {
     // Check if element is already inserted and use it, other-wise, add it.
     let toastEl = this.shadowRoot?.querySelector(".toast-container");
-    if(!toastEl) {
+    if (!toastEl) {
       toastEl = this.template.querySelector(".toast-container")!;
       this.shadowRoot?.append(toastEl);
     }
-    const toast = new bootstrap.Toast(toastEl.querySelector("#liveToast"));
-    console.log("showing toast: ", bootstrap, toast);
+    const toast = new bootstrap.Toast(toastEl.querySelector("#liveToast"), {
+      delay: 1000,
+    });
+    this.logger.log("showing toast: ", bootstrap, toast);
     toast.show();
   }
 }

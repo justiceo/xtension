@@ -30,6 +30,7 @@ export class Analytics {
 
   // Returns the current session id, or creates a new one if one doesn't exist or
   // the previous one has expired.
+  // TODO: This function should not fire events when use in service-worker.
   async getOrCreateSessionId() {
     return new Promise((resolve) => {
       chrome.runtime.sendMessage("get_or_create_session_id", (sessionId) => {

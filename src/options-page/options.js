@@ -4,7 +4,6 @@ import { WinBox } from "../utils/winbox/winbox";
 
 class OptionsPage {
   render(options) {
-    console.log("rendering options: ", options);
     const optionsEl = new SettingsUI(options);
     document.body.appendChild(optionsEl);
 

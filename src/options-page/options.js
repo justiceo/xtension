@@ -1,6 +1,6 @@
-import './options.css'
-import { SettingsUI } from '../utils/options/settings';
-import {WinBox} from '../utils/winbox/winbox';
+import "./options.css";
+import { SettingsUI } from "../utils/options/settings";
+import { WinBox } from "../utils/winbox/winbox";
 
 class OptionsPage {
   render(options) {
@@ -8,14 +8,16 @@ class OptionsPage {
     const optionsEl = new SettingsUI(options);
     document.body.appendChild(optionsEl);
 
-    new WinBox("Winbox Title", {
-      width: "400px",
-      height: "400px",
-      shadowel: "test-shadow",
-      html: `<h1>Hello winbox</h1>`
+    // Show winbox demo.
+    document.querySelector("#winbox-demo").addEventListener("click", () => {
+      new WinBox("Winbox Title", {
+        width: "400px",
+        height: "400px",
+        shadowel: "test-shadow",
+        html: `<h1>Hello winbox</h1>`
+      });
     });
   }
-
 }
 
 const config = [
@@ -71,4 +73,3 @@ const config = [
 ];
 let op = new OptionsPage();
 op.render(config);
-

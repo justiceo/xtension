@@ -4,13 +4,27 @@ import bootstrapCSS from "./bootstrap5.txt.css";
 import formHtml from "./settings.txt.html";
 import Storage from "../storage.js";
 import { Logger } from "../logger.js";
+import { i18n } from "../i18n.js";
+
+export interface Config {
+  id: string;
+  title: string;
+  description: string;
+  type: "checkbox" | "switch" | "text" | "range" | "select" | "textarea" | "radio";
+  default_value: string | boolean | number;  
+
+  value?: any;
+  options?: string[];
+  min?: number;
+  max?: number;
+}
 
 export class SettingsUI extends HTMLElement {
-  configItems: any[];
+  configItems: Config[];
   template!: HTMLElement;
   logger = new Logger(this);
 
-  constructor(configItems: any[]) {
+  constructor(configItems: Config[]) {
     // Always call super first in constructor
     super();
 
@@ -35,7 +49,7 @@ export class SettingsUI extends HTMLElement {
   }
 
   // Fetch value of each option from storage, set to default_value otherwise.
-  async fetchAndSetConfigValues(options: any[]) {
+  async fetchAndSetConfigValues(options: Config[]) {
     for (const option of options) {
       const val = await Storage.get(option.id);
       if (val == null || val === undefined) {
@@ -47,7 +61,7 @@ export class SettingsUI extends HTMLElement {
     return options;
   }
 
-  render(options: any[]): HTMLElement {
+  render(options: Config[]): void {
     const style = document.createElement("style");
     style.textContent = `
     ${bootstrapCSS}
@@ -89,14 +103,15 @@ export class SettingsUI extends HTMLElement {
     this.showToast();
   }
 
-  cloneInput(option): HTMLElement {
+  // Clone the template and set the title, description, and value.
+  cloneInput(option: Config): HTMLElement {
     let input = this.template
       .getElementsByClassName(`${option.type}-template`)[0]
       .cloneNode(true) as HTMLElement;
 
-    input.getElementsByClassName(`control-title`)[0].innerHTML = option.title;
+    input.getElementsByClassName(`control-title`)[0].innerHTML = i18n(option.title);
     input.getElementsByClassName(`control-description`)[0].innerHTML =
-      option.description;
+      i18n(option.description);
 
     const eventHandler = (e: Event) => {
       const data =

@@ -131,7 +131,7 @@ class Build {
           "src/background-script/background.ts",
           "src/content-script/content-script.ts",
           "src/popup/popup.ts",
-          "src/options-page/options.js",
+          "src/options-page/options.ts",
         ],
         bundle: true,
         minify: this.isProd,

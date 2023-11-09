@@ -1,5 +1,5 @@
 import "./options.css";
-import { SettingsUI } from "../utils/options/settings";
+import { Config, SettingsUI } from "../utils/options/settings";
 import { WinBox } from "../utils/winbox/winbox";
 
 class OptionsPage {
@@ -8,7 +8,7 @@ class OptionsPage {
     document.body.appendChild(optionsEl);
 
     // Show winbox demo.
-    document.querySelector("#winbox-demo").addEventListener("click", () => {
+    document.querySelector("#winbox-demo")?.addEventListener("click", () => {
       new WinBox("Winbox Title", {
         width: "400px",
         height: "400px",
@@ -19,7 +19,7 @@ class OptionsPage {
   }
 }
 
-const config = [
+const config: Config[] = [
   {
     id: "disable-extension-on-site",
     type: "checkbox",

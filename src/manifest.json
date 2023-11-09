@@ -9,6 +9,8 @@
   "__comment:version__": "Firefox does not support leading zeros in versions",
   "version": "23.1.21",
   "__sentry_dsn__": "https://b1d81a9e5f1546f79885a473ce33128c@o526305.ingest.sentry.io/6244539",
+  "__measurement_id__": "G-JWLV6CJVSJ",
+  "__ga_api_secret__": "E2EWHH--QbSaf9-f0ePC5g",
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",

@@ -39,7 +39,8 @@ const config: Config[] = [
     type: "radio",
     title: "Sample radio title",
     description: "The detail information about the radio here.",
-    default_value: 1,
+    default_value: "2",
+    options: [{ id: "1", text: "Option 1" }, { id: "2", text: "Option 2" }],
   },
   {
     id: "switch-id",
@@ -53,7 +54,8 @@ const config: Config[] = [
     type: "select",
     title: "Sample select title",
     description: "The detail information about the select here.",
-    default_value: 2,
+    default_value: "2",
+    options: [{ id: "1", text: "Option 1" }, { id: "2", text: "Option 2" }],
   },
   {
     id: "range-id",
@@ -61,13 +63,6 @@ const config: Config[] = [
     title: "Sample range title",
     description: "The detail information about the range here.",
     default_value: 0,
-  },
-  {
-    id: "textarea-id",
-    type: "textarea",
-    title: "Sample textarea title",
-    description: "The detail information about the textarea here.",
-    default_value: "hello world",
   },
 ];
 let op = new OptionsPage();

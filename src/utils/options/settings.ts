@@ -1,27 +1,32 @@
 import "@webcomponents/custom-elements";
-import bootstrap from "./bootstrap.bundle.min.js";
-import bootstrapCSS from "./bootstrap5.txt.css";
+import { Toast } from "bootstrap";
+import "./settings.css";
 import formHtml from "./settings.txt.html";
 import Storage from "../storage.js";
 import { Logger } from "../logger.js";
 import { i18n } from "../i18n.js";
 
+export interface SelectOption {
+  id: string;
+  text: string;
+}
+
 export interface Config {
   id: string;
   title: string;
   description: string;
-  type: "checkbox" | "switch" | "text" | "range" | "select" | "textarea" | "radio";
-  default_value: string | boolean | number;  
+  type: "checkbox" | "switch" | "range" | "select" | "radio";
+  default_value: string | boolean | number;
 
   value?: any;
-  options?: string[];
-  min?: number;
-  max?: number;
+  options?: SelectOption[];
+  min?: string;
+  max?: string;
 }
 
 export class SettingsUI extends HTMLElement {
   configItems: Config[];
-  template!: HTMLElement;
+  template = new DOMParser().parseFromString(formHtml, "text/html");
   logger = new Logger(this);
 
   constructor(configItems: Config[]) {
@@ -62,87 +67,99 @@ export class SettingsUI extends HTMLElement {
   }
 
   render(options: Config[]): void {
-    const style = document.createElement("style");
-    style.textContent = `
-    ${bootstrapCSS}
-    
-    input[type="checkbox"] {
-      /* Double-sized Checkboxes */
-      -ms-transform: scale(1.4); /* IE */
-      -moz-transform: scale(1.4); /* FF */
-      -webkit-transform: scale(1.4); /* Safari and Chrome */
-      -o-transform: scale(1.4); /* Opera */
-      padding: 10px;
-    }
-    
-    .collapse {
-      margin-top: 15px;
-    }
-    .container {
-      min-width: 400px;
-      min-height: 400px;
-    }
+    this.logger.debug("Rendering options: ", options);
+    // Add the stylesheet.
+    const style = document.createElement("link");
+    style.rel = "stylesheet";
+    style.href = chrome.runtime.getURL("utils/options/settings.css");
+    this.shadowRoot?.append(style);
 
-    .toast {
-      width: auto;
-    }
-  `;
-
-    this.template = document.createElement("div");
-    this.template.innerHTML = formHtml;
-
+    // Generate the form from template.
     const output = document.createElement("ul");
     output.className = "list-group";
     options.forEach((o) => output.appendChild(this.cloneInput(o)));
-    this.shadowRoot?.append(style, output);
+    this.shadowRoot?.append(output);
   }
 
-  async saveChange(option, updatedValue) {
-    this.logger.debug("saving: ", option.id, updatedValue);
-    await Storage.put(option.id, updatedValue);
+  async saveChange(config: Config, updatedValue) {
+    this.logger.debug("saving: ", config.id, updatedValue);
+    await Storage.put(config.id, updatedValue);
     this.showToast();
   }
 
   // Clone the template and set the title, description, and value.
-  cloneInput(option: Config): HTMLElement {
-    let input = this.template
-      .getElementsByClassName(`${option.type}-template`)[0]
+  cloneInput(config: Config): HTMLElement {
+    let control = this.template
+      .getElementsByClassName(`${config.type}-template`)[0]
       .cloneNode(true) as HTMLElement;
 
-    input.getElementsByClassName(`control-title`)[0].innerHTML = i18n(option.title);
-    input.getElementsByClassName(`control-description`)[0].innerHTML =
-      i18n(option.description);
+    // Set the title and description of the control.
+    control.getElementsByClassName(`control-title`)[0].innerHTML = i18n(
+      config.title
+    );
+    control.getElementsByClassName(`control-description`)[0].innerHTML = i18n(
+      config.description
+    );
 
-    const eventHandler = (e: Event) => {
-      const data =
-        ["checkbox", "switch"].indexOf(option.type) >= 0
-          ? e.target?.checked
-          : e.target?.value;
-      this.saveChange(option, data);
-    };
-
-    const actualInput = input.getElementsByClassName(
+    // Set up the value of the controls and wire-up change listeners.
+    const actualInput = control.getElementsByClassName(
       "control-input"
     )[0] as HTMLInputElement;
-    ["checkbox", "switch"].indexOf(option.type) >= 0
-      ? (actualInput.checked = !!option.value)
-      : (actualInput.value = option.value);
 
-    option.type === "select"
-      ? actualInput.addEventListener("change", eventHandler)
-      : actualInput.addEventListener("input", eventHandler);
-
-    if (option.type === "range") {
-      actualInput.min = option.min;
-      actualInput.max = option.max;
-    }
-    if (option.type === "select") {
-      // option.options.forEach(e => {
-      //   (actualInput as unknown as HTMLSelectElement).add(new Option(e, e));
-      // });
+    if (["checkbox", "switch"].includes(config.type)) {
+      actualInput.checked = !!config.value;
+      actualInput.addEventListener("input", (e: Event) =>
+        this.saveChange(config, (e.target as HTMLInputElement).checked)
+      );
+    } else {
+      actualInput.value = config.value;
     }
 
-    return input;
+    if (config.type === "range") {
+      actualInput.min = config.min ?? "0";
+      actualInput.max = config.max ?? "5";
+      actualInput.addEventListener("input", (e: Event) =>
+        this.saveChange(config, (e.target as HTMLInputElement).value)
+      );
+    }
+
+    if (config.type === "select") {
+      config.options?.forEach((o) => {
+        (actualInput as unknown as HTMLSelectElement).add(
+          new Option(o.text, o.id, o.id === config.value)
+        );
+      });
+      (actualInput as unknown as HTMLSelectElement).selectedIndex =
+        config.options?.findIndex((o) => o.id === config.value) ?? -1;
+      actualInput.addEventListener("change", (e: Event) =>
+        this.saveChange(config, (e.target as HTMLInputElement).value)
+      );
+    }
+
+    if (config.type === "radio") {
+      config.options?.forEach((o) => {
+        const radioInput = document.createElement("input");
+        radioInput.type = "radio";
+        radioInput.name = config.id;
+        radioInput.value = o.id;
+        radioInput.id = `${config.id}-${o.id}`;
+        radioInput.autocomplete = "off";
+        radioInput.className = "btn-check";
+        radioInput.checked = o.id === config.value;
+        actualInput.appendChild(radioInput);
+
+        const radioLabel = document.createElement("label");
+        radioLabel.className = "btn btn-outline-primary";
+        radioLabel.htmlFor = radioInput.id;
+        radioLabel.appendChild(document.createTextNode(o.text));
+        actualInput.appendChild(radioLabel);
+      });
+      actualInput.addEventListener("input", (e: Event) =>
+        this.saveChange(config, (e.target as HTMLInputElement).value)
+      );
+    }
+
+    return control;
   }
 
   showToast() {
@@ -152,10 +169,10 @@ export class SettingsUI extends HTMLElement {
       toastEl = this.template.querySelector(".toast-container")!;
       this.shadowRoot?.append(toastEl);
     }
-    const toast = new bootstrap.Toast(toastEl.querySelector("#liveToast"), {
+    const toast = new Toast(toastEl.querySelector("#liveToast"), {
       delay: 1000,
     });
-    this.logger.log("showing toast: ", bootstrap, toast);
+    this.logger.log("showing toast: ", toast);
     toast.show();
   }
 }

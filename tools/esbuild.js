@@ -132,7 +132,7 @@ class Build {
           "src/content-script/content-script.ts",
           "src/popup/popup.ts",
           "src/options-page/options.ts",
-          "src/utils/options/settings.ts",
+          "src/utils/settings/settings.ts",
         ],
         bundle: true,
         minify: this.isProd,

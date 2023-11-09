@@ -71,7 +71,7 @@ export class SettingsUI extends HTMLElement {
     // Add the stylesheet.
     const style = document.createElement("link");
     style.rel = "stylesheet";
-    style.href = chrome.runtime.getURL("utils/options/settings.css");
+    style.href = chrome.runtime.getURL("utils/settings/settings.css");
     this.shadowRoot?.append(style);
 
     // Generate the form from template.

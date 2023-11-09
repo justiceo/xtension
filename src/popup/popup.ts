@@ -1,5 +1,5 @@
 
-import { SettingsUI } from '../utils/options/settings';
+import { SettingsUI } from '../utils/settings/settings';
 import '../utils/feedback/feedback';
 import { RemoteLogger } from '../utils/logger';
 import { FeedbackData } from '../background-script/feedback-checker';
@@ -11,10 +11,11 @@ const optionsEl = new SettingsUI([ {
   type: "checkbox",
   title: "Disable extension on this site",
   description: "You will no longer see preview search results or view smart actions on this website",
+  default_value: false,
 },]);
 document.body.appendChild(optionsEl);
 
-document.querySelector("#go-to-options").addEventListener("click", () => {
+document.querySelector("#go-to-options")?.addEventListener("click", () => {
   if (chrome.runtime.openOptionsPage) {
     chrome.runtime.openOptionsPage();
   } else {

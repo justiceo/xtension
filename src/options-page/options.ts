@@ -1,5 +1,5 @@
 import "./options.css";
-import { Config, SettingsUI } from "../utils/options/settings";
+import { Config, SettingsUI } from "../utils/settings/settings";
 import { WinBox } from "../utils/winbox/winbox";
 
 class OptionsPage {

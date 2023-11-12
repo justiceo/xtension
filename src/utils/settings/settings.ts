@@ -15,7 +15,7 @@ export interface Config {
   id: string;
   title: string;
   description: string;
-  type: "checkbox" | "switch" | "range" | "select" | "radio";
+  type: "checkbox" | "switch" | "range" | "select" | "radio" | "textarea";
   default_value: string | boolean | number;
 
   value?: any;
@@ -159,6 +159,12 @@ export class SettingsUI extends HTMLElement {
       );
     }
 
+    if (config.type === "textarea") {
+      actualInput.addEventListener("input", (e: Event) =>
+        this.saveChange(config, (e.target as HTMLInputElement).value),
+      );
+    }
+
     return control;
   }
 
@@ -173,6 +179,8 @@ export class SettingsUI extends HTMLElement {
       delay: 1000,
     });
     this.logger.log("showing toast: ", toast);
+
+    // TODO: Add debounce for multiple saves in quick succession (e.g. textarea and range).
     toast.show();
   }
 }

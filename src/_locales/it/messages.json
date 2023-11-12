@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Starter di estensione del browser",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "ESSERE S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Esempio di estensione del browser. TypeScript, test E2E, generazione di icona, i18n automatico ed esbuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Starter di estensione del browser",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "ESSERE S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Esempio di estensione del browser. TypeScript, test E2E, generazione di icona, i18n automatico ed esbuild",
+    "description": "The description of your extension"
+  }
 }

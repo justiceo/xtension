@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Inici de l'extensió del navegador",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Exemple d’extensió del navegador. TypeScript, E2E Proves, Generació d’icones, Automàtic I18N i ESBuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Inici de l'extensió del navegador",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Exemple d’extensió del navegador. TypeScript, E2E Proves, Generació d’icones, Automàtic I18N i ESBuild",
+    "description": "The description of your extension"
+  }
 }

@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Trình duyệt mở rộng khởi động",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "CÓ S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Ví dụ mở rộng trình duyệt. TypeScript, E2E Tests, Icon Generation, Automatic I18N và ESBUILD",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Trình duyệt mở rộng khởi động",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "CÓ S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Ví dụ mở rộng trình duyệt. TypeScript, E2E Tests, Icon Generation, Automatic I18N và ESBUILD",
+    "description": "The description of your extension"
+  }
 }

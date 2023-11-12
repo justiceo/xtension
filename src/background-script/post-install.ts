@@ -8,7 +8,7 @@ const welcomeUrl = chrome.runtime.getURL("welcome/welcome.html");
 const onInstalled = (details: chrome.runtime.InstalledDetails) => {
   // Set the installation time in storage.
   Storage.get(INSTALL_TIME_MS).then((installTime) => {
-    if(installTime == null) {
+    if (installTime == null) {
       Storage.put(INSTALL_TIME_MS, Date.now());
     }
   });

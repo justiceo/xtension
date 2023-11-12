@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "உலாவி நீட்டிப்பு ஸ்டார்டர்",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.e.s.",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "உலாவி நீட்டிப்பு எடுத்துக்காட்டு. டைப்ஸ்கிரிப்ட், E2E சோதனைகள், ஐகான் உருவாக்கம், தானியங்கி i18n மற்றும் esbuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "உலாவி நீட்டிப்பு ஸ்டார்டர்",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.e.s.",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "உலாவி நீட்டிப்பு எடுத்துக்காட்டு. டைப்ஸ்கிரிப்ட், E2E சோதனைகள், ஐகான் உருவாக்கம், தானியங்கி i18n மற்றும் esbuild",
+    "description": "The description of your extension"
+  }
 }

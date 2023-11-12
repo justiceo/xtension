@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Starter ya Upanuzi wa Kivinjari",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Mfano wa Upanuzi wa Kivinjari. Vipimo vya Typescript, E2E, Kizazi cha Icon, moja kwa moja I18N na EsBuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Starter ya Upanuzi wa Kivinjari",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Mfano wa Upanuzi wa Kivinjari. Vipimo vya Typescript, E2E, Kizazi cha Icon, moja kwa moja I18N na EsBuild",
+    "description": "The description of your extension"
+  }
 }

@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "متصفح تمديد بداية",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "ب",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "مثال تمديد المتصفح. TypeScript ، اختبارات E2E ، توليد الأيقونات ، I18N التلقائي و ESBUILD",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "متصفح تمديد بداية",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "ب",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "مثال تمديد المتصفح. TypeScript ، اختبارات E2E ، توليد الأيقونات ، I18N التلقائي و ESBUILD",
+    "description": "The description of your extension"
+  }
 }

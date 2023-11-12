@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Böngészőhosszabbító indító",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Böngésző kiterjesztési példa. TypeScript, E2E tesztek, ikongenerálás, automatikus I18N és esbuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Böngészőhosszabbító indító",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Böngésző kiterjesztési példa. TypeScript, E2E tesztek, ikongenerálás, automatikus I18N és esbuild",
+    "description": "The description of your extension"
+  }
 }

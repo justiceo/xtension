@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "બ્રાઉઝર એક્સ્ટેંશન સ્ટાર્ટર",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.S.",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "બ્રાઉઝર એક્સ્ટેંશન ઉદાહરણ. ટાઇપસ્ક્રિપ્ટ, E2E પરીક્ષણો, આયકન જનરેશન, સ્વચાલિત I18N અને ESBild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "બ્રાઉઝર એક્સ્ટેંશન સ્ટાર્ટર",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.S.",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "બ્રાઉઝર એક્સ્ટેંશન ઉદાહરણ. ટાઇપસ્ક્રિપ્ટ, E2E પરીક્ષણો, આયકન જનરેશન, સ્વચાલિત I18N અને ESBild",
+    "description": "The description of your extension"
+  }
 }

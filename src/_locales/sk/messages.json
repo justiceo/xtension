@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Predlžovač prehliadača",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Príklad rozšírenia prehliadača. TypeScript, E2E testy, generovanie ikon, automatické i18n a Esbuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Predlžovač prehliadača",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Príklad rozšírenia prehliadača. TypeScript, E2E testy, generovanie ikon, automatické i18n a Esbuild",
+    "description": "The description of your extension"
+  }
 }

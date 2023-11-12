@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Webbläsarförlängningsstart",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "VARA S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Exempel på webbläsarförlängning. TypeScript, E2E -test, ikongenerering, automatisk i18N och ESBUILD",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Webbläsarförlängningsstart",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "VARA S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Exempel på webbläsarförlängning. TypeScript, E2E -test, ikongenerering, automatisk i18N och ESBUILD",
+    "description": "The description of your extension"
+  }
 }

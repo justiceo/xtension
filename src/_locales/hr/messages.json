@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Starter preglednika",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Primjer proširenja preglednika. TypeScript, E2E testovi, stvaranje ikona, automatski i18n i esbuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Starter preglednika",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Primjer proširenja preglednika. TypeScript, E2E testovi, stvaranje ikona, automatski i18n i esbuild",
+    "description": "The description of your extension"
+  }
 }

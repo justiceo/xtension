@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Brauseri pikenduse starter",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Brauseri laienduse näide. TypeScript, E2E testid, ikooni genereerimine, automaatne i18n ja esbuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Brauseri pikenduse starter",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Brauseri laienduse näide. TypeScript, E2E testid, ikooni genereerimine, automaatne i18n ja esbuild",
+    "description": "The description of your extension"
+  }
 }

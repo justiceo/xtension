@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Pārlūka pagarinājuma starteris",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Pārlūka pagarinājuma piemērs. TypeScript, E2E testi, ikonu ģenerēšana, automātiskā I18N un esbuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Pārlūka pagarinājuma starteris",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Pārlūka pagarinājuma piemērs. TypeScript, E2E testi, ikonu ģenerēšana, automātiskā I18N un esbuild",
+    "description": "The description of your extension"
+  }
 }

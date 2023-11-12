@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Naršyklės plėtinio starteris",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Naršyklės plėtinio pavyzdys. „TypeScript“, „E2E“ testai, piktogramų generavimas, automatinis I18N ir „Esbuild“",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Naršyklės plėtinio starteris",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Naršyklės plėtinio pavyzdys. „TypeScript“, „E2E“ testai, piktogramų generavimas, automatinis I18N ir „Esbuild“",
+    "description": "The description of your extension"
+  }
 }

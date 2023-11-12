@@ -1,9 +1,8 @@
-
 # Tasks to clone a new extension
 
 - Add replacement objects list to each property, {file, match, replacement}
 - Do find and replace in the order (case sentitive):
-  "Browser Extension Starter", "Xtension", "xtension" 
+  "Browser Extension Starter", "Xtension", "xtension"
 - Do find and replace for version
 - Update version in manifest.json and package.json
 - Update Github repo URL in manifest.json and package.json

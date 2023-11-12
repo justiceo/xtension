@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Prodlužovací startér prohlížeče",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.S",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Příklad prodloužení prohlížeče. Strojopis, testy E2e, generování ikon, automatický i18n a esbuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Prodlužovací startér prohlížeče",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.S",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Příklad prodloužení prohlížeče. Strojopis, testy E2e, generování ikon, automatický i18n a esbuild",
+    "description": "The description of your extension"
+  }
 }

@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "ब्राउज़र एक्सटेंशन स्टार्टर",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "बी.ई.एस.",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "ब्राउज़र एक्सटेंशन उदाहरण। टाइपस्क्रिप्ट, E2E परीक्षण, आइकन पीढ़ी, स्वचालित I18N और Esbuild",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "ब्राउज़र एक्सटेंशन स्टार्टर",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "बी.ई.एस.",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "ब्राउज़र एक्सटेंशन उदाहरण। टाइपस्क्रिप्ट, E2E परीक्षण, आइकन पीढ़ी, स्वचालित I18N और Esbuild",
+    "description": "The description of your extension"
+  }
 }

@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Проширење претраживача Стартер",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Б.е.с",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Пример проширења прегледача. Типцрипт, Е2Е тестови, производња икона, аутоматски И18Н и ЕСБУИЛД",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "Проширење претраживача Стартер",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Б.е.с",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Пример проширења прегледача. Типцрипт, Е2Е тестови, производња икона, аутоматски И18Н и ЕСБУИЛД",
+    "description": "The description of your extension"
+  }
 }

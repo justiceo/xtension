@@ -13,7 +13,7 @@ class OptionsPage {
         width: "400px",
         height: "400px",
         shadowel: "test-shadow",
-        html: `<h1>Hello winbox</h1>`
+        html: `<h1>Hello winbox</h1>`,
       });
     });
   }
@@ -40,7 +40,10 @@ const config: Config[] = [
     title: "Sample radio title",
     description: "The detail information about the radio here.",
     default_value: "2",
-    options: [{ id: "1", text: "Option 1" }, { id: "2", text: "Option 2" }],
+    options: [
+      { id: "1", text: "Option 1" },
+      { id: "2", text: "Option 2" },
+    ],
   },
   {
     id: "switch-id",
@@ -55,7 +58,10 @@ const config: Config[] = [
     title: "Sample select title",
     description: "The detail information about the select here.",
     default_value: "2",
-    options: [{ id: "1", text: "Option 1" }, { id: "2", text: "Option 2" }],
+    options: [
+      { id: "1", text: "Option 1" },
+      { id: "2", text: "Option 2" },
+    ],
   },
   {
     id: "range-id",

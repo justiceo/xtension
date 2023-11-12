@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "ബ്ര browser സർ വിപുലീകരണ സ്റ്റാർട്ടർ",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "B.E.",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "ബ്ര browser സർ വിപുലീകരണ ഉദാഹരണം. ടൈപ്പ്സ്ക്രിപ്റ്റ്, E2E ടെസ്റ്റുകൾ, ഐക്കൺ ജനറേഷൻ, ഓട്ടോമാറ്റിക് I18N, ESBUILD",
-        "description": "The description of your extension"
-    }
+  "appName": {
+    "message": "ബ്ര browser സർ വിപുലീകരണ സ്റ്റാർട്ടർ",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "B.E.",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "ബ്ര browser സർ വിപുലീകരണ ഉദാഹരണം. ടൈപ്പ്സ്ക്രിപ്റ്റ്, E2E ടെസ്റ്റുകൾ, ഐക്കൺ ജനറേഷൻ, ഓട്ടോമാറ്റിക് I18N, ESBUILD",
+    "description": "The description of your extension"
+  }
 }

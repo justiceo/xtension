@@ -29,7 +29,7 @@ class ConfigGenerator {
     }
 
     console.log(
-      `Using manifest: ${this.manifestPath}, package.json: ${this.packageJsonPath}, jekyll config: ${this.jekyllConfigPath}.`
+      `Using manifest: ${this.manifestPath}, package.json: ${this.packageJsonPath}, jekyll config: ${this.jekyllConfigPath}.`,
     );
     this.run();
   }
@@ -93,7 +93,7 @@ class ConfigGenerator {
     // Convert to yaml and prepend generated notice
     const updatedJekyllConfig = this.convertJsonToYamlLines(jekyllConfig);
     updatedJekyllConfig.unshift(
-      "# The contents of this file are generated. See site_config.yml."
+      "# The contents of this file are generated. See site_config.yml.",
     );
     // Save the yaml config.
     fs.writeFile(
@@ -105,7 +105,7 @@ class ConfigGenerator {
         } else {
           console.log("Generated " + this.outputConfigPath);
         }
-      }
+      },
     );
 
     // Copy README.md to Index.md

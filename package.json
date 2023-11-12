@@ -9,8 +9,10 @@
     "start": "node tools/esbuild.js start",
     "watch": "node tools/esbuild.js watch",
     "start:firefox": "node tools/esbuild.js start --browser=firefox",
+    "format": "npx prettier . --write",
     "generateIcons": "node tools/esbuild.js image --icons",
-    "translate": "node tools/translateMessages.js"
+    "translate": "node tools/translateMessages.js",
+    "prepare": "husky install"
   },
   "author": "Justice Ogbonna",
   "license": "MIT",
@@ -28,6 +30,9 @@
     "starter",
     "boilerplate"
   ],
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
   "devDependencies": {
     "@types/chrome": "^0.0.246",
     "@types/jasmine": "^5.1.0",
@@ -37,6 +42,9 @@
     "google-translate-api-x": "^10.6.7",
     "jasmine": "^5.1.0",
     "jimp": "^0.22.10",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "prettier": "3.0.3",
     "puppeteer": "19.4.0"
   },
   "dependencies": {

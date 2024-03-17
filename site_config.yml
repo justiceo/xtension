@@ -1,8 +1,8 @@
 theme: minima
 bool: true
 number: 12334
-array: [a,b,c,d]
-multi-line-array: 
+array: [a, b, c, d]
+multi-line-array:
   - value 1
   - value 2
 null-value: null
@@ -12,16 +12,16 @@ symbol: 😊
 
 # The fields below would be imported from package.json and manifest.json in that order.
 # They are listed here so that config_generator.js knows to look for them.
-name: 
+name:
 short_name:
 manifest_version:
-version: 
+version:
 description:
 homepage:
-author: 
+author:
 license:
-keywords: 
-homepage_url: 
+keywords:
+homepage_url:
 icons:
 bugs:
 funding:

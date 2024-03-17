@@ -1,7 +1,7 @@
 {
-  "name": "__MSG_appName__",
-  "description": "__MSG_appDesc__",
-  "short_name": "__MSG_appShortName_",
+  "name": "__MSG_@appName__",
+  "description": "__MSG_@appDesc__",
+  "short_name": "__MSG_@appShortName_",
   "__package_name__": "xtension",
   "__comment:homepage_url": "This should be the webstore link, __MSG_@@extension_id__ is not allowed",
   "homepage_url": "https://github.com/justiceo/xtension",
@@ -46,8 +46,8 @@
   ],
   "options_page": "options-page/options.html",
   "background": {
-    "__chrome__service_worker": "background-script/background.js",
-    "__firefox__scripts": ["background-script/background.js"]
+    "__chrome__service_worker": "background-script/service-worker.js",
+    "__firefox__scripts": ["background-script/service-worker.js"]
   },
   "__firefox__key": "",
   "__firefox__browser_specific_settings": {

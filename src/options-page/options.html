@@ -1,28 +1,30 @@
 <!doctype html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <title>options</title>
-    <link rel="stylesheet" href="./options.css" />
-  </head>
 
-  <body>
-    <div class="container" style="margin-top: 100px">
-      <div class="header">
-        <img class="logo" alt="logo" src="../assets/logo-48x48.png" />
-        <h1>Xtension</h1>
-        <p>
-          Browser extension example. Typescript, E2E tests, icon generation,
-          automatic i18n and ESBuild
-        </p>
-      </div>
-      <button id="winbox-demo">Show Winbox Demo</button>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title i18n>Options</title>
+  <link rel="stylesheet" href="./options.css" />
+</head>
+
+<body>
+  <div class="container" style="margin-top: 100px">
+    <div class="header">
+      <img class="logo" alt="logo" src="../assets/logo-48x48.png" />
+      <h1 i18n="@appName"></h1>
+      <p i18n="@appDesc"></p>
     </div>
+    <div class="options-container"></div>
+    <p class="p-3 d-flex justify-content-evenly">
+      <button id="show-preview" class="btn btn-primary" i18n>
+        Show Demo
+      </button>
+      <a role="button" target="_blank" href="https://github.com/essentialkit/link-previews/issues/new/choose"
+        class="btn btn-outline-primary" i18n>Report an Issue</a>
+    </p>
+  </div>
+  <script src="options.js"></script>
+</body>
 
-    <script src="options.js"></script>
-  </body>
 </html>

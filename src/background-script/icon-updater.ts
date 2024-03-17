@@ -10,11 +10,6 @@ chrome.tabs.onActivated.addListener((activeInfo) => {
   chrome.tabs.get(activeInfo.tabId, (tab) => updateIcon(tab.url));
 });
 
-// Re-run on create new tab... essentially hide.
-// chrome.tabs.onCreated.addListener((tab) => {
-//   updateIcon()
-// });
-
 // Automatically disable icon on webstore and new tab pages.
 // FYI: window.alert and window.confirm are now disabled in MV3.
 const updateIcon = (url?: string) => {

@@ -15,6 +15,7 @@ const onMessage = (
     console.warn("Ignoring message from unknown sender", sender);
     return;
   }
+  console.log("Received message: ", message, " from: ", sender);
 
   if (message === "get_or_create_session_id") {
     getOrCreateSessionId().then((sessionId) => {

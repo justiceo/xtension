@@ -2,16 +2,12 @@ import Analytics from "../utils/analytics";
 import Storage from "../utils/storage";
 import { INSTALL_TIME_MS } from "../utils/storage";
 
-const uninstallUrl = "https://forms.gle/MLu6iBLLcXEk1ZhH6";
+const uninstallUrl = "https://forms.gle/iE1DgamFFEy2g2fDA";
 const welcomeUrl = chrome.runtime.getURL("welcome/welcome.html");
 
 const onInstalled = (details: chrome.runtime.InstalledDetails) => {
   // Set the installation time in storage.
-  Storage.get(INSTALL_TIME_MS).then((installTime) => {
-    if (installTime == null) {
-      Storage.put(INSTALL_TIME_MS, Date.now());
-    }
-  });
+  Storage.put(INSTALL_TIME_MS, Date.now());
 
   // On fresh install, open page how to use extension.
   if (details.reason === "install") {

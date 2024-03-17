@@ -1,75 +1,37 @@
+import { SettingsUI } from "../utils/settings/settings";
 import "./options.css";
-import { Config, SettingsUI } from "../utils/settings/settings";
-import { WinBox } from "../utils/winbox/winbox";
+import "../utils/feedback/feedback";
+import { configOptions } from "../config";
+import { translateMarkup } from "../utils/i18n";
+import { Logger } from "../utils/logger";
+import { ContentScript } from "../content-script/content-script";
 
-class OptionsPage {
-  render(options) {
-    const optionsEl = new SettingsUI(options);
-    document.body.appendChild(optionsEl);
+class Options {
+  logger = new Logger(this);
+  contentScript = new ContentScript();
 
-    // Show winbox demo.
-    document.querySelector("#winbox-demo")?.addEventListener("click", () => {
-      new WinBox("Winbox Title", {
-        width: "400px",
-        height: "400px",
-        shadowel: "test-shadow",
-        html: `<h1>Hello winbox</h1>`,
-      });
+  init() {
+    this.contentScript.init();
+    this.renderSettingsUI();
+    this.registerDemoClickHandler();
+  }
+
+  renderSettingsUI() {
+    document
+      .querySelector(".options-container")
+      ?.appendChild(new SettingsUI(configOptions));
+
+    translateMarkup(document);
+  }
+
+  registerDemoClickHandler() {
+    document.querySelector("#show-preview")?.addEventListener("click", () => {
+      this.logger.debug("Handling demo click");
+      this.contentScript.showDemo();
     });
   }
 }
 
-const config: Config[] = [
-  {
-    id: "disable-extension-on-site",
-    type: "checkbox",
-    title: "Temporarily disable extension",
-    description: "Turns off the extension on all websites.",
-    default_value: false,
-  },
-  {
-    id: "disable-sync",
-    type: "checkbox",
-    title: "Disable storage sync",
-    description: "Your settings will not propagate to other browsers.",
-    default_value: false,
-  },
-  {
-    id: "radio-id",
-    type: "radio",
-    title: "Sample radio title",
-    description: "The detail information about the radio here.",
-    default_value: "2",
-    options: [
-      { id: "1", text: "Option 1" },
-      { id: "2", text: "Option 2" },
-    ],
-  },
-  {
-    id: "switch-id",
-    type: "switch",
-    title: "Sample switch title",
-    description: "The detail information about the switch here.",
-    default_value: true,
-  },
-  {
-    id: "select-id",
-    type: "select",
-    title: "Sample select title",
-    description: "The detail information about the select here.",
-    default_value: "2",
-    options: [
-      { id: "1", text: "Option 1" },
-      { id: "2", text: "Option 2" },
-    ],
-  },
-  {
-    id: "range-id",
-    type: "range",
-    title: "Sample range title",
-    description: "The detail information about the range here.",
-    default_value: 0,
-  },
-];
-let op = new OptionsPage();
-op.render(config);
+document.addEventListener("DOMContentLoaded", () => {
+  new Options().init();
+});

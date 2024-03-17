@@ -1,31 +1,25 @@
 import Analytics from "../utils/analytics";
-import { Logger } from "../utils/logger";
+import { RemoteLogger } from "../utils/logger";
 import Storage from "../utils/storage";
+import { contextMenus } from "../config";
+import { MenuItem } from "../types";
 /*
  * Set up context menu (right-click menu) for different conexts.
  * See reference https://developer.chrome.com/docs/extensions/reference/contextMenus/#method-create.
  * Max number of browser_action menu items: 6 - https://developer.chrome.com/docs/extensions/reference/contextMenus/#property-ACTION_MENU_TOP_LEVEL_LIMIT
  */
-interface MenuItem {
-  menu: chrome.contextMenus.CreateProperties;
-  handler: (
-    info: chrome.contextMenus.OnClickData,
-    tab?: chrome.tabs.Tab,
-  ) => void;
-}
 
 /*
  * Prefer arrow method names here -
  * https://www.typescriptlang.org/docs/handbook/2/classes.html#arrow-functions.
  */
-
 declare var IS_DEV_BUILD: boolean;
 class ContextMenu {
-  logger = new Logger(this);
+  logger = new RemoteLogger(this);
 
   RELOAD_ACTION: MenuItem = {
     menu: {
-      id: "reload-action",
+      id: "reload-extension",
       title: "Reload Extension",
       visible: true,
       contexts: ["action"],
@@ -60,7 +54,44 @@ class ContextMenu {
     },
   };
 
-  browserActionContextMenu: MenuItem[] = [];
+  DISABLE_ON_SITE: MenuItem = {
+    menu: {
+      id: "disable-on-site",
+      title: "Disable on this site",
+      visible: true,
+      contexts: ["action"],
+    },
+    handler: (unusedInfo) => {
+      Storage.getAndUpdate("blocked-sites", async (sites: string) => {
+        let url;
+
+        try {
+          const tabs = await chrome.tabs.query({
+            active: true,
+            currentWindow: true,
+          });
+          const pageUrl = tabs[0].url ?? "";
+          url = new URL(pageUrl);
+        } catch (e) {
+          this.logger.debug("Unable to parse url:", e);
+          return sites;
+        }
+        if (!url) {
+          this.logger.debug("URL is null");
+          return sites;
+        }
+
+        // TODO: File urls do not have hostname.
+        const newSites = sites ? sites + "\n" + url.hostname : url.hostname;
+        return newSites;
+      });
+    },
+  };
+
+  browserActionContextMenu: MenuItem[] = [
+    this.DISABLE_ON_SITE,
+    ...contextMenus,
+  ];
 
   init = () => {
     // Maybe add dev-only actions.
@@ -68,10 +99,9 @@ class ContextMenu {
       this.browserActionContextMenu.push(
         this.RELOAD_ACTION,
         this.CLEAR_STORAGE,
-        this.PRINT_STORAGE,
+        this.PRINT_STORAGE
       );
     }
-
     // Check if we can access context menus.
     if (!chrome || !chrome.contextMenus) {
       this.logger.warn("No access to chrome.contextMenus");
@@ -82,7 +112,7 @@ class ContextMenu {
     chrome.contextMenus.removeAll();
     // Add menu items.
     this.browserActionContextMenu.forEach((item) =>
-      chrome.contextMenus.create(item.menu),
+      chrome.contextMenus.create(item.menu)
     );
     /*
      * When onClick is fired, execute the handler associated
@@ -93,10 +123,10 @@ class ContextMenu {
 
   onClick = (info: chrome.contextMenus.OnClickData, tab?: chrome.tabs.Tab) => {
     const menuItem = this.browserActionContextMenu.find(
-      (item) => item.menu.id === info.menuItemId,
+      (item) => item.menu.id === info.menuItemId
     );
     if (menuItem) {
-      Analytics.fireEvent("context_menu_click", { menu_id: menuItem.menu.id });
+      Analytics.fireEvent("context_menu_click", { menu_id: info.menuItemId });
       menuItem.handler(info, tab);
     } else {
       this.logger.error("Unable to find menu item: ", info);

@@ -1,29 +1,12 @@
 import "@webcomponents/custom-elements";
 import { Toast } from "bootstrap";
-import "./settings.css";
 import formHtml from "./settings.txt.html";
 import Storage from "../storage.js";
 import { Logger } from "../logger.js";
 import { i18n } from "../i18n.js";
+import { Config } from "../../types.js";
 
-export interface SelectOption {
-  id: string;
-  text: string;
-}
-
-export interface Config {
-  id: string;
-  title: string;
-  description: string;
-  type: "checkbox" | "switch" | "range" | "select" | "radio" | "textarea";
-  default_value: string | boolean | number;
-
-  value?: any;
-  options?: SelectOption[];
-  min?: string;
-  max?: string;
-}
-
+declare var IS_DEV_BUILD: boolean;
 export class SettingsUI extends HTMLElement {
   configItems: Config[];
   template = new DOMParser().parseFromString(formHtml, "text/html");
@@ -77,7 +60,10 @@ export class SettingsUI extends HTMLElement {
     // Generate the form from template.
     const output = document.createElement("ul");
     output.className = "list-group";
-    options.forEach((o) => output.appendChild(this.cloneInput(o)));
+    output.setAttribute("data-bs-theme", "light");
+    options
+      .filter((o) => !o.dev_only || (o.dev_only && IS_DEV_BUILD))
+      .forEach((o) => output.appendChild(this.cloneInput(o)));
     this.shadowRoot?.append(output);
   }
 
@@ -95,21 +81,21 @@ export class SettingsUI extends HTMLElement {
 
     // Set the title and description of the control.
     control.getElementsByClassName(`control-title`)[0].innerHTML = i18n(
-      config.title,
+      config.title
     );
     control.getElementsByClassName(`control-description`)[0].innerHTML = i18n(
-      config.description,
+      config.description
     );
 
     // Set up the value of the controls and wire-up change listeners.
     const actualInput = control.getElementsByClassName(
-      "control-input",
+      "control-input"
     )[0] as HTMLInputElement;
 
     if (["checkbox", "switch"].includes(config.type)) {
       actualInput.checked = !!config.value;
       actualInput.addEventListener("input", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).checked),
+        this.saveChange(config, (e.target as HTMLInputElement).checked)
       );
     } else {
       actualInput.value = config.value;
@@ -118,21 +104,24 @@ export class SettingsUI extends HTMLElement {
     if (config.type === "range") {
       actualInput.min = config.min ?? "0";
       actualInput.max = config.max ?? "5";
-      actualInput.addEventListener("input", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).value),
-      );
+      actualInput.step = config.step ?? "1";
+      actualInput.nextElementSibling!.innerHTML = actualInput.value;
+      actualInput.addEventListener("input", (e: Event) => {
+        this.saveChange(config, (e.target as HTMLInputElement).value);
+        actualInput.nextElementSibling!.innerHTML = actualInput.value;
+      });
     }
 
     if (config.type === "select") {
       config.options?.forEach((o) => {
         (actualInput as unknown as HTMLSelectElement).add(
-          new Option(o.text, o.id, o.id === config.value),
+          new Option(i18n(o.text), o.id, o.id === config.value)
         );
       });
       (actualInput as unknown as HTMLSelectElement).selectedIndex =
         config.options?.findIndex((o) => o.id === config.value) ?? -1;
       actualInput.addEventListener("change", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).value),
+        this.saveChange(config, (e.target as HTMLInputElement).value)
       );
     }
 
@@ -155,13 +144,13 @@ export class SettingsUI extends HTMLElement {
         actualInput.appendChild(radioLabel);
       });
       actualInput.addEventListener("input", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).value),
+        this.saveChange(config, (e.target as HTMLInputElement).value)
       );
     }
 
     if (config.type === "textarea") {
       actualInput.addEventListener("input", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).value),
+        this.saveChange(config, (e.target as HTMLInputElement).value)
       );
     }
 
@@ -173,6 +162,8 @@ export class SettingsUI extends HTMLElement {
     let toastEl = this.shadowRoot?.querySelector(".toast-container");
     if (!toastEl) {
       toastEl = this.template.querySelector(".toast-container")!;
+      toastEl.querySelector(".toast-body span")!.innerHTML =
+        i18n("optionsSaveSuccess");
       this.shadowRoot?.append(toastEl);
     }
     const toast = new Toast(toastEl.querySelector("#liveToast"), {

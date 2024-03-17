@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> Hei maailma </p> Tämä on Webin <strong> kieli </strong>"
     },
-    "Successfully_updated_settings": {
-        "message": "Päivitetyt asetukset onnistuneesti"
+    "Temporarily_disable_extension": {
+        "message": "Poista väliaikaisesti laajennus"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Sammuttaa laajennuksen kaikilla verkkosivustoilla."
+    },
+    "Disable_storage_sync": {
+        "message": "Poista Storage -synkronointi käytöstä"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Asetuksesi eivät etene muihin selaimiin."
+    },
+    "Disabled_on_Websites": {
+        "message": "Vammaiset verkkosivustoilla"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Laajennus ei toimi näillä sivustoilla. Kirjoita yksi sivusto riviä kohti."
     },
     "How_can_we_improve_": {
         "message": "Kuinka voimme parantaa?"
+    },
+    "Successfully_updated_settings": {
+        "message": "Päivitetyt asetukset onnistuneesti"
+    },
+    "Welcome": {
+        "message": "Tervetuloa"
+    },
+    "Hooray____": {
+        "message": "Hurraa! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Jos tarkastelet tätä sivua, olet onnistuneesti"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Kloonasi arkistossa \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           ja asensi kaikki riippuvuudet."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Käytti Esbuildia lähdekoodin rakentamiseen ja pakattuna myymälään valmiiksi \n           muoto."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Käytössä Dev -tila Chrome/Firefoxissa ja asensi pakkaamattoman \n           Laajennus ..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "tai pystyit aloittamaan nukketeatterin tapauksen \n           Laajennus asennettu."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Sanon, että se on suuri edistyminen selaimen laajennuksen luomiseen."
+    },
+    "Next__Pin_it": {
+        "message": "Seuraava: Kiinnitä se"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Napsauta Extensions -kuvaketta."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Löydä \"selaimen laajennuksen aloittaja\" luettelosta \n       Laajennukset."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> Napsauta tämän oikealla puolella olevaa PIN -kuvaketta \n       Laajennuksen kuvake."
+    },
+    "All_done_": {
+        "message": "Valmista."
+    },
+    "Share_the_love_": {
+        "message": "Jaa rakkautta!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Jos pidit tämän laajennuksen hyödylliseksi, jätä tähti GitHub -sivulle \n         tai luokitus Chromen verkkokaupassa."
+    },
+    "Star_on_GitHub": {
+        "message": "Tähti Githubissa"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Arvio Chrome Web -kaupassa"
     },
     "Options": {
         "message": "Vaihtoehdot"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "Kiitos palautteesta!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Arvostelu verkkokaupassa"
     },
     "No": {
         "message": "Ei"

@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> Hello World </p> Ez a web </strong> nyelv </strong> nyelv </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "Sikeresen frissített beállítások"
+    "Temporarily_disable_extension": {
+        "message": "Ideiglenesen tiltsa le a kiterjesztést"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Kikapcsolja az összes webhely kiterjesztését."
+    },
+    "Disable_storage_sync": {
+        "message": "Tiltsa le a tárolási szinkronizálást"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "A beállításai nem terjednek más böngészőkre."
+    },
+    "Disabled_on_Websites": {
+        "message": "Letiltva a webhelyeken"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "A kiterjesztés nem fog futni ezeken a webhelyeken. Írjon be egy helyenként egy webhelyet."
     },
     "How_can_we_improve_": {
         "message": "Hogyan javulhatunk?"
+    },
+    "Successfully_updated_settings": {
+        "message": "Sikeresen frissített beállítások"
+    },
+    "Welcome": {
+        "message": "Üdvözöljük"
+    },
+    "Hooray____": {
+        "message": "Hurrá! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Ha ezt az oldalt nézi, akkor sikeresen"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Klónozta a tárolóját \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           és telepítette az összes függőséget."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Az Esbuild-t használták a forráskód felépítéséhez és a boltba történő csomagoláshoz \n           formátum."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Engedélyezve DEV módot a Chrome/Firefox -on, és telepített egy kicsomagolású \n           kiterjesztés..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "Vagy el tudta indítania egy bábos példányt a \n           Bővítés telepítve."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Azt mondom, hogy ez nagy előrelépés a böngésző meghosszabbításának létrehozása felé."
+    },
+    "Next__Pin_it": {
+        "message": "Következő: Csatlakoztassa"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Kattintson a kiterjesztések ikonra."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. \n       kiterjesztések."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. \n       Bővítés ikonja."
+    },
+    "All_done_": {
+        "message": "Minden kész."
+    },
+    "Share_the_love_": {
+        "message": "Oszd meg a szeretetet!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Ha hasznosnak találta ezt a kiterjesztést, hagyjon egy csillagot a Github oldalon \n         vagy besorolás a Chrome weboldalon."
+    },
+    "Star_on_GitHub": {
+        "message": "Csillag a githubon"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Értékeld a Chrome Web Store -on"
     },
     "Options": {
         "message": "Lehetőségek"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "Köszönöm a visszajelzést!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Értékeld a webáruházat"
     },
     "No": {
         "message": "Nem"

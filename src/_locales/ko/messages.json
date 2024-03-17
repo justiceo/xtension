@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> Hello World </p> 이것은 웹의 <strong> 언어 </strong>입니다 </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "설정을 성공적으로 업데이트했습니다"
+    "Temporarily_disable_extension": {
+        "message": "일시적으로 확장을 비활성화합니다"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "모든 웹 사이트의 확장을 끕니다."
+    },
+    "Disable_storage_sync": {
+        "message": "스토리지 동기화를 비활성화합니다"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "설정은 다른 브라우저로 전파되지 않습니다."
+    },
+    "Disabled_on_Websites": {
+        "message": "웹 사이트에서 비활성화"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "이 사이트에서 확장이 실행되지 않습니다. 줄 당 한 사이트를 입력하십시오."
     },
     "How_can_we_improve_": {
         "message": "우리는 어떻게 개선 할 수 있습니까?"
+    },
+    "Successfully_updated_settings": {
+        "message": "설정을 성공적으로 업데이트했습니다"
+    },
+    "Welcome": {
+        "message": "환영"
+    },
+    "Hooray____": {
+        "message": "만세! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "이 페이지를보고 있다면 성공적으로"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "저장소를 클로닝했습니다 \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           모든 종속성을 설치했습니다."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "ESBUILD를 사용하여 소스 코드를 작성하고 상점 준비로 포장했습니다. \n           체재."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Chrome/Firefox에서 Dev Mode를 활성화하고 포장되지 않은 채 설치했습니다. \n           확대..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "또는 당신은 인형 인스턴스를 \n           확장 설치."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "브라우저 확장을 만드는 데 큰 진전이 있다고 말합니다."
+    },
+    "Next__Pin_it": {
+        "message": "다음 : 고정하십시오"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> 확장자 아이콘을 클릭하십시오."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> 목록에서 \"브라우저 확장 스타터\"찾기 \n       확장."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> 오른쪽의 핀 아이콘을 클릭하십시오. \n       확장자의 아이콘."
+    },
+    "All_done_": {
+        "message": "모두 완료되었습니다."
+    },
+    "Share_the_love_": {
+        "message": "사랑을 공유!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "이 확장이 도움이된다면 Github 페이지에 별을 남겨주세요. \n         또는 Chrome Webstore의 등급."
+    },
+    "Star_on_GitHub": {
+        "message": "github에 별"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome Web Store의 속도"
     },
     "Options": {
         "message": "옵션"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "의견을 보내 주셔서 감사합니다!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Webstore의 요금"
     },
     "No": {
         "message": "아니요"

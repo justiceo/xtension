@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<dip> <prame ዓለም </ p> ይህ <strong> ቋንቋ </ strong >> </ sub >>"
     },
-    "Successfully_updated_settings": {
-        "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
+    "Temporarily_disable_extension": {
+        "message": "ለጊዜው ቅጥያውን ያሰናክሉ"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "ቅጥያውን በሁሉም ድር ጣቢያዎች ያጠፋል."
+    },
+    "Disable_storage_sync": {
+        "message": "የማከማቻ ማመሳሰልን ያሰናክሉ"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "ቅንብሮችዎ ለሌሎች አሳሾች አያሰራጩም."
+    },
+    "Disabled_on_Websites": {
+        "message": "ድርጣቢያዎች ላይ ተሰናክሏል"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "ቅጥያ በእነዚህ ጣቢያዎች ላይ አይሰራም. በአንድ መስመር አንድ ጣቢያ ያስገቡ."
     },
     "How_can_we_improve_": {
         "message": "እንዴት ማሻሻል እንችላለን?"
+    },
+    "Successfully_updated_settings": {
+        "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
+    },
+    "Welcome": {
+        "message": "እንኳን ደህና መጣህ"
+    },
+    "Hooray____": {
+        "message": "ትቶ! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "ይህንን ገጽ እየተመለከቱ ከሆነ በተሳካ ሁኔታ"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "ማከማቻውን በ \n           <a horf=\"httsps:/cititub.com httpte: http://github.com/juittice/xtrity/xteed \n           እና ሁሉንም ጥገኝነትን ተጭኗል."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "የምንጭውን ደጃፍ ኮድ ለመገንባት እና የተሸፈኑትን ወደ ማከማቻ ዝግጁነት ለመገንባት ይጠቀሙበት \n           ቅርጸት."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "በ Chrome / Firefox ላይ የ DEV ሁነታን በመጫን ተጭኗል \n           ማራዘሚያ ..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "ወይም የአሻንጉሊት አሻንጉሊት ምሳሌ መጀመር ችለዋል \n           ቅጥያ ተጭኗል."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "አሳሽ ቅጥያ ለመፍጠር ትልቅ እድገት ነው እላለሁ."
+    },
+    "Next__Pin_it": {
+        "message": "የሚቀጥለው: አከርካሪ"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<ጠንካራ> 1. </ strong> ቅጥያዎች አዶዎችን ጠቅ ያድርጉ."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<ጠንካራ> 2. </ strong >> በ ዝርዝር ውስጥ \"የአሳሽ ቅጥያ ጅምር\" ይፈልጉ \n       ቅጥያዎች."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </ strong> ከዚህ በቀኝ በኩል ባለው የፒን አዶ ላይ ጠቅ ያድርጉ \n       የቅጥያ አዶ."
+    },
+    "All_done_": {
+        "message": "ሁሉም ተጠናቀቀ."
+    },
+    "Share_the_love_": {
+        "message": "ፍቅርን ያጋሩ!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "ይህንን ቅጥያ ጠቃሚ ሆኖ ካገኙ በ Githubage ገጽ ላይ ኮከቡን ይተው \n         ወይም በ Chrome ድርጣቢያ ላይ ደረጃ ይስጡ."
+    },
+    "Star_on_GitHub": {
+        "message": "በ Github ላይ ኮከብ"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "በ Chrome ድር ማከማቻ ላይ ተመን"
     },
     "Options": {
         "message": "አማራጮች"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "ስለ ግብረመልሱ አመሰግናለሁ!"
-    },
-    "Rate_on_Webstore": {
-        "message": "በደረጃዎች ላይ ይስጡ"
     },
     "No": {
         "message": "አይ"

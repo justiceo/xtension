@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> Halo dunia </p> Ini adalah bahasa <strong> </strong> dari web </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "Pengaturan yang berhasil diperbarui"
+    "Temporarily_disable_extension": {
+        "message": "Nonaktifkan ekstensi sementara"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Matikan ekstensi di semua situs web."
+    },
+    "Disable_storage_sync": {
+        "message": "Nonaktifkan Sinkronisasi Penyimpanan"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Pengaturan Anda tidak akan menyebar ke browser lain."
+    },
+    "Disabled_on_Websites": {
+        "message": "Dinonaktifkan di situs web"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Ekstensi tidak akan berjalan di situs -situs ini. Masukkan satu situs per baris."
     },
     "How_can_we_improve_": {
         "message": "Bagaimana kita bisa meningkatkan?"
+    },
+    "Successfully_updated_settings": {
+        "message": "Pengaturan yang berhasil diperbarui"
+    },
+    "Welcome": {
+        "message": "Selamat datang"
+    },
+    "Hooray____": {
+        "message": "Hore! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Jika Anda melihat halaman ini, Anda berhasil"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Mengkloning repositori di \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           dan menginstal semua dependensi."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Menggunakan EsBuild untuk membangun kode sumber dan dikemas menjadi siap-toko \n           format."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Mode dev yang diaktifkan pada chrome/firefox dan memasang yang tidak dibongkar \n           perpanjangan..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "atau Anda dapat memulai contoh dalang dengan \n           ekstensi terpasang."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Saya katakan itu adalah kemajuan besar dalam menciptakan ekstensi browser."
+    },
+    "Next__Pin_it": {
+        "message": "Berikutnya: Pin It"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Klik ikon Extensions."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> temukan \"starter ekstensi browser\" dalam daftar \n       ekstensi."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> klik ikon pin di sebelah kanan ini \n       Ikon ekstensi."
+    },
+    "All_done_": {
+        "message": "Semua selesai."
+    },
+    "Share_the_love_": {
+        "message": "Berbagi kasih!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Jika Anda menemukan ekstensi ini bermanfaat, tinggalkan bintang di halaman GitHub \n         atau peringkat di Webstore Chrome."
+    },
+    "Star_on_GitHub": {
+        "message": "Bintang di GitHub"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Nilai di toko web chrome"
     },
     "Options": {
         "message": "Pilihan"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "Terima kasih untuk umpan baliknya!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Nilai di Webstore"
     },
     "No": {
         "message": "TIDAK"

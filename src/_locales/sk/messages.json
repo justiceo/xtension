@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> Ahoj svet </p> Toto je jazyk <strong> </strong> z webu </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "Úspešne aktualizované nastavenia"
+    "Temporarily_disable_extension": {
+        "message": "Dočasne deaktivovať rozšírenie"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Vypne rozšírenie na všetkých webových stránkach."
+    },
+    "Disable_storage_sync": {
+        "message": "Zakázať synchronizáciu ukladania"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Vaše nastavenia sa nebudú šíriť do iných prehliadačov."
+    },
+    "Disabled_on_Websites": {
+        "message": "Zakázané na webových stránkach"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Rozšírenie nebude bežať na týchto stránkach. Zadajte jednu stránku na riadok."
     },
     "How_can_we_improve_": {
         "message": "Ako sa môžeme vylepšiť?"
+    },
+    "Successfully_updated_settings": {
+        "message": "Úspešne aktualizované nastavenia"
+    },
+    "Welcome": {
+        "message": "Privítať"
+    },
+    "Hooray____": {
+        "message": "Hurá! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Ak sa pozeráte na túto stránku, úspešne ste"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Klonoval úložisko na \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           a nainštalovali všetky závislosti."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Použitý Esbuild na zostavenie zdrojového kódu a zabalený do obchodu pripravený \n           formát."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Povolený režim dev na prehliadači Chrome/Firefox a nainštalovaný rozbalený \n           rozšírenie ..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "Alebo ste boli schopní založiť inštanciu bábkarstva s \n           Nainštalované rozšírenie."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Hovorím, že je to veľký pokrok smerom k vytvoreniu rozšírenia prehliadača."
+    },
+    "Next__Pin_it": {
+        "message": "ĎALŠIE: Pripnutá to"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Kliknite na ikonu rozšírení."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Nájdite „Štartér rozšírenia prehliadača“ v zozname \n       rozšírenia."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> kliknite na ikonu PIN napravo od tohto \n       Ikona rozšírenia."
+    },
+    "All_done_": {
+        "message": "Všetko hotové."
+    },
+    "Share_the_love_": {
+        "message": "Zdielať lásku!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Ak ste zistili, že toto rozšírenie je užitočné, zanechajte hviezdu na stránke GitHub \n         alebo hodnotenie na webstore Chrome."
+    },
+    "Star_on_GitHub": {
+        "message": "Hviezda na github"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Hodnotiť na internetovom obchode Chrome"
     },
     "Options": {
         "message": "možnosti"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "Ďakujem za spätnú väzbu!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Hodnotiť na webstore"
     },
     "No": {
         "message": "Nie"

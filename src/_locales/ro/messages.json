@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> hello world </p> Acesta este <strong> limbajul </strong> al web </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "Setări actualizate cu succes"
+    "Temporarily_disable_extension": {
+        "message": "Dezactivați temporar extensia"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Opriți extensia pe toate site -urile web."
+    },
+    "Disable_storage_sync": {
+        "message": "Dezactivați sincronizarea de stocare"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Setările dvs. nu se vor propaga la alte browsere."
+    },
+    "Disabled_on_Websites": {
+        "message": "Dezactivat pe site -uri web"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Extensia nu va rula pe aceste site -uri. Introduceți un site pe linie."
     },
     "How_can_we_improve_": {
         "message": "Cum ne putem îmbunătăți?"
+    },
+    "Successfully_updated_settings": {
+        "message": "Setări actualizate cu succes"
+    },
+    "Welcome": {
+        "message": "Bine ati venit"
+    },
+    "Hooray____": {
+        "message": "Ura! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Dacă te uiți la această pagină, cu succes"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "A clonat depozitul la \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           și a instalat toate dependențele."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "A folosit esBuild pentru a construi codul sursă și ambalat în magazin pregătit \n           format."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Modul Dev activat pe Chrome/Firefox și a instalat un despachetat \n           extensie..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "sau ai putut începe o instanță de păpușă cu \n           extensie instalată."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Spun că este mare progres către crearea unei extensii a browserului."
+    },
+    "Next__Pin_it": {
+        "message": "Următorul: fixați -l"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Faceți clic pe pictograma Extensii."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Găsiți „Starter de extensie de browser” în lista de \n       extensii."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> Faceți clic pe pictograma PIN din dreapta acest lucru \n       Pictograma extensiei."
+    },
+    "All_done_": {
+        "message": "Totul este gata."
+    },
+    "Share_the_love_": {
+        "message": "Impartaseste iubirea!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Dacă ați găsit această extensie utilă, lăsați o stea pe pagina Github \n         sau evaluare pe magazinul web Chrome."
+    },
+    "Star_on_GitHub": {
+        "message": "Steaua pe Github"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Evaluați pe magazinul web Chrome"
     },
     "Options": {
         "message": "Opțiuni"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "Multumesc pentru feedback!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Evaluarea pe magazinul web"
     },
     "No": {
         "message": "Nu"

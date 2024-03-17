@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> سلام جهان </p> این زبان <strong> </strong> وب است </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "تنظیمات با موفقیت به روز شده"
+    "Temporarily_disable_extension": {
+        "message": "پسوند موقت را غیرفعال کنید"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "پسوند را در همه وب سایت ها خاموش می کند."
+    },
+    "Disable_storage_sync": {
+        "message": "همگام سازی ذخیره سازی را غیرفعال کنید"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "تنظیمات شما به مرورگرهای دیگر پخش نمی شود."
+    },
+    "Disabled_on_Websites": {
+        "message": "غیرفعال در وب سایت ها"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "پسوند در این سایت ها اجرا نمی شود. در هر خط یک سایت را وارد کنید."
     },
     "How_can_we_improve_": {
         "message": "چگونه می توانیم پیشرفت کنیم؟"
+    },
+    "Successfully_updated_settings": {
+        "message": "تنظیمات با موفقیت به روز شده"
+    },
+    "Welcome": {
+        "message": "خوش آمدی"
+    },
+    "Hooray____": {
+        "message": "هورا! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "اگر به این صفحه نگاه می کنید ، با موفقیت"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "مخزن را در \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           و تمام وابستگی ها را نصب کرد."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "از Esbuild برای ساخت کد منبع استفاده شده و بسته بندی شده در فروشگاه آماده است \n           قالب"
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "حالت dev را در Chrome/Firefox فعال کرده و بسته بندی نشده نصب شده است \n           افزونه..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "یا شما توانستید نمونه ای از Puppeter را با \n           پسوند نصب شده"
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "من می گویم این پیشرفت بزرگی در جهت ایجاد پسوند مرورگر است."
+    },
+    "Next__Pin_it": {
+        "message": "بعدی: آن را پین کنید"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> روی نماد پسوند کلیک کنید."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> \"استارت پسوند مرورگر\" را در لیست پیدا کنید \n       پسوندها"
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> روی نماد پین در سمت راست این کلیک کنید \n       نماد پسوند."
+    },
+    "All_done_": {
+        "message": "همه کارها"
+    },
+    "Share_the_love_": {
+        "message": "عشق را به اشتراک بگذارید!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "اگر این برنامه افزودنی را مفید دیدید ، یک ستاره را در صفحه GitHub بگذارید \n         یا امتیاز در WebStore Chrome."
+    },
+    "Star_on_GitHub": {
+        "message": "ستاره در Github"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "در فروشگاه وب Chrome امتیاز دهید"
     },
     "Options": {
         "message": "گزینه ها"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "از نظر شما متشکریم!"
-    },
-    "Rate_on_Webstore": {
-        "message": "نرخ در WebStore"
     },
     "No": {
         "message": "هیچ"

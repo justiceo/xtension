@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> labas pasaulis </p> Tai yra žiniatinklio </strong> kalba </strong> </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "Sėkmingai atnaujinti nustatymai"
+    "Temporarily_disable_extension": {
+        "message": "Laikinai išjungti plėtinį"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Išjunkite plėtinį visose svetainėse."
+    },
+    "Disable_storage_sync": {
+        "message": "Išjunkite saugyklos sinchronizavimą"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Jūsų nustatymai neplatins kitoms naršyklėms."
+    },
+    "Disabled_on_Websites": {
+        "message": "Neįgalios svetainėse"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Pratęsimas šiose svetainėse nebus vykdomas. Įveskite vieną svetainę vienoje eilutėje."
     },
     "How_can_we_improve_": {
         "message": "Kaip mes galime tobulėti?"
+    },
+    "Successfully_updated_settings": {
+        "message": "Sėkmingai atnaujinti nustatymai"
+    },
+    "Welcome": {
+        "message": "Sveiki"
+    },
+    "Hooray____": {
+        "message": "Hooray! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Jei žiūrite į šį puslapį, sėkmingai"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Klonavo saugyklą \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           ir įdiegė visas priklausomybes."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Naudojo „Esbuild“, kad sukurtų šaltinio kodą ir supakuotų į paruoštą parduotuvei \n           Formatas."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Įjungtas „Dev“ režimas „Chrome“/„Firefox“ ir įdiegė neišpakuotą \n           pratęsimas ..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "Arba jūs sugebėjote pradėti logino pavyzdį su \n           Įdiegtas pratęsimas."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Aš sakau, kad tai yra didelė pažanga kuriant naršyklės pratęsimą."
+    },
+    "Next__Pin_it": {
+        "message": "Kitas: PINK"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> spustelėkite plėtinių piktogramą."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Raskite „Naršyklės plėtinio starterio“ sąraše \n       pratęsimai."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> Spustelėkite PIN piktogramą dešinėje \n       Eilmės piktograma."
+    },
+    "All_done_": {
+        "message": "Viskas padaryta."
+    },
+    "Share_the_love_": {
+        "message": "Pasidalink meile!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Jei jums pasirodė naudingas šis plėtinys, palikite žvaigždę „GitHub“ puslapyje \n         arba „Chrome WebStore“ įvertinimas."
+    },
+    "Star_on_GitHub": {
+        "message": "Žvaigždė „Github“"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Įvertinimas „Chrome“ internetinėje parduotuvėje"
     },
     "Options": {
         "message": "Galimybės"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "Ačiū už nuomonę!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Įvertinimas „WebStore“"
     },
     "No": {
         "message": "Ne"

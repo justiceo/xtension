@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> ஹலோ வேர்ல்ட் </p> இது வலையின் <strong> மொழி </strong> ஆகும் </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "வெற்றிகரமாக புதுப்பிக்கப்பட்ட அமைப்புகள்"
+    "Temporarily_disable_extension": {
+        "message": "நீட்டிப்பை தற்காலிகமாக முடக்கு"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "எல்லா வலைத்தளங்களிலும் நீட்டிப்பை முடக்குகிறது."
+    },
+    "Disable_storage_sync": {
+        "message": "சேமிப்பக ஒத்திசைவை முடக்கு"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "உங்கள் அமைப்புகள் மற்ற உலாவிகளுக்கு பிரச்சாரம் செய்யாது."
+    },
+    "Disabled_on_Websites": {
+        "message": "வலைத்தளங்களில் முடக்கப்பட்டது"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "இந்த தளங்களில் நீட்டிப்பு இயங்காது. ஒரு வரிக்கு ஒரு தளத்தை உள்ளிடவும்."
     },
     "How_can_we_improve_": {
         "message": "நாம் எவ்வாறு மேம்படுத்த முடியும்?"
+    },
+    "Successfully_updated_settings": {
+        "message": "வெற்றிகரமாக புதுப்பிக்கப்பட்ட அமைப்புகள்"
+    },
+    "Welcome": {
+        "message": "வரவேற்பு"
+    },
+    "Hooray____": {
+        "message": "ஹூரே! ."
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "நீங்கள் இந்த பக்கத்தைப் பார்க்கிறீர்கள் என்றால், நீங்கள் வெற்றிகரமாக"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "களஞ்சியத்தை குளோன் செய்தது \n           <a href=\"https://github.com/justiceo/xxtension\"> https://github.com/justiceo/xxtension </a> \n           மற்றும் அனைத்து சார்புகளையும் நிறுவியது."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "மூலக் குறியீட்டை உருவாக்க ESBUILD ஐப் பயன்படுத்தியது மற்றும் கடையில் தயாராக உள்ளது \n           வடிவம்."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Chrome/Firefox இல் தேவ் பயன்முறையை இயக்கியது மற்றும் தொகுக்கப்படாத ஒரு நிறுவப்பட்டது \n           நீட்டிப்பு ..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "அல்லது பொம்மலாட்டக்காரரின் ஒரு நிகழ்வைத் தொடங்க முடிந்தது \n           நீட்டிப்பு நிறுவப்பட்டது."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "உலாவி நீட்டிப்பை உருவாக்குவதில் இது பெரும் முன்னேற்றம் என்று நான் சொல்கிறேன்."
+    },
+    "Next__Pin_it": {
+        "message": "அடுத்து: அதை முள்"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> நீட்டிப்பு ஐகானைக் கிளிக் செய்க."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> பட்டியலில் \"உலாவி நீட்டிப்பு ஸ்டார்ட்டரை\" கண்டுபிடிக்கவும் \n       நீட்டிப்புகள்."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> இதன் வலதுபுறத்தில் உள்ள முள் ஐகானைக் கிளிக் செய்க \n       நீட்டிப்பு ஐகான்."
+    },
+    "All_done_": {
+        "message": "அனைத்தும் முடிந்தது."
+    },
+    "Share_the_love_": {
+        "message": "அன்பைப் பகிர்ந்து கொள்ளுங்கள்!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "இந்த நீட்டிப்பு உங்களுக்கு உதவியாக இருந்தால், கிதுப் பக்கத்தில் ஒரு நட்சத்திரத்தை விட்டு விடுங்கள் \n         அல்லது குரோம் வெப்ஸ்டோரில் மதிப்பீடு."
+    },
+    "Star_on_GitHub": {
+        "message": "கிட்ஹப்பில் நட்சத்திரம்"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome வலை கடையில் விகிதம்"
     },
     "Options": {
         "message": "விருப்பங்கள்"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "தங்கள் கருத்துகளுக்கு நன்றி!"
-    },
-    "Rate_on_Webstore": {
-        "message": "வெப்ஸ்டோரில் விகிதம்"
     },
     "No": {
         "message": "இல்லை"

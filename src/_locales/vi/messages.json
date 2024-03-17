@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<DIV> <p> Xin chào thế giới </p> Đây là ngôn ngữ <strong>"
     },
-    "Successfully_updated_settings": {
-        "message": "Cập nhật cài đặt thành công"
+    "Temporarily_disable_extension": {
+        "message": "Tạm thời vô hiệu hóa mở rộng"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Tắt phần mở rộng trên tất cả các trang web."
+    },
+    "Disable_storage_sync": {
+        "message": "Vô hiệu hóa lưu trữ đồng bộ"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Cài đặt của bạn sẽ không tuyên truyền đến các trình duyệt khác."
+    },
+    "Disabled_on_Websites": {
+        "message": "Bị vô hiệu hóa trên các trang web"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Tiện ích mở rộng sẽ không chạy trên các trang web này. Nhập một trang web trên mỗi dòng."
     },
     "How_can_we_improve_": {
         "message": "Chúng ta có thể cải thiện như thế nào?"
+    },
+    "Successfully_updated_settings": {
+        "message": "Cập nhật cài đặt thành công"
+    },
+    "Welcome": {
+        "message": "Chào mừng"
+    },
+    "Hooray____": {
+        "message": "Hoan hô! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Nếu bạn đang xem trang này, bạn thành công"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Nhân bản kho lưu trữ tại \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           và cài đặt tất cả các phụ thuộc."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Đã sử dụng ESBUILD để xây dựng mã nguồn và đóng gói vào cửa hàng sẵn sàng \n           định dạng."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Chế độ Dev được bật trên Chrome/Firefox và được cài đặt không đóng gói \n           sự mở rộng..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "hoặc bạn đã có thể bắt đầu một ví dụ của Puppeteer với \n           Tiện ích mở rộng được cài đặt."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Tôi nói rằng đó là tiến bộ tuyệt vời để tạo ra một phần mở rộng trình duyệt."
+    },
+    "Next__Pin_it": {
+        "message": "Tiếp theo: Ghim nó"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Nhấp vào biểu tượng tiện ích mở rộng."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Tìm \"Bộ mở rộng trình duyệt\" trong danh sách \n       phần mở rộng."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> Nhấp vào biểu tượng pin ở bên phải của điều này \n       Biểu tượng của tiện ích mở rộng."
+    },
+    "All_done_": {
+        "message": "Tất cả đã được làm xong."
+    },
+    "Share_the_love_": {
+        "message": "Chia sẻ tình yêu!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Nếu bạn thấy tiện ích mở rộng này hữu ích, hãy để lại một ngôi sao trên trang GitHub \n         hoặc xếp hạng trên trang web Chrome."
+    },
+    "Star_on_GitHub": {
+        "message": "Ngôi sao trên GitHub"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Đánh giá trên cửa hàng trang web Chrome"
     },
     "Options": {
         "message": "Tùy chọn"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "Cảm ơn vì bạn đã phản hồi!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Đánh giá trên ststore"
     },
     "No": {
         "message": "KHÔNG"

@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> здравей свят </p> Това е <strong> езикът </strong> на мрежата </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "Успешно актуализирани настройки"
+    "Temporarily_disable_extension": {
+        "message": "Временно деактивиране на разширението"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Изключва разширението на всички уебсайтове."
+    },
+    "Disable_storage_sync": {
+        "message": "Деактивирайте синхронизирането на съхранението"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Настройките ви няма да се разпространяват в други браузъри."
+    },
+    "Disabled_on_Websites": {
+        "message": "Деактивирани на уебсайтове"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Разширението няма да работи на тези сайтове. Въведете един сайт на ред."
     },
     "How_can_we_improve_": {
         "message": "Как можем да се подобрим?"
+    },
+    "Successfully_updated_settings": {
+        "message": "Успешно актуализирани настройки"
+    },
+    "Welcome": {
+        "message": "Добре дошли"
+    },
+    "Hooray____": {
+        "message": "Ура! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Ако разглеждате тази страница, вие успешно"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Клонира хранилището в \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           и инсталира всички зависимости."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Използва esbuild за изграждане на изходния код и опаковано в готовност за магазини \n           формат."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Активиран DEV режим на Chrome/Firefox и инсталиран разопакован \n           разширение ..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "или сте успели да стартирате екземпляр на кукловода с \n           Инсталирано разширение."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Казвам, че това е голям напредък към създаването на разширение на браузъра."
+    },
+    "Next__Pin_it": {
+        "message": "След това: Закрепете го"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Кликнете върху иконата за разширения."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Намерете „Стартер за разширение на браузъра“ в списъка на \n       разширения."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> Кликнете върху иконата на ПИН вдясно от това \n       Иконата на разширението."
+    },
+    "All_done_": {
+        "message": "Готово."
+    },
+    "Share_the_love_": {
+        "message": "Споделете любовта!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Ако сте намерили това разширение за полезно, оставете звезда на страницата на GitHub \n         или рейтинг на chrome webstore."
+    },
+    "Star_on_GitHub": {
+        "message": "Звезда на GitHub"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Оценка на уеб магазина на Chrome"
     },
     "Options": {
         "message": "Настроики"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "Благодаря за обратната връзка!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Оценете на WebStore"
     },
     "No": {
         "message": "Не"

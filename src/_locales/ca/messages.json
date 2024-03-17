@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> Hola món </p> Aquest és el <strong> llenguatge </strong> del web </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "Configuració actualitzada amb èxit"
+    "Temporarily_disable_extension": {
+        "message": "Desactiva temporalment l'extensió"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Desactiva l'extensió a tots els llocs web."
+    },
+    "Disable_storage_sync": {
+        "message": "Desactiva la sincronització d'emmagatzematge"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "La vostra configuració no es propagarà a altres navegadors."
+    },
+    "Disabled_on_Websites": {
+        "message": "Desactivat en llocs web"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "L’extensió no s’executarà en aquests llocs. Introduïu un lloc per línia."
     },
     "How_can_we_improve_": {
         "message": "Com podem millorar?"
+    },
+    "Successfully_updated_settings": {
+        "message": "Configuració actualitzada amb èxit"
+    },
+    "Welcome": {
+        "message": "Benvingut"
+    },
+    "Hooray____": {
+        "message": "Hooray! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Si mireu aquesta pàgina, teniu èxit"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Va clonar el dipòsit a \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           i va instal·lar totes les dependències."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Esbuild usat per crear el codi font i empaquetar-lo a la botiga \n           Format."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Mode Dev activat a Chrome/Firefox i va instal·lar un desembalat \n           extensió ..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "o heu pogut iniciar una instància de titellaire amb el \n           Extensió instal·lada."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Dic que és un gran progrés cap a la creació d’una extensió del navegador."
+    },
+    "Next__Pin_it": {
+        "message": "Següent: fixeu -lo"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Feu clic a la icona Extensions."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Trobeu \"Starter d'extensió del navegador\" a la llista de \n       extensions."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong>. </strong> feu clic a la icona del pin a la dreta \n       Icona de l'extensió."
+    },
+    "All_done_": {
+        "message": "Tot fet."
+    },
+    "Share_the_love_": {
+        "message": "Comparteix l’amor!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Si heu trobat útil aquesta extensió, deixeu una estrella a la pàgina de GitHub \n         o qualificació a Chrome Webstore."
+    },
+    "Star_on_GitHub": {
+        "message": "Estrella a GitHub"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Valoreu a la botiga web Chrome"
     },
     "Options": {
         "message": "Les opcions"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "Gràcies pels comentaris!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Valora a la botiga web"
     },
     "No": {
         "message": "No"

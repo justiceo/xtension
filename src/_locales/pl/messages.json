@@ -14,11 +14,80 @@
     "@testMarkup": {
         "message": "<div> <p> Hello World </p> To jest język <strong> </strong> w sieci </div>"
     },
-    "Successfully_updated_settings": {
-        "message": "Pomyślnie zaktualizowane ustawienia"
+    "Temporarily_disable_extension": {
+        "message": "Tymczasowo wyłącz rozszerzenie"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Wyłącza rozszerzenie na wszystkich stronach internetowych."
+    },
+    "Disable_storage_sync": {
+        "message": "Wyłącz synchronizację pamięci"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Twoje ustawienia nie będą się rozprzestrzeniać do innych przeglądarek."
+    },
+    "Disabled_on_Websites": {
+        "message": "Wyłączone na stronach internetowych"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Rozszerzenie nie będzie działać na tych stronach. Wprowadź jedną witrynę na wiersz."
     },
     "How_can_we_improve_": {
         "message": "Jak możemy poprawić?"
+    },
+    "Successfully_updated_settings": {
+        "message": "Pomyślnie zaktualizowane ustawienia"
+    },
+    "Welcome": {
+        "message": "Powitanie"
+    },
+    "Hooray____": {
+        "message": "Brawo! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Jeśli patrzysz na tę stronę, pomyślnie"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Sklonował repozytorium pod adresem \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           i zainstalował wszystkie zależności."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Używał ESBuild do zbudowania kodu źródłowego i pakowanego w gotowe sklep \n           format."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Włączony tryb dev na Chrome/Firefox i zainstalował rozpakowany \n           rozszerzenie..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "lub byłeś w stanie rozpocząć instancję lalkarza z \n           Zainstalowane rozszerzenie."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Mówię, że to wielki postęp w tworzeniu rozszerzenia przeglądarki."
+    },
+    "Next__Pin_it": {
+        "message": "Dalej: Przypnij to"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> kliknij ikonę rozszerzeń."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Znajdź „rozszerzenie rozszerzenia przeglądarki” na liście \n       rozszerzenia."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> kliknij ikonę pin po prawej stronie tego \n       Ikona rozszerzenia."
+    },
+    "All_done_": {
+        "message": "Wszystkie zrobione."
+    },
+    "Share_the_love_": {
+        "message": "Dziel się miłością!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Jeśli uznałeś to rozszerzenie za pomocne, zostaw gwiazdę na stronie Github \n         lub ocena w Chrome Webstore."
+    },
+    "Star_on_GitHub": {
+        "message": "Gwiazda na github"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Oceń w Chrome Web Store"
     },
     "Options": {
         "message": "Opcje"
@@ -37,9 +106,6 @@
     },
     "Thanks_for_the_feedback_": {
         "message": "Dzięki za opinie!"
-    },
-    "Rate_on_Webstore": {
-        "message": "Oceń w Webstore"
     },
     "No": {
         "message": "NIE"

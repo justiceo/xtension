@@ -1,5 +1,5 @@
 /* A light wrapper around chrome storage API. */
-import { configOptions } from "../options-page/option-items";
+import { configOptions } from "../config";
 export const FEEDBACK_DATA_KEY = "feedback_data";
 export const INSTALL_TIME_MS = "install_time_ms";
 export const SUCCESSFUL_INTERACTIONS = "successful_interactions";

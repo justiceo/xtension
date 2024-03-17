@@ -2,14 +2,10 @@
   "name": "__MSG_@appName__",
   "description": "__MSG_@appDesc__",
   "short_name": "__MSG_@appShortName_",
-  "__package_name__": "xtension",
   "__comment:homepage_url": "This should be the webstore link, __MSG_@@extension_id__ is not allowed",
   "homepage_url": "https://github.com/justiceo/xtension",
   "__comment:version__": "Firefox does not support leading zeros in versions",
   "version": "23.1.21",
-  "__sentry_dsn__": "https://b1d81a9e5f1546f79885a473ce33128c@o526305.ingest.sentry.io/6244539",
-  "__measurement_id__": "G-JWLV6CJVSJ",
-  "__ga_api_secret__": "E2EWHH--QbSaf9-f0ePC5g",
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",
@@ -26,10 +22,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
+      "matches": ["<all_urls>"],
       "all_frames": true,
       "js": ["content-script/content-script.js"],
-      "css": ["content-script/content-script.css"]
+      "css": ["content-script/content-script.css"],
+      "match_about_blank": true,
+      "run_at": "document_start"
     }
   ],
   "icons": {
@@ -38,12 +36,6 @@
     "48": "assets/logo-48x48.png",
     "128": "assets/logo-128x128.png"
   },
-  "web_accessible_resources": [
-    {
-      "resources": ["assets/logo-24x24.png"],
-      "matches": ["<all_urls>"]
-    }
-  ],
   "options_page": "options-page/options.html",
   "background": {
     "__chrome__service_worker": "background-script/service-worker.js",
@@ -54,5 +46,11 @@
     "gecko": {
       "id": "no-reply@justiceo.com"
     }
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/logo-24x24.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

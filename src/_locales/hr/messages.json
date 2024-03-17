@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Starter preglednika",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Primjer proširenja preglednika. TypeScript, E2E testovi, stvaranje ikona, automatski i18n i esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Starter za proširenje preglednika",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Primjer proširenja preglednika. TypeScript, E2E testovi, stvaranje ikona, automatski i18n i esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Zdravo svijet </p> Ovo je <strong> jezik </strong> web </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Uspješno ažurirane postavke"
+    },
+    "How_can_we_improve_": {
+        "message": "Kako se možemo poboljšati?"
+    },
+    "Options": {
+        "message": "Opcije"
+    },
+    "Show_Demo": {
+        "message": "Prikaži demo"
+    },
+    "Report_an_Issue": {
+        "message": "Prijaviti problem"
+    },
+    "How_are_we_doing_": {
+        "message": "Kako stojimo?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Drago mi je da ti se sviđa! Možete li nam pomoći da dijelimo ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Hvala na povratnoj informaciji!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Ocijenite na web prostoru"
+    },
+    "No": {
+        "message": "Ne"
+    },
+    "Submit_Feedback": {
+        "message": "Pošaljite povratne informacije"
+    }
 }

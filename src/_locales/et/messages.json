@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Brauseri pikenduse starter",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Brauseri laienduse näide. TypeScript, E2E testid, ikooni genereerimine, automaatne i18n ja esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Brauseri pikenduse starter",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Brauseri laienduse näide. TypeScript, E2E testid, ikooni genereerimine, automaatne i18n ja esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Tere maailm </p> See on veebi </strong>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Edukalt värskendatud sätted"
+    },
+    "How_can_we_improve_": {
+        "message": "Kuidas saaksime parandada?"
+    },
+    "Options": {
+        "message": "Valikud"
+    },
+    "Show_Demo": {
+        "message": "Näita demo"
+    },
+    "Report_an_Issue": {
+        "message": "Väljaandmist teatama"
+    },
+    "How_are_we_doing_": {
+        "message": "Kuidas meil läheb?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Tore, et see teile meeldib! Kas saate aidata meil ❤️ jagada?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Aitäh tagasiside eest!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Hindus veebipoes"
+    },
+    "No": {
+        "message": "Mitte"
+    },
+    "Submit_Feedback": {
+        "message": "Tagasisidet esitama"
+    }
 }

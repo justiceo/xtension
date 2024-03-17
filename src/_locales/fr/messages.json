@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Démarreur d'extension du navigateur",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Exemple d'extension du navigateur. TypeScript, tests E2E, génération d'icônes, I18N automatique et Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Démarreur d'extension du navigateur",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Exemple d'extension du navigateur. TypeScript, tests E2E, génération d'icônes, I18N automatique et Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Bonjour le monde </p> C'est la <strong> langue </strong> du web </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Paramètres mis à jour avec succès"
+    },
+    "How_can_we_improve_": {
+        "message": "Comment pouvons nous nous améliorer?"
+    },
+    "Options": {
+        "message": "Options"
+    },
+    "Show_Demo": {
+        "message": "Démonstration"
+    },
+    "Report_an_Issue": {
+        "message": "Signaler un problème"
+    },
+    "How_are_we_doing_": {
+        "message": "Comment allons nous?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Content que tu aimes ça! Pouvez-vous nous aider à partager le ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Merci pour les commentaires!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Tarif sur Webstore"
+    },
+    "No": {
+        "message": "Non"
+    },
+    "Submit_Feedback": {
+        "message": "Soumettre des commentaires"
+    }
 }

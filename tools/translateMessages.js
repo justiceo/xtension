@@ -149,6 +149,7 @@ function searchForI18nStrings(srcDirectory) {
       return acc;
     }, {});
 
+    console.log("All matches", allMatches);
     let literals = Object.values(allMatches).reduce(
       (acc, currentValue) => acc.concat(currentValue),
       []

@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "瀏覽器擴展入門",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "瀏覽器擴展示例。 打字稿，E2E測試，圖標生成，自動I18N和ESBUILD",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "瀏覽器擴展入門",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "瀏覽器擴展示例。 打字稿，E2E測試，圖標生成，自動I18N和ESBUILD",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello world </p>這是Web的<strong>語言</strong> </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "成功更新了設置"
+    },
+    "How_can_we_improve_": {
+        "message": "我們如何改進？"
+    },
+    "Options": {
+        "message": "選項"
+    },
+    "Show_Demo": {
+        "message": "展示演示"
+    },
+    "Report_an_Issue": {
+        "message": "報告一個問題"
+    },
+    "How_are_we_doing_": {
+        "message": "我們好嗎？"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "很高興你喜歡它！ 您能幫我們分享❤️嗎？"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "感謝您的反饋！"
+    },
+    "Rate_on_Webstore": {
+        "message": "網上商店的費率"
+    },
+    "No": {
+        "message": "不"
+    },
+    "Submit_Feedback": {
+        "message": "提交反饋"
+    }
 }

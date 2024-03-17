@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "உலாவி நீட்டிப்பு ஸ்டார்டர்",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.e.s.",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "உலாவி நீட்டிப்பு எடுத்துக்காட்டு. டைப்ஸ்கிரிப்ட், E2E சோதனைகள், ஐகான் உருவாக்கம், தானியங்கி i18n மற்றும் esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "உலாவி நீட்டிப்பு ஸ்டார்டர்",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.e.s.",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "உலாவி நீட்டிப்பு எடுத்துக்காட்டு. டைப்ஸ்கிரிப்ட், E2E சோதனைகள், ஐகான் உருவாக்கம், தானியங்கி i18n மற்றும் esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> ஹலோ வேர்ல்ட் </p> இது வலையின் <strong> மொழி </strong> ஆகும் </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "வெற்றிகரமாக புதுப்பிக்கப்பட்ட அமைப்புகள்"
+    },
+    "How_can_we_improve_": {
+        "message": "நாம் எவ்வாறு மேம்படுத்த முடியும்?"
+    },
+    "Options": {
+        "message": "விருப்பங்கள்"
+    },
+    "Show_Demo": {
+        "message": "டெமோவைக் காட்டு"
+    },
+    "Report_an_Issue": {
+        "message": "ஒரு சிக்கலைப் புகாரளிக்கவும்"
+    },
+    "How_are_we_doing_": {
+        "message": "நாங்கள் எப்படி இருக்கிறோம்?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "நீங்கள் விரும்பியதில் மகிழ்ச்சி! ❤❤ ஐப் பகிர எங்களுக்கு உதவ முடியுமா?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "தங்கள் கருத்துகளுக்கு நன்றி!"
+    },
+    "Rate_on_Webstore": {
+        "message": "வெப்ஸ்டோரில் விகிதம்"
+    },
+    "No": {
+        "message": "இல்லை"
+    },
+    "Submit_Feedback": {
+        "message": "கருத்துக்களை சமர்ப்பிக்கவும்"
+    }
 }

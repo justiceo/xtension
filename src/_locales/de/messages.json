@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Browser -Erweiterungsstarter",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S.S.",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Beispiel für Browser -Erweiterung. TypeScript, E2E -Tests, Icon -Generierung, automatische I18N und Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Browser -Erweiterungsstarter",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S.S.",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Beispiel für Browser -Erweiterung. TypeScript, E2E -Tests, Icon -Generierung, automatische I18N und Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hallo Welt </p> Dies ist die <strong> Sprache </strong> des Web </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Erfolgreich aktualisierte Einstellungen"
+    },
+    "How_can_we_improve_": {
+        "message": "Wie können wir uns verbessern?"
+    },
+    "Options": {
+        "message": "Optionen"
+    },
+    "Show_Demo": {
+        "message": "Demo zeigen"
+    },
+    "Report_an_Issue": {
+        "message": "Ein Problem melden"
+    },
+    "How_are_we_doing_": {
+        "message": "Wie machen wir uns?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Froh, dass Sie es mögen! Können Sie uns helfen, die ❤️ zu teilen?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Danke für die Rückmeldung!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Rate auf Webstore"
+    },
+    "No": {
+        "message": "NEIN"
+    },
+    "Submit_Feedback": {
+        "message": "Feedback einreichen"
+    }
 }

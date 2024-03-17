@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "浏览器扩展入门",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "浏览器扩展示例。 打字稿，E2E测试，图标生成，自动I18N和ESBUILD",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "浏览器扩展入门",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "浏览器扩展示例。 打字稿，E2E测试，图标生成，自动I18N和ESBUILD",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello world </p>这是Web的<strong>语言</strong> </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "成功更新了设置"
+    },
+    "How_can_we_improve_": {
+        "message": "我们如何改进？"
+    },
+    "Options": {
+        "message": "选项"
+    },
+    "Show_Demo": {
+        "message": "展示演示"
+    },
+    "Report_an_Issue": {
+        "message": "报告一个问题"
+    },
+    "How_are_we_doing_": {
+        "message": "我们好吗？"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "很高兴你喜欢它！ 您能帮我们分享❤️吗？"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "感谢您的反馈！"
+    },
+    "Rate_on_Webstore": {
+        "message": "网上商店的费率"
+    },
+    "No": {
+        "message": "不"
+    },
+    "Submit_Feedback": {
+        "message": "提交反馈"
+    }
 }

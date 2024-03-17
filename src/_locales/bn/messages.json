@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "ব্রাউজার এক্সটেনশন স্টার্টার",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "বি.ই.এস.",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "ব্রাউজার এক্সটেনশন উদাহরণ। টাইপস্ক্রিপ্ট, ই 2 ই টেস্টস, আইকন জেনারেশন, স্বয়ংক্রিয় আই 18 এন এবং এসবিল্ড",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "ব্রাউজার এক্সটেনশন স্টার্টার",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "বি.ই.এস.",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "ব্রাউজার এক্সটেনশন উদাহরণ। টাইপস্ক্রিপ্ট, ই 2 ই টেস্টস, আইকন জেনারেশন, স্বয়ংক্রিয় আই 18 এন এবং এসবিল্ড",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> হ্যালো ওয়ার্ল্ড </p> এটি ওয়েব </div> এর <strong> ভাষা </strong>"
+    },
+    "Successfully_updated_settings": {
+        "message": "সফলভাবে আপডেট করা সেটিংস"
+    },
+    "How_can_we_improve_": {
+        "message": "আমরা কিভাবে উন্নত করতে পারি?"
+    },
+    "Options": {
+        "message": "বিকল্প"
+    },
+    "Show_Demo": {
+        "message": "ডেমো দেখান"
+    },
+    "Report_an_Issue": {
+        "message": "একটি সমস্যা রিপোর্ট"
+    },
+    "How_are_we_doing_": {
+        "message": "আমরা কেমন করছি?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "আমি খুশি তুমি এটা পছন্দ করেছো! আপনি কি আমাদের ❤ ভাগ করতে সহায়তা করতে পারেন?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "সাহায্য করার জন্য ধন্যবাদ!"
+    },
+    "Rate_on_Webstore": {
+        "message": "ওয়েবস্টোরে হার"
+    },
+    "No": {
+        "message": "না"
+    },
+    "Submit_Feedback": {
+        "message": "প্রতিক্রিয়া জমা দিন"
+    }
 }

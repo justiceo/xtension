@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Starter ekstensi browser",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Contoh ekstensi browser. Tescript, Tes E2E, Generasi Ikon, I18n Otomatis dan Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Starter ekstensi browser",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Contoh ekstensi browser. Tescript, Tes E2E, Generasi Ikon, I18n Otomatis dan Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Halo dunia </p> Ini adalah bahasa <strong> </strong> dari web </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Pengaturan yang berhasil diperbarui"
+    },
+    "How_can_we_improve_": {
+        "message": "Bagaimana kita bisa meningkatkan?"
+    },
+    "Options": {
+        "message": "Pilihan"
+    },
+    "Show_Demo": {
+        "message": "Tampilkan demo"
+    },
+    "Report_an_Issue": {
+        "message": "Melaporkan masalah"
+    },
+    "How_are_we_doing_": {
+        "message": "Bagaimana kabar kita?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Senang kamu menyukainya! Bisakah Anda membantu kami membagikan ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Terima kasih untuk umpan baliknya!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Nilai di Webstore"
+    },
+    "No": {
+        "message": "TIDAK"
+    },
+    "Submit_Feedback": {
+        "message": "Berikan umpan balik"
+    }
 }

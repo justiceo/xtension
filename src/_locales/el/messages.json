@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Εκκινητής επέκτασης του προγράμματος περιήγησης",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Παράδειγμα επέκτασης του προγράμματος περιήγησης. TypeScript, E2E Δοκιμές, Δημιουργία εικονιδίων, αυτόματη I18N και ESBUILD",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Εκκινητής επέκτασης του προγράμματος περιήγησης",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Παράδειγμα επέκτασης του προγράμματος περιήγησης. TypeScript, E2E Δοκιμές, Δημιουργία εικονιδίων, αυτόματη I18N και ESBUILD",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> hello world </p> Αυτή είναι η <strong> γλώσσα </strong> του ιστού </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Ενημερωμένες ρυθμίσεις με επιτυχία"
+    },
+    "How_can_we_improve_": {
+        "message": "Πώς μπορούμε να βελτιώσουμε;"
+    },
+    "Options": {
+        "message": "Επιλογές"
+    },
+    "Show_Demo": {
+        "message": "Επίδειξη επίδειξης"
+    },
+    "Report_an_Issue": {
+        "message": "Αναφέρετε ένα πρόβλημα"
+    },
+    "How_are_we_doing_": {
+        "message": "ΠΩΣ ΤΑ ΠΑΜΕ?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Χαίρομαι που σου αρέσει! Μπορείτε να μας βοηθήσετε να μοιραστούμε το ❤्;"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Ευχαριστώ για τα σχόλια!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Βαθμολογία στο webstore"
+    },
+    "No": {
+        "message": "Οχι"
+    },
+    "Submit_Feedback": {
+        "message": "Υποβάλετε σχόλια"
+    }
 }

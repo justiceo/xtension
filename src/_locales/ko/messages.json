@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "브라우저 확장 스타터",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "브라우저 확장 예제. TypeScript, E2E 테스트, 아이콘 생성, 자동 i18N 및 Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "브라우저 확장 스타터",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "브라우저 확장 예제. TypeScript, E2E 테스트, 아이콘 생성, 자동 i18N 및 Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello World </p> 이것은 웹의 <strong> 언어 </strong>입니다 </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "설정을 성공적으로 업데이트했습니다"
+    },
+    "How_can_we_improve_": {
+        "message": "우리는 어떻게 개선 할 수 있습니까?"
+    },
+    "Options": {
+        "message": "옵션"
+    },
+    "Show_Demo": {
+        "message": "데모를 보여주십시오"
+    },
+    "Report_an_Issue": {
+        "message": "문제를보고하십시오"
+    },
+    "How_are_we_doing_": {
+        "message": "일은 잘되고 있니?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "당신이 그것을 좋아해서 다행입니다! 우리가 us️를 공유하도록 도와 줄 수 있습니까?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "의견을 보내 주셔서 감사합니다!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Webstore의 요금"
+    },
+    "No": {
+        "message": "아니요"
+    },
+    "Submit_Feedback": {
+        "message": "피드백을 제출하십시오"
+    }
 }

@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "استارت پسوند مرورگر",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "b.e.s",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "مثال پسوند مرورگر. TypeScript ، تست های E2E ، تولید نماد ، Automatic I18N و Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "استارت پسوند مرورگر",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "b.e.s",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "مثال پسوند مرورگر. TypeScript ، تست های E2E ، تولید نماد ، Automatic I18N و Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> سلام جهان </p> این زبان <strong> </strong> وب است </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "تنظیمات با موفقیت به روز شده"
+    },
+    "How_can_we_improve_": {
+        "message": "چگونه می توانیم پیشرفت کنیم؟"
+    },
+    "Options": {
+        "message": "گزینه ها"
+    },
+    "Show_Demo": {
+        "message": "نمایش نسخه ی نمایشی"
+    },
+    "Report_an_Issue": {
+        "message": "گزارش یک موضوع"
+    },
+    "How_are_we_doing_": {
+        "message": "حال ما چطور است؟"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "خوشحالم که دوستش داشتی! آیا می توانید به ما در اشتراک گذاری ❤ کمک کنید؟"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "از نظر شما متشکریم!"
+    },
+    "Rate_on_Webstore": {
+        "message": "نرخ در WebStore"
+    },
+    "No": {
+        "message": "هیچ"
+    },
+    "Submit_Feedback": {
+        "message": "بازخورد ارائه دهید"
+    }
 }

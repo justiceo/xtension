@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "ಬ್ರೌಸರ್ ವಿಸ್ತರಣೆ ಸ್ಟಾರ್ಟರ್",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "ಬಿ.ಇ.ಎಸ್",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "ಬ್ರೌಸರ್ ವಿಸ್ತರಣಾ ಉದಾಹರಣೆ. ಟೈಪ್‌ಸ್ಕ್ರಿಪ್ಟ್, ಇ 2 ಇ ಪರೀಕ್ಷೆಗಳು, ಐಕಾನ್ ಉತ್ಪಾದನೆ, ಸ್ವಯಂಚಾಲಿತ ಐ 18 ಎನ್ ಮತ್ತು ಎಸ್ಬಿಲ್ಡ್",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "ಬ್ರೌಸರ್ ವಿಸ್ತರಣೆ ಸ್ಟಾರ್ಟರ್",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "ಬಿ.ಇ.ಎಸ್",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "ಬ್ರೌಸರ್ ವಿಸ್ತರಣಾ ಉದಾಹರಣೆ. ಟೈಪ್‌ಸ್ಕ್ರಿಪ್ಟ್, ಇ 2 ಇ ಪರೀಕ್ಷೆಗಳು, ಐಕಾನ್ ಉತ್ಪಾದನೆ, ಸ್ವಯಂಚಾಲಿತ ಐ 18 ಎನ್ ಮತ್ತು ಎಸ್ಬಿಲ್ಡ್",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<ಡಿವ್> <p> ಹಲೋ ವರ್ಲ್ಡ್ </p> ಇದು ವೆಬ್‌ನ <strong> ಭಾಷೆ </strong> </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಿದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+    },
+    "How_can_we_improve_": {
+        "message": "ನಾವು ಹೇಗೆ ಸುಧಾರಿಸಬಹುದು?"
+    },
+    "Options": {
+        "message": "ಆಯ್ಕೆಗಳು"
+    },
+    "Show_Demo": {
+        "message": "ಡೆಮೊ ತೋರಿಸಿ"
+    },
+    "Report_an_Issue": {
+        "message": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ"
+    },
+    "How_are_we_doing_": {
+        "message": "ನಾವು ಹೇಗೆ ಮಾಡುತ್ತಿದ್ದೇವೆ?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "ನೀವು ಇಷ್ಟಪಟ್ಟಿದ್ದಕ್ಕಾಗಿ ಸಂತೋಷ! The ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಹುದೇ?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ಧನ್ಯವಾದಗಳು!"
+    },
+    "Rate_on_Webstore": {
+        "message": "ವೆಬ್‌ಸ್ಟೋರ್‌ನಲ್ಲಿ ದರ"
+    },
+    "No": {
+        "message": "ಇಲ್ಲ"
+    },
+    "Submit_Feedback": {
+        "message": "ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಸಲ್ಲಿಸಿ"
+    }
 }

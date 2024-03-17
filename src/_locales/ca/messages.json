@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Inici de l'extensió del navegador",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Exemple d’extensió del navegador. TypeScript, E2E Proves, Generació d’icones, Automàtic I18N i ESBuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Inici de l'extensió del navegador",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Exemple d’extensió del navegador. TypeScript, E2E Proves, Generació d’icones, Automàtic I18N i ESBuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hola món </p> Aquest és el <strong> llenguatge </strong> del web </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Configuració actualitzada amb èxit"
+    },
+    "How_can_we_improve_": {
+        "message": "Com podem millorar?"
+    },
+    "Options": {
+        "message": "Les opcions"
+    },
+    "Show_Demo": {
+        "message": "Demostració d'espectacle"
+    },
+    "Report_an_Issue": {
+        "message": "Informeu d’un problema"
+    },
+    "How_are_we_doing_": {
+        "message": "Com estem?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Encantat de que t'agradi! Ens podeu ajudar a compartir el ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Gràcies pels comentaris!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Valora a la botiga web"
+    },
+    "No": {
+        "message": "No"
+    },
+    "Submit_Feedback": {
+        "message": "Envieu comentaris"
+    }
 }

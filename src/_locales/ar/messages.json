@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "متصفح تمديد بداية",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "ب",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "مثال تمديد المتصفح. TypeScript ، اختبارات E2E ، توليد الأيقونات ، I18N التلقائي و ESBUILD",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "متصفح تمديد بداية",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "ب",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "مثال تمديد المتصفح. TypeScript ، اختبارات E2E ، توليد الأيقونات ، I18N التلقائي و ESBUILD",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<viv> <p> Hello World </p> هذه هي اللغة <strong> </strong> من الويب </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "الإعدادات التي تم تحديثها بنجاح"
+    },
+    "How_can_we_improve_": {
+        "message": "كيف يمكن أن نتحسن؟"
+    },
+    "Options": {
+        "message": "خيارات"
+    },
+    "Show_Demo": {
+        "message": "عرض العرض التوضيحي"
+    },
+    "Report_an_Issue": {
+        "message": "بلغ عن خطأ"
+    },
+    "How_are_we_doing_": {
+        "message": "كيف نفعل؟"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "سعيد انه اعجبك! هل يمكنك مساعدتنا في مشاركة ❤؟"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "شكرا على ملاحظاتك!"
+    },
+    "Rate_on_Webstore": {
+        "message": "معدل على WebStore"
+    },
+    "No": {
+        "message": "لا"
+    },
+    "Submit_Feedback": {
+        "message": "إرسال ردود الفعل"
+    }
 }

@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Проширење претраживача Стартер",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "Б.е.с",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Пример проширења прегледача. Типцрипт, Е2Е тестови, производња икона, аутоматски И18Н и ЕСБУИЛД",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Проширење претраживача Стартер",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "Б.е.с",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Пример проширења прегледача. Типцрипт, Е2Е тестови, производња икона, аутоматски И18Н и ЕСБУИЛД",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<див> <п> Поздрав свијет </ п> Ово је <стронг> језик </ стронг> на веб </ див>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Успешно ажурирана подешавања"
+    },
+    "How_can_we_improve_": {
+        "message": "Како се можемо побољшати?"
+    },
+    "Options": {
+        "message": "Опције"
+    },
+    "Show_Demo": {
+        "message": "Показати демо"
+    },
+    "Report_an_Issue": {
+        "message": "Пријавите проблем"
+    },
+    "How_are_we_doing_": {
+        "message": "Како нам иде?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Драго ми је да ти се свиђа! Можете ли нам помоћи да поделимо ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Хвала за повратне информације!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Брзина на ВебСторе-у"
+    },
+    "No": {
+        "message": "Не"
+    },
+    "Submit_Feedback": {
+        "message": "Пошаљите повратне информације"
+    }
 }

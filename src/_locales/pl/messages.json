@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Rozszerzenie rozszerzenia przeglądarki",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "BĄDZ S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Przykład rozszerzenia przeglądarki. Testy TypeScript, E2E, generowanie ikon, automatyczne I18N i ESBUILD",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Rozszerzenie rozszerzenia przeglądarki",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "BĄDZ S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Przykład rozszerzenia przeglądarki. Testy TypeScript, E2E, generowanie ikon, automatyczne I18N i ESBUILD",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello World </p> To jest język <strong> </strong> w sieci </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Pomyślnie zaktualizowane ustawienia"
+    },
+    "How_can_we_improve_": {
+        "message": "Jak możemy poprawić?"
+    },
+    "Options": {
+        "message": "Opcje"
+    },
+    "Show_Demo": {
+        "message": "Pokazuj demo"
+    },
+    "Report_an_Issue": {
+        "message": "Zgłoś problem"
+    },
+    "How_are_we_doing_": {
+        "message": "Jak nam idzie?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Cieszę się że to lubisz! Czy możesz nam pomóc w udostępnieniu ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Dzięki za opinie!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Oceń w Webstore"
+    },
+    "No": {
+        "message": "NIE"
+    },
+    "Submit_Feedback": {
+        "message": "Prześlij informację zwrotną"
+    }
 }

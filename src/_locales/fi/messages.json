@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Selaimen laajennuksen aloittaja",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Selaimen laajennusesimerkki. TYPLESTI, E2E -testit, kuvakkeen sukupolvi, automaattinen i18n ja Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Selaimen laajennuksen aloittaja",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Selaimen laajennusesimerkki. TYPLESTI, E2E -testit, kuvakkeen sukupolvi, automaattinen i18n ja Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hei maailma </p> Tämä on Webin <strong> kieli </strong>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Päivitetyt asetukset onnistuneesti"
+    },
+    "How_can_we_improve_": {
+        "message": "Kuinka voimme parantaa?"
+    },
+    "Options": {
+        "message": "Vaihtoehdot"
+    },
+    "Show_Demo": {
+        "message": "Näytä esittely"
+    },
+    "Report_an_Issue": {
+        "message": "Ilmoita ongelma"
+    },
+    "How_are_we_doing_": {
+        "message": "Kuinka me voimme?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Iloinen, että pidät siitä! Voitko auttaa meitä jakamaan ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Kiitos palautteesta!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Arvostelu verkkokaupassa"
+    },
+    "No": {
+        "message": "Ei"
+    },
+    "Submit_Feedback": {
+        "message": "Antaa palautetta"
+    }
 }

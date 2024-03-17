@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Nettleserforlengelsesstarter",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S.",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Eksempel på nettleserutvidelse. TypeScript, E2E Tests, Icon Generation, Automatic I18N og Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Nettleserforlengelsesstarter",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S.",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Eksempel på nettleserutvidelse. TypeScript, E2E Tests, Icon Generation, Automatic I18N og Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello World </p> Dette er <strong> språket </strong> på nettet </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Vellykket oppdaterte innstillinger"
+    },
+    "How_can_we_improve_": {
+        "message": "Hvordan kan vi forbedre oss?"
+    },
+    "Options": {
+        "message": "Alternativer"
+    },
+    "Show_Demo": {
+        "message": "Vis demo"
+    },
+    "Report_an_Issue": {
+        "message": "Rapporter et problem"
+    },
+    "How_are_we_doing_": {
+        "message": "Hvordan har vi det?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Glad du likte det! Kan du hjelpe oss med å dele ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Takk for tilbakemeldingen!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Priser på nettbutikken"
+    },
+    "No": {
+        "message": "Nei"
+    },
+    "Submit_Feedback": {
+        "message": "Send inn tilbakemelding"
+    }
 }

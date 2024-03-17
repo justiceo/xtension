@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "બ્રાઉઝર એક્સ્ટેંશન સ્ટાર્ટર",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S.",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "બ્રાઉઝર એક્સ્ટેંશન ઉદાહરણ. ટાઇપસ્ક્રિપ્ટ, E2E પરીક્ષણો, આયકન જનરેશન, સ્વચાલિત I18N અને ESBild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "બ્રાઉઝર એક્સ્ટેંશન સ્ટાર્ટર",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "બ્રાઉઝર એક્સ્ટેંશન ઉદાહરણ. ટાઇપસ્ક્રિપ્ટ, E2E પરીક્ષણો, આયકન જનરેશન, સ્વચાલિત I18N અને ESBild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<iv> <p> હેલો વર્લ્ડ </p> વેબની આ <strong> ભાષા </strong> છે </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "સફળતાપૂર્વક અપડેટ સેટિંગ્સ"
+    },
+    "How_can_we_improve_": {
+        "message": "આપણે કેવી રીતે સુધારી શકીએ?"
+    },
+    "Options": {
+        "message": "વિકલ્પ"
+    },
+    "Show_Demo": {
+        "message": "ડેમો બતાવો"
+    },
+    "Report_an_Issue": {
+        "message": "એક મુદ્દો જાણ કરો"
+    },
+    "How_are_we_doing_": {
+        "message": "આપણે કેવી રીતે કરી રહ્યા છીએ?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "તમને ગમ્યું એના થી હું પ્રસન્ન છું! તમે અમને શેર કરવામાં મદદ કરી શકો છો?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "પ્રતિસાદ માટે આભાર!"
+    },
+    "Rate_on_Webstore": {
+        "message": "વેબ સ્ટોર પર દર"
+    },
+    "No": {
+        "message": "કોઈ"
+    },
+    "Submit_Feedback": {
+        "message": "પ્રતિસાદ સબમિટ કરો"
+    }
 }

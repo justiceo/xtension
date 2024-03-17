@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Starter di estensione del browser",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "ESSERE S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Esempio di estensione del browser. TypeScript, test E2E, generazione di icona, i18n automatico ed esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Starter di estensione del browser",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "ESSERE S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Esempio di estensione del browser. TypeScript, test E2E, generazione di icona, i18n automatico ed esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<AV> <p> Hello World </p> Questa è la lingua <strong> </strong> del web </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Impostazioni aggiornate correttamente"
+    },
+    "How_can_we_improve_": {
+        "message": "Come possiamo migliorare?"
+    },
+    "Options": {
+        "message": "Opzioni"
+    },
+    "Show_Demo": {
+        "message": "Mostra demo"
+    },
+    "Report_an_Issue": {
+        "message": "Segnala un problema"
+    },
+    "How_are_we_doing_": {
+        "message": "Come stiamo andando?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Contento che ti piaccia! Puoi aiutarci a condividere il ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Grazie per il feedback!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Valuta su webstore"
+    },
+    "No": {
+        "message": "NO"
+    },
+    "Submit_Feedback": {
+        "message": "Invia un feedback"
+    }
 }

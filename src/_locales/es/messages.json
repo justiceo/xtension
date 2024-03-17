@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Arrancador de extensión del navegador",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Ejemplo de extensión del navegador. TypeScript, E2E Pruebas, Generación de iconos, Automático I18N y ESBuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Arrancador de extensión del navegador",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Ejemplo de extensión del navegador. TypeScript, E2E Pruebas, Generación de iconos, Automático I18N y ESBuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<Viv> <p> Hello World </p> Este es el lenguaje <strong> </strong> de la web </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Configuración actualizada con éxito"
+    },
+    "How_can_we_improve_": {
+        "message": "¿Como podemos mejorar?"
+    },
+    "Options": {
+        "message": "Opción"
+    },
+    "Show_Demo": {
+        "message": "Demostración de exhibición"
+    },
+    "Report_an_Issue": {
+        "message": "Reportar un problema"
+    },
+    "How_are_we_doing_": {
+        "message": "¿Cómo vamos?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "¡Me alegra que te guste! ¿Puedes ayudarnos a compartir el ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "¡Gracias por la respuesta!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Calificar en la tienda web"
+    },
+    "No": {
+        "message": "No"
+    },
+    "Submit_Feedback": {
+        "message": "Enviar comentarios"
+    }
 }

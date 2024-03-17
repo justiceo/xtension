@@ -14,32 +14,11 @@
     "@testMarkup": {
         "message": "<div><p>Hello world</p>This is the <strong>language</strong> of the web</div>"
     },
-    "optionsSaveSuccess": {
-        "message": "optionsSaveSuccess"
+    "Successfully_updated_settings": {
+        "message": "Successfully updated settings"
     },
-    "fdbkHowAreWeDoing": {
-        "message": "fdbkHowAreWeDoing"
-    },
-    "fdbkCareToShare": {
-        "message": "fdbkCareToShare"
-    },
-    "fdbkHowCanWeImprove": {
-        "message": "fdbkHowCanWeImprove"
-    },
-    "fdbkThanks": {
-        "message": "fdbkThanks"
-    },
-    "fdbkRateOnWebstore": {
-        "message": "fdbkRateOnWebstore"
-    },
-    "fdbkNoResponse": {
-        "message": "fdbkNoResponse"
-    },
-    "fdbkSumbit": {
-        "message": "fdbkSumbit"
-    },
-    "appName": {
-        "message": "appName"
+    "How_can_we_improve_": {
+        "message": "How can we improve?"
     },
     "Options": {
         "message": "Options"
@@ -49,5 +28,23 @@
     },
     "Report_an_Issue": {
         "message": "Report an Issue"
+    },
+    "How_are_we_doing_": {
+        "message": "How are we doing?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Glad you like it! Can you help us share the ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Thanks for the feedback!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Rate on Webstore"
+    },
+    "No": {
+        "message": "No"
+    },
+    "Submit_Feedback": {
+        "message": "Submit Feedback"
     }
 }

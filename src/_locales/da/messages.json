@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Browser Extension Starter",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Eksempel på browserudvidelse. TypeScript, E2E Tests, Icon Generation, Automatic I18N og Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Browser Extension Starter",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Eksempel på browserudvidelse. TypeScript, E2E Tests, Icon Generation, Automatic I18N og Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> hej verden </p> Dette er <strong> sprog </strong> på web </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Med succes opdaterede indstillinger"
+    },
+    "How_can_we_improve_": {
+        "message": "Hvordan kan vi forbedre os?"
+    },
+    "Options": {
+        "message": "Muligheder"
+    },
+    "Show_Demo": {
+        "message": "Vis demo"
+    },
+    "Report_an_Issue": {
+        "message": "Rapporter et problem"
+    },
+    "How_are_we_doing_": {
+        "message": "Hvordan har vi det?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Glad for at du kunne lide det! Kan du hjælpe os med at dele ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Tak for tilbagemeldingen!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Bedøm på webshop"
+    },
+    "No": {
+        "message": "Ingen"
+    },
+    "Submit_Feedback": {
+        "message": "Send feedback"
+    }
 }

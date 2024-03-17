@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "ബ്ര browser സർ വിപുലീകരണ സ്റ്റാർട്ടർ",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "ബ്ര browser സർ വിപുലീകരണ ഉദാഹരണം. ടൈപ്പ്സ്ക്രിപ്റ്റ്, E2E ടെസ്റ്റുകൾ, ഐക്കൺ ജനറേഷൻ, ഓട്ടോമാറ്റിക് I18N, ESBUILD",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "ബ്ര browser സർ വിപുലീകരണ സ്റ്റാർട്ടർ",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "ബ്ര browser സർ വിപുലീകരണ ഉദാഹരണം. ടൈപ്പ്സ്ക്രിപ്റ്റ്, E2E ടെസ്റ്റുകൾ, ഐക്കൺ ജനറേഷൻ, ഓട്ടോമാറ്റിക് I18N, ESBUILD",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> ഹലോ വേൾഡ് </ p> ഇത് വെബിന്റെ </ dive> ന്റെ </ play> ഇതാണ്"
+    },
+    "Successfully_updated_settings": {
+        "message": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റുചെയ്തു"
+    },
+    "How_can_we_improve_": {
+        "message": "നമുക്ക് എങ്ങനെ മെച്ചപ്പെടുത്താൻ കഴിയും?"
+    },
+    "Options": {
+        "message": "ഓപ്ഷനുകൾ"
+    },
+    "Show_Demo": {
+        "message": "ഡെമോ കാണിക്കുക"
+    },
+    "Report_an_Issue": {
+        "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക"
+    },
+    "How_are_we_doing_": {
+        "message": "ഞങ്ങൾ എങ്ങനെ ചെയ്യുന്നു?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "നിങ്ങൾ ഇത് ഇഷ്ടപ്പെട്ടതിൽ സന്തോഷം! ❤️ പങ്കിടാൻ ഞങ്ങളെ സഹായിക്കാമോ?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "ഫീഡ്ബാക്കിന് നന്ദി!"
+    },
+    "Rate_on_Webstore": {
+        "message": "വെബ്സ്റ്ററിലെ നിരക്ക്"
+    },
+    "No": {
+        "message": "ഇല്ല"
+    },
+    "Submit_Feedback": {
+        "message": "ഫീഡ്ബാക്ക് സമർപ്പിക്കുക"
+    }
 }

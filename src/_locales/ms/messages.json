@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Starter Peluasan Pelayar",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Contoh peluasan penyemak imbas. TypeScript, Ujian E2E, Generasi Ikon, I18N Automatik dan Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Starter Peluasan Pelayar",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Contoh peluasan penyemak imbas. TypeScript, Ujian E2E, Generasi Ikon, I18N Automatik dan Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> hello world </p> Ini adalah <strong> bahasa </strong> dari web </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Tetapan yang berjaya dikemas kini"
+    },
+    "How_can_we_improve_": {
+        "message": "Bagaimana kita dapat memperbaiki?"
+    },
+    "Options": {
+        "message": "Pilihan"
+    },
+    "Show_Demo": {
+        "message": "Tunjukkan demo"
+    },
+    "Report_an_Issue": {
+        "message": "Melaporkan isu"
+    },
+    "How_are_we_doing_": {
+        "message": "Bagaimana keadaan kita?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Gembira anda menyukainya! Bolehkah anda membantu kami berkongsi ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Terima kasih atas maklum balas!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Kadar di WebStore"
+    },
+    "No": {
+        "message": "Tidak"
+    },
+    "Submit_Feedback": {
+        "message": "Hantar maklum balas"
+    }
 }

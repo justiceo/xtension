@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "ブラウザ拡張スターター",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "ブラウザ拡張機能の例。 タイプスクリプト、E2Eテスト、アイコン生成、自動I18Nおよびesbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "ブラウザ拡張スターター",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "ブラウザ拡張機能の例。 タイプスクリプト、E2Eテスト、アイコン生成、自動I18Nおよびesbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> hello world </p>これは<strong>言語</strong> </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "正常に更新された設定"
+    },
+    "How_can_we_improve_": {
+        "message": "どうすれば改善できますか？"
+    },
+    "Options": {
+        "message": "オプション"
+    },
+    "Show_Demo": {
+        "message": "デモを表示します"
+    },
+    "Report_an_Issue": {
+        "message": "問題を報告する"
+    },
+    "How_are_we_doing_": {
+        "message": "私たちはどのようにやっています？"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "気に入ってくれてうれしいです！ ❤️を共有するのを手伝ってもらえますか？"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "フィードバックをお寄せいただきありがとうございます！"
+    },
+    "Rate_on_Webstore": {
+        "message": "Webstoreのレート"
+    },
+    "No": {
+        "message": "いいえ"
+    },
+    "Submit_Feedback": {
+        "message": "フィードバックを送信"
+    }
 }

@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "การเริ่มต้นเบราว์เซอร์",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "ตัวอย่างส่วนขยายเบราว์เซอร์ TypeScript, การทดสอบ E2E, การสร้างไอคอน, I18N อัตโนมัติและ ESBUILD",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "การเริ่มต้นเบราว์เซอร์",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "ตัวอย่างส่วนขยายเบราว์เซอร์ TypeScript, การทดสอบ E2E, การสร้างไอคอน, I18N อัตโนมัติและ ESBUILD",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello World </p> นี่คือ <strong> ภาษา </strong> ของเว็บ </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "อัปเดตการตั้งค่าสำเร็จ"
+    },
+    "How_can_we_improve_": {
+        "message": "เราจะปรับปรุงได้อย่างไร?"
+    },
+    "Options": {
+        "message": "ตัวเลือก"
+    },
+    "Show_Demo": {
+        "message": "แสดงตัวอย่าง"
+    },
+    "Report_an_Issue": {
+        "message": "รายงานปัญหา"
+    },
+    "How_are_we_doing_": {
+        "message": "เราเป็นอย่างไรบ้าง?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "ดีใจที่คุณชอบ! คุณสามารถช่วยเราแบ่งปัน❤ได้หรือไม่?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "ขอบคุณสำหรับความคิดเห็น!"
+    },
+    "Rate_on_Webstore": {
+        "message": "ให้คะแนนบนเว็บสโตร์"
+    },
+    "No": {
+        "message": "เลขที่"
+    },
+    "Submit_Feedback": {
+        "message": "ส่งข้อเสนอแนะ"
+    }
 }

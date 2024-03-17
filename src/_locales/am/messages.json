@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "አሳሽ ቅጥያ ጅምር",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.e.s",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "የአሳሽ ቅጥያ ምሳሌ. AlyCript, EE2E ሙከራዎች, አዶ ትውልድ, አውቶማቲክ i18n እና ESBEADED",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "አሳሽ ቅጥያ ጅምር",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.e.s",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "የአሳሽ ቅጥያ ምሳሌ. AlyCript, EE2E ሙከራዎች, አዶ ትውልድ, አውቶማቲክ i18n እና ESBEADED",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<dip> <prame ዓለም </ p> ይህ <strong> ቋንቋ </ strong >> </ sub >>"
+    },
+    "Successfully_updated_settings": {
+        "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
+    },
+    "How_can_we_improve_": {
+        "message": "እንዴት ማሻሻል እንችላለን?"
+    },
+    "Options": {
+        "message": "አማራጮች"
+    },
+    "Show_Demo": {
+        "message": "ማሳያ ማሳያ"
+    },
+    "Report_an_Issue": {
+        "message": "አንድ ጉዳይ ሪፖርት ያድርጉ"
+    },
+    "How_are_we_doing_": {
+        "message": "እንዴት እየሰራን ነው?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "ደስ እንደሰኛቸው ደስ ብሎኛል! ❤️ እንድንካፈል ሊረዱን ይችላሉ?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "ስለ ግብረመልሱ አመሰግናለሁ!"
+    },
+    "Rate_on_Webstore": {
+        "message": "በደረጃዎች ላይ ይስጡ"
+    },
+    "No": {
+        "message": "አይ"
+    },
+    "Submit_Feedback": {
+        "message": "ግብረ መልስ ያስገቡ"
+    }
 }

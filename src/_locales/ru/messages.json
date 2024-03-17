@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Стартер расширения браузера",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "Б.Е.",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Пример расширения браузера. TypeScript, E2E -тесты, генерация значков, автоматический i18n и Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Стартер расширения браузера",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "Б.Е.",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Пример расширения браузера. TypeScript, E2E -тесты, генерация значков, автоматический i18n и Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Привет, мир </p> Это язык <strong> </strong> Интернета </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Успешно обновленные настройки"
+    },
+    "How_can_we_improve_": {
+        "message": "Как мы можем улучшить?"
+    },
+    "Options": {
+        "message": "Параметры"
+    },
+    "Show_Demo": {
+        "message": "Показать демонстрацию"
+    },
+    "Report_an_Issue": {
+        "message": "Сообщить о проблеме"
+    },
+    "How_are_we_doing_": {
+        "message": "Как у нас дела?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Рад, что вам это нравится! Вы можете помочь нам поделиться ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Спасибо за ответ!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Оценка в веб -магазине"
+    },
+    "No": {
+        "message": "Нет"
+    },
+    "Submit_Feedback": {
+        "message": "Отправить отзыв"
+    }
 }

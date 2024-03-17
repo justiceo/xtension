@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Starter ya Upanuzi wa Kivinjari",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Mfano wa Upanuzi wa Kivinjari. Vipimo vya Typescript, E2E, Kizazi cha Icon, moja kwa moja I18N na EsBuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Starter ya Upanuzi wa Kivinjari",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Mfano wa Upanuzi wa Kivinjari. Vipimo vya Typescript, E2E, Kizazi cha Icon, moja kwa moja I18N na EsBuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello World </p> Hii ndio lugha ya <strong> </strong> ya wavuti </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Mipangilio iliyosasishwa kwa mafanikio"
+    },
+    "How_can_we_improve_": {
+        "message": "Tunawezaje kuboresha?"
+    },
+    "Options": {
+        "message": "Chaguzi"
+    },
+    "Show_Demo": {
+        "message": "Onyesha demo"
+    },
+    "Report_an_Issue": {
+        "message": "Ripoti suala"
+    },
+    "How_are_we_doing_": {
+        "message": "Tunaendeleaje?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Nimefurahi kuipenda! Je! Unaweza kutusaidia kushiriki ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Asante kwa maoni!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Kiwango kwenye duka la wavuti"
+    },
+    "No": {
+        "message": "Hapana"
+    },
+    "Submit_Feedback": {
+        "message": "Wasilisha maoni"
+    }
 }

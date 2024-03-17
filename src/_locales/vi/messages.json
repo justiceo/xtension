@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Trình duyệt mở rộng khởi động",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "CÓ S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Ví dụ mở rộng trình duyệt. TypeScript, E2E Tests, Icon Generation, Automatic I18N và ESBUILD",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Trình duyệt mở rộng khởi động",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "CÓ S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Ví dụ mở rộng trình duyệt. TypeScript, E2E Tests, Icon Generation, Automatic I18N và ESBUILD",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<DIV> <p> Xin chào thế giới </p> Đây là ngôn ngữ <strong>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Cập nhật cài đặt thành công"
+    },
+    "How_can_we_improve_": {
+        "message": "Chúng ta có thể cải thiện như thế nào?"
+    },
+    "Options": {
+        "message": "Tùy chọn"
+    },
+    "Show_Demo": {
+        "message": "Đưa ra bản chạy thử"
+    },
+    "Report_an_Issue": {
+        "message": "Báo cáo một vấn đề"
+    },
+    "How_are_we_doing_": {
+        "message": "Chúng ta đang làm thế nào?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Vui vì bạn thích nó! Bạn có thể giúp chúng tôi chia sẻ ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Cảm ơn vì bạn đã phản hồi!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Đánh giá trên ststore"
+    },
+    "No": {
+        "message": "KHÔNG"
+    },
+    "Submit_Feedback": {
+        "message": "Gửi phản hồi"
+    }
 }

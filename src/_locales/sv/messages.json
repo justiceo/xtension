@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Webbläsarförlängningsstart",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "VARA S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Exempel på webbläsarförlängning. TypeScript, E2E -test, ikongenerering, automatisk i18N och ESBUILD",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Webbläsarförlängningsstart",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "VARA S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Exempel på webbläsarförlängning. TypeScript, E2E -test, ikongenerering, automatisk i18N och ESBUILD",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello World </p> Detta är <strong> språket </strong> på webben </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Framgångsrikt uppdaterade inställningar"
+    },
+    "How_can_we_improve_": {
+        "message": "Hur kan vi förbättra?"
+    },
+    "Options": {
+        "message": "alternativ"
+    },
+    "Show_Demo": {
+        "message": "Visa demo"
+    },
+    "Report_an_Issue": {
+        "message": "Rapportera ett problem"
+    },
+    "How_are_we_doing_": {
+        "message": "Hur går det för oss?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Glad att du gillar det! Kan du hjälpa oss att dela ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Tack för feedbacken!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Hastighet på webbutiken"
+    },
+    "No": {
+        "message": "Nej"
+    },
+    "Submit_Feedback": {
+        "message": "Skicka feedback"
+    }
 }

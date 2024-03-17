@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Predlžovač prehliadača",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Príklad rozšírenia prehliadača. TypeScript, E2E testy, generovanie ikon, automatické i18n a Esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Predlžovač prehliadača",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Príklad rozšírenia prehliadača. TypeScript, E2E testy, generovanie ikon, automatické i18n a Esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Ahoj svet </p> Toto je jazyk <strong> </strong> z webu </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Úspešne aktualizované nastavenia"
+    },
+    "How_can_we_improve_": {
+        "message": "Ako sa môžeme vylepšiť?"
+    },
+    "Options": {
+        "message": "možnosti"
+    },
+    "Show_Demo": {
+        "message": "Ukázať"
+    },
+    "Report_an_Issue": {
+        "message": "Nahlásiť problém"
+    },
+    "How_are_we_doing_": {
+        "message": "Ako sa máme?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Som rád že sa ti to páči! Môžete nám pomôcť zdieľať ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Ďakujem za spätnú väzbu!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Hodnotiť na webstore"
+    },
+    "No": {
+        "message": "Nie"
+    },
+    "Submit_Feedback": {
+        "message": "Odoslať spätnú väzbu"
+    }
 }

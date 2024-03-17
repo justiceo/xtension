@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Pārlūka pagarinājuma starteris",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Pārlūka pagarinājuma piemērs. TypeScript, E2E testi, ikonu ģenerēšana, automātiskā I18N un esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Pārlūka pagarinājuma starteris",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Pārlūka pagarinājuma piemērs. TypeScript, E2E testi, ikonu ģenerēšana, automātiskā I18N un esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello World </p> Šī ir tīmekļa </strong> valoda </strong> </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Veiksmīgi atjauninātie iestatījumi"
+    },
+    "How_can_we_improve_": {
+        "message": "Kā mēs varam uzlabot?"
+    },
+    "Options": {
+        "message": "Iespējas"
+    },
+    "Show_Demo": {
+        "message": "Parādīt demonstrāciju"
+    },
+    "Report_an_Issue": {
+        "message": "Ziņot par jautājumu"
+    },
+    "How_are_we_doing_": {
+        "message": "Kā mums klājas?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Prieks ka tev patīk! Vai varat palīdzēt mums dalīties ar ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Paldies par atsauksmēm!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Novērtējiet tīmekļa veikalā"
+    },
+    "No": {
+        "message": "Nē"
+    },
+    "Submit_Feedback": {
+        "message": "Iesniedziet atsauksmes"
+    }
 }

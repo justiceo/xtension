@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Zaganjalnik za podaljšanje brskalnika",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Primer razširitve brskalnika. TypeScript, E2E testi, generiranje ikon, avtomatski i18n in esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Zaganjalnik za podaljšanje brskalnika",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Primer razširitve brskalnika. TypeScript, E2E testi, generiranje ikon, avtomatski i18n in esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<EV> <p> Hello World </p> To je <strong> jezik </strong> spleta </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Uspešno posodobljene nastavitve"
+    },
+    "How_can_we_improve_": {
+        "message": "Kako se lahko izboljšamo?"
+    },
+    "Options": {
+        "message": "Opcije"
+    },
+    "Show_Demo": {
+        "message": "Pokaži demo"
+    },
+    "Report_an_Issue": {
+        "message": "Poroča o težavi"
+    },
+    "How_are_we_doing_": {
+        "message": "Kako smo?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Vesela sem, da ti je všeč! Ali nam lahko pomagate deliti ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Hvala za povratne informacije!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Ocenite na spletni trgovini"
+    },
+    "No": {
+        "message": "Ne"
+    },
+    "Submit_Feedback": {
+        "message": "Predložite povratne informacije"
+    }
 }

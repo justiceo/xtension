@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Starter של סיומת דפדפן",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S.",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "דוגמה להרחבת דפדפן. Typescript, בדיקות E2E, ייצור אייקונים, אוטומטית I18N ו- ESBUILD",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Starter של סיומת דפדפן",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S.",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "דוגמה להרחבת דפדפן. Typescript, בדיקות E2E, ייצור אייקונים, אוטומטית I18N ו- ESBUILD",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> שלום עולם </p> זוהי שפה <strong> </strong> של האינטרנט </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "הגדרות מעודכנות בהצלחה"
+    },
+    "How_can_we_improve_": {
+        "message": "איך אנחנו יכולים להשתפר?"
+    },
+    "Options": {
+        "message": "אפשרויות"
+    },
+    "Show_Demo": {
+        "message": "להראות הדגמה"
+    },
+    "Report_an_Issue": {
+        "message": "דווח על בעיה"
+    },
+    "How_are_we_doing_": {
+        "message": "מה שלומנו?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "שמח שאתה אוהב את זה! אתה יכול לעזור לנו לשתף את ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "תודה על המשוב!"
+    },
+    "Rate_on_Webstore": {
+        "message": "דרג בחנות האינטרנט"
+    },
+    "No": {
+        "message": "לא"
+    },
+    "Submit_Feedback": {
+        "message": "הגש משוב"
+    }
 }

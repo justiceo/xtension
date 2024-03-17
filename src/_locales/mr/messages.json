@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "ब्राउझर विस्तार स्टार्टर",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "बी.ई.एस.",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "ब्राउझर विस्तार उदाहरण. टाइपस्क्रिप्ट, ई 2 ई चाचण्या, आयकॉन जनरेशन, स्वयंचलित आय 18 एन आणि एसबिल्ड",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "ब्राउझर विस्तार स्टार्टर",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "बी.ई.एस.",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "ब्राउझर विस्तार उदाहरण. टाइपस्क्रिप्ट, ई 2 ई चाचण्या, आयकॉन जनरेशन, स्वयंचलित आय 18 एन आणि एसबिल्ड",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> हॅलो वर्ल्ड </p> ही वेबची </strong> </strong> आहे </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "यशस्वीरित्या अद्यतनित सेटिंग्ज"
+    },
+    "How_can_we_improve_": {
+        "message": "आपण कसे सुधारू शकतो?"
+    },
+    "Options": {
+        "message": "पर्याय"
+    },
+    "Show_Demo": {
+        "message": "डेमो दर्शवा"
+    },
+    "Report_an_Issue": {
+        "message": "एखाद्या समस्येचा अहवाल द्या"
+    },
+    "How_are_we_doing_": {
+        "message": "आम्ही कसे करीत आहोत?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "आपल्याला हे आवडले याचा आनंद! आपण आम्हाला सामायिक करण्यात मदत करू शकता ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "आपल्या अभिप्रायाबद्दल धन्यवाद!"
+    },
+    "Rate_on_Webstore": {
+        "message": "वेबस्टोअरवर दर"
+    },
+    "No": {
+        "message": "नाही"
+    },
+    "Submit_Feedback": {
+        "message": "अभिप्राय सबमिट करा"
+    }
 }

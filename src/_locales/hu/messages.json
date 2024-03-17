@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Böngészőhosszabbító indító",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Böngésző kiterjesztési példa. TypeScript, E2E tesztek, ikongenerálás, automatikus I18N és esbuild",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Böngészőhosszabbító indító",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Böngésző kiterjesztési példa. TypeScript, E2E tesztek, ikongenerálás, automatikus I18N és esbuild",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello World </p> Ez a web </strong> nyelv </strong> nyelv </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Sikeresen frissített beállítások"
+    },
+    "How_can_we_improve_": {
+        "message": "Hogyan javulhatunk?"
+    },
+    "Options": {
+        "message": "Lehetőségek"
+    },
+    "Show_Demo": {
+        "message": "Bemutató bemutató"
+    },
+    "Report_an_Issue": {
+        "message": "Jelentsen egy problémát"
+    },
+    "How_are_we_doing_": {
+        "message": "Hogy vagyunk?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Örülök, hogy tetszik! Tudna segíteni nekünk a ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Köszönöm a visszajelzést!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Értékeld a webáruházat"
+    },
+    "No": {
+        "message": "Nem"
+    },
+    "Submit_Feedback": {
+        "message": "Visszajelzés küldése"
+    }
 }

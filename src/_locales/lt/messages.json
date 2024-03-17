@@ -1,14 +1,50 @@
 {
-  "appName": {
-    "message": "Naršyklės plėtinio starteris",
-    "description": "The name of the extension"
-  },
-  "appShortName": {
-    "message": "B.E.S",
-    "description": "The short-version name of the extension name"
-  },
-  "appDesc": {
-    "message": "Naršyklės plėtinio pavyzdys. „TypeScript“, „E2E“ testai, piktogramų generavimas, automatinis I18N ir „Esbuild“",
-    "description": "The description of your extension"
-  }
+    "@appName": {
+        "message": "Naršyklės plėtinio starteris",
+        "description": "The name of the extension"
+    },
+    "@appShortName": {
+        "message": "B.E.S",
+        "description": "The short-version name of the extension name"
+    },
+    "@appDesc": {
+        "message": "Naršyklės plėtinio pavyzdys. „TypeScript“, „E2E“ testai, piktogramų generavimas, automatinis I18N ir „Esbuild“",
+        "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> labas pasaulis </p> Tai yra žiniatinklio </strong> kalba </strong> </div>"
+    },
+    "Successfully_updated_settings": {
+        "message": "Sėkmingai atnaujinti nustatymai"
+    },
+    "How_can_we_improve_": {
+        "message": "Kaip mes galime tobulėti?"
+    },
+    "Options": {
+        "message": "Galimybės"
+    },
+    "Show_Demo": {
+        "message": "Parodykite demonstracinę versiją"
+    },
+    "Report_an_Issue": {
+        "message": "Pranešti apie problemą"
+    },
+    "How_are_we_doing_": {
+        "message": "Kaip mums sekasi?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Džiugu, kad tau tai patiko! Ar galite padėti mums pasidalyti ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Ačiū už nuomonę!"
+    },
+    "Rate_on_Webstore": {
+        "message": "Įvertinimas „WebStore“"
+    },
+    "No": {
+        "message": "Ne"
+    },
+    "Submit_Feedback": {
+        "message": "Pateikite atsiliepimą"
+    }
 }

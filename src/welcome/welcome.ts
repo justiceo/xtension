@@ -1,10 +1,22 @@
+import { Logger } from "../utils/logger";
 import { ContentScript } from "../content-script/content-script";
+import { translateMarkup } from "../utils/i18n";
+import "./welcome.css";
 
-const contentScript = new ContentScript();
-contentScript.init();
+export class Welcome {
+  logger = new Logger(this);
+  contentScript = new ContentScript();
+
+  init() {
+    this.contentScript.init();
+    translateMarkup(document);
+
+    document.querySelector("#demo-button")?.addEventListener("click", (e) => {
+      this.contentScript.showDemo();
+    });
+  }
+}
 
 window.addEventListener("load", (e) => {
-  document.querySelector("#demo-button")?.addEventListener("click", (e) => {
-    contentScript.showDemo();
-  });
+  new Welcome().init();
 });

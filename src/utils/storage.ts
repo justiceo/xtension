@@ -1,8 +1,9 @@
 /* A light wrapper around chrome storage API. */
-import { configOptions } from "../config";
+import { configOptions } from "../options-page/option-items";
 export const FEEDBACK_DATA_KEY = "feedback_data";
 export const INSTALL_TIME_MS = "install_time_ms";
 export const SUCCESSFUL_INTERACTIONS = "successful_interactions";
+
 class Storage {
   storageService: chrome.storage.SyncStorageArea | Window["localStorage"];
   constructor() {
@@ -54,7 +55,7 @@ class Storage {
 
   async getAndUpdate(
     key: string,
-    updateFn: (val) => Promise<any>,
+    updateFn: (val) => Promise<any>
   ): Promise<void> {
     const data = await this.get(key);
     return this.put(key, await updateFn(data));

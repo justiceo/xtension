@@ -10,7 +10,7 @@ null-value: null
 undefined_value:
 date: 2022-07-01
 symbol: 😊
-name: __MSG_appName__
+name: __MSG_@appName__
 short_name: __MSG_appShortName_
 manifest_version: 3
 version: 23.1.21

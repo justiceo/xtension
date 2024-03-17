@@ -1,7 +1,7 @@
 import { SettingsUI } from "../utils/settings/settings";
 import "./options.css";
 import "../utils/feedback/feedback";
-import { configOptions } from "../config";
+import { configOptions } from "./option-items";
 import { translateMarkup } from "../utils/i18n";
 import { Logger } from "../utils/logger";
 import { ContentScript } from "../content-script/content-script";

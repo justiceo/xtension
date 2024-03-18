@@ -3,7 +3,6 @@
 const fs = require("fs");
 const path = require("path");
 const translate = require("google-translate-api-x");
-const { glob } = require("glob");
 const { JSDOM } = require("jsdom");
 
 const srcDir = "src";
@@ -116,47 +115,68 @@ function applyTranslation(targetLocale, localeData, sourceLocaleData) {
   fs.writeFileSync(getLocaleFile(targetLocale), formattedData, { flag: "w" });
 }
 
-// Function to search and return a matching regex in a file.
-function searchInFile(filePath, regex) {
-  const content = fs.readFileSync(filePath, "utf8");
-  const allMatches = [];
-  let matches;
+// Search for i18n literals in .ts and .js files in the given directory.
+function searchFilesForI18n(directoryPath) {
+  const regex = /i18n\(\s*(?:"([\s\S]*?)"|'([\s\S]*?)')\s*,?\s*\)/g;
+  const i18nMap = {};
 
-  while ((matches = regex.exec(content)) !== null) {
-    // This will push the first captured group (the content inside quotes) into allMatches
-    if (matches[1]) {
-      allMatches.push(matches[1]);
+  function processJsFile(filePath) {
+    const fileContents = fs.readFileSync(filePath, "utf8");
+
+    while ((matches = regex.exec(fileContents)) !== null) {
+      // This will push the first captured group (the content inside quotes) into allMatches.
+      // Literals starting with @@ are reserved by chrome and those starting with @ are reserved by the application.
+      if (matches[1] && !matches[1].startsWith("@")) {
+        i18nMap[encodeString(matches[1])] = { message: matches[1] };
+      }
     }
   }
 
-  return allMatches;
-}
+  function processHtmlFile(filePath) {
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    const dom = new JSDOM(fileContents);
+    const document = dom.window.document;
 
-// Loops through .ts and .js files and extracts i18n literals.
-function searchForI18nStrings(srcDirectory) {
-  return new Promise(async (resolve, reject) => {
-    // Regex to capture content inside quotes without including the quotes
-    // TODO: Verify it works for new lines (for long texts).
-    const regex = /i18n\(\s*(?:"([\s\S]*?)"|'([\s\S]*?)')\s*,?\s*\)/g;
-    const filesPattern = path.join(srcDirectory, "**", "*.{ts,js}");
-    const files = await glob(filesPattern);
+    // Query all elements with the i18n attribute
+    const elements = document.querySelectorAll("[i18n]");
 
-    const allMatches = files.reduce((acc, filePath) => {
-      const matches = searchInFile(filePath, regex);
-      if (matches.length > 0) {
-        acc[filePath] = matches;
+    elements.forEach((el) => {
+      // Ignore elements with i18n attribute.
+      const i18nValue = el.getAttribute("i18n");
+      // The value would be a reserved symbol like @appName.
+      if (i18nValue) {
+        return;
       }
-      return acc;
-    }, {});
 
-    console.log("All matches", allMatches);
-    let literals = Object.values(allMatches).reduce(
-      (acc, currentValue) => acc.concat(currentValue),
-      []
-    );
-    literals = literals.filter((f) => !f.startsWith("@")); // exclude special messages.
-    resolve(literals);
-  });
+      // Encode the innerHTML as key
+      const innerHTML = el.innerHTML.toString();
+      const key = encodeString(innerHTML.trim());
+      i18nMap[key] = { message: innerHTML };
+    });
+  }
+
+  function processDirectory(directory) {
+    const files = fs.readdirSync(directory);
+
+    for (const file of files) {
+      const filePath = path.join(directory, file);
+      const stats = fs.statSync(filePath);
+
+      if (stats.isDirectory()) {
+        processDirectory(filePath);
+      } else if (
+        stats.isFile() &&
+        (file.endsWith(".ts") || file.endsWith(".js"))
+      ) {
+        processJsFile(filePath);
+      } else if (stats.isFile() && file.endsWith(".html")) {
+        processHtmlFile(filePath);
+      }
+    }
+  }
+
+  processDirectory(directoryPath);
+  return i18nMap;
 }
 
 // Map the literals to a valid manifest key.
@@ -177,49 +197,6 @@ function encodeString(input) {
     .join("");
 }
 
-// Maps the literals to an object, where the key is an encoded version of the literal and the value is the literal itself.
-function mapLiteralsToEncodedObject(literals) {
-  return literals.reduce((acc, literal) => {
-    acc[encodeString(literal)] = { message: literal };
-    return acc;
-  }, {});
-}
-
-function parseHTMLFiles(src) {
-  return new Promise(async (resolve, reject) => {
-    // Map to hold the i18n attribute value to innerHTML
-    const i18nMap = {};
-
-    // Fetch all HTML files in the given src directory
-    const files = await glob(`${src}/**/*.html`);
-
-    files.forEach((file) => {
-      // Read the content of each HTML file
-      const htmlContent = fs.readFileSync(file, "utf8");
-      const dom = new JSDOM(htmlContent);
-      const document = dom.window.document;
-
-      // Query all elements with the i18n attribute
-      const elements = document.querySelectorAll("[i18n]");
-
-      elements.forEach((el) => {
-        // Ignore elements with i18n attribute.
-        const i18nValue = el.getAttribute("i18n");
-        if (i18nValue) {
-          return;
-        }
-
-        // Encode the innerHTML as key
-        const innerHTML = el.innerHTML.toString();
-        const key = encodeString(innerHTML.trim());
-        i18nMap[key] = { message: innerHTML };
-      });
-    });
-
-    resolve(i18nMap);
-  });
-}
-
 // Main function to generate translations
 async function generateTranslations() {
   let sourceLocaleData = readSourceLocaleData();
@@ -230,18 +207,10 @@ async function generateTranslations() {
     }
   });
 
-  // Get the literals from Js/TS files
-  const codeLiterals = await searchForI18nStrings(srcDir);
+  // Get the literals from Js/TS/HTMLs files
+  const codeLiterals = searchFilesForI18n(srcDir);
   // combine sourceLocaleData and mappedLiterals into one object.
-  sourceLocaleData = Object.assign(
-    sourceLocaleData,
-    mapLiteralsToEncodedObject(codeLiterals)
-  );
-
-  // Get the literals from HTML files
-  const htmlLiterals = await parseHTMLFiles(srcDir);
-  // combine htmlLiterals into sourceLocaleData
-  sourceLocaleData = Object.assign(sourceLocaleData, htmlLiterals);
+  sourceLocaleData = Object.assign(sourceLocaleData, codeLiterals);
 
   const messageRequest = Object.keys(sourceLocaleData).reduce((acc, key) => {
     acc[key] = sourceLocaleData[key]["message"];

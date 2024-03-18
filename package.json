@@ -39,7 +39,6 @@
     "@types/node": "^20.8.3",
     "@types/puppeteer": "^7.0.4",
     "esbuild": "0.19.4",
-    "glob": "^10.3.10",
     "google-translate-api-x": "^10.6.7",
     "jasmine": "^5.1.0",
     "jimp": "^0.22.10",

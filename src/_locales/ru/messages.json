@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Расширение не будет работать на этих сайтах. Введите один сайт на строку."
     },
+    "Options": {
+        "message": "Параметры"
+    },
+    "Show_Demo": {
+        "message": "Показать демонстрацию"
+    },
+    "Report_an_Issue": {
+        "message": "Сообщить о проблеме"
+    },
     "How_can_we_improve_": {
         "message": "Как мы можем улучшить?"
+    },
+    "How_are_we_doing_": {
+        "message": "Как у нас дела?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Рад, что вам это нравится! Вы можете помочь нам поделиться ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Спасибо за ответ!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Оценка в веб -магазине Chrome"
+    },
+    "No": {
+        "message": "Нет"
+    },
+    "Submit_Feedback": {
+        "message": "Отправить отзыв"
     },
     "Successfully_updated_settings": {
         "message": "Успешно обновленные настройки"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Звезда на GitHub"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Оценка в веб -магазине Chrome"
-    },
-    "Options": {
-        "message": "Параметры"
-    },
-    "Show_Demo": {
-        "message": "Показать демонстрацию"
-    },
-    "Report_an_Issue": {
-        "message": "Сообщить о проблеме"
-    },
-    "How_are_we_doing_": {
-        "message": "Как у нас дела?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Рад, что вам это нравится! Вы можете помочь нам поделиться ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Спасибо за ответ!"
-    },
-    "No": {
-        "message": "Нет"
-    },
-    "Submit_Feedback": {
-        "message": "Отправить отзыв"
     }
 }

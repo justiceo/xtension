@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Rozšírenie nebude bežať na týchto stránkach. Zadajte jednu stránku na riadok."
     },
+    "Options": {
+        "message": "možnosti"
+    },
+    "Show_Demo": {
+        "message": "Ukázať"
+    },
+    "Report_an_Issue": {
+        "message": "Nahlásiť problém"
+    },
     "How_can_we_improve_": {
         "message": "Ako sa môžeme vylepšiť?"
+    },
+    "How_are_we_doing_": {
+        "message": "Ako sa máme?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Som rád že sa ti to páči! Môžete nám pomôcť zdieľať ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Ďakujem za spätnú väzbu!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Hodnotiť na internetovom obchode Chrome"
+    },
+    "No": {
+        "message": "Nie"
+    },
+    "Submit_Feedback": {
+        "message": "Odoslať spätnú väzbu"
     },
     "Successfully_updated_settings": {
         "message": "Úspešne aktualizované nastavenia"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Hviezda na github"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Hodnotiť na internetovom obchode Chrome"
-    },
-    "Options": {
-        "message": "možnosti"
-    },
-    "Show_Demo": {
-        "message": "Ukázať"
-    },
-    "Report_an_Issue": {
-        "message": "Nahlásiť problém"
-    },
-    "How_are_we_doing_": {
-        "message": "Ako sa máme?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Som rád že sa ti to páči! Môžete nám pomôcť zdieľať ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Ďakujem za spätnú väzbu!"
-    },
-    "No": {
-        "message": "Nie"
-    },
-    "Submit_Feedback": {
-        "message": "Odoslať spätnú väzbu"
     }
 }

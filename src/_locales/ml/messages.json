@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "ഈ സൈറ്റുകളിൽ വിപുലീകരണം പ്രവർത്തിക്കില്ല. ഒരു വരിയിൽ ഒരു സൈറ്റ് നൽകുക."
     },
+    "Options": {
+        "message": "ഓപ്ഷനുകൾ"
+    },
+    "Show_Demo": {
+        "message": "ഡെമോ കാണിക്കുക"
+    },
+    "Report_an_Issue": {
+        "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക"
+    },
     "How_can_we_improve_": {
         "message": "നമുക്ക് എങ്ങനെ മെച്ചപ്പെടുത്താൻ കഴിയും?"
+    },
+    "How_are_we_doing_": {
+        "message": "ഞങ്ങൾ എങ്ങനെ ചെയ്യുന്നു?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "നിങ്ങൾ ഇത് ഇഷ്ടപ്പെട്ടതിൽ സന്തോഷം! ❤️ പങ്കിടാൻ ഞങ്ങളെ സഹായിക്കാമോ?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "ഫീഡ്ബാക്കിന് നന്ദി!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome വെബ് സ്റ്റോറിലെ നിരക്ക്"
+    },
+    "No": {
+        "message": "ഇല്ല"
+    },
+    "Submit_Feedback": {
+        "message": "ഫീഡ്ബാക്ക് സമർപ്പിക്കുക"
     },
     "Successfully_updated_settings": {
         "message": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റുചെയ്തു"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Github- ലെ നക്ഷത്രം"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome വെബ് സ്റ്റോറിലെ നിരക്ക്"
-    },
-    "Options": {
-        "message": "ഓപ്ഷനുകൾ"
-    },
-    "Show_Demo": {
-        "message": "ഡെമോ കാണിക്കുക"
-    },
-    "Report_an_Issue": {
-        "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക"
-    },
-    "How_are_we_doing_": {
-        "message": "ഞങ്ങൾ എങ്ങനെ ചെയ്യുന്നു?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "നിങ്ങൾ ഇത് ഇഷ്ടപ്പെട്ടതിൽ സന്തോഷം! ❤️ പങ്കിടാൻ ഞങ്ങളെ സഹായിക്കാമോ?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "ഫീഡ്ബാക്കിന് നന്ദി!"
-    },
-    "No": {
-        "message": "ഇല്ല"
-    },
-    "Submit_Feedback": {
-        "message": "ഫീഡ്ബാക്ക് സമർപ്പിക്കുക"
     }
 }

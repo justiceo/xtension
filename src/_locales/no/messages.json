@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Utvidelse kjøres ikke på disse nettstedene. Skriv inn ett nettsted per linje."
     },
+    "Options": {
+        "message": "Alternativer"
+    },
+    "Show_Demo": {
+        "message": "Vis demo"
+    },
+    "Report_an_Issue": {
+        "message": "Rapporter et problem"
+    },
     "How_can_we_improve_": {
         "message": "Hvordan kan vi forbedre oss?"
+    },
+    "How_are_we_doing_": {
+        "message": "Hvordan har vi det?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Glad du likte det! Kan du hjelpe oss med å dele ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Takk for tilbakemeldingen!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Rate på Chrome Web Store"
+    },
+    "No": {
+        "message": "Nei"
+    },
+    "Submit_Feedback": {
+        "message": "Send inn tilbakemelding"
     },
     "Successfully_updated_settings": {
         "message": "Vellykket oppdaterte innstillinger"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Stjerne på github"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Rate på Chrome Web Store"
-    },
-    "Options": {
-        "message": "Alternativer"
-    },
-    "Show_Demo": {
-        "message": "Vis demo"
-    },
-    "Report_an_Issue": {
-        "message": "Rapporter et problem"
-    },
-    "How_are_we_doing_": {
-        "message": "Hvordan har vi det?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Glad du likte det! Kan du hjelpe oss med å dele ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Takk for tilbakemeldingen!"
-    },
-    "No": {
-        "message": "Nei"
-    },
-    "Submit_Feedback": {
-        "message": "Send inn tilbakemelding"
     }
 }

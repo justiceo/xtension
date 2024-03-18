@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "इन साइटों पर एक्सटेंशन नहीं चलेगा। प्रति पंक्ति एक साइट दर्ज करें।"
     },
+    "Options": {
+        "message": "विकल्प"
+    },
+    "Show_Demo": {
+        "message": "डेमो दिखाओ"
+    },
+    "Report_an_Issue": {
+        "message": "मामले की रिपोर्ट करें"
+    },
     "How_can_we_improve_": {
         "message": "हम कैसे सुधार सकते हैं?"
+    },
+    "How_are_we_doing_": {
+        "message": "हम कैसे हैं?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "खुशी है कि यह आपको पसंद है! क्या आप हमें ❤ साझा करने में मदद कर सकते हैं?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "प्रतिक्रिया के लिए धन्यवाद!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "क्रोम वेब स्टोर पर दर"
+    },
+    "No": {
+        "message": "नहीं"
+    },
+    "Submit_Feedback": {
+        "message": "प्रतिपुष्टि दें"
     },
     "Successfully_updated_settings": {
         "message": "सफलतापूर्वक अद्यतन सेटिंग्स"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Github पर स्टार"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "क्रोम वेब स्टोर पर दर"
-    },
-    "Options": {
-        "message": "विकल्प"
-    },
-    "Show_Demo": {
-        "message": "डेमो दिखाओ"
-    },
-    "Report_an_Issue": {
-        "message": "मामले की रिपोर्ट करें"
-    },
-    "How_are_we_doing_": {
-        "message": "हम कैसे हैं?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "खुशी है कि यह आपको पसंद है! क्या आप हमें ❤ साझा करने में मदद कर सकते हैं?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "प्रतिक्रिया के लिए धन्यवाद!"
-    },
-    "No": {
-        "message": "नहीं"
-    },
-    "Submit_Feedback": {
-        "message": "प्रतिपुष्टि दें"
     }
 }

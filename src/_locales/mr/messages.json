@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "या साइटवर विस्तार चालू होणार नाही. प्रति लाइन एक साइट प्रविष्ट करा."
     },
+    "Options": {
+        "message": "पर्याय"
+    },
+    "Show_Demo": {
+        "message": "डेमो दर्शवा"
+    },
+    "Report_an_Issue": {
+        "message": "एखाद्या समस्येचा अहवाल द्या"
+    },
     "How_can_we_improve_": {
         "message": "आपण कसे सुधारू शकतो?"
+    },
+    "How_are_we_doing_": {
+        "message": "आम्ही कसे करीत आहोत?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "आपल्याला हे आवडले याचा आनंद! आपण आम्हाला सामायिक करण्यात मदत करू शकता ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "आपल्या अभिप्रायाबद्दल धन्यवाद!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome वेब स्टोअर वर रेट"
+    },
+    "No": {
+        "message": "नाही"
+    },
+    "Submit_Feedback": {
+        "message": "अभिप्राय सबमिट करा"
     },
     "Successfully_updated_settings": {
         "message": "यशस्वीरित्या अद्यतनित सेटिंग्ज"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "गीथब वर तारा"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome वेब स्टोअर वर रेट"
-    },
-    "Options": {
-        "message": "पर्याय"
-    },
-    "Show_Demo": {
-        "message": "डेमो दर्शवा"
-    },
-    "Report_an_Issue": {
-        "message": "एखाद्या समस्येचा अहवाल द्या"
-    },
-    "How_are_we_doing_": {
-        "message": "आम्ही कसे करीत आहोत?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "आपल्याला हे आवडले याचा आनंद! आपण आम्हाला सामायिक करण्यात मदत करू शकता ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "आपल्या अभिप्रायाबद्दल धन्यवाद!"
-    },
-    "No": {
-        "message": "नाही"
-    },
-    "Submit_Feedback": {
-        "message": "अभिप्राय सबमिट करा"
     }
 }

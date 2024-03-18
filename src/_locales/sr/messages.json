@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Проширење неће покренути на овим веб локацијама. Унесите једну локацију по линији."
     },
+    "Options": {
+        "message": "Опције"
+    },
+    "Show_Demo": {
+        "message": "Показати демо"
+    },
+    "Report_an_Issue": {
+        "message": "Пријавите проблем"
+    },
     "How_can_we_improve_": {
         "message": "Како се можемо побољшати?"
+    },
+    "How_are_we_doing_": {
+        "message": "Како нам иде?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Драго ми је да ти се свиђа! Можете ли нам помоћи да поделимо ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Хвала за повратне информације!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Оцени на Цхроме Веб Сторе"
+    },
+    "No": {
+        "message": "Не"
+    },
+    "Submit_Feedback": {
+        "message": "Пошаљите повратне информације"
     },
     "Successfully_updated_settings": {
         "message": "Успешно ажурирана подешавања"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Звезда на Гитхуб-у"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Оцени на Цхроме Веб Сторе"
-    },
-    "Options": {
-        "message": "Опције"
-    },
-    "Show_Demo": {
-        "message": "Показати демо"
-    },
-    "Report_an_Issue": {
-        "message": "Пријавите проблем"
-    },
-    "How_are_we_doing_": {
-        "message": "Како нам иде?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Драго ми је да ти се свиђа! Можете ли нам помоћи да поделимо ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Хвала за повратне информације!"
-    },
-    "No": {
-        "message": "Не"
-    },
-    "Submit_Feedback": {
-        "message": "Пошаљите повратне информације"
     }
 }

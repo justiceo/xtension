@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "এই সাইটগুলিতে এক্সটেনশন চলবে না। প্রতি লাইনে একটি সাইট লিখুন।"
     },
+    "Options": {
+        "message": "বিকল্প"
+    },
+    "Show_Demo": {
+        "message": "ডেমো দেখান"
+    },
+    "Report_an_Issue": {
+        "message": "একটি সমস্যা রিপোর্ট"
+    },
     "How_can_we_improve_": {
         "message": "আমরা কিভাবে উন্নত করতে পারি?"
+    },
+    "How_are_we_doing_": {
+        "message": "আমরা কেমন করছি?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "আমি খুশি তুমি এটা পছন্দ করেছো! আপনি কি আমাদের ❤ ভাগ করতে সহায়তা করতে পারেন?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "সাহায্য করার জন্য ধন্যবাদ!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "ক্রোম ওয়েব স্টোরে রেট"
+    },
+    "No": {
+        "message": "না"
+    },
+    "Submit_Feedback": {
+        "message": "প্রতিক্রিয়া জমা দিন"
     },
     "Successfully_updated_settings": {
         "message": "সফলভাবে আপডেট করা সেটিংস"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "গিথুবে তারকা"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "ক্রোম ওয়েব স্টোরে রেট"
-    },
-    "Options": {
-        "message": "বিকল্প"
-    },
-    "Show_Demo": {
-        "message": "ডেমো দেখান"
-    },
-    "Report_an_Issue": {
-        "message": "একটি সমস্যা রিপোর্ট"
-    },
-    "How_are_we_doing_": {
-        "message": "আমরা কেমন করছি?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "আমি খুশি তুমি এটা পছন্দ করেছো! আপনি কি আমাদের ❤ ভাগ করতে সহায়তা করতে পারেন?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "সাহায্য করার জন্য ধন্যবাদ!"
-    },
-    "No": {
-        "message": "না"
-    },
-    "Submit_Feedback": {
-        "message": "প্রতিক্রিয়া জমা দিন"
     }
 }

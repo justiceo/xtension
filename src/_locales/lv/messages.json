@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Paplašinājums šajās vietnēs nedarbosies. Ievadiet vienu vietni vienā rindā."
     },
+    "Options": {
+        "message": "Iespējas"
+    },
+    "Show_Demo": {
+        "message": "Parādīt demonstrāciju"
+    },
+    "Report_an_Issue": {
+        "message": "Ziņot par jautājumu"
+    },
     "How_can_we_improve_": {
         "message": "Kā mēs varam uzlabot?"
+    },
+    "How_are_we_doing_": {
+        "message": "Kā mums klājas?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Prieks ka tev patīk! Vai varat palīdzēt mums dalīties ar ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Paldies par atsauksmēm!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Novērtējiet hroma interneta veikalā"
+    },
+    "No": {
+        "message": "Nē"
+    },
+    "Submit_Feedback": {
+        "message": "Iesniedziet atsauksmes"
     },
     "Successfully_updated_settings": {
         "message": "Veiksmīgi atjauninātie iestatījumi"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Zvaigzne uz github"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Novērtējiet hroma interneta veikalā"
-    },
-    "Options": {
-        "message": "Iespējas"
-    },
-    "Show_Demo": {
-        "message": "Parādīt demonstrāciju"
-    },
-    "Report_an_Issue": {
-        "message": "Ziņot par jautājumu"
-    },
-    "How_are_we_doing_": {
-        "message": "Kā mums klājas?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Prieks ka tev patīk! Vai varat palīdzēt mums dalīties ar ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Paldies par atsauksmēm!"
-    },
-    "No": {
-        "message": "Nē"
-    },
-    "Submit_Feedback": {
-        "message": "Iesniedziet atsauksmes"
     }
 }

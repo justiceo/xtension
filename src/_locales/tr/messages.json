@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Uzatma bu sitelerde çalışmaz. Satır başına bir site girin."
     },
+    "Options": {
+        "message": "Seçenekler"
+    },
+    "Show_Demo": {
+        "message": "Demoyu Göster"
+    },
+    "Report_an_Issue": {
+        "message": "Bir Sorun Bildirin"
+    },
     "How_can_we_improve_": {
         "message": "Nasıl gelişebiliriz?"
+    },
+    "How_are_we_doing_": {
+        "message": "Nasıl yapıyoruz?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Beğendiğine sevindim! ❤ood paylaşmamıza yardım edebilir misiniz?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Geri dönüşünüz için teşekkür ederiz!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome web mağazasında oran"
+    },
+    "No": {
+        "message": "HAYIR"
+    },
+    "Submit_Feedback": {
+        "message": "Geri bildirim gönder"
     },
     "Successfully_updated_settings": {
         "message": "Başarılı bir şekilde güncellenen ayarlar"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Github'da yıldız"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome web mağazasında oran"
-    },
-    "Options": {
-        "message": "Seçenekler"
-    },
-    "Show_Demo": {
-        "message": "Demoyu Göster"
-    },
-    "Report_an_Issue": {
-        "message": "Bir Sorun Bildirin"
-    },
-    "How_are_we_doing_": {
-        "message": "Nasıl yapıyoruz?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Beğendiğine sevindim! ❤ood paylaşmamıza yardım edebilir misiniz?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Geri dönüşünüz için teşekkür ederiz!"
-    },
-    "No": {
-        "message": "HAYIR"
-    },
-    "Submit_Feedback": {
-        "message": "Geri bildirim gönder"
     }
 }

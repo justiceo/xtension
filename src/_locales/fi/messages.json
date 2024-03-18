@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Laajennus ei toimi näillä sivustoilla. Kirjoita yksi sivusto riviä kohti."
     },
+    "Options": {
+        "message": "Vaihtoehdot"
+    },
+    "Show_Demo": {
+        "message": "Näytä esittely"
+    },
+    "Report_an_Issue": {
+        "message": "Ilmoita ongelma"
+    },
     "How_can_we_improve_": {
         "message": "Kuinka voimme parantaa?"
+    },
+    "How_are_we_doing_": {
+        "message": "Kuinka me voimme?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Iloinen, että pidät siitä! Voitko auttaa meitä jakamaan ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Kiitos palautteesta!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Arvio Chrome Web -kaupassa"
+    },
+    "No": {
+        "message": "Ei"
+    },
+    "Submit_Feedback": {
+        "message": "Antaa palautetta"
     },
     "Successfully_updated_settings": {
         "message": "Päivitetyt asetukset onnistuneesti"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Tähti Githubissa"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Arvio Chrome Web -kaupassa"
-    },
-    "Options": {
-        "message": "Vaihtoehdot"
-    },
-    "Show_Demo": {
-        "message": "Näytä esittely"
-    },
-    "Report_an_Issue": {
-        "message": "Ilmoita ongelma"
-    },
-    "How_are_we_doing_": {
-        "message": "Kuinka me voimme?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Iloinen, että pidät siitä! Voitko auttaa meitä jakamaan ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Kiitos palautteesta!"
-    },
-    "No": {
-        "message": "Ei"
-    },
-    "Submit_Feedback": {
-        "message": "Antaa palautetta"
     }
 }

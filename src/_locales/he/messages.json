@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "ההרחבה לא תפעל באתרים אלה. הזן אתר אחד בשורה."
     },
+    "Options": {
+        "message": "אפשרויות"
+    },
+    "Show_Demo": {
+        "message": "להראות הדגמה"
+    },
+    "Report_an_Issue": {
+        "message": "דווח על בעיה"
+    },
     "How_can_we_improve_": {
         "message": "איך אנחנו יכולים להשתפר?"
+    },
+    "How_are_we_doing_": {
+        "message": "מה שלומנו?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "שמח שאתה אוהב את זה! אתה יכול לעזור לנו לשתף את ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "תודה על המשוב!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "דרג בחנות האינטרנט של Chrome"
+    },
+    "No": {
+        "message": "לא"
+    },
+    "Submit_Feedback": {
+        "message": "הגש משוב"
     },
     "Successfully_updated_settings": {
         "message": "הגדרות מעודכנות בהצלחה"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "כוכב ב- GitHub"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "דרג בחנות האינטרנט של Chrome"
-    },
-    "Options": {
-        "message": "אפשרויות"
-    },
-    "Show_Demo": {
-        "message": "להראות הדגמה"
-    },
-    "Report_an_Issue": {
-        "message": "דווח על בעיה"
-    },
-    "How_are_we_doing_": {
-        "message": "מה שלומנו?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "שמח שאתה אוהב את זה! אתה יכול לעזור לנו לשתף את ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "תודה על המשוב!"
-    },
-    "No": {
-        "message": "לא"
-    },
-    "Submit_Feedback": {
-        "message": "הגש משוב"
     }
 }

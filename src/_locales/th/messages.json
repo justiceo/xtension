@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "ส่วนขยายจะไม่ทำงานบนเว็บไซต์เหล่านี้ ป้อนหนึ่งไซต์ต่อบรรทัด"
     },
+    "Options": {
+        "message": "ตัวเลือก"
+    },
+    "Show_Demo": {
+        "message": "แสดงตัวอย่าง"
+    },
+    "Report_an_Issue": {
+        "message": "รายงานปัญหา"
+    },
     "How_can_we_improve_": {
         "message": "เราจะปรับปรุงได้อย่างไร?"
+    },
+    "How_are_we_doing_": {
+        "message": "เราเป็นอย่างไรบ้าง?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "ดีใจที่คุณชอบ! คุณสามารถช่วยเราแบ่งปัน❤ได้หรือไม่?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "ขอบคุณสำหรับความคิดเห็น!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "ให้คะแนนใน Chrome Web Store"
+    },
+    "No": {
+        "message": "เลขที่"
+    },
+    "Submit_Feedback": {
+        "message": "ส่งข้อเสนอแนะ"
     },
     "Successfully_updated_settings": {
         "message": "อัปเดตการตั้งค่าสำเร็จ"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "ดาราบน GitHub"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "ให้คะแนนใน Chrome Web Store"
-    },
-    "Options": {
-        "message": "ตัวเลือก"
-    },
-    "Show_Demo": {
-        "message": "แสดงตัวอย่าง"
-    },
-    "Report_an_Issue": {
-        "message": "รายงานปัญหา"
-    },
-    "How_are_we_doing_": {
-        "message": "เราเป็นอย่างไรบ้าง?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "ดีใจที่คุณชอบ! คุณสามารถช่วยเราแบ่งปัน❤ได้หรือไม่?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "ขอบคุณสำหรับความคิดเห็น!"
-    },
-    "No": {
-        "message": "เลขที่"
-    },
-    "Submit_Feedback": {
-        "message": "ส่งข้อเสนอแนะ"
     }
 }

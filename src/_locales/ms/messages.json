@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Pelanjutan tidak akan berjalan di laman web ini. Masukkan satu tapak setiap baris."
     },
+    "Options": {
+        "message": "Pilihan"
+    },
+    "Show_Demo": {
+        "message": "Tunjukkan demo"
+    },
+    "Report_an_Issue": {
+        "message": "Melaporkan isu"
+    },
     "How_can_we_improve_": {
         "message": "Bagaimana kita dapat memperbaiki?"
+    },
+    "How_are_we_doing_": {
+        "message": "Bagaimana keadaan kita?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Gembira anda menyukainya! Bolehkah anda membantu kami berkongsi ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Terima kasih atas maklum balas!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Nilai di kedai web Chrome"
+    },
+    "No": {
+        "message": "Tidak"
+    },
+    "Submit_Feedback": {
+        "message": "Hantar maklum balas"
     },
     "Successfully_updated_settings": {
         "message": "Tetapan yang berjaya dikemas kini"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Bintang di GitHub"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Nilai di kedai web Chrome"
-    },
-    "Options": {
-        "message": "Pilihan"
-    },
-    "Show_Demo": {
-        "message": "Tunjukkan demo"
-    },
-    "Report_an_Issue": {
-        "message": "Melaporkan isu"
-    },
-    "How_are_we_doing_": {
-        "message": "Bagaimana keadaan kita?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Gembira anda menyukainya! Bolehkah anda membantu kami berkongsi ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Terima kasih atas maklum balas!"
-    },
-    "No": {
-        "message": "Tidak"
-    },
-    "Submit_Feedback": {
-        "message": "Hantar maklum balas"
     }
 }

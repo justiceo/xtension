@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Ugani hautaendesha kwenye tovuti hizi. Ingiza tovuti moja kwa kila mstari."
     },
+    "Options": {
+        "message": "Chaguzi"
+    },
+    "Show_Demo": {
+        "message": "Onyesha demo"
+    },
+    "Report_an_Issue": {
+        "message": "Ripoti suala"
+    },
     "How_can_we_improve_": {
         "message": "Tunawezaje kuboresha?"
+    },
+    "How_are_we_doing_": {
+        "message": "Tunaendeleaje?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Nimefurahi kuipenda! Je! Unaweza kutusaidia kushiriki ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Asante kwa maoni!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Kiwango kwenye Duka la Wavuti la Chrome"
+    },
+    "No": {
+        "message": "Hapana"
+    },
+    "Submit_Feedback": {
+        "message": "Wasilisha maoni"
     },
     "Successfully_updated_settings": {
         "message": "Mipangilio iliyosasishwa kwa mafanikio"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Nyota kwenye GitHub"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Kiwango kwenye Duka la Wavuti la Chrome"
-    },
-    "Options": {
-        "message": "Chaguzi"
-    },
-    "Show_Demo": {
-        "message": "Onyesha demo"
-    },
-    "Report_an_Issue": {
-        "message": "Ripoti suala"
-    },
-    "How_are_we_doing_": {
-        "message": "Tunaendeleaje?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Nimefurahi kuipenda! Je! Unaweza kutusaidia kushiriki ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Asante kwa maoni!"
-    },
-    "No": {
-        "message": "Hapana"
-    },
-    "Submit_Feedback": {
-        "message": "Wasilisha maoni"
     }
 }

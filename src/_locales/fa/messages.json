@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "پسوند در این سایت ها اجرا نمی شود. در هر خط یک سایت را وارد کنید."
     },
+    "Options": {
+        "message": "گزینه ها"
+    },
+    "Show_Demo": {
+        "message": "نمایش نسخه ی نمایشی"
+    },
+    "Report_an_Issue": {
+        "message": "گزارش یک موضوع"
+    },
     "How_can_we_improve_": {
         "message": "چگونه می توانیم پیشرفت کنیم؟"
+    },
+    "How_are_we_doing_": {
+        "message": "حال ما چطور است؟"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "خوشحالم که دوستش داشتی! آیا می توانید به ما در اشتراک گذاری ❤ کمک کنید؟"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "از نظر شما متشکریم!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "در فروشگاه وب Chrome امتیاز دهید"
+    },
+    "No": {
+        "message": "هیچ"
+    },
+    "Submit_Feedback": {
+        "message": "بازخورد ارائه دهید"
     },
     "Successfully_updated_settings": {
         "message": "تنظیمات با موفقیت به روز شده"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "ستاره در Github"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "در فروشگاه وب Chrome امتیاز دهید"
-    },
-    "Options": {
-        "message": "گزینه ها"
-    },
-    "Show_Demo": {
-        "message": "نمایش نسخه ی نمایشی"
-    },
-    "Report_an_Issue": {
-        "message": "گزارش یک موضوع"
-    },
-    "How_are_we_doing_": {
-        "message": "حال ما چطور است؟"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "خوشحالم که دوستش داشتی! آیا می توانید به ما در اشتراک گذاری ❤ کمک کنید؟"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "از نظر شما متشکریم!"
-    },
-    "No": {
-        "message": "هیچ"
-    },
-    "Submit_Feedback": {
-        "message": "بازخورد ارائه دهید"
     }
 }

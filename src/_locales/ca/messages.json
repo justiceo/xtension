@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "L’extensió no s’executarà en aquests llocs. Introduïu un lloc per línia."
     },
+    "Options": {
+        "message": "Les opcions"
+    },
+    "Show_Demo": {
+        "message": "Demostració d'espectacle"
+    },
+    "Report_an_Issue": {
+        "message": "Informeu d’un problema"
+    },
     "How_can_we_improve_": {
         "message": "Com podem millorar?"
+    },
+    "How_are_we_doing_": {
+        "message": "Com estem?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Encantat de que t'agradi! Ens podeu ajudar a compartir el ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Gràcies pels comentaris!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Valoreu a la botiga web Chrome"
+    },
+    "No": {
+        "message": "No"
+    },
+    "Submit_Feedback": {
+        "message": "Envieu comentaris"
     },
     "Successfully_updated_settings": {
         "message": "Configuració actualitzada amb èxit"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Estrella a GitHub"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Valoreu a la botiga web Chrome"
-    },
-    "Options": {
-        "message": "Les opcions"
-    },
-    "Show_Demo": {
-        "message": "Demostració d'espectacle"
-    },
-    "Report_an_Issue": {
-        "message": "Informeu d’un problema"
-    },
-    "How_are_we_doing_": {
-        "message": "Com estem?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Encantat de que t'agradi! Ens podeu ajudar a compartir el ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Gràcies pels comentaris!"
-    },
-    "No": {
-        "message": "No"
-    },
-    "Submit_Feedback": {
-        "message": "Envieu comentaris"
     }
 }

@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "扩展将不会在这些站点上运行。 每行进入一个站点。"
     },
+    "Options": {
+        "message": "选项"
+    },
+    "Show_Demo": {
+        "message": "展示演示"
+    },
+    "Report_an_Issue": {
+        "message": "报告一个问题"
+    },
     "How_can_we_improve_": {
         "message": "我们如何改进？"
+    },
+    "How_are_we_doing_": {
+        "message": "我们好吗？"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "很高兴你喜欢它！ 您能帮我们分享❤️吗？"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "感谢您的反馈！"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome网上商店的利率"
+    },
+    "No": {
+        "message": "不"
+    },
+    "Submit_Feedback": {
+        "message": "提交反馈"
     },
     "Successfully_updated_settings": {
         "message": "成功更新了设置"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "明星在github上"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome网上商店的利率"
-    },
-    "Options": {
-        "message": "选项"
-    },
-    "Show_Demo": {
-        "message": "展示演示"
-    },
-    "Report_an_Issue": {
-        "message": "报告一个问题"
-    },
-    "How_are_we_doing_": {
-        "message": "我们好吗？"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "很高兴你喜欢它！ 您能帮我们分享❤️吗？"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "感谢您的反馈！"
-    },
-    "No": {
-        "message": "不"
-    },
-    "Submit_Feedback": {
-        "message": "提交反馈"
     }
 }

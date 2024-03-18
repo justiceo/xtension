@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "આ સાઇટ્સ પર એક્સ્ટેંશન ચાલશે નહીં. લાઇન દીઠ એક સાઇટ દાખલ કરો."
     },
+    "Options": {
+        "message": "વિકલ્પ"
+    },
+    "Show_Demo": {
+        "message": "ડેમો બતાવો"
+    },
+    "Report_an_Issue": {
+        "message": "એક મુદ્દો જાણ કરો"
+    },
     "How_can_we_improve_": {
         "message": "આપણે કેવી રીતે સુધારી શકીએ?"
+    },
+    "How_are_we_doing_": {
+        "message": "આપણે કેવી રીતે કરી રહ્યા છીએ?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "તમને ગમ્યું એના થી હું પ્રસન્ન છું! તમે અમને શેર કરવામાં મદદ કરી શકો છો?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "પ્રતિસાદ માટે આભાર!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "ક્રોમ વેબ સ્ટોર પર દર"
+    },
+    "No": {
+        "message": "કોઈ"
+    },
+    "Submit_Feedback": {
+        "message": "પ્રતિસાદ સબમિટ કરો"
     },
     "Successfully_updated_settings": {
         "message": "સફળતાપૂર્વક અપડેટ સેટિંગ્સ"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "ગિટહબ પર સ્ટાર"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "ક્રોમ વેબ સ્ટોર પર દર"
-    },
-    "Options": {
-        "message": "વિકલ્પ"
-    },
-    "Show_Demo": {
-        "message": "ડેમો બતાવો"
-    },
-    "Report_an_Issue": {
-        "message": "એક મુદ્દો જાણ કરો"
-    },
-    "How_are_we_doing_": {
-        "message": "આપણે કેવી રીતે કરી રહ્યા છીએ?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "તમને ગમ્યું એના થી હું પ્રસન્ન છું! તમે અમને શેર કરવામાં મદદ કરી શકો છો?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "પ્રતિસાદ માટે આભાર!"
-    },
-    "No": {
-        "message": "કોઈ"
-    },
-    "Submit_Feedback": {
-        "message": "પ્રતિસાદ સબમિટ કરો"
     }
 }

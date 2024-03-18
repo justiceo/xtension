@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "L'estensione non verrà eseguita su questi siti. Immettere un sito per riga."
     },
+    "Options": {
+        "message": "Opzioni"
+    },
+    "Show_Demo": {
+        "message": "Mostra demo"
+    },
+    "Report_an_Issue": {
+        "message": "Segnala un problema"
+    },
     "How_can_we_improve_": {
         "message": "Come possiamo migliorare?"
+    },
+    "How_are_we_doing_": {
+        "message": "Come stiamo andando?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Contento che ti piaccia! Puoi aiutarci a condividere il ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Grazie per il feedback!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Valuta su Chrome Web Store"
+    },
+    "No": {
+        "message": "NO"
+    },
+    "Submit_Feedback": {
+        "message": "Invia un feedback"
     },
     "Successfully_updated_settings": {
         "message": "Impostazioni aggiornate correttamente"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Star su Github"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Valuta su Chrome Web Store"
-    },
-    "Options": {
-        "message": "Opzioni"
-    },
-    "Show_Demo": {
-        "message": "Mostra demo"
-    },
-    "Report_an_Issue": {
-        "message": "Segnala un problema"
-    },
-    "How_are_we_doing_": {
-        "message": "Come stiamo andando?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Contento che ti piaccia! Puoi aiutarci a condividere il ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Grazie per il feedback!"
-    },
-    "No": {
-        "message": "NO"
-    },
-    "Submit_Feedback": {
-        "message": "Invia un feedback"
     }
 }

@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Prodloužení nebude na těchto stránkách spuštěno. Zadejte jeden web na řádek."
     },
+    "Options": {
+        "message": "Možnosti"
+    },
+    "Show_Demo": {
+        "message": "Zobrazit demo"
+    },
+    "Report_an_Issue": {
+        "message": "Nahlásit problém"
+    },
     "How_can_we_improve_": {
         "message": "Jak se můžeme zlepšit?"
+    },
+    "How_are_we_doing_": {
+        "message": "Jak se máme?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Jsem rád že se ti líbí! Můžete nám pomoci sdílet ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Děkuji za zpětnou vazbu!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Ohodnoťte se na webovém obchodě Chrome"
+    },
+    "No": {
+        "message": "Ne"
+    },
+    "Submit_Feedback": {
+        "message": "Odeslat zpětnou vazbu"
     },
     "Successfully_updated_settings": {
         "message": "Úspěšně aktualizovaná nastavení"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Hvězda na GitHubu"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Ohodnoťte se na webovém obchodě Chrome"
-    },
-    "Options": {
-        "message": "Možnosti"
-    },
-    "Show_Demo": {
-        "message": "Zobrazit demo"
-    },
-    "Report_an_Issue": {
-        "message": "Nahlásit problém"
-    },
-    "How_are_we_doing_": {
-        "message": "Jak se máme?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Jsem rád že se ti líbí! Můžete nám pomoci sdílet ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Děkuji za zpětnou vazbu!"
-    },
-    "No": {
-        "message": "Ne"
-    },
-    "Submit_Feedback": {
-        "message": "Odeslat zpětnou vazbu"
     }
 }

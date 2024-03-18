@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Pratęsimas šiose svetainėse nebus vykdomas. Įveskite vieną svetainę vienoje eilutėje."
     },
+    "Options": {
+        "message": "Galimybės"
+    },
+    "Show_Demo": {
+        "message": "Parodykite demonstracinę versiją"
+    },
+    "Report_an_Issue": {
+        "message": "Pranešti apie problemą"
+    },
     "How_can_we_improve_": {
         "message": "Kaip mes galime tobulėti?"
+    },
+    "How_are_we_doing_": {
+        "message": "Kaip mums sekasi?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Džiugu, kad tau tai patiko! Ar galite padėti mums pasidalyti ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Ačiū už nuomonę!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Įvertinimas „Chrome“ internetinėje parduotuvėje"
+    },
+    "No": {
+        "message": "Ne"
+    },
+    "Submit_Feedback": {
+        "message": "Pateikite atsiliepimą"
     },
     "Successfully_updated_settings": {
         "message": "Sėkmingai atnaujinti nustatymai"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Žvaigždė „Github“"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Įvertinimas „Chrome“ internetinėje parduotuvėje"
-    },
-    "Options": {
-        "message": "Galimybės"
-    },
-    "Show_Demo": {
-        "message": "Parodykite demonstracinę versiją"
-    },
-    "Report_an_Issue": {
-        "message": "Pranešti apie problemą"
-    },
-    "How_are_we_doing_": {
-        "message": "Kaip mums sekasi?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Džiugu, kad tau tai patiko! Ar galite padėti mums pasidalyti ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Ačiū už nuomonę!"
-    },
-    "No": {
-        "message": "Ne"
-    },
-    "Submit_Feedback": {
-        "message": "Pateikite atsiliepimą"
     }
 }

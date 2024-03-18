@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "ఈ సైట్లలో పొడిగింపు అమలు చేయదు. ప్రతి పంక్తికి ఒక సైట్‌ను నమోదు చేయండి."
     },
+    "Options": {
+        "message": "ఎంపికలు"
+    },
+    "Show_Demo": {
+        "message": "డెమో షో"
+    },
+    "Report_an_Issue": {
+        "message": "ఒక సమస్యను నివేదించండి"
+    },
     "How_can_we_improve_": {
         "message": "మేము ఎలా మెరుగుపరచగలం?"
+    },
+    "How_are_we_doing_": {
+        "message": "మేము ఎలా చేస్తున్నాము?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "నీకు నచ్చినందుకు సంతోషం! మీరు ❤ భాగస్వామ్యం చేయడానికి మాకు సహాయం చేయగలరా?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "అభిప్రాయము తెలిపినందుకు ధన్యవాదములు!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome వెబ్ స్టోర్‌లో రేటు"
+    },
+    "No": {
+        "message": "లేదు"
+    },
+    "Submit_Feedback": {
+        "message": "అభిప్రాయాన్ని సమర్పించండి"
     },
     "Successfully_updated_settings": {
         "message": "విజయవంతంగా నవీకరించబడిన సెట్టింగులు"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "గితుబ్‌లో స్టార్"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome వెబ్ స్టోర్‌లో రేటు"
-    },
-    "Options": {
-        "message": "ఎంపికలు"
-    },
-    "Show_Demo": {
-        "message": "డెమో షో"
-    },
-    "Report_an_Issue": {
-        "message": "ఒక సమస్యను నివేదించండి"
-    },
-    "How_are_we_doing_": {
-        "message": "మేము ఎలా చేస్తున్నాము?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "నీకు నచ్చినందుకు సంతోషం! మీరు ❤ భాగస్వామ్యం చేయడానికి మాకు సహాయం చేయగలరా?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "అభిప్రాయము తెలిపినందుకు ధన్యవాదములు!"
-    },
-    "No": {
-        "message": "లేదు"
-    },
-    "Submit_Feedback": {
-        "message": "అభిప్రాయాన్ని సమర్పించండి"
     }
 }

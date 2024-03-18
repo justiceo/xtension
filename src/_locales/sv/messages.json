@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Förlängningen körs inte på dessa webbplatser. Ange en webbplats per rad."
     },
+    "Options": {
+        "message": "alternativ"
+    },
+    "Show_Demo": {
+        "message": "Visa demo"
+    },
+    "Report_an_Issue": {
+        "message": "Rapportera ett problem"
+    },
     "How_can_we_improve_": {
         "message": "Hur kan vi förbättra?"
+    },
+    "How_are_we_doing_": {
+        "message": "Hur går det för oss?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Glad att du gillar det! Kan du hjälpa oss att dela ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Tack för feedbacken!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Betyg på Chrome Web Store"
+    },
+    "No": {
+        "message": "Nej"
+    },
+    "Submit_Feedback": {
+        "message": "Skicka feedback"
     },
     "Successfully_updated_settings": {
         "message": "Framgångsrikt uppdaterade inställningar"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Stjärna på github"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Betyg på Chrome Web Store"
-    },
-    "Options": {
-        "message": "alternativ"
-    },
-    "Show_Demo": {
-        "message": "Visa demo"
-    },
-    "Report_an_Issue": {
-        "message": "Rapportera ett problem"
-    },
-    "How_are_we_doing_": {
-        "message": "Hur går det för oss?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Glad att du gillar det! Kan du hjälpa oss att dela ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Tack för feedbacken!"
-    },
-    "No": {
-        "message": "Nej"
-    },
-    "Submit_Feedback": {
-        "message": "Skicka feedback"
     }
 }

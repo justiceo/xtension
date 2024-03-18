@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Pikendus nendel saitidel ei tööta. Sisestage üks sait rea kohta."
     },
+    "Options": {
+        "message": "Valikud"
+    },
+    "Show_Demo": {
+        "message": "Näita demo"
+    },
+    "Report_an_Issue": {
+        "message": "Väljaandmist teatama"
+    },
     "How_can_we_improve_": {
         "message": "Kuidas saaksime parandada?"
+    },
+    "How_are_we_doing_": {
+        "message": "Kuidas meil läheb?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Tore, et see teile meeldib! Kas saate aidata meil ❤️ jagada?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Aitäh tagasiside eest!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Kiirus Chrome'i veebipoes"
+    },
+    "No": {
+        "message": "Mitte"
+    },
+    "Submit_Feedback": {
+        "message": "Tagasisidet esitama"
     },
     "Successfully_updated_settings": {
         "message": "Edukalt värskendatud sätted"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Täht GitHubis"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Kiirus Chrome'i veebipoes"
-    },
-    "Options": {
-        "message": "Valikud"
-    },
-    "Show_Demo": {
-        "message": "Näita demo"
-    },
-    "Report_an_Issue": {
-        "message": "Väljaandmist teatama"
-    },
-    "How_are_we_doing_": {
-        "message": "Kuidas meil läheb?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Tore, et see teile meeldib! Kas saate aidata meil ❤️ jagada?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Aitäh tagasiside eest!"
-    },
-    "No": {
-        "message": "Mitte"
-    },
-    "Submit_Feedback": {
-        "message": "Tagasisidet esitama"
     }
 }

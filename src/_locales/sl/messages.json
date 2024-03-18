@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Na teh spletnih mestih se ne bo izvajalo razširitev. Vnesite eno spletno mesto na vrstico."
     },
+    "Options": {
+        "message": "Opcije"
+    },
+    "Show_Demo": {
+        "message": "Pokaži demo"
+    },
+    "Report_an_Issue": {
+        "message": "Poroča o težavi"
+    },
     "How_can_we_improve_": {
         "message": "Kako se lahko izboljšamo?"
+    },
+    "How_are_we_doing_": {
+        "message": "Kako smo?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Vesela sem, da ti je všeč! Ali nam lahko pomagate deliti ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Hvala za povratne informacije!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Ocenite v spletni trgovini Chrome"
+    },
+    "No": {
+        "message": "Ne"
+    },
+    "Submit_Feedback": {
+        "message": "Predložite povratne informacije"
     },
     "Successfully_updated_settings": {
         "message": "Uspešno posodobljene nastavitve"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Zvezda na githubu"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Ocenite v spletni trgovini Chrome"
-    },
-    "Options": {
-        "message": "Opcije"
-    },
-    "Show_Demo": {
-        "message": "Pokaži demo"
-    },
-    "Report_an_Issue": {
-        "message": "Poroča o težavi"
-    },
-    "How_are_we_doing_": {
-        "message": "Kako smo?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Vesela sem, da ti je všeč! Ali nam lahko pomagate deliti ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Hvala za povratne informacije!"
-    },
-    "No": {
-        "message": "Ne"
-    },
-    "Submit_Feedback": {
-        "message": "Predložite povratne informacije"
     }
 }

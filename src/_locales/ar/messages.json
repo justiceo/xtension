@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "التمديد لن يعمل على هذه المواقع. أدخل موقع واحد لكل سطر."
     },
+    "Options": {
+        "message": "خيارات"
+    },
+    "Show_Demo": {
+        "message": "عرض العرض التوضيحي"
+    },
+    "Report_an_Issue": {
+        "message": "بلغ عن خطأ"
+    },
     "How_can_we_improve_": {
         "message": "كيف يمكن أن نتحسن؟"
+    },
+    "How_are_we_doing_": {
+        "message": "كيف نفعل؟"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "سعيد انه اعجبك! هل يمكنك مساعدتنا في مشاركة ❤؟"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "شكرا على ملاحظاتك!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "معدل على متجر Chrome على الويب"
+    },
+    "No": {
+        "message": "لا"
+    },
+    "Submit_Feedback": {
+        "message": "إرسال ردود الفعل"
     },
     "Successfully_updated_settings": {
         "message": "الإعدادات التي تم تحديثها بنجاح"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "نجمة على جيثب"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "معدل على متجر Chrome على الويب"
-    },
-    "Options": {
-        "message": "خيارات"
-    },
-    "Show_Demo": {
-        "message": "عرض العرض التوضيحي"
-    },
-    "Report_an_Issue": {
-        "message": "بلغ عن خطأ"
-    },
-    "How_are_we_doing_": {
-        "message": "كيف نفعل؟"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "سعيد انه اعجبك! هل يمكنك مساعدتنا في مشاركة ❤؟"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "شكرا على ملاحظاتك!"
-    },
-    "No": {
-        "message": "لا"
-    },
-    "Submit_Feedback": {
-        "message": "إرسال ردود الفعل"
     }
 }

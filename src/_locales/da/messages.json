@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Udvidelse kører ikke på disse websteder. Indtast et sted pr. Linje."
     },
+    "Options": {
+        "message": "Muligheder"
+    },
+    "Show_Demo": {
+        "message": "Vis demo"
+    },
+    "Report_an_Issue": {
+        "message": "Rapporter et problem"
+    },
     "How_can_we_improve_": {
         "message": "Hvordan kan vi forbedre os?"
+    },
+    "How_are_we_doing_": {
+        "message": "Hvordan har vi det?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Glad for at du kunne lide det! Kan du hjælpe os med at dele ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Tak for tilbagemeldingen!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Bedøm i Chrome Web Store"
+    },
+    "No": {
+        "message": "Ingen"
+    },
+    "Submit_Feedback": {
+        "message": "Send feedback"
     },
     "Successfully_updated_settings": {
         "message": "Med succes opdaterede indstillinger"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Star på GitHub"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Bedøm i Chrome Web Store"
-    },
-    "Options": {
-        "message": "Muligheder"
-    },
-    "Show_Demo": {
-        "message": "Vis demo"
-    },
-    "Report_an_Issue": {
-        "message": "Rapporter et problem"
-    },
-    "How_are_we_doing_": {
-        "message": "Hvordan har vi det?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Glad for at du kunne lide det! Kan du hjælpe os med at dele ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Tak for tilbagemeldingen!"
-    },
-    "No": {
-        "message": "Ingen"
-    },
-    "Submit_Feedback": {
-        "message": "Send feedback"
     }
 }

@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Разширението няма да работи на тези сайтове. Въведете един сайт на ред."
     },
+    "Options": {
+        "message": "Настроики"
+    },
+    "Show_Demo": {
+        "message": "Покажи демонстрация"
+    },
+    "Report_an_Issue": {
+        "message": "Докладвайте проблем"
+    },
     "How_can_we_improve_": {
         "message": "Как можем да се подобрим?"
+    },
+    "How_are_we_doing_": {
+        "message": "Как сме?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Радвам се, че ти харесва! Можете ли да ни помогнете да споделим ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Благодаря за обратната връзка!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Оценка на уеб магазина на Chrome"
+    },
+    "No": {
+        "message": "Не"
+    },
+    "Submit_Feedback": {
+        "message": "Изпратете обратна връзка"
     },
     "Successfully_updated_settings": {
         "message": "Успешно актуализирани настройки"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Звезда на GitHub"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Оценка на уеб магазина на Chrome"
-    },
-    "Options": {
-        "message": "Настроики"
-    },
-    "Show_Demo": {
-        "message": "Покажи демонстрация"
-    },
-    "Report_an_Issue": {
-        "message": "Докладвайте проблем"
-    },
-    "How_are_we_doing_": {
-        "message": "Как сме?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Радвам се, че ти харесва! Можете ли да ни помогнете да споделим ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Благодаря за обратната връзка!"
-    },
-    "No": {
-        "message": "Не"
-    },
-    "Submit_Feedback": {
-        "message": "Изпратете обратна връзка"
     }
 }

@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Extensia nu va rula pe aceste site -uri. Introduceți un site pe linie."
     },
+    "Options": {
+        "message": "Opțiuni"
+    },
+    "Show_Demo": {
+        "message": "Arată demo"
+    },
+    "Report_an_Issue": {
+        "message": "Raportează o problemă"
+    },
     "How_can_we_improve_": {
         "message": "Cum ne putem îmbunătăți?"
+    },
+    "How_are_we_doing_": {
+        "message": "Ce mai facem?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Bucur că vă place! Ne puteți ajuta să împărtășim ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Multumesc pentru feedback!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Evaluați pe magazinul web Chrome"
+    },
+    "No": {
+        "message": "Nu"
+    },
+    "Submit_Feedback": {
+        "message": "Trimite parerea ta"
     },
     "Successfully_updated_settings": {
         "message": "Setări actualizate cu succes"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Steaua pe Github"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Evaluați pe magazinul web Chrome"
-    },
-    "Options": {
-        "message": "Opțiuni"
-    },
-    "Show_Demo": {
-        "message": "Arată demo"
-    },
-    "Report_an_Issue": {
-        "message": "Raportează o problemă"
-    },
-    "How_are_we_doing_": {
-        "message": "Ce mai facem?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Bucur că vă place! Ne puteți ajuta să împărtășim ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Multumesc pentru feedback!"
-    },
-    "No": {
-        "message": "Nu"
-    },
-    "Submit_Feedback": {
-        "message": "Trimite parerea ta"
     }
 }

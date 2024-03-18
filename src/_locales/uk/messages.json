@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Розширення не буде працювати на цих сайтах. Введіть один сайт на рядок."
     },
+    "Options": {
+        "message": "Варіанти"
+    },
+    "Show_Demo": {
+        "message": "Показати демонстрацію"
+    },
+    "Report_an_Issue": {
+        "message": "Повідомте про питання"
+    },
     "How_can_we_improve_": {
         "message": "Як ми можемо вдосконалитись?"
+    },
+    "How_are_we_doing_": {
+        "message": "Як у нас справи?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Радий, що тобі подобається! Чи можете ви допомогти нам поділитися ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Дякую за відгук!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Швидкість у веб -магазині Chrome"
+    },
+    "No": {
+        "message": "Немає"
+    },
+    "Submit_Feedback": {
+        "message": "Надіслати відгук"
     },
     "Successfully_updated_settings": {
         "message": "Успішно оновлені налаштування"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Зірка на Github"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Швидкість у веб -магазині Chrome"
-    },
-    "Options": {
-        "message": "Варіанти"
-    },
-    "Show_Demo": {
-        "message": "Показати демонстрацію"
-    },
-    "Report_an_Issue": {
-        "message": "Повідомте про питання"
-    },
-    "How_are_we_doing_": {
-        "message": "Як у нас справи?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Радий, що тобі подобається! Чи можете ви допомогти нам поділитися ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Дякую за відгук!"
-    },
-    "No": {
-        "message": "Немає"
-    },
-    "Submit_Feedback": {
-        "message": "Надіслати відгук"
     }
 }

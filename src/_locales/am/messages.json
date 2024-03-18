@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "ቅጥያ በእነዚህ ጣቢያዎች ላይ አይሰራም. በአንድ መስመር አንድ ጣቢያ ያስገቡ."
     },
+    "Options": {
+        "message": "አማራጮች"
+    },
+    "Show_Demo": {
+        "message": "ማሳያ ማሳያ"
+    },
+    "Report_an_Issue": {
+        "message": "አንድ ጉዳይ ሪፖርት ያድርጉ"
+    },
     "How_can_we_improve_": {
         "message": "እንዴት ማሻሻል እንችላለን?"
+    },
+    "How_are_we_doing_": {
+        "message": "እንዴት እየሰራን ነው?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "ደስ እንደሰኛቸው ደስ ብሎኛል! ❤️ እንድንካፈል ሊረዱን ይችላሉ?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "ስለ ግብረመልሱ አመሰግናለሁ!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "በ Chrome ድር ማከማቻ ላይ ተመን"
+    },
+    "No": {
+        "message": "አይ"
+    },
+    "Submit_Feedback": {
+        "message": "ግብረ መልስ ያስገቡ"
     },
     "Successfully_updated_settings": {
         "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "በ Github ላይ ኮከብ"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "በ Chrome ድር ማከማቻ ላይ ተመን"
-    },
-    "Options": {
-        "message": "አማራጮች"
-    },
-    "Show_Demo": {
-        "message": "ማሳያ ማሳያ"
-    },
-    "Report_an_Issue": {
-        "message": "አንድ ጉዳይ ሪፖርት ያድርጉ"
-    },
-    "How_are_we_doing_": {
-        "message": "እንዴት እየሰራን ነው?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "ደስ እንደሰኛቸው ደስ ብሎኛል! ❤️ እንድንካፈል ሊረዱን ይችላሉ?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "ስለ ግብረመልሱ አመሰግናለሁ!"
-    },
-    "No": {
-        "message": "አይ"
-    },
-    "Submit_Feedback": {
-        "message": "ግብረ መልስ ያስገቡ"
     }
 }

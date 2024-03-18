@@ -32,8 +32,35 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "これらのサイトでは拡張機能が実行されません。 1行ごとに1つのサイトを入力します。"
     },
+    "Options": {
+        "message": "オプション"
+    },
+    "Show_Demo": {
+        "message": "デモを表示します"
+    },
+    "Report_an_Issue": {
+        "message": "問題を報告する"
+    },
     "How_can_we_improve_": {
         "message": "どうすれば改善できますか？"
+    },
+    "How_are_we_doing_": {
+        "message": "私たちはどのようにやっています？"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "気に入ってくれてうれしいです！ ❤️を共有するのを手伝ってもらえますか？"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "フィードバックをお寄せいただきありがとうございます！"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome Webストアのレート"
+    },
+    "No": {
+        "message": "いいえ"
+    },
+    "Submit_Feedback": {
+        "message": "フィードバックを送信"
     },
     "Successfully_updated_settings": {
         "message": "正常に更新された設定"
@@ -85,32 +112,5 @@
     },
     "Star_on_GitHub": {
         "message": "Githubのスター"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome Webストアのレート"
-    },
-    "Options": {
-        "message": "オプション"
-    },
-    "Show_Demo": {
-        "message": "デモを表示します"
-    },
-    "Report_an_Issue": {
-        "message": "問題を報告する"
-    },
-    "How_are_we_doing_": {
-        "message": "私たちはどのようにやっています？"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "気に入ってくれてうれしいです！ ❤️を共有するのを手伝ってもらえますか？"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "フィードバックをお寄せいただきありがとうございます！"
-    },
-    "No": {
-        "message": "いいえ"
-    },
-    "Submit_Feedback": {
-        "message": "フィードバックを送信"
     }
 }

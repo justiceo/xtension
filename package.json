@@ -44,7 +44,8 @@
     "jimp": "^0.22.10",
     "jsdom": "^24.0.0",
     "prettier": "3.0.3",
-    "puppeteer": "19.4.0"
+    "puppeteer": "^23.5.3",
+    "typescript": "^5.7.2"
   },
   "dependencies": {
     "@sentry/browser": "^7.73.0",

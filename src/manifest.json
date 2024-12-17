@@ -36,6 +36,9 @@
     "48": "assets/logo-48x48.png",
     "128": "assets/logo-128x128.png"
   },
+  "side_panel": {
+    "default_path": "sidepanel/side-panel.html"
+  },
   "options_page": "options-page/options.html",
   "background": {
     "__chrome__service_worker": "background-script/service-worker.js",
@@ -52,5 +55,23 @@
       "resources": ["assets/logo-24x24.png"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "__entryPoints": [
+    "src/background-script/service-worker.ts",
+    "src/content-script/content-script.ts",
+    "src/options-page/options.ts",
+    "src/popup/popup.ts",
+    "src/welcome/welcome.ts",
+    "src/utils/settings/settings.ts",
+    "src/side-panel/side-panel.ts",
+    "src/utils/winbox/winbox.js"
+  ],
+  "__assets": {
+    "src/assets/": "assets",
+    "src/_locales": "_locales",
+    "src/popup/popup.html": "popup/popup.html",
+    "src/options-page/options.html": "options-page/options.html",
+    "src/welcome": "welcome",
+    "src/side-panel/side-panel.html": "sidepanel/side-panel.html"
+  }
 }

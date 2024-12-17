@@ -1,25 +1,32 @@
-const fs = require("fs");
-const { exec } = require("child_process");
-const esbuild = require("esbuild");
-const Jimp = require("jimp");
-const Jasmine = require("jasmine");
-const puppeteer = require("puppeteer");
-const config = require("./config.json");
+import fs from "fs";
+import path from "path";
+import { exec } from "child_process";
+import esbuild from "esbuild";
+import Jasmine from "jasmine";
+import puppeteer from "puppeteer";
+import { parse } from "./parse.js";
+import manifest from "../src/manifest.json" assert { type: "json" };
+import { Translator } from "./translator.js";
+import { ImageResizer } from "./image-resizer.js";
+import { ManifestValidator } from "./manifest-validator.js";
+import { ChromeExtensionDownloader } from "./downloader.js";
+import { BrowserCompatibilityAnalyzer } from "./compat-checker.js";
+import { StorePublisher } from "./publisher.js";
 
 class Build {
   outputBase = "build";
   browser = "chrome";
   isProd = false;
   outDir = "build/chrome-dev";
-  maybeTask = "";
+  srcDir = "src";
   args;
 
-  testSpecs = ["spec/e2e-spec.ts"];
-  compiledTestSpecs = ["spec/e2e-spec.js"];
-  originalIconPath = "src/assets/logo.png";
+  testSpecs = ["spec/e2e-spec.ts", "spec/i18n-spec.ts"];
+  compiledTestSpecs = ["spec/e2e-spec.js", "spec/i18n-spec.js"];
+  originalIconPath = "src/assets/images/logo.png";
 
   constructor() {
-    const args = this.parse(process.argv);
+    const args = parse(process.argv);
     this.args = args;
 
     if (args.output_base) {
@@ -35,16 +42,15 @@ class Build {
       this.browser = args.browser.toLowerCase();
     }
 
+    // Set the source directory
+    this.srcDir = args.src ?? this.srcDir;
+
     // Set the output directory
     this.outDir = `${this.outputBase}/${this.browser}-${
       this.isProd ? "prod" : "dev"
     }/`;
 
-    switch (this.maybeTask) {
-      // Additional options: --src, --icons, --screenshot, --marquee, --tile
-      case "image":
-        this.generateIcons();
-        break;
+    switch (args.task) {
       case "start":
         this.launchBrowser();
         break;
@@ -57,52 +63,28 @@ class Build {
       case "build":
         this.packageExtension().then((out) => console.log(out));
         break;
+      case "standalone":
+        this.copyToStandalone();
+        break;
+      case "translate":
+        new Translator(this.srcDir).generateTranslations();
+        break;
+      case "resize":
+        // Args read: --icon, --screenshot, --tile, --marquee
+        new ImageResizer().resizeImages(args);
+        break;
+      case "download":
+        new ChromeExtensionDownloader().download(args.url, args.dest);
+        break;
+      case "compat":
+        new BrowserCompatibilityAnalyzer(args.src ?? this.outDir).analyze();
+        break;
+      case "publish":
+        new StorePublisher().publishItemPublic("random_id");
+        break;
       default:
-        console.error("Unknown task", this.maybeTask);
+        console.error("Unknown task", args.task);
     }
-  }
-
-  /* Straight-forward node.js arguments parser.
-   * From https://github.com/eveningkid/args-parser/blob/master/parse.js
-   */
-  parse(argv) {
-    const ARGUMENT_SEPARATION_REGEX = /([^=\s]+)=?\s*(.*)/;
-
-    // Removing node/bin and called script name
-    argv = argv.slice(2);
-
-    const parsedArgs = {};
-    let argName, argValue;
-
-    if (argv.length > 0) {
-      this.maybeTask = argv[0];
-    }
-
-    argv.forEach(function (arg) {
-      // Separate argument for a key/value return
-      arg = arg.match(ARGUMENT_SEPARATION_REGEX);
-      arg.splice(0, 1);
-
-      // Retrieve the argument name
-      argName = arg[0];
-
-      // Remove "--" or "-"
-      if (argName.indexOf("-") === 0) {
-        argName = argName.slice(argName.slice(0, 2).lastIndexOf("-") + 1);
-      }
-
-      // Parse argument value or set it to `true` if empty
-      argValue =
-        arg[1] !== ""
-          ? parseFloat(arg[1]).toString() === arg[1]
-            ? +arg[1]
-            : arg[1]
-          : true;
-
-      parsedArgs[argName] = argValue;
-    });
-
-    return parsedArgs;
   }
 
   // Clean output directory
@@ -127,15 +109,7 @@ class Build {
   bundleScripts() {
     return esbuild
       .build({
-        entryPoints: [
-          "src/background-script/service-worker.ts",
-          "src/content-script/content-script.ts",
-          "src/options-page/options.ts",
-          "src/popup/popup.ts",
-          "src/welcome/welcome.ts",
-          "src/utils/settings/settings.css",
-          ...config["additionalEntryPoints"],
-        ],
+        entryPoints: manifest.__entryPoints,
         bundle: true,
         minify: this.isProd,
         sourcemap: !this.isProd,
@@ -199,6 +173,23 @@ class Build {
   // NB: This function would fail if outDir doesn't exist yet.
   // For browser manifest.json compatibility see https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Browser_compatibility_for_manifest.json
   generateManifest() {
+    const removeBrowserPrefixesForManifest = (obj) => {
+      const cleanedObj = {};
+      for (let [key, value] of Object.entries(obj)) {
+        // Recursively apply this check on values.
+        if (typeof value === "object" && !Array.isArray(value)) {
+          value = removeBrowserPrefixesForManifest(value);
+        }
+
+        if (!key.startsWith("__")) {
+          cleanedObj[key] = value;
+        } else if (key.startsWith(`__${this.browser}__`)) {
+          cleanedObj[key.replace(`__${this.browser}__`, "")] = value;
+        }
+      }
+      return cleanedObj;
+    };
+
     return new Promise((resolve, reject) => {
       let rawdata = fs.readFileSync("src/manifest.json");
       let manifest = JSON.parse(rawdata);
@@ -207,99 +198,59 @@ class Build {
         manifest.name = "[DEV] " + manifest.name;
       }
 
-      const browserManifest = this.removeBrowserPrefixesForManifest(manifest);
+      const browserManifest = removeBrowserPrefixesForManifest(manifest);
 
       const formattedJson = JSON.stringify(browserManifest, null, 4);
-      fs.writeFile(this.outDir + "manifest.json", formattedJson, (err) => {
+
+      fs.mkdir(this.outDir, { recursive: true }, (err) => {
         if (err) {
-          reject();
-        } else {
-          resolve();
+          reject(err); // Reject if directory creation fails
+          return;
         }
+
+        fs.writeFile(
+          path.join(this.outDir, "manifest.json"),
+          formattedJson,
+          (err) => {
+            if (err) {
+              reject(err);
+            } else {
+              resolve();
+            }
+          }
+        );
       });
     });
   }
 
-  removeBrowserPrefixesForManifest(obj) {
-    const cleanedObj = {};
-    for (let [key, value] of Object.entries(obj)) {
-      // Recursively apply this check on values.
-      if (typeof value === "object" && !Array.isArray(value)) {
-        value = this.removeBrowserPrefixesForManifest(value);
-      }
+  // Generate standalone library.
+  async copyToStandalone() {
+    await this.buildExtension();
 
-      if (!key.startsWith("__")) {
-        cleanedObj[key] = value;
-      } else if (key.startsWith(`__${this.browser}__`)) {
-        cleanedObj[key.replace(`__${this.browser}__`, "")] = value;
-      }
-    }
-    return cleanedObj;
-  }
+    let fileMap = {};
+    fileMap[this.outDir + "/assets"] = "standalone/assets";
+    fileMap[this.outDir + "/_locales"] = "standalone/_locales";
+    fileMap[this.outDir + "/content-script"] = "standalone/content-script";
 
-  // Generate icons
-  generateIcons() {
-    let src = this.originalIconPath;
-    if (this.args.src) {
-      src = this.args.src;
-    }
-
-    return new Promise((resolve, reject) => {
-      Jimp.read(src, (err, icon) => {
-        if (err || !icon) {
-          reject("Error reading icon: " + err);
-        }
-
-        // Generate logos of different sizes and use-cases.
-        if (this.args.icons) {
-          [16, 24, 32, 48, 128].forEach((size) => {
-            const resized = icon.clone().resize(size, size);
-            resized.write(`src/assets/logo-${size}x${size}.png`);
-            resized
-              .greyscale()
-              .write(`src/assets/logo-gray-${size}x${size}.png`);
-            ``;
-            // TODO: Add paused overlay.
-          });
-        }
-
-        let clone = icon.clone();
-        let newName = "";
-        const alignBits =
-          Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER;
-        if (this.args.screenshot) {
-          newName = "screenshot-1280x800-" + src.split("/").pop().split(".")[0];
-          clone = clone.cover(1280, 800, alignBits);
-        } else if (this.args.tile) {
-          newName = "tile-440x280-" + src.split("/").pop().split(".")[0];
-          clone = clone.cover(440, 280, alignBits);
-        } else if (this.args.marquee) {
-          newName = "marquee-1400x560-" + src.split("/").pop().split(".")[0];
-          clone = clone.cover(1400, 560, alignBits);
-        }
-        if (newName) {
-          clone.write(`src/assets/${newName}.png`);
-        }
-
-        resolve();
-      });
-    });
+    return this.copy(fileMap);
   }
 
   // Copy assets.
   copyAssets() {
     // Map of static files/directories to destinations we want to copy them to.
-    const fileMap = {
-      "src/assets/": "assets",
-      "src/_locales": "_locales",
-      "src/popup/popup.html": "popup/popup.html",
-      "src/options-page/options.html": "options-page/options.html",
-      "src/welcome": "welcome",
-      ...config.additionalAssetsToCopy,
-    };
+    const fileMap = manifest.__assets;
+    return this.copy(fileMap);
+  }
 
+  copy(fileMap) {
     return new Promise((resolve, reject) => {
       let copied = 0;
+      if (!fileMap || Object.keys(fileMap).length == 0) {
+        console.warn(
+          "No assets to copy. Ensure the __assets key is set in manifest.json"
+        );
+        resolve();
+      }
       for (const [src, dest] of Object.entries(fileMap)) {
         fs.cp(
           src,
@@ -326,21 +277,19 @@ class Build {
   // Package extension.
   async packageExtension() {
     await this.buildExtension();
-    const zipFile = `${this.outputBase}/${this.browser}-${
-      this.isProd ? "prod" : "dev"
-    }.zip`;
+    new ManifestValidator(this.outDir).runAllValidations();
     return new Promise((resolve, reject) => {
       // Step into the directory to zip to avoid including directory in zip (for firefox).
       exec(`cd ${this.outDir} && zip -r archive .`, (error, stdout, stderr) => {
         if (error) {
-          reject(`zip error: ${error.message}`);
+          reject(error);
           return;
         }
         if (stderr) {
-          reject(`zip stderr: ${stderr}`);
+          reject(stderr);
           return;
         }
-        resolve(`Zipped files... \n${stdout}`);
+        resolve(`Zipped files successfully`);
       });
     });
   }
@@ -353,6 +302,9 @@ class Build {
         bundle: true,
         outdir: "spec",
         platform: "node",
+        banner: {
+          js: `var IS_DEV_BUILD=true;var chrome=null`,
+        },
       })
       .catch((err) => {
         console.error(err);
@@ -378,16 +330,21 @@ class Build {
   }
 
   async buildExtension() {
+    console.log("Cleaning output directory...");
     await this.clean(this.outDir);
-    await this.copyAssets();
+    console.log("Bundling scripts...");
     await this.bundleScripts();
+    console.log("Generating manifest...");
     await this.generateManifest();
+    console.log("Copying assets...");
+    await this.copyAssets();
   }
 
   async launchBrowser() {
     const launchOptions = {
       headless: false,
       ignoreDefaultArgs: ["--disable-extensions", "--enable-automation"],
+      // load multiple extensions - https://stackoverflow.com/a/66752286
       args: [
         `--disable-extensions-except=${process.env.PWD}/${this.outDir}`,
         `--load-extension=${process.env.PWD}/${this.outDir}`,

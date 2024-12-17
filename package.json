@@ -4,17 +4,18 @@
   "description": "Browser extension example. Typescript, E2E tests, icon generation, automatic i18n and ESBuild",
   "homepage": "https://essentialkit.org/xtension/",
   "scripts": {
-    "build": "node tools/esbuild.js build",
-    "test": "node tools/esbuild.js test",
-    "watch": "node tools/esbuild.js watch",
-    "start": "node tools/esbuild.js start",
-    "start:firefox": "node tools/esbuild.js start --browser=firefox",
+    "build": "node tools/esbuild.js --task=build",
+    "test": "node tools/esbuild.js --task=test",
+    "watch": "node tools/esbuild.js --task=watch",
+    "start": "node tools/esbuild.js --task=start",
+    "start:firefox": "node tools/esbuild.js --task=start --browser=firefox",
     "format": "npx prettier . --write",
-    "generateIcons": "node tools/esbuild.js image --icons",
-    "updateTranslations": "node tools/translateMessages.js"
+    "generateIcons": "node tools/esbuild.js --task=resize --icon",
+    "updateTranslations": "node tools/esbuild.js --task=translate"
   },
   "author": "Justice Ogbonna",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/essentialkit/xtension"
@@ -34,15 +35,18 @@
     "boilerplate"
   ],
   "devDependencies": {
+    "@mdn/browser-compat-data": "^5.6.24",
     "@types/chrome": "^0.0.246",
     "@types/jasmine": "^5.1.0",
     "@types/node": "^20.8.3",
     "@types/puppeteer": "^7.0.4",
+    "axios": "^1.7.9",
     "esbuild": "0.19.4",
     "google-translate-api-x": "^10.6.7",
     "jasmine": "^5.1.0",
     "jimp": "^0.22.10",
     "jsdom": "^24.0.0",
+    "node-stream-zip": "^1.15.0",
     "prettier": "3.0.3",
     "puppeteer": "^23.5.3",
     "typescript": "^5.7.2"

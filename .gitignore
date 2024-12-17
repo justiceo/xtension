@@ -1,4 +1,4 @@
 node_modules/*
-spec/**/*.js
+spec/out/*.js
 build/*dev*
 .DS_Store

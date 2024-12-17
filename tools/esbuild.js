@@ -21,8 +21,9 @@ class Build {
   srcDir = "src";
   args;
 
-  testSpecs = ["spec/e2e-spec.ts", "spec/i18n-spec.ts"];
-  compiledTestSpecs = ["spec/e2e-spec.js", "spec/i18n-spec.js"];
+  // If a spec is in TS, specify the path to the both ts and js versions.
+  tsSpecs = ["spec/lib/i18n-spec.ts"];
+  testSpecs = ["spec/out/i18n-spec.js", "spec/e2e/e2e-spec.js"];
   originalIconPath = "src/assets/images/logo.png";
 
   constructor() {
@@ -61,7 +62,7 @@ class Build {
         this.test();
         break;
       case "build":
-        this.packageExtension().then((out) => console.log(out));
+        this.packageExtension();
         break;
       case "standalone":
         this.copyToStandalone();
@@ -289,7 +290,8 @@ class Build {
           reject(stderr);
           return;
         }
-        resolve(`Zipped files successfully`);
+        console.log(`Zipped files successfully`);
+        resolve();
       });
     });
   }
@@ -298,9 +300,9 @@ class Build {
   buildAndExecuteTests() {
     const buildTest = esbuild
       .build({
-        entryPoints: this.testSpecs,
+        entryPoints: this.tsSpecs,
         bundle: true,
-        outdir: "spec",
+        outdir: "spec/out",
         platform: "node",
         banner: {
           js: `var IS_DEV_BUILD=true;var chrome=null`,
@@ -315,7 +317,7 @@ class Build {
       buildTest.then(() => {
         const jasmine = new Jasmine();
         jasmine.loadConfig({
-          spec_files: this.compiledTestSpecs,
+          spec_files: this.testSpecs,
           random: false,
         });
         jasmine.exitOnCompletion = false;
@@ -341,6 +343,7 @@ class Build {
   }
 
   async launchBrowser() {
+    await this.packageExtension();
     const launchOptions = {
       headless: false,
       ignoreDefaultArgs: ["--disable-extensions", "--enable-automation"],
@@ -356,6 +359,7 @@ class Build {
        */
       launchOptions.product = "firefox";
     }
+    console.log("Launching test browser with extension");
     await puppeteer.launch(launchOptions);
   }
 

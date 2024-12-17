@@ -1,10 +1,30 @@
 import "@webcomponents/custom-elements";
 import { Toast } from "bootstrap";
+import "./settings.css";
 import formHtml from "./settings.txt.html";
 import Storage from "../storage.js";
 import { Logger } from "../logger.js";
 import { i18n } from "../i18n.js";
-import { Config } from "../../types.js";
+
+export interface SelectOption {
+  id: string;
+  text: string;
+}
+
+export interface Config {
+  id: string;
+  title: string;
+  description: string;
+  type: "checkbox" | "switch" | "range" | "select" | "radio" | "textarea";
+  default_value: string | boolean | number;
+
+  value?: any;
+  options?: SelectOption[];
+  min?: string;
+  max?: string;
+
+  dev_only?: boolean;
+}
 
 declare var IS_DEV_BUILD: boolean;
 export class SettingsUI extends HTMLElement {
@@ -80,12 +100,9 @@ export class SettingsUI extends HTMLElement {
       .cloneNode(true) as HTMLElement;
 
     // Set the title and description of the control.
-    control.getElementsByClassName(`control-title`)[0].innerHTML = i18n(
-      config.title
-    );
-    control.getElementsByClassName(`control-description`)[0].innerHTML = i18n(
-      config.description
-    );
+    control.getElementsByClassName(`control-title`)[0].innerHTML = config.title;
+    control.getElementsByClassName(`control-description`)[0].innerHTML =
+      config.description;
 
     // Set up the value of the controls and wire-up change listeners.
     const actualInput = control.getElementsByClassName(

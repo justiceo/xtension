@@ -1,7 +1,7 @@
 {
   "name": "__MSG_@appName__",
   "description": "__MSG_@appDesc__",
-  "short_name": "__MSG_@appShortName_",
+  "short_name": "__MSG_@appShortName__",
   "__comment:homepage_url": "This should be the webstore link, __MSG_@@extension_id__ is not allowed",
   "homepage_url": "https://github.com/justiceo/xtension",
   "__comment:version__": "Firefox does not support leading zeros in versions",
@@ -37,7 +37,7 @@
     "128": "assets/logo-128x128.png"
   },
   "side_panel": {
-    "default_path": "sidepanel/side-panel.html"
+    "default_path": "side-panel/side-panel.html"
   },
   "options_page": "options-page/options.html",
   "background": {
@@ -72,6 +72,6 @@
     "src/popup/popup.html": "popup/popup.html",
     "src/options-page/options.html": "options-page/options.html",
     "src/welcome": "welcome",
-    "src/side-panel/side-panel.html": "sidepanel/side-panel.html"
+    "src/side-panel/side-panel.html": "side-panel/side-panel.html"
   }
 }

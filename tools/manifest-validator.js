@@ -1,90 +1,13 @@
 import fs from "fs";
 import path from "path";
-
-// chrome permissions list from https://developer.chrome.com/docs/extensions/reference/permissions-list
-const VALID_PERMISSIONS = [
-  "accessibilityFeatures.modify",
-  "accessibilityFeatures.read",
-  "activeTab",
-  "alarms",
-  "audio",
-  "background",
-  "bookmarks",
-  "browsingData",
-  "certificateProvider",
-  "clipboardRead",
-  "clipboardWrite",
-  "contentSettings",
-  "contextMenus",
-  "cookies",
-  "debugger",
-  "declarativeContent",
-  "declarativeNetRequest",
-  "declarativeNetRequestWithHostAccess",
-  "declarativeNetRequestFeedback",
-  "dns",
-  "desktopCapture",
-  "documentScan",
-  "downloads",
-  "downloads.open",
-  "downloads.ui",
-  "enterprise.deviceAttributes",
-  "enterprise.hardwarePlatform",
-  "enterprise.networkingAttributes",
-  "enterprise.platformKeys",
-  "favicon",
-  "fileBrowserHandler",
-  "fileSystemProvider",
-  "fontSettings",
-  "gcm",
-  "geolocation",
-  "history",
-  "identity",
-  "identity.email",
-  "idle",
-  "loginState",
-  "management",
-  "nativeMessaging",
-  "notifications",
-  "offscreen",
-  "pageCapture",
-  "platformKeys",
-  "power",
-  "printerProvider",
-  "printing",
-  "printingMetrics",
-  "privacy",
-  "processes",
-  "proxy",
-  "readingList",
-  "runtime",
-  "scripting",
-  "search",
-  "sessions",
-  "sidePanel",
-  "storage",
-  "system.cpu",
-  "system.display",
-  "system.memory",
-  "system.storage",
-  "tabCapture",
-  "tabGroups",
-  "tabs",
-  "topSites",
-  "tts",
-  "ttsEngine",
-  "unlimitedStorage",
-  "vpnProvider",
-  "wallpaper",
-  "webAuthenticationProxy",
-  "webNavigation",
-  "webRequest",
-  "webRequestBlocking",
-];
+import { glob } from "glob";
+import { validatePermissions } from "./permission-checker.js";
+import { BrowserCompatibilityAnalyzer } from "./compat-checker.js";
 
 export class ManifestValidator {
-  constructor(basePath) {
+  constructor(basePath, browser) {
     this.basePath = basePath;
+    this.browser = browser;
     this.manifestPath = path.join(basePath, "manifest.json");
     this.manifest = {};
   }
@@ -103,11 +26,10 @@ export class ManifestValidator {
     try {
       const allPaths = [
         ...(this.manifest.icons ? Object.values(this.manifest.icons) : []),
-        ...(this.manifest.content_scripts.js
-          ? [this.manifest.content_scripts.js]
-          : []),
-        ...(this.manifest.content_scripts.css
-          ? [this.manifest.content_scripts.css]
+        ...(this.manifest.content_scripts
+          ? this.manifest.content_scripts
+              .map((cs) => [cs.js, cs.css].flat())
+              .flat()
           : []),
         ...(this.manifest.action
           ? Object.values(this.manifest.action.default_icon)
@@ -182,19 +104,23 @@ export class ManifestValidator {
     }
   }
 
-  validatePermissions() {
+  async validateMinimumBrowserVersion() {
     try {
-      if (this.manifest.permissions) {
-        this.manifest.permissions.forEach((permission) => {
-          if (!VALID_PERMISSIONS.includes(permission)) {
-            throw new Error(`Invalid permission: ${permission}`);
-          }
-        });
+      if (!this.manifest[`minimum_${this.browser}_version`]) {
+        throw new Error(
+          `minimum_${this.browser}_version is not set in the manifest.json file.`
+        );
       }
-      return { message: "Permissions validation", status: "PASS" };
+
+      await new BrowserCompatibilityAnalyzer(
+        this.basePath,
+        this.browser
+      ).analyze();
+
+      return { message: "Browser compat", status: "PASS" };
     } catch (error) {
       return {
-        message: "Permissions validation",
+        message: "Browser compat",
         status: "FAIL",
         error: error,
       };
@@ -275,15 +201,23 @@ export class ManifestValidator {
     return localeData[localeKey].message;
   }
 
-  runAllValidations() {
+  async runAllValidations() {
+    const jsFiles = glob.sync("**/*.+(js|ts)", { cwd: this.basePath });
     const results = [
       this.loadManifest(),
       this.validateFilePaths(),
       this.validateLocales(),
       this.validateVersion(),
-      this.validatePermissions(),
+      await this.validateMinimumBrowserVersion(),
+      validatePermissions(
+        this.basePath,
+        jsFiles,
+        this.manifest.permissions,
+        this.manifest.optional_permissions ?? []
+      ),
       this.validateIcons(),
       this.validateShortName(),
+      // TODO: Ensure that uninstall URL is set.
     ];
     results.forEach((result) => {
       console.log(
@@ -298,7 +232,10 @@ export class ManifestValidator {
     );
     if (hasFailedValidation) {
       throw new Error(
-        "Manifest validation failed: " + hasFailedValidation.message
+        "Manifest validation failed: " +
+          hasFailedValidation.message +
+          ": " +
+          hasFailedValidation.error
       );
     }
   }

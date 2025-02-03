@@ -5,7 +5,7 @@ import esbuild from "esbuild";
 import Jasmine from "jasmine";
 import puppeteer from "puppeteer";
 import { parse } from "./parse.js";
-import manifest from "../src/manifest.json" assert { type: "json" };
+import manifest from "../src/manifest.json" with { type: "json" };
 import { Translator } from "./translator.js";
 import { ImageResizer } from "./image-resizer.js";
 import { ManifestValidator } from "./manifest-validator.js";
@@ -78,8 +78,16 @@ class Build {
         new ChromeExtensionDownloader().download(args.url, args.dest);
         break;
       case "compat":
-        new BrowserCompatibilityAnalyzer(args.src ?? this.outDir).analyze();
+        new BrowserCompatibilityAnalyzer(
+          args.src ?? this.outDir,
+          this.browser
+        ).analyze();
         break;
+      case "validate":
+        new ManifestValidator(
+          this.srcDir ?? this.outDir,
+          this.browser
+        ).runAllValidations();
       case "publish":
         new StorePublisher().publishItemPublic("random_id");
         break;
@@ -107,28 +115,24 @@ class Build {
   }
 
   // Bundle scripts.
-  bundleScripts() {
-    return esbuild
-      .build({
-        entryPoints: manifest.__entryPoints,
-        bundle: true,
-        minify: this.isProd,
-        sourcemap: !this.isProd,
-        loader: {
-          ".txt.html": "text",
-          ".txt.css": "text",
-          ".file.css": "file",
-          ".woff2": "dataurl",
-        },
-        banner: {
-          js: `var IS_DEV_BUILD=${!this.isProd};`,
-        },
-        outdir: this.outDir,
-        target: ["chrome107"], // https://en.wikipedia.org/wiki/Google_Chrome_version_history
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+  async bundleScripts() {
+    await esbuild.build({
+      entryPoints: manifest.__entryPoints,
+      bundle: true,
+      minify: this.isProd,
+      sourcemap: !this.isProd,
+      loader: {
+        ".txt.html": "text",
+        ".txt.css": "text",
+        ".file.css": "file",
+        ".woff2": "dataurl",
+      },
+      banner: {
+        js: `var IS_DEV_BUILD=${!this.isProd};`,
+      },
+      outdir: this.outDir,
+      target: ["chrome107"], // https://en.wikipedia.org/wiki/Google_Chrome_version_history
+    });
   }
 
   async watch() {
@@ -277,8 +281,25 @@ class Build {
 
   // Package extension.
   async packageExtension() {
-    await this.buildExtension();
-    new ManifestValidator(this.outDir).runAllValidations();
+    try {
+      await this.buildExtension();
+    } catch (e) {
+      console.error("Build failed: ", e.message);
+      return;
+    }
+
+    try {
+      await new ManifestValidator(
+        this.outDir,
+        this.browser
+      ).runAllValidations();
+    } catch (e) {
+      console.error(
+        "Aborting packaging due to validation errors: \n",
+        e.message
+      );
+      return;
+    }
     return new Promise((resolve, reject) => {
       // Step into the directory to zip to avoid including directory in zip (for firefox).
       exec(`cd ${this.outDir} && zip -r archive .`, (error, stdout, stderr) => {

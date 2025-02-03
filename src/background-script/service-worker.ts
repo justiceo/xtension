@@ -3,12 +3,13 @@ import "./context-menus";
 import "./icon-updater";
 import "./feedback-checker";
 import { getOrCreateSessionId } from "../utils/session-id";
+import "./app-worker";
 
 // All service-worker messages should go through this function.
 const onMessage = (
   message: any,
   sender: chrome.runtime.MessageSender,
-  callback: (response?: any) => void,
+  callback: (response?: any) => void
 ) => {
   // Check if the message is from this extension.
   if (!sender.id || sender.id !== chrome.i18n.getMessage("@@extension_id")) {

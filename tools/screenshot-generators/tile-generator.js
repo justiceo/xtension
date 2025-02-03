@@ -1,5 +1,6 @@
 import Jimp from "jimp";
 import fs from "fs";
+import path from "path";
 
 class ImageCreator {
   constructor(width, height) {
@@ -12,7 +13,7 @@ class ImageCreator {
 
     if (typeof background === "string" && background.endsWith(".png")) {
       if (!fs.existsSync(background)) {
-        throw new Error("Background file does not exist.");
+        throw new Error(`Background file ${background} does not exist.`);
       }
       image = await Jimp.read(background);
       image.cover(this.width, this.height);
@@ -26,8 +27,9 @@ class ImageCreator {
   }
 
   async loadLogo(logoPath, size) {
+    logoPath = path.resolve(logoPath);
     if (!fs.existsSync(logoPath)) {
-      throw new Error("Logo file does not exist.");
+      throw new Error(`Logo file ${logoPath} does not exist.`);
     }
     const logo = await Jimp.read(logoPath);
     await logo.resize(size, size);
@@ -39,7 +41,7 @@ class ImageCreator {
     // TODO: Update to use the most prominent color in the image from sampling.
     const bgColor = image.getPixelColor(
       image.bitmap.width / 2,
-      image.bitmap.height / 2,
+      image.bitmap.height / 2
     );
     const red = (bgColor >> 24) & 255;
     const green = (bgColor >> 16) & 255;
@@ -52,7 +54,7 @@ class ImageCreator {
         (red + 60) % 255,
         (green + 60) % 255,
         (blue + 60) % 255,
-        255,
+        255
       ),
     };
   }
@@ -60,16 +62,16 @@ class ImageCreator {
   async loadFonts(textColor) {
     return {
       titleFont: await Jimp.loadFont(
-        Jimp[`FONT_SANS_32_${textColor.toUpperCase()}`],
+        Jimp[`FONT_SANS_32_${textColor.toUpperCase()}`]
       ),
       descFont: await Jimp.loadFont(
-        Jimp[`FONT_SANS_32_${textColor.toUpperCase()}`],
+        Jimp[`FONT_SANS_32_${textColor.toUpperCase()}`]
       ),
       attributesFont: await Jimp.loadFont(
-        Jimp[`FONT_SANS_16_${textColor.toUpperCase()}`],
+        Jimp[`FONT_SANS_16_${textColor.toUpperCase()}`]
       ),
       buttonFont: await Jimp.loadFont(
-        Jimp[`FONT_SANS_32_${textColor.toUpperCase()}`],
+        Jimp[`FONT_SANS_32_${textColor.toUpperCase()}`]
       ),
     };
   }
@@ -89,7 +91,7 @@ class ImageCreator {
         i + counter + 1 < attributes.length
       ) {
         const chipX =
-          Jimp.measureText(attributesFont, attributes[i + counter]) + 
+          Jimp.measureText(attributesFont, attributes[i + counter]) +
           30 /* Padding */ +
           10; /* Margin */
         if (totalChipX + chipX > canvas.bitmap.width) {
@@ -115,7 +117,7 @@ class ImageCreator {
             alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE,
           },
           chipWidth,
-          chipHeight,
+          chipHeight
         );
         canvas.scan(chipX, attributesY, chipWidth, chipHeight, (x, y, idx) => {
           // Invert the color inside the chip
@@ -152,7 +154,7 @@ class ImageCreator {
         canvas.bitmap.data[idx + 1] = 0; // G
         canvas.bitmap.data[idx + 2] = 0; // B
         canvas.bitmap.data[idx + 3] = 95; // Shadow opacity
-      },
+      }
     );
 
     // Draw the button
@@ -172,7 +174,7 @@ class ImageCreator {
         alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE,
       },
       buttonWidth,
-      buttonHeight,
+      buttonHeight
     );
   }
 
@@ -182,11 +184,11 @@ class ImageCreator {
     extensionName,
     description,
     fonts,
-    colors,
+    colors
   ) {
     const { titleFont, descFont, attributesFont, buttonFont } = fonts;
-    const callToActionHeight =  0;
-    const attributesHeight =  0;
+    const callToActionHeight = 0;
+    const attributesHeight = 0;
     let verticalAdjustment = callToActionHeight;
 
     // Render logo.
@@ -208,16 +210,16 @@ class ImageCreator {
 
     let descX =
       (canvas.bitmap.width - Jimp.measureText(descFont, description)) / 2;
-    if(descX <= 0 ) {
+    if (descX <= 0) {
       descX = 50;
     }
-    const descY = logoY + logo.bitmap.height + 30;;
+    const descY = logoY + logo.bitmap.height + 30;
     canvas.print(
       descFont,
       descX,
       descY,
       description,
-      canvas.bitmap.width - descX - 40,
+      canvas.bitmap.width - descX - 40
     );
   }
 
@@ -240,7 +242,7 @@ class ImageCreator {
       extensionName,
       description,
       fonts,
-      colors,
+      colors
     );
 
     await canvas.writeAsync(outputPath);
@@ -251,10 +253,10 @@ class ImageCreator {
 // Example usage
 const imageCreator = new ImageCreator(440, 280);
 imageCreator.createPromotionalImage({
-  logoPath: "./logo.png",
+  logoPath: "src/assets/logo-128x128.png",
   background: "#123456", // Can be a solid color or an image path
   extensionName: "Search & Link Preview",
   description:
     "Instantly view links and search results without opening new tabs",
-  outputPath: "tile2.png",
+  outputPath: "src/assets/tile.png",
 });

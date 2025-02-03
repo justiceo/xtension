@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { glob } from "glob";
-import browserCompatData from "@mdn/browser-compat-data" assert { type: "json" };
+import browserCompatData from "@mdn/browser-compat-data" with { type: "json" };
 
 /**
  * Analyzes the compatibility of a browser extension against
@@ -17,22 +17,32 @@ import browserCompatData from "@mdn/browser-compat-data" assert { type: "json" }
  * All browsers have automatic updates, so in no time, the minimum supported version will be reaching >95% of users.
  */
 export class BrowserCompatibilityAnalyzer {
-  constructor(extensionDirectory) {
+  compatOverrides = {
+    "chrome.runtime.setUninstallURL": 41, // Limits URL to 255 characters.
+    "chrome.storage.session": 102, // Limits session storage to 1MB.
+  };
+
+  constructor(extensionDirectory, browser = "chrome") {
     this.extensionDirectory = extensionDirectory;
+    this.browser = browser;
     this.chromeApi = browserCompatData.webextensions.api;
-    this.browsers = this.loadManifestBrowserInfo();
+    this.minBrowserVersion = this.getMinBrowserVersion(
+      extensionDirectory,
+      browser
+    );
     this.files = this.getJavaScriptFiles();
   }
 
-  loadManifestBrowserInfo() {
+  getMinBrowserVersion(outDir, browser) {
     try {
-      const manifestPath = path.join(this.extensionDirectory, "manifest.json");
+      const manifestPath = path.join(outDir, "manifest.json");
       const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-      // TODO: Update this table with browsers from args and support prefix like __chrome__.
-      return {
-        chrome: manifest.minimum_chrome_version,
-        firefox: manifest.minimum_firefox_version,
-      };
+      const minVersion = manifest[`minimum_${browser}_version`];
+      if (minVersion) {
+        return parseInt(minVersion, 10);
+      } else {
+        return 0; // All browser versions are supported.
+      }
     } catch (error) {
       console.error("Error loading or parsing manifest.json:", error);
       return {};
@@ -48,41 +58,43 @@ export class BrowserCompatibilityAnalyzer {
 
     for (const file of this.files) {
       const code = await this.readFile(
-        path.join(this.extensionDirectory, file),
+        path.join(this.extensionDirectory, file)
       );
       if (code) {
         const apiCalls = this.findChromeAPICalls(code);
-        this.checkCompatibility(apiCalls, file, violations);
+        try {
+          this.checkCompatibility(apiCalls, file, violations, this.browser);
+        } catch (error) {
+          throw Error(`Error checking compatibility for ${file}:${error}`);
+        }
       }
     }
 
-    Object.keys(violations).map((violationKey) => {
-      const violation = violations[violationKey];
-      console.log(
-        `[${violation.browser}]: ${violation.api} requires version ${violation.required_version} or later.`,
-      );
+    const violationsArr = Object.values(violations);
+    // Find violation with max required version
+    const violation = violationsArr.reduce(
+      (max, v) => (max.required_version > v.required_version ? max : v),
+      violationsArr[0]
+    );
 
-      let notes = "";
-      if (violation.support_info) {
-        if (Array.isArray(violation.support_info)) {
-          notes = violation.support_info[0].notes;
-        } else {
-          notes = violation.support_info.notes;
-        }
-      }
-      if (notes) {
-        console.log("Notes:", notes);
-      }
-      console.debug("Support info:", violation.support_info)
+    if (violation) {
+      console.error(
+        `[${violation.api}] requires version ${violation.required_version} or later.`
+      );
+      console.debug("Support info:", violation.support_info);
 
       console.log(`Found in ${violation.occurrences.length} places:`);
       const occurences =
         "    " +
         violation.occurrences
-          .map((occurrence) => occurrence.location + "\t" + occurrence.match)
+          .map((occurrence) => occurrence.location)
           .join("\n    ");
       console.log(occurences, "\n");
-    });
+
+      throw Error(
+        `[${violation.api}] requires version ${violation.required_version} or later.`
+      );
+    }
   }
 
   async readFile(file) {
@@ -123,49 +135,52 @@ export class BrowserCompatibilityAnalyzer {
       }
       data = data[symbol];
     }
-    return data.__compat;
+    return data ? data.__compat : null;
   }
 
-  checkCompatibility(apiCalls, file, violations) {
+  checkCompatibility(apiCalls, file, violations, browser) {
     apiCalls.forEach((call) => {
       const apiData = this.getCompatData(call.symbol);
-      if (apiData) {
-        for (const browser in this.browsers) {
-          const version = parseInt(this.browsers[browser], 10);
-          const supportInfos = apiData.support[browser];
-          if (!supportInfos) continue;
-          let latestVersion, latestSupportInfo;
-          if (Array.isArray(supportInfos)) {
-            latestVersion = Math.max(...supportInfos.map((s) => s.version_added));
-            latestSupportInfo = supportInfos.find((s) => s.version_added === "" + latestVersion);
-          } else {
-            latestVersion = supportInfos.version_added;
-            latestSupportInfo = supportInfos;
-          }
-          let versionAdded = latestSupportInfo.version_added;
-          
-          if (versionAdded === true) continue;
-          versionAdded = parseInt(versionAdded, 10);
-          if (isNaN(versionAdded)) continue;
-          const supported = versionAdded <= version;
+      if (!apiData) {
+        return;
+      }
+      const supportInfos = apiData.support[browser];
+      if (!supportInfos) return;
+      let latestVersion, latestSupportInfo;
+      if (Array.isArray(supportInfos)) {
+        latestVersion = Math.max(...supportInfos.map((s) => s.version_added));
+        latestSupportInfo = supportInfos.find(
+          (s) => s.version_added === "" + latestVersion
+        );
+      } else {
+        latestVersion = supportInfos.version_added;
+        latestSupportInfo = supportInfos;
+      }
+      let versionAdded = latestSupportInfo.version_added;
 
-          if (!supported) {
-            const violationKey = `${browser}:${call.symbol}`;
-            if (!violations[violationKey]) {
-              violations[violationKey] = {
-                browser,
-                api: call.symbol,
-                required_version: versionAdded,
-                support_info: supportInfos,
-                occurrences: [],
-              };
-            }
-            violations[violationKey].occurrences.push({
-              location: `${file}:${call.line}`,
-              match: call.match,
-            });
-          }
+      if (versionAdded === true) return;
+      versionAdded = parseInt(versionAdded, 10);
+      if (isNaN(versionAdded)) return;
+      const overriddenVersion = this.compatOverrides[call.symbol];
+      const supported = overriddenVersion
+        ? overriddenVersion <= this.minBrowserVersion
+        : versionAdded <= this.minBrowserVersion;
+
+      if (!supported) {
+        const violationKey = `${browser}:${call.symbol}`;
+        if (!violations[violationKey]) {
+          violations[violationKey] = {
+            browser,
+            api: call.symbol,
+            required_version: versionAdded,
+            support_info: supportInfos,
+            occurrences: [],
+          };
         }
+        violations[violationKey].occurrences.push({
+          location: `${file}:${call.line}`,
+          match: call.match,
+        });
       }
     });
   }

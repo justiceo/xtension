@@ -10,7 +10,8 @@
   "default_locale": "en",
   "author": "Justice Ogbonna",
   "permissions": ["contextMenus", "storage", "cookies", "tabs"],
-  "host_permissions": ["*://*/*"],
+  "optional_permissions": ["unlimitedStorage"],
+  "host_permissions": ["<all_urls>"],
   "action": {
     "default_icon": {
       "16": "assets/logo-16x16.png",
@@ -36,6 +37,8 @@
     "48": "assets/logo-48x48.png",
     "128": "assets/logo-128x128.png"
   },
+  "__chrome__minimum_chrome_version": "102",
+  "__firefox__minimum_firefox_version": "50",
   "side_panel": {
     "default_path": "side-panel/side-panel.html"
   },
@@ -71,7 +74,7 @@
     "src/_locales": "_locales",
     "src/popup/popup.html": "popup/popup.html",
     "src/options-page/options.html": "options-page/options.html",
-    "src/welcome": "welcome",
+    "src/welcome/welcome.html": "welcome/welcome.html",
     "src/side-panel/side-panel.html": "side-panel/side-panel.html"
   }
 }

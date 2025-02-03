@@ -54,7 +54,7 @@ class MarqueeGenerator {
   calculateTextColor(image) {
     const bgColor = image.getPixelColor(
       image.bitmap.width / 2,
-      image.bitmap.height / 2,
+      image.bitmap.height / 2
     );
     const red = (bgColor >> 24) & 255;
     const green = (bgColor >> 16) & 255;
@@ -67,7 +67,7 @@ class MarqueeGenerator {
         (red + 60) % 255,
         (green + 60) % 255,
         (blue + 60) % 255,
-        255,
+        255
       ),
     };
   }
@@ -75,16 +75,16 @@ class MarqueeGenerator {
   async loadFonts(textColor) {
     return {
       titleFont: await Jimp.loadFont(
-        Jimp[`FONT_SANS_64_${textColor.toUpperCase()}`],
+        Jimp[`FONT_SANS_64_${textColor.toUpperCase()}`]
       ),
       descFont: await Jimp.loadFont(
-        Jimp[`FONT_SANS_32_${textColor.toUpperCase()}`],
+        Jimp[`FONT_SANS_32_${textColor.toUpperCase()}`]
       ),
       attributesFont: await Jimp.loadFont(
-        Jimp[`FONT_SANS_32_${textColor.toUpperCase()}`],
+        Jimp[`FONT_SANS_32_${textColor.toUpperCase()}`]
       ),
       buttonFont: await Jimp.loadFont(
-        Jimp[`FONT_SANS_64_${textColor.toUpperCase()}`],
+        Jimp[`FONT_SANS_64_${textColor.toUpperCase()}`]
       ),
     };
   }
@@ -131,7 +131,7 @@ class MarqueeGenerator {
           alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE,
         },
         chipWidth,
-        chipHeight,
+        chipHeight
       );
       canvas.scan(chipX, attributesY, chipWidth, chipHeight, (x, y, idx) => {
         // Invert the color inside the chip
@@ -168,7 +168,7 @@ class MarqueeGenerator {
         canvas.bitmap.data[idx + 1] = 0;
         canvas.bitmap.data[idx + 2] = 0;
         canvas.bitmap.data[idx + 3] = 95;
-      },
+      }
     );
 
     canvas.scan(
@@ -181,7 +181,7 @@ class MarqueeGenerator {
         canvas.bitmap.data[idx + 1] = (buttonColor >> 16) & 255;
         canvas.bitmap.data[idx + 2] = (buttonColor >> 8) & 255;
         canvas.bitmap.data[idx + 3] = 255;
-      },
+      }
     );
     canvas.print(
       buttonFont,
@@ -193,7 +193,7 @@ class MarqueeGenerator {
         alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE,
       },
       buttonWidth,
-      this.config.buttonHeight,
+      this.config.buttonHeight
     );
   }
 
@@ -206,7 +206,7 @@ class MarqueeGenerator {
     callToAction,
     fonts,
     colors,
-    style,
+    style
   ) {
     const { titleFont, descFont, attributesFont, buttonFont } = fonts;
     const callToActionHeight = callToAction ? 50 : 0;
@@ -261,14 +261,14 @@ class MarqueeGenerator {
       textX,
       textY,
       extensionName,
-      canvas.bitmap.width - textX - this.config.fontPadding,
+      canvas.bitmap.width - textX - this.config.fontPadding
     );
     canvas.print(
       descFont,
       descX,
       descY,
       description,
-      canvas.bitmap.width - textX - this.config.fontPadding,
+      canvas.bitmap.width - textX - this.config.fontPadding
     );
 
     if (hasAttributes) {
@@ -278,7 +278,7 @@ class MarqueeGenerator {
         attributesFont,
         textX,
         textY,
-        style,
+        style
       );
     }
     if (callToAction) {
@@ -287,15 +287,16 @@ class MarqueeGenerator {
         callToAction,
         buttonFont,
         colors.buttonColor,
-        style,
+        style
       );
     }
   }
 
   getExtensionDetails(extensionDir) {
-    const manifestPath = path.join(extensionDir, "manifest.json");
+    const manifestPath = path.resolve(path.join(extensionDir, "manifest.json"));
+
     if (!fs.existsSync(manifestPath)) {
-      throw new Error("Manifest file does not exist.");
+      throw new Error(`Manifest file ${manifestPath} does not exist.`);
     }
 
     const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
@@ -308,11 +309,11 @@ class MarqueeGenerator {
         const localePath = path.join(
           localesDir,
           manifest.default_locale,
-          "messages.json",
+          "messages.json"
         );
         if (fs.existsSync(localePath)) {
           const localeMessages = JSON.parse(
-            fs.readFileSync(localePath, "utf8"),
+            fs.readFileSync(localePath, "utf8")
           );
           const nameKey = manifest.name.split("_MSG_").pop().replace("__", "");
           const descKey = manifest.description
@@ -371,7 +372,7 @@ class MarqueeGenerator {
         callToAction,
         fonts,
         colors,
-        style,
+        style
       );
 
       await canvas.writeAsync(outputPath);
@@ -385,7 +386,7 @@ class MarqueeGenerator {
 // Example usage
 const generator = new MarqueeGenerator();
 generator.createPromotionalImage({
-  extensionDir: "../../../calculator/build/chrome-dev",
+  extensionDir: "./build/chrome-dev",
   background: "#123456",
   attributes: [
     "fast",
@@ -398,11 +399,11 @@ generator.createPromotionalImage({
   ],
   callToAction: "Try it out",
   style: 1,
-  outputPath: "marquee1.png",
+  outputPath: "src/assets/marquee1.png",
 });
 
 generator.createPromotionalImage({
-  extensionDir: "../../../calculator/build/chrome-dev",
+  extensionDir: "build/chrome-dev",
   background: "#123456",
   attributes: [
     "fast",
@@ -415,10 +416,11 @@ generator.createPromotionalImage({
   ],
   callToAction: "Try it out",
   style: 2,
-  outputPath: "marquee2.png",
+  outputPath: "src/assets/marquee2.png",
 });
+
 generator.createPromotionalImage({
-  extensionDir: "../../../calculator/build/chrome-dev",
+  extensionDir: "./build/chrome-dev",
   background: "#123456",
   attributes: [
     "fast",
@@ -431,5 +433,5 @@ generator.createPromotionalImage({
   ],
   callToAction: "Try it out",
   style: 3,
-  outputPath: "marquee3.png",
+  outputPath: "src/assets/marquee3.png",
 });

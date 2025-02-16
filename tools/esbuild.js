@@ -355,12 +355,12 @@ class Build {
   async buildExtension() {
     console.log("Cleaning output directory...");
     await this.clean(this.outDir);
+    console.log("Copying assets...");
+    await this.copyAssets();
     console.log("Bundling scripts...");
     await this.bundleScripts();
     console.log("Generating manifest...");
     await this.generateManifest();
-    console.log("Copying assets...");
-    await this.copyAssets();
   }
 
   async launchBrowser() {

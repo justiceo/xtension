@@ -3,6 +3,7 @@ import path from "path";
 import { glob } from "glob";
 import { validatePermissions } from "./permission-checker.js";
 import { BrowserCompatibilityAnalyzer } from "./compat-checker.js";
+import { checkForRemoteCode } from "./remote-code-scan.js";
 
 export class ManifestValidator {
   constructor(basePath, browser) {
@@ -22,34 +23,36 @@ export class ManifestValidator {
     }
   }
 
+  allManifestPaths() {
+    return [
+      ...(this.manifest.icons ? Object.values(this.manifest.icons) : []),
+      ...(this.manifest.content_scripts
+        ? this.manifest.content_scripts
+            .map((cs) => [cs.js, cs.css].flat())
+            .flat()
+        : []),
+      ...(this.manifest.action
+        ? Object.values(this.manifest.action.default_icon)
+        : []),
+      ...(this.manifest.action.default_popup
+        ? [this.manifest.action.default_popup]
+        : []),
+      ...(this.manifest.side_panel
+        ? [this.manifest.side_panel.default_path]
+        : []),
+      ...(this.manifest.options_page ? [this.manifest.options_page] : []),
+      ...(this.manifest.background
+        ? Object.values(this.manifest.background)
+        : []),
+      ...(this.manifest.web_accessible_resources
+        ? this.manifest.web_accessible_resources.map((r) => r.resources).flat()
+        : []),
+    ];
+  }
+
   validateFilePaths() {
     try {
-      const allPaths = [
-        ...(this.manifest.icons ? Object.values(this.manifest.icons) : []),
-        ...(this.manifest.content_scripts
-          ? this.manifest.content_scripts
-              .map((cs) => [cs.js, cs.css].flat())
-              .flat()
-          : []),
-        ...(this.manifest.action
-          ? Object.values(this.manifest.action.default_icon)
-          : []),
-        ...(this.manifest.action.default_popup
-          ? [this.manifest.action.default_popup]
-          : []),
-        ...(this.manifest.side_panel
-          ? [this.manifest.side_panel.default_path]
-          : []),
-        ...(this.manifest.options_page ? [this.manifest.options_page] : []),
-        ...(this.manifest.background
-          ? Object.values(this.manifest.background)
-          : []),
-        ...(this.manifest.web_accessible_resources
-          ? this.manifest.web_accessible_resources
-              .map((r) => r.resources)
-              .flat()
-          : []),
-      ];
+      const allPaths = this.allManifestPaths();
       allPaths.forEach((file) => {
         if (!fs.existsSync(path.join(this.basePath, file))) {
           throw new Error(`File not found: ${file}`);
@@ -215,9 +218,9 @@ export class ManifestValidator {
         this.manifest.permissions,
         this.manifest.optional_permissions ?? []
       ),
+      checkForRemoteCode(this.basePath),
       this.validateIcons(),
       this.validateShortName(),
-      // TODO: Ensure that uninstall URL is set.
     ];
     results.forEach((result) => {
       console.log(

@@ -41,6 +41,19 @@ class Storage {
     return response[key];
   }
 
+  async remove(key: string): Promise<void> {
+    if (!key) {
+      return Promise.reject("Attempting to use a null key");
+    }
+
+    // localStorage fall-back.
+    if (!chrome?.storage?.sync) {
+      return this.storageService.removeItem(key);
+    }
+
+    return this.storageService.remove(key);
+  }
+
   // This alias for #get returns a default value for unset config options.
   async getConfig(key: string): Promise<any> {
     return (

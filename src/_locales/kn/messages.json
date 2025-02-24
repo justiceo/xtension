@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "ಬ್ರೌಸರ್ ವಿಸ್ತರಣೆ ಸ್ಟಾರ್ಟರ್",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "ಬಿ.ಇ.ಎಸ್",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "ಬ್ರೌಸರ್ ವಿಸ್ತರಣಾ ಉದಾಹರಣೆ. ಟೈಪ್‌ಸ್ಕ್ರಿಪ್ಟ್, ಇ 2 ಇ ಪರೀಕ್ಷೆಗಳು, ಐಕಾನ್ ಉತ್ಪಾದನೆ, ಸ್ವಯಂಚಾಲಿತ ಐ 18 ಎನ್ ಮತ್ತು ಎಸ್ಬಿಲ್ಡ್",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<ಡಿವ್> <p> ಹಲೋ ವರ್ಲ್ಡ್ </p> ಇದು ವೆಬ್‌ನ <strong> ಭಾಷೆ </strong> </div>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "ಈ ಸೈಟ್‌ಗಳಲ್ಲಿ ವಿಸ್ತರಣೆ ಚಲಿಸುವುದಿಲ್ಲ. ಪ್ರತಿ ಸಾಲಿಗೆ ಒಂದು ಸೈಟ್ ನಮೂದಿಸಿ."
     },
-    "Options": {
-        "message": "ಆಯ್ಕೆಗಳು"
-    },
-    "Show_Demo": {
-        "message": "ಡೆಮೊ ತೋರಿಸಿ"
-    },
-    "Report_an_Issue": {
-        "message": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ"
+    "Successfully_updated_settings": {
+        "message": "ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಿದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
     },
     "How_can_we_improve_": {
         "message": "ನಾವು ಹೇಗೆ ಸುಧಾರಿಸಬಹುದು?"
     },
-    "How_are_we_doing_": {
-        "message": "ನಾವು ಹೇಗೆ ಮಾಡುತ್ತಿದ್ದೇವೆ?"
+    "_appName": {
+        "message": "@appname"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "ನೀವು ಇಷ್ಟಪಟ್ಟಿದ್ದಕ್ಕಾಗಿ ಸಂತೋಷ! The ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಹುದೇ?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ಧನ್ಯವಾದಗಳು!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "ಕ್ರೋಮ್ ವೆಬ್ ಅಂಗಡಿಯಲ್ಲಿ ದರ"
-    },
-    "No": {
-        "message": "ಇಲ್ಲ"
-    },
-    "Submit_Feedback": {
-        "message": "ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಸಲ್ಲಿಸಿ"
-    },
-    "Successfully_updated_settings": {
-        "message": "ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಿದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+    "__extension_id": {
+        "message": "@@ ವಿಸ್ತರಣೆ_ಐಡಿ"
     },
     "Welcome": {
         "message": "ಸುಧನ"
@@ -75,16 +54,16 @@
         "message": "ನೀವು ಈ ಪುಟವನ್ನು ನೋಡುತ್ತಿದ್ದರೆ, ನೀವು ಯಶಸ್ವಿಯಾಗಿ"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "ನಲ್ಲಿ ರೆಪೊಸಿಟರಿಯನ್ನು ಅಬೀಜ ಸಂತಾನೋತ್ಪತ್ತಿ ಮಾಡಿ \n           <a href=\"https://github.com/justiceo/xtensention\"> \n           ಮತ್ತು ಎಲ್ಲಾ ಅವಲಂಬನೆಗಳನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ."
+        "message": "ನಲ್ಲಿ ರೆಪೊಸಿಟರಿಯನ್ನು ಅಬೀಜ ಸಂತಾನೋತ್ಪತ್ತಿ ಮಾಡಿ\n <a href = \"\n ಮತ್ತು ಎಲ್ಲಾ ಅವಲಂಬನೆಗಳನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "ಮೂಲ ಕೋಡ್ ಅನ್ನು ನಿರ್ಮಿಸಲು ಎಸ್ಬಿಲ್ಡ್ ಅನ್ನು ಬಳಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅಂಗಡಿ-ಸಿದ್ಧವಾಗಿ ಪ್ಯಾಕ್ ಮಾಡಲಾಗಿದೆ \n           ಸ್ವರೂಪ."
+        "message": "ಮೂಲ ಕೋಡ್ ಅನ್ನು ನಿರ್ಮಿಸಲು ಎಸ್ಬಿಲ್ಡ್ ಅನ್ನು ಬಳಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅಂಗಡಿ-ಸಿದ್ಧವಾಗಿ ಪ್ಯಾಕ್ ಮಾಡಲಾಗಿದೆ\n ಸ್ವರೂಪ."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "ಕ್ರೋಮ್/ಫೈರ್‌ಫಾಕ್ಸ್‌ನಲ್ಲಿ ಡಿಇವಿ ಮೋಡ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ ಮತ್ತು ಅನ್ಪ್ಯಾಕ್ ಮಾಡಲಾಗಿಲ್ಲ \n           ವಿಸ್ತರಣೆ ..."
+        "message": "ಕ್ರೋಮ್/ಫೈರ್‌ಫಾಕ್ಸ್‌ನಲ್ಲಿ ಡಿಇವಿ ಮೋಡ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ ಮತ್ತು ಅನ್ಪ್ಯಾಕ್ ಮಾಡಲಾಗಿಲ್ಲ\n ವಿಸ್ತರಣೆ ..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "ಅಥವಾ ನೀವು ಕೈಗೊಂಬೆಗಳ ಉದಾಹರಣೆಯನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಾಯಿತು \n           ವಿಸ್ತರಣೆಯನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ."
+        "message": "ಅಥವಾ ನೀವು ಕೈಗೊಂಬೆಗಳ ಉದಾಹರಣೆಯನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಾಯಿತು\n ವಿಸ್ತರಣೆಯನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "ಬ್ರೌಸರ್ ವಿಸ್ತರಣೆಯನ್ನು ರಚಿಸುವ ಕಡೆಗೆ ಅದು ಉತ್ತಮ ಪ್ರಗತಿಯಾಗಿದೆ ಎಂದು ನಾನು ಹೇಳುತ್ತೇನೆ."
@@ -96,21 +75,48 @@
         "message": "<strong> 1. </strong> ವಿಸ್ತರಣೆಗಳ ಐಕಾನ್ ಕ್ಲಿಕ್ ಮಾಡಿ."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> ಪಟ್ಟಿಯಲ್ಲಿ \"ಬ್ರೌಸರ್ ವಿಸ್ತರಣೆ ಸ್ಟಾರ್ಟರ್\" ಅನ್ನು ಹುಡುಕಿ \n       ವಿಸ್ತರಣೆಗಳು."
+        "message": "<strong> 2. </strong> ಪಟ್ಟಿಯಲ್ಲಿ \"ಬ್ರೌಸರ್ ವಿಸ್ತರಣೆ ಸ್ಟಾರ್ಟರ್\" ಅನ್ನು ಹುಡುಕಿ\n ವಿಸ್ತರಣೆಗಳು."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> ಇದರ ಬಲಭಾಗದಲ್ಲಿರುವ ಪಿನ್ ಐಕಾನ್ ಕ್ಲಿಕ್ ಮಾಡಿ \n       ವಿಸ್ತರಣೆಯ ಐಕಾನ್."
+        "message": "<strong> 3. </strong> ಇದರ ಬಲಭಾಗದಲ್ಲಿರುವ ಪಿನ್ ಐಕಾನ್ ಕ್ಲಿಕ್ ಮಾಡಿ\n ವಿಸ್ತರಣೆಯ ಐಕಾನ್."
     },
     "All_done_": {
-        "message": "ಎಲ್ಲವೂ ಮುಗಿಯಿತು."
+        "message": "ಎಲ್ಲಾ ಮುಗಿದಿದೆ."
     },
     "Share_the_love_": {
         "message": "ಪ್ರೀತಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳಿ!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "ಈ ವಿಸ್ತರಣೆಯು ಸಹಾಯಕವಾಗಿದೆಯೆಂದು ನೀವು ಕಂಡುಕೊಂಡರೆ, ಗಿಟ್‌ಹಬ್ ಪುಟದಲ್ಲಿ ನಕ್ಷತ್ರವನ್ನು ಬಿಡಿ \n         ಅಥವಾ ಕ್ರೋಮ್ ವೆಬ್‌ಸ್ಟೋರ್‌ನಲ್ಲಿ ರೇಟಿಂಗ್."
+        "message": "ಈ ವಿಸ್ತರಣೆಯು ಸಹಾಯಕವಾಗಿದೆಯೆಂದು ನೀವು ಕಂಡುಕೊಂಡರೆ, ಗಿಟ್‌ಹಬ್ ಪುಟದಲ್ಲಿ ನಕ್ಷತ್ರವನ್ನು ಬಿಡಿ\n ಅಥವಾ ಕ್ರೋಮ್ ವೆಬ್‌ಸ್ಟೋರ್‌ನಲ್ಲಿ ರೇಟಿಂಗ್."
     },
     "Star_on_GitHub": {
         "message": "ಗಿಟ್‌ಹಬ್‌ನಲ್ಲಿ ಸ್ಟಾರ್"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "ಕ್ರೋಮ್ ವೆಬ್ ಅಂಗಡಿಯಲ್ಲಿ ದರ"
+    },
+    "Options": {
+        "message": "ಆಯ್ಕೆಗಳು"
+    },
+    "Show_Demo": {
+        "message": "ಡೆಮೊ ತೋರಿಸಿ"
+    },
+    "Report_an_Issue": {
+        "message": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ"
+    },
+    "How_are_we_doing_": {
+        "message": "ನಾವು ಹೇಗೆ ಮಾಡುತ್ತಿದ್ದೇವೆ?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "ನೀವು ಇಷ್ಟಪಟ್ಟಿದ್ದಕ್ಕೆ ಸಂತೋಷವಾಗಿದೆ! The ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಹುದೇ?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ಧನ್ಯವಾದಗಳು!"
+    },
+    "No": {
+        "message": "ಇಲ್ಲ"
+    },
+    "Submit_Feedback": {
+        "message": "ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಸಲ್ಲಿಸಿ"
     }
 }

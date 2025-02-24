@@ -1,7 +1,7 @@
 {
-    "name": "__MSG_@appName__",
-    "description": "__MSG_@appDesc__",
-    "short_name": "__MSG_@appShortName__",
+    "name": "__MSG_const_appName__",
+    "description": "__MSG_const_appDesc__",
+    "short_name": "__MSG_const_appShortName__",
     "homepage_url": "https://github.com/justiceo/xtension",
     "version": "23.1.21",
     "manifest_version": 3,
@@ -25,7 +25,7 @@
             "24": "assets/logo-24x24.png",
             "32": "assets/logo-32x32.png"
         },
-        "default_title": "__MSG_@appName__",
+        "default_title": "__MSG_const_appName__",
         "default_popup": "popup/popup.html"
     },
     "content_scripts": [

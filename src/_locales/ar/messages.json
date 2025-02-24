@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "متصفح تمديد بداية",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "ب",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "مثال تمديد المتصفح. TypeScript ، اختبارات E2E ، توليد الأيقونات ، I18N التلقائي و ESBUILD",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<viv> <p> Hello World </p> هذه هي اللغة <strong> </strong> من الويب </div>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "التمديد لن يعمل على هذه المواقع. أدخل موقع واحد لكل سطر."
     },
-    "Options": {
-        "message": "خيارات"
-    },
-    "Show_Demo": {
-        "message": "عرض العرض التوضيحي"
-    },
-    "Report_an_Issue": {
-        "message": "بلغ عن خطأ"
-    },
-    "How_can_we_improve_": {
-        "message": "كيف يمكن أن نتحسن؟"
-    },
-    "How_are_we_doing_": {
-        "message": "كيف نفعل؟"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "سعيد انه اعجبك! هل يمكنك مساعدتنا في مشاركة ❤؟"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "شكرا على ملاحظاتك!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "معدل على متجر Chrome على الويب"
-    },
-    "No": {
-        "message": "لا"
-    },
-    "Submit_Feedback": {
-        "message": "إرسال ردود الفعل"
-    },
     "Successfully_updated_settings": {
         "message": "الإعدادات التي تم تحديثها بنجاح"
+    },
+    "How_can_we_improve_": {
+        "message": "كيف يمكننا تحسين؟"
+    },
+    "_appName": {
+        "message": "appname"
+    },
+    "__extension_id": {
+        "message": "extension_id"
     },
     "Welcome": {
         "message": "مرحباً"
@@ -75,16 +54,16 @@
         "message": "إذا كنت تنظر إلى هذه الصفحة ، فأنت بنجاح"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "استنساخ المستودع في \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtense </a> \n           وتثبيت جميع التبعيات."
+        "message": "استنساخ المستودع في\n <a href = \"https://github.com/justiceo/xtense\"> https://github.com/justiceo/xtense </a>\n وتثبيت جميع التبعيات."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "استخدم Esbuild لبناء رمز المصدر وتعبئته في متجر جاهز \n           شكل."
+        "message": "استخدم Esbuild لبناء رمز المصدر وتعبئته في متجر جاهز\n شكل."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "ممكّن وضع DEV على Chrome/Firefox وقام بتركيبه غير معبأ \n           امتداد..."
+        "message": "ممكّن وضع DEV على Chrome/Firefox وقام بتركيبه غير معبأ\n امتداد..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "أو تمكنت من بدء مثيل من Puppeteer مع \n           امتداد مثبت."
+        "message": "أو تمكنت من بدء مثيل من Puppeteer مع\n امتداد مثبت."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "أقول إن هذا تقدم كبير نحو إنشاء امتداد المتصفح."
@@ -96,21 +75,48 @@
         "message": "<strong> 1. </strong> انقر على أيقونة الامتدادات."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> ابحث عن \"بداية امتداد المتصفح\" في قائمة من \n       الامتدادات."
+        "message": "<strong> 2. </strong> ابحث عن \"بداية امتداد المتصفح\" في قائمة من\n الامتدادات."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> انقر على أيقونة دبوس على يمين هذا \n       أيقونة التمديد."
+        "message": "<strong> 3. </strong> انقر على أيقونة دبوس على يمين هذا\n أيقونة التمديد."
     },
     "All_done_": {
-        "message": "كله تمام."
+        "message": "كل ذلك."
     },
     "Share_the_love_": {
         "message": "شارك الحب!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "إذا وجدت هذا الامتداد مفيدًا ، فاترك نجمًا على صفحة Github \n         أو تصنيف chrome webstore."
+        "message": "إذا وجدت هذا الامتداد مفيدًا ، فاترك نجمًا على صفحة Github\n أو تصنيف chrome webstore."
     },
     "Star_on_GitHub": {
         "message": "نجمة على جيثب"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "معدل على متجر Chrome على الويب"
+    },
+    "Options": {
+        "message": "خيارات"
+    },
+    "Show_Demo": {
+        "message": "عرض العرض التوضيحي"
+    },
+    "Report_an_Issue": {
+        "message": "الإبلاغ عن قضية"
+    },
+    "How_are_we_doing_": {
+        "message": "كيف حالنا؟"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "سعيد لأنك أحب ذلك! هل يمكنك مساعدتنا في مشاركة ❤؟"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "شكرا على ردود الفعل!"
+    },
+    "No": {
+        "message": "لا"
+    },
+    "Submit_Feedback": {
+        "message": "إرسال الملاحظات"
     }
 }

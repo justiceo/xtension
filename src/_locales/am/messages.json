@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "አሳሽ ቅጥያ ጅምር",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "B.e.s",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "የአሳሽ ቅጥያ ምሳሌ. AlyCript, EE2E ሙከራዎች, አዶ ትውልድ, አውቶማቲክ i18n እና ESBEADED",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<dip> <prame ዓለም </ p> ይህ <strong> ቋንቋ </ strong >> </ sub >>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "ቅጥያ በእነዚህ ጣቢያዎች ላይ አይሰራም. በአንድ መስመር አንድ ጣቢያ ያስገቡ."
     },
-    "Options": {
-        "message": "አማራጮች"
-    },
-    "Show_Demo": {
-        "message": "ማሳያ ማሳያ"
-    },
-    "Report_an_Issue": {
-        "message": "አንድ ጉዳይ ሪፖርት ያድርጉ"
+    "Successfully_updated_settings": {
+        "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
     },
     "How_can_we_improve_": {
         "message": "እንዴት ማሻሻል እንችላለን?"
     },
-    "How_are_we_doing_": {
-        "message": "እንዴት እየሰራን ነው?"
+    "_appName": {
+        "message": "@app ስም"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "ደስ እንደሰኛቸው ደስ ብሎኛል! ❤️ እንድንካፈል ሊረዱን ይችላሉ?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "ስለ ግብረመልሱ አመሰግናለሁ!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "በ Chrome ድር ማከማቻ ላይ ተመን"
-    },
-    "No": {
-        "message": "አይ"
-    },
-    "Submit_Feedback": {
-        "message": "ግብረ መልስ ያስገቡ"
-    },
-    "Successfully_updated_settings": {
-        "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
+    "__extension_id": {
+        "message": "@@ ቅጥያ_"
     },
     "Welcome": {
         "message": "እንኳን ደህና መጣህ"
@@ -75,16 +54,16 @@
         "message": "ይህንን ገጽ እየተመለከቱ ከሆነ በተሳካ ሁኔታ"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "ማከማቻውን በ \n           <a horf=\"httsps:/cititub.com httpte: http://github.com/juittice/xtrity/xteed \n           እና ሁሉንም ጥገኝነትን ተጭኗል."
+        "message": "ማከማቻውን በ\n <ሂቲኤፍ = \"https://github.com/juiticeico/xcetion/xtence/xtence/ttention/t./auitt.com/juitticeo/xcte ·/a>\n እና ሁሉንም ጥገኝነትን ተጭኗል."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "የምንጭውን ደጃፍ ኮድ ለመገንባት እና የተሸፈኑትን ወደ ማከማቻ ዝግጁነት ለመገንባት ይጠቀሙበት \n           ቅርጸት."
+        "message": "የምንጭውን ደጃፍ ኮድ ለመገንባት እና የተሸፈኑትን ወደ ማከማቻ ዝግጁነት ለመገንባት ይጠቀሙበት\n ቅርጸት."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "በ Chrome / Firefox ላይ የ DEV ሁነታን በመጫን ተጭኗል \n           ማራዘሚያ ..."
+        "message": "በ Chrome / Firefox ላይ የ DEV ሁነታን በመጫን ተጭኗል\n ማራዘሚያ ..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "ወይም የአሻንጉሊት አሻንጉሊት ምሳሌ መጀመር ችለዋል \n           ቅጥያ ተጭኗል."
+        "message": "ወይም የአሻንጉሊት አሻንጉሊት ምሳሌ መጀመር ችለዋል\n ቅጥያ ተጭኗል."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "አሳሽ ቅጥያ ለመፍጠር ትልቅ እድገት ነው እላለሁ."
@@ -96,21 +75,48 @@
         "message": "<ጠንካራ> 1. </ strong> ቅጥያዎች አዶዎችን ጠቅ ያድርጉ."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<ጠንካራ> 2. </ strong >> በ ዝርዝር ውስጥ \"የአሳሽ ቅጥያ ጅምር\" ይፈልጉ \n       ቅጥያዎች."
+        "message": "<ጠንካራ> 2. </ strong >> በ ዝርዝር ውስጥ \"የአሳሽ ቅጥያ ጅምር\" ይፈልጉ\n ቅጥያዎች."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </ strong> ከዚህ በቀኝ በኩል ባለው የፒን አዶ ላይ ጠቅ ያድርጉ \n       የቅጥያ አዶ."
+        "message": "<strong> 3. </ strong> ከዚህ በቀኝ በኩል ባለው የፒን አዶ ላይ ጠቅ ያድርጉ\n የቅጥያ አዶ."
     },
     "All_done_": {
-        "message": "ሁሉም ተጠናቀቀ."
+        "message": "ሁሉም ተከናውነዋል."
     },
     "Share_the_love_": {
         "message": "ፍቅርን ያጋሩ!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "ይህንን ቅጥያ ጠቃሚ ሆኖ ካገኙ በ Githubage ገጽ ላይ ኮከቡን ይተው \n         ወይም በ Chrome ድርጣቢያ ላይ ደረጃ ይስጡ."
+        "message": "ይህንን ቅጥያ ጠቃሚ ሆኖ ካገኙ በ Githubage ገጽ ላይ ኮከቡን ይተው\n ወይም በ Chrome ድርጣቢያ ላይ ደረጃ ይስጡ."
     },
     "Star_on_GitHub": {
         "message": "በ Github ላይ ኮከብ"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "በ Chrome ድር ማከማቻ ላይ ተመን"
+    },
+    "Options": {
+        "message": "አማራጮች"
+    },
+    "Show_Demo": {
+        "message": "ማሳያ ማሳያ"
+    },
+    "Report_an_Issue": {
+        "message": "አንድ ጉዳይ ሪፖርት ያድርጉ"
+    },
+    "How_are_we_doing_": {
+        "message": "እንዴት እየሰራን ነው?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "ደስ እንደሰኛቸው ደስ ብሎኛል! ❤️ እንድንካፈል ሊረዱን ይችላሉ?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "ስለ ግብረመልሱ አመሰግናለሁ!"
+    },
+    "No": {
+        "message": "አይ"
+    },
+    "Submit_Feedback": {
+        "message": "ግብረ መልስ ያስገቡ"
     }
 }

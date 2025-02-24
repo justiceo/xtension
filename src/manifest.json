@@ -1,7 +1,7 @@
 {
-  "name": "__MSG_@appName__",
-  "description": "__MSG_@appDesc__",
-  "short_name": "__MSG_@appShortName__",
+  "name": "__MSG_const_appName__",
+  "description": "__MSG_const_appDesc__",
+  "short_name": "__MSG_const_appShortName__",
   "__comment:homepage_url": "This should be the webstore link, __MSG_@@extension_id__ is not allowed",
   "homepage_url": "https://github.com/justiceo/xtension",
   "__comment:version__": "Firefox does not support leading zeros in versions",
@@ -18,7 +18,7 @@
       "24": "assets/logo-24x24.png",
       "32": "assets/logo-32x32.png"
     },
-    "default_title": "__MSG_@appName__",
+    "default_title": "__MSG_const_appName__",
     "default_popup": "popup/popup.html"
   },
   "content_scripts": [

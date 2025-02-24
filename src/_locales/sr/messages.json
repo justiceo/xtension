@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "Проширење претраживача Стартер",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "Б.е.с",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "Пример проширења прегледача. Типцрипт, Е2Е тестови, производња икона, аутоматски И18Н и ЕСБУИЛД",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<див> <п> Поздрав свијет </ п> Ово је <стронг> језик </ стронг> на веб </ див>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Проширење неће покренути на овим веб локацијама. Унесите једну локацију по линији."
     },
-    "Options": {
-        "message": "Опције"
-    },
-    "Show_Demo": {
-        "message": "Показати демо"
-    },
-    "Report_an_Issue": {
-        "message": "Пријавите проблем"
+    "Successfully_updated_settings": {
+        "message": "Успешно ажурирана подешавања"
     },
     "How_can_we_improve_": {
         "message": "Како се можемо побољшати?"
     },
-    "How_are_we_doing_": {
-        "message": "Како нам иде?"
+    "_appName": {
+        "message": "@ аппнаме"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Драго ми је да ти се свиђа! Можете ли нам помоћи да поделимо ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Хвала за повратне информације!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Оцени на Цхроме Веб Сторе"
-    },
-    "No": {
-        "message": "Не"
-    },
-    "Submit_Feedback": {
-        "message": "Пошаљите повратне информације"
-    },
-    "Successfully_updated_settings": {
-        "message": "Успешно ажурирана подешавања"
+    "__extension_id": {
+        "message": "@@ екстенсион_ид"
     },
     "Welcome": {
         "message": "Добродошли"
@@ -75,16 +54,16 @@
         "message": "Ако гледате ову страницу, успешно сте"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "Клониран спремиште на \n           <а хреф = \"хттпс: //гитхуб.цом/јустицео/кТенсион \"> хттпс: //гитхуб.цом/јустицео/Кствензија </ а> \n           и инсталирали све зависности."
+        "message": "Клониран спремиште на\n <а хреф = \"хттпс: //гитхуб.цом/јустицео/ктенсион\"> хттпс: //гитхуб.цом/Јустицео/ктенсион </ а>\n и инсталирали све зависности."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "Половно Есбуилд за изградњу изворног кода и упаковано у складиште \n           Формат."
+        "message": "Половно Есбуилд за изградњу изворног кода и упаковано у складиште\n Формат."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Омогућено СВ режим на Цхроме / Фирефоку и инсталиран је распакиран \n           Екстензија ..."
+        "message": "Омогућено СВ режим на Цхроме / Фирефоку и инсталиран је распакиран\n Екстензија ..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "или сте били у могућности да започнете инстанцу штенера са \n           Инсталирано проширење."
+        "message": "или сте били у могућности да започнете инстанцу штенера са\n Инсталирано проширење."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "Кажем да је то велики напредак ка стварању проширења прегледача."
@@ -96,21 +75,48 @@
         "message": "<стронг> 1. </ стронг> Кликните на икону Ектенсионс."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<стронг> 2 </ стронг> Пронађи \"Проширење претраживача стартер\" на листи \n       Проширења."
+        "message": "<стронг> 2 </ стронг> Пронађи \"Проширење претраживача стартер\" на листи\n Проширења."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<стронг> 3. </ стронг> Кликните на икону ПИН десно од овога \n       Икона екстензије."
+        "message": "<стронг> 3. </ стронг> Кликните на икону ПИН десно од овога\n Икона екстензије."
     },
     "All_done_": {
-        "message": "Завршено."
+        "message": "Све завршено."
     },
     "Share_the_love_": {
         "message": "Поделите љубав!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "Ако сте нашли ово проширење корисно, оставите звезду на страници ГитХуб \n         или оцена на Цхроме ВебСторе."
+        "message": "Ако сте нашли ово проширење корисно, оставите звезду на страници ГитХуб\n или оцена на Цхроме ВебСроре."
     },
     "Star_on_GitHub": {
         "message": "Звезда на Гитхуб-у"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Оцени на Цхроме Веб Сторе"
+    },
+    "Options": {
+        "message": "Опције"
+    },
+    "Show_Demo": {
+        "message": "Показати демо"
+    },
+    "Report_an_Issue": {
+        "message": "Пријавите проблем"
+    },
+    "How_are_we_doing_": {
+        "message": "Како смо?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Драго ми је да ти се свиђа! Можете ли нам помоћи да поделимо ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Хвала на повратним информацијама!"
+    },
+    "No": {
+        "message": "Не"
+    },
+    "Submit_Feedback": {
+        "message": "Пошаљите повратне информације"
     }
 }

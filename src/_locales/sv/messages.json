@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "Webbläsarförlängningsstart",
         "description": "The name of the extension"
     },
-    "@appShortName": {
-        "message": "VARA S",
+    "const_appShortName": {
+        "message": "B.e.s",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "Exempel på webbläsarförlängning. TypeScript, E2E -test, ikongenerering, automatisk i18N och ESBUILD",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<div> <p> Hello World </p> Detta är <strong> språket </strong> på webben </div>"
     },
     "Temporarily_disable_extension": {
@@ -32,59 +32,38 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Förlängningen körs inte på dessa webbplatser. Ange en webbplats per rad."
     },
-    "Options": {
-        "message": "alternativ"
-    },
-    "Show_Demo": {
-        "message": "Visa demo"
-    },
-    "Report_an_Issue": {
-        "message": "Rapportera ett problem"
+    "Successfully_updated_settings": {
+        "message": "Framgångsrikt uppdaterade inställningar"
     },
     "How_can_we_improve_": {
         "message": "Hur kan vi förbättra?"
     },
-    "How_are_we_doing_": {
-        "message": "Hur går det för oss?"
+    "_appName": {
+        "message": "@AppName"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Glad att du gillar det! Kan du hjälpa oss att dela ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Tack för feedbacken!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Betyg på Chrome Web Store"
-    },
-    "No": {
-        "message": "Nej"
-    },
-    "Submit_Feedback": {
-        "message": "Skicka feedback"
-    },
-    "Successfully_updated_settings": {
-        "message": "Framgångsrikt uppdaterade inställningar"
+    "__extension_id": {
+        "message": "@@ Extension_id"
     },
     "Welcome": {
-        "message": "Välkommen"
+        "message": "Välkomna"
     },
     "Hooray____": {
-        "message": "Hurra! 🎉"
+        "message": "Hooray! 🎉"
     },
     "If_you_are_looking_at_this_page__you_successfully": {
         "message": "Om du tittar på den här sidan är du framgångsrikt"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "Klonade förvaret på \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           och installerade alla beroenden."
+        "message": "Klonade förvaret på\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a>\n och installerade alla beroenden."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "Använde esbuild för att bygga källkoden och förpackas i butiksklar \n           formatera."
+        "message": "Använde esbuild för att bygga källkoden och förpackas i butiksklar\n formatera."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Aktiverat dev -läge på Chrome/Firefox och installerade en packad \n           förlängning..."
+        "message": "Aktiverat dev -läge på Chrome/Firefox och installerade en packad\n förlängning..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "eller så kunde du starta en instans av marionett med \n           förlängning installerad."
+        "message": "eller så kunde du starta en instans av marionett med\n förlängning installerad."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "Jag säger att det är stora framsteg mot att skapa en webbläsarförlängning."
@@ -96,21 +75,48 @@
         "message": "<strong> 1. </strong> Klicka på ikonen för tillägg."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> Hitta \"webbläsarförlängningsstarter\" i listan över \n       tillägg."
+        "message": "<strong> 2. </strong> Hitta \"webbläsarförlängningsstarter\" i listan över\n tillägg."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> klicka på stiftikonen till höger om detta \n       Extensions ikon."
+        "message": "<strong> 3. </strong> klicka på stiftikonen till höger om detta\n Extensions ikon."
     },
     "All_done_": {
-        "message": "Helt klar."
+        "message": "Allt gjort."
     },
     "Share_the_love_": {
-        "message": "Dela kärlek!"
+        "message": "Dela kärleken!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "Om du tyckte att denna förlängning var till hjälp, lämna en stjärna på Github -sidan \n         eller betyg på Chrome Webstore."
+        "message": "Om du tyckte att denna förlängning var till hjälp, lämna en stjärna på Github -sidan\n eller betyg på Chrome Webstore."
     },
     "Star_on_GitHub": {
         "message": "Stjärna på github"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Betyg på Chrome Web Store"
+    },
+    "Options": {
+        "message": "Alternativ"
+    },
+    "Show_Demo": {
+        "message": "Visa demo"
+    },
+    "Report_an_Issue": {
+        "message": "Rapportera ett problem"
+    },
+    "How_are_we_doing_": {
+        "message": "Hur mår vi?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Glad att du gillar det! Kan du hjälpa oss att dela ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Tack för feedbacken!"
+    },
+    "No": {
+        "message": "Inga"
+    },
+    "Submit_Feedback": {
+        "message": "Skicka feedback"
     }
 }

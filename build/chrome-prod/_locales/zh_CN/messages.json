@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "浏览器扩展入门",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "浏览器扩展示例。 打字稿，E2E测试，图标生成，自动I18N和ESBUILD",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<div> <p> Hello world </p>这是Web的<strong>语言</strong> </div>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "扩展将不会在这些站点上运行。 每行进入一个站点。"
     },
-    "Options": {
-        "message": "选项"
-    },
-    "Show_Demo": {
-        "message": "展示演示"
-    },
-    "Report_an_Issue": {
-        "message": "报告一个问题"
+    "Successfully_updated_settings": {
+        "message": "成功更新了设置"
     },
     "How_can_we_improve_": {
         "message": "我们如何改进？"
     },
-    "How_are_we_doing_": {
-        "message": "我们好吗？"
+    "_appName": {
+        "message": "@AppName"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "很高兴你喜欢它！ 您能帮我们分享❤️吗？"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "感谢您的反馈！"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome网上商店的利率"
-    },
-    "No": {
-        "message": "不"
-    },
-    "Submit_Feedback": {
-        "message": "提交反馈"
-    },
-    "Successfully_updated_settings": {
-        "message": "成功更新了设置"
+    "__extension_id": {
+        "message": "@@extension_id"
     },
     "Welcome": {
         "message": "欢迎"
@@ -75,42 +54,69 @@
         "message": "如果您正在查看此页面，那么您成功"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "克隆了存储库 \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           并安装了所有依赖项。"
+        "message": "克隆了存储库\n <a href =“ https://github.com/justiceo/xtension”> https://github.com/justiceo/xtension </a>\n 并安装了所有依赖项。"
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "使用Esbuild来构建源代码并打包到准备商店中 \n           格式。"
+        "message": "使用Esbuild来构建源代码并打包到准备商店中\n 格式。"
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "在Chrome/Firefox上启用了Dev模式，并安装了一个未包装的 \n           扩大..."
+        "message": "在Chrome/Firefox上启用了Dev模式，并安装了一个未包装的\n 扩大..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "或者您能够使用 \n           安装了扩展。"
+        "message": "或者您能够使用\n 安装了扩展。"
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "我说这是创建浏览器扩展程序的巨大进步。"
     },
     "Next__Pin_it": {
-        "message": "下一步：固定"
+        "message": "下一个：固定"
     },
     "_strong_1___strong__Click_on_the_extensions_icon_": {
         "message": "<strong>1。</strong>单击扩展图标。"
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2。</strong>在列表中找到“浏览器扩展启动器” \n       扩展。"
+        "message": "<strong> 2。</strong>在列表中找到“浏览器扩展启动器”\n 扩展。"
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3。</strong>单击此右侧的针图标 \n       扩展的图标。"
+        "message": "<strong> 3。</strong>单击此右侧的针图标\n 扩展的图标。"
     },
     "All_done_": {
-        "message": "全做完了。"
+        "message": "一切都完成了。"
     },
     "Share_the_love_": {
         "message": "分享爱！"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "如果您发现此扩展程序有帮助，请在GitHub页面上留下一颗星星 \n         或在Chrome网络店上进行评分。"
+        "message": "如果您发现此扩展程序有帮助，请在GitHub页面上留下一颗星星\n 或在Chrome网络店上进行评分。"
     },
     "Star_on_GitHub": {
         "message": "明星在github上"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome网上商店的利率"
+    },
+    "Options": {
+        "message": "选项"
+    },
+    "Show_Demo": {
+        "message": "展示演示"
+    },
+    "Report_an_Issue": {
+        "message": "报告一个问题"
+    },
+    "How_are_we_doing_": {
+        "message": "我们好吗？"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "很高兴您喜欢它！ 您能帮我们分享❤️吗？"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "感谢您的反馈！"
+    },
+    "No": {
+        "message": "不"
+    },
+    "Submit_Feedback": {
+        "message": "提交反馈"
     }
 }

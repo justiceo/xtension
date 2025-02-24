@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "బ్రౌజర్ ఎక్స్‌టెన్షన్ స్టార్టర్",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "బ్రౌజర్ పొడిగింపు ఉదాహరణ. టైప్‌స్క్రిప్ట్, E2E పరీక్షలు, ఐకాన్ జనరేషన్, ఆటోమేటిక్ I18N మరియు ESBUILD",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<div> <p> హలో వరల్డ్ </p> ఇది వెబ్ </div> యొక్క <strong> భాష </strong>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "ఈ సైట్లలో పొడిగింపు అమలు చేయదు. ప్రతి పంక్తికి ఒక సైట్‌ను నమోదు చేయండి."
     },
-    "Options": {
-        "message": "ఎంపికలు"
-    },
-    "Show_Demo": {
-        "message": "డెమో షో"
-    },
-    "Report_an_Issue": {
-        "message": "ఒక సమస్యను నివేదించండి"
+    "Successfully_updated_settings": {
+        "message": "విజయవంతంగా నవీకరించబడిన సెట్టింగులు"
     },
     "How_can_we_improve_": {
         "message": "మేము ఎలా మెరుగుపరచగలం?"
     },
-    "How_are_we_doing_": {
-        "message": "మేము ఎలా చేస్తున్నాము?"
+    "_appName": {
+        "message": "@AppName"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "నీకు నచ్చినందుకు సంతోషం! మీరు ❤ భాగస్వామ్యం చేయడానికి మాకు సహాయం చేయగలరా?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "అభిప్రాయము తెలిపినందుకు ధన్యవాదములు!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome వెబ్ స్టోర్‌లో రేటు"
-    },
-    "No": {
-        "message": "లేదు"
-    },
-    "Submit_Feedback": {
-        "message": "అభిప్రాయాన్ని సమర్పించండి"
-    },
-    "Successfully_updated_settings": {
-        "message": "విజయవంతంగా నవీకరించబడిన సెట్టింగులు"
+    "__extension_id": {
+        "message": "@@ పొడిగింపు_ఐడి"
     },
     "Welcome": {
         "message": "స్వాగతం"
@@ -75,31 +54,31 @@
         "message": "మీరు ఈ పేజీని చూస్తున్నట్లయితే, మీరు విజయవంతంగా"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "వద్ద రిపోజిటరీని క్లోన్ చేసింది \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           మరియు అన్ని డిపెండెన్సీలను వ్యవస్థాపించారు."
+        "message": "వద్ద రిపోజిటరీని క్లోన్ చేసింది\n <a href = \"\n మరియు అన్ని డిపెండెన్సీలను వ్యవస్థాపించారు."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "సోర్స్ కోడ్‌ను రూపొందించడానికి ESBUILD ఉపయోగించబడింది మరియు స్టోర్-రెడీలో ప్యాక్ చేయబడింది \n           ఫార్మాట్."
+        "message": "సోర్స్ కోడ్‌ను రూపొందించడానికి ESBUILD ఉపయోగించబడింది మరియు స్టోర్-రెడీలో ప్యాక్ చేయబడింది\n ఫార్మాట్."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Chrome/firefox లో DEV మోడ్‌ను ప్రారంభించి, అన్ప్యాక్ చేయనిదాన్ని ఇన్‌స్టాల్ చేసింది \n           పొడిగింపు ..."
+        "message": "Chrome/firefox లో DEV మోడ్‌ను ప్రారంభించి, అన్ప్యాక్ చేయనిదాన్ని ఇన్‌స్టాల్ చేసింది\n పొడిగింపు ..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "లేదా మీరు తోలుబొమ్మ యొక్క ఉదాహరణను ప్రారంభించగలిగారు \n           పొడిగింపు వ్యవస్థాపించబడింది."
+        "message": "లేదా మీరు తోలుబొమ్మ యొక్క ఉదాహరణను ప్రారంభించగలిగారు\n పొడిగింపు వ్యవస్థాపించబడింది."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "బ్రౌజర్ పొడిగింపును సృష్టించే దిశగా ఇది గొప్ప పురోగతి అని నేను చెప్తున్నాను."
     },
     "Next__Pin_it": {
-        "message": "తర్వాత: పిన్ చేయండి"
+        "message": "తరువాత: పిన్ చేయండి"
     },
     "_strong_1___strong__Click_on_the_extensions_icon_": {
         "message": "<strong> 1. </strong> పొడిగింపుల చిహ్నంపై క్లిక్ చేయండి."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> జాబితాలో \"బ్రౌజర్ ఎక్స్‌టెన్షన్ స్టార్టర్\" ను కనుగొనండి \n       పొడిగింపులు."
+        "message": "<strong> 2. </strong> జాబితాలో \"బ్రౌజర్ ఎక్స్‌టెన్షన్ స్టార్టర్\" ను కనుగొనండి\n పొడిగింపులు."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> దీని కుడి వైపున ఉన్న పిన్ చిహ్నంపై క్లిక్ చేయండి \n       పొడిగింపు యొక్క చిహ్నం."
+        "message": "<strong> 3. </strong> దీని కుడి వైపున ఉన్న పిన్ చిహ్నంపై క్లిక్ చేయండి\n పొడిగింపు యొక్క చిహ్నం."
     },
     "All_done_": {
         "message": "అన్నీ పూర్తయ్యాయి."
@@ -108,9 +87,36 @@
         "message": "ప్రేమను పంచుకోండి!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "మీరు ఈ పొడిగింపు సహాయకరంగా అనిపిస్తే, గితుబ్ పేజీలో ఒక నక్షత్రాన్ని వదిలివేయండి \n         లేదా క్రోమ్ వెబ్‌స్టోర్‌లో రేటింగ్."
+        "message": "మీరు ఈ పొడిగింపు సహాయకరంగా అనిపిస్తే, గితుబ్ పేజీలో ఒక నక్షత్రాన్ని వదిలివేయండి\n లేదా క్రోమ్ వెబ్‌స్టోర్‌లో రేటింగ్."
     },
     "Star_on_GitHub": {
         "message": "గితుబ్‌లో స్టార్"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome వెబ్ స్టోర్‌లో రేటు"
+    },
+    "Options": {
+        "message": "ఎంపికలు"
+    },
+    "Show_Demo": {
+        "message": "డెమో షో"
+    },
+    "Report_an_Issue": {
+        "message": "ఒక సమస్యను నివేదించండి"
+    },
+    "How_are_we_doing_": {
+        "message": "మేము ఎలా చేస్తున్నాము?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "మీకు నచ్చినందుకు ఆనందంగా ఉంది! మీరు ❤ భాగస్వామ్యం చేయడానికి మాకు సహాయం చేయగలరా?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "అభిప్రాయానికి ధన్యవాదాలు!"
+    },
+    "No": {
+        "message": "లేదు"
+    },
+    "Submit_Feedback": {
+        "message": "అభిప్రాయాన్ని సమర్పించండి"
     }
 }

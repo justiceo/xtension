@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "Démarreur d'extension du navigateur",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "Exemple d'extension du navigateur. TypeScript, tests E2E, génération d'icônes, I18N automatique et Esbuild",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<div> <p> Bonjour le monde </p> C'est la <strong> langue </strong> du web </div>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "L'extension ne fonctionnera pas sur ces sites. Entrez un site par ligne."
     },
-    "Options": {
-        "message": "Options"
-    },
-    "Show_Demo": {
-        "message": "Démonstration"
-    },
-    "Report_an_Issue": {
-        "message": "Signaler un problème"
-    },
-    "How_can_we_improve_": {
-        "message": "Comment pouvons nous nous améliorer?"
-    },
-    "How_are_we_doing_": {
-        "message": "Comment allons nous?"
-    },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Content que tu aimes ça! Pouvez-vous nous aider à partager le ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Merci pour les commentaires!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Tarif sur Chrome Web Store"
-    },
-    "No": {
-        "message": "Non"
-    },
-    "Submit_Feedback": {
-        "message": "Soumettre des commentaires"
-    },
     "Successfully_updated_settings": {
         "message": "Paramètres mis à jour avec succès"
+    },
+    "How_can_we_improve_": {
+        "message": "Comment pouvons-nous nous améliorer?"
+    },
+    "_appName": {
+        "message": "@Appname"
+    },
+    "__extension_id": {
+        "message": "@@ Extension_ID"
     },
     "Welcome": {
         "message": "Bienvenue"
@@ -75,16 +54,16 @@
         "message": "Si vous regardez cette page, vous avez réussi"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "Cloné le référentiel à \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           et installé toutes les dépendances."
+        "message": "Cloné le référentiel à\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a>\n et installé toutes les dépendances."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "Esbuild utilisé pour construire le code source et emballé dans le magasin prêt pour le magasin \n           format."
+        "message": "Esbuild utilisé pour construire le code source et emballé dans le magasin prêt pour le magasin\n format."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Mode de développement activé sur Chrome / Firefox et installé un déballé \n           extension..."
+        "message": "Mode de développement activé sur Chrome / Firefox et installé un déballé\n extension..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "ou vous avez pu démarrer une instance de marionnettiste avec le \n           extension installée."
+        "message": "ou vous avez pu démarrer une instance de marionnettiste avec le\n extension installée."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "Je dis que c'est de grands progrès vers la création d'une extension de navigateur."
@@ -96,21 +75,48 @@
         "message": "<strong> 1. </strong> Cliquez sur l'icône d'extensions."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> trouver \"Starter d'extension du navigateur\" dans la liste de \n       extensions."
+        "message": "<strong> 2. </strong> trouver \"Starter d'extension du navigateur\" dans la liste de\n extensions."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> Cliquez sur l'icône de la broche à droite \n       L'icône de l'extension."
+        "message": "<strong> 3. </strong> Cliquez sur l'icône de la broche à droite\n L'icône de l'extension."
     },
     "All_done_": {
-        "message": "Terminé."
+        "message": "Tout fait."
     },
     "Share_the_love_": {
-        "message": "Partager l'amour!"
+        "message": "Partagez l'amour!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "Si vous avez trouvé cette extension utile, laissez une étoile sur la page GitHub \n         ou note sur Chrome Webstore."
+        "message": "Si vous avez trouvé cette extension utile, laissez une étoile sur la page GitHub\n ou note sur Chrome Webstore."
     },
     "Star_on_GitHub": {
         "message": "Star sur github"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Tarif sur Chrome Web Store"
+    },
+    "Options": {
+        "message": "Options"
+    },
+    "Show_Demo": {
+        "message": "Démonstration"
+    },
+    "Report_an_Issue": {
+        "message": "Signaler un problème"
+    },
+    "How_are_we_doing_": {
+        "message": "Comment allons-nous?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Heureux que vous l'aimiez! Pouvez-vous nous aider à partager le ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Merci pour les commentaires!"
+    },
+    "No": {
+        "message": "Non"
+    },
+    "Submit_Feedback": {
+        "message": "Soumettre des commentaires"
     }
 }

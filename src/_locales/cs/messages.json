@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "Prodlužovací startér prohlížeče",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "Příklad prodloužení prohlížeče. Strojopis, testy E2e, generování ikon, automatický i18n a esbuild",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<div> <p> Hello World </p> Toto je <strong> jazyk </strong> webu </v div>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Prodloužení nebude na těchto stránkách spuštěno. Zadejte jeden web na řádek."
     },
-    "Options": {
-        "message": "Možnosti"
-    },
-    "Show_Demo": {
-        "message": "Zobrazit demo"
-    },
-    "Report_an_Issue": {
-        "message": "Nahlásit problém"
+    "Successfully_updated_settings": {
+        "message": "Úspěšně aktualizovaná nastavení"
     },
     "How_can_we_improve_": {
         "message": "Jak se můžeme zlepšit?"
     },
-    "How_are_we_doing_": {
-        "message": "Jak se máme?"
+    "_appName": {
+        "message": "@Appname"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Jsem rád že se ti líbí! Můžete nám pomoci sdílet ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Děkuji za zpětnou vazbu!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Ohodnoťte se na webovém obchodě Chrome"
-    },
-    "No": {
-        "message": "Ne"
-    },
-    "Submit_Feedback": {
-        "message": "Odeslat zpětnou vazbu"
-    },
-    "Successfully_updated_settings": {
-        "message": "Úspěšně aktualizovaná nastavení"
+    "__extension_id": {
+        "message": "@@ Extension_id"
     },
     "Welcome": {
         "message": "Vítejte"
@@ -75,16 +54,16 @@
         "message": "Pokud se díváte na tuto stránku, úspěšně jste"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "Klonoval úložiště na \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           a nainstaloval všechny závislosti."
+        "message": "Klonoval úložiště na\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a>\n a nainstaloval všechny závislosti."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "Použitý esbuild k vytvoření zdrojového kódu a zabaleno do připraveného obchodu \n           formát."
+        "message": "Použitý esbuild k vytvoření zdrojového kódu a zabaleno do připraveného obchodu\n formát."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Povolen režim DEV na Chrome/Firefox a nainstalován rozbalený \n           rozšíření..."
+        "message": "Povolen režim DEV na Chrome/Firefox a nainstalován rozbalený\n rozšíření..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "nebo jste byli schopni zahájit instanci loutkáře s \n           Nainstalováno rozšíření."
+        "message": "nebo jste byli schopni zahájit instanci loutkáře s\n Nainstalováno rozšíření."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "Říkám, že je to velký pokrok směrem k vytvoření rozšíření prohlížeče."
@@ -96,21 +75,48 @@
         "message": "<strong> 1. </strong> klikněte na ikonu rozšíření."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> Najděte „Prodlužovací startér prohlížeče“ v seznamu \n       rozšíření."
+        "message": "<strong> 2. </strong> Najděte „Prodlužovací startér prohlížeče“ v seznamu\n rozšíření."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> klikněte na ikonu pin na pravé straně \n       Ikona rozšíření."
+        "message": "<strong> 3. </strong> klikněte na ikonu pin na pravé straně\n Ikona rozšíření."
     },
     "All_done_": {
-        "message": "Vše hotovo."
+        "message": "Všechno hotovo."
     },
     "Share_the_love_": {
-        "message": "Sdílej lásku!"
+        "message": "Sdílejte lásku!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "Pokud jste toto rozšíření považovali za užitečné, ponechte na stránce GitHub hvězdu \n         nebo hodnocení na Chrome Webstore."
+        "message": "Pokud jste toto rozšíření považovali za užitečné, ponechte na stránce GitHub hvězdu\n nebo hodnocení na Chrome Webstore."
     },
     "Star_on_GitHub": {
         "message": "Hvězda na GitHubu"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Ohodnoťte se na webovém obchodě Chrome"
+    },
+    "Options": {
+        "message": "Možnosti"
+    },
+    "Show_Demo": {
+        "message": "Zobrazit demo"
+    },
+    "Report_an_Issue": {
+        "message": "Nahlásit problém"
+    },
+    "How_are_we_doing_": {
+        "message": "Jak se máme?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Jsem rád, že se vám to líbí! Můžete nám pomoci sdílet ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Díky za zpětnou vazbu!"
+    },
+    "No": {
+        "message": "Žádný"
+    },
+    "Submit_Feedback": {
+        "message": "Odeslat zpětnou vazbu"
     }
 }

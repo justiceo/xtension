@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "Predlžovač prehliadača",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "Príklad rozšírenia prehliadača. TypeScript, E2E testy, generovanie ikon, automatické i18n a Esbuild",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<div> <p> Ahoj svet </p> Toto je jazyk <strong> </strong> z webu </div>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Rozšírenie nebude bežať na týchto stránkach. Zadajte jednu stránku na riadok."
     },
-    "Options": {
-        "message": "možnosti"
-    },
-    "Show_Demo": {
-        "message": "Ukázať"
-    },
-    "Report_an_Issue": {
-        "message": "Nahlásiť problém"
+    "Successfully_updated_settings": {
+        "message": "Úspešne aktualizované nastavenia"
     },
     "How_can_we_improve_": {
         "message": "Ako sa môžeme vylepšiť?"
     },
-    "How_are_we_doing_": {
-        "message": "Ako sa máme?"
+    "_appName": {
+        "message": "@AppName"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Som rád že sa ti to páči! Môžete nám pomôcť zdieľať ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Ďakujem za spätnú väzbu!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Hodnotiť na internetovom obchode Chrome"
-    },
-    "No": {
-        "message": "Nie"
-    },
-    "Submit_Feedback": {
-        "message": "Odoslať spätnú väzbu"
-    },
-    "Successfully_updated_settings": {
-        "message": "Úspešne aktualizované nastavenia"
+    "__extension_id": {
+        "message": "@@ extension_id"
     },
     "Welcome": {
         "message": "Privítať"
@@ -75,16 +54,16 @@
         "message": "Ak sa pozeráte na túto stránku, úspešne ste"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "Klonoval úložisko na \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           a nainštalovali všetky závislosti."
+        "message": "Klonoval úložisko na\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a>\n a nainštalovali všetky závislosti."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "Použitý Esbuild na zostavenie zdrojového kódu a zabalený do obchodu pripravený \n           formát."
+        "message": "Použitý Esbuild na zostavenie zdrojového kódu a zabalený do obchodu pripravený\n formát."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Povolený režim dev na prehliadači Chrome/Firefox a nainštalovaný rozbalený \n           rozšírenie ..."
+        "message": "Povolený režim dev na prehliadači Chrome/Firefox a nainštalovaný rozbalený\n rozšírenie ..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "Alebo ste boli schopní založiť inštanciu bábkarstva s \n           Nainštalované rozšírenie."
+        "message": "Alebo ste boli schopní založiť inštanciu bábkarstva s\n Nainštalované rozšírenie."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "Hovorím, že je to veľký pokrok smerom k vytvoreniu rozšírenia prehliadača."
@@ -96,21 +75,48 @@
         "message": "<strong> 1. </strong> Kliknite na ikonu rozšírení."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> Nájdite „Štartér rozšírenia prehliadača“ v zozname \n       rozšírenia."
+        "message": "<strong> 2. </strong> Nájdite „Štartér rozšírenia prehliadača“ v zozname\n rozšírenia."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> kliknite na ikonu PIN napravo od tohto \n       Ikona rozšírenia."
+        "message": "<strong> 3. </strong> kliknite na ikonu PIN napravo od tohto\n Ikona rozšírenia."
     },
     "All_done_": {
         "message": "Všetko hotové."
     },
     "Share_the_love_": {
-        "message": "Zdielať lásku!"
+        "message": "Podeľte sa o lásku!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "Ak ste zistili, že toto rozšírenie je užitočné, zanechajte hviezdu na stránke GitHub \n         alebo hodnotenie na webstore Chrome."
+        "message": "Ak ste zistili, že toto rozšírenie je užitočné, nechajte hviezdu na stránke GitHub\n alebo hodnotenie na webstore Chrome."
     },
     "Star_on_GitHub": {
         "message": "Hviezda na github"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Hodnotiť na internetovom obchode Chrome"
+    },
+    "Options": {
+        "message": "Možnosti"
+    },
+    "Show_Demo": {
+        "message": "Ukázať"
+    },
+    "Report_an_Issue": {
+        "message": "Nahlásiť problém"
+    },
+    "How_are_we_doing_": {
+        "message": "Ako sa nám darí?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Som rád, že sa vám páči! Môžete nám pomôcť zdieľať ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Ďakujeme za spätnú väzbu!"
+    },
+    "No": {
+        "message": "Nie"
+    },
+    "Submit_Feedback": {
+        "message": "Odoslať spätnú väzbu"
     }
 }

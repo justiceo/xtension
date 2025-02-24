@@ -119,7 +119,7 @@ export class Translator {
         localeData[key].from.language.iso !== this.defaultLocale
       ) {
         console.warn(
-          `Auto corrected source locale from ${this.defaultLocale} to ${localeData[key].from.language.iso} `,
+          `Auto corrected source locale from ${this.defaultLocale} to ${localeData[key].from.language.iso} `
         );
       }
       if (
@@ -127,7 +127,7 @@ export class Translator {
         localeData[key].from?.text?.autoCorrected
       ) {
         console.warn(
-          `Auto corrected text to ${localeData[key].from?.text?.value}`,
+          `Auto corrected text to ${localeData[key].from?.text?.value}`
         );
       }
     });
@@ -175,9 +175,9 @@ export class Translator {
 
       let literals = Object.values(allMatches).reduce(
         (acc, currentValue) => acc.concat(currentValue),
-        [],
+        []
       );
-      literals = literals.filter((f) => !f.startsWith("@")); // exclude special messages.
+      literals = literals.filter((f) => !f.startsWith("const_")); // exclude special messages.
       resolve(literals);
     });
   }
@@ -246,9 +246,9 @@ export class Translator {
   // Main function to generate translations
   async generateTranslations() {
     let defaultLocaleData = this.getDefaultLocaleData();
-    // Remove all the messages that are not prefixed with @, they'll be added as literals.
+    // Remove all the messages that are not prefixed with const_, they'll be added as literals.
     Object.keys(defaultLocaleData).forEach((key) => {
-      if (!key.startsWith("@")) {
+      if (!key.startsWith("const_")) {
         delete defaultLocaleData[key];
       }
     });
@@ -258,7 +258,7 @@ export class Translator {
     // combine sourceLocaleData and mappedLiterals into one object.
     defaultLocaleData = Object.assign(
       defaultLocaleData,
-      this.mapLiteralsToEncodedObject(codeLiterals),
+      this.mapLiteralsToEncodedObject(codeLiterals)
     );
 
     // Get the literals from HTML files
@@ -280,7 +280,7 @@ export class Translator {
             to: targetLocale,
           });
           this.applyTranslation(targetLocale, res, defaultLocaleData);
-        }),
+        })
       );
 
       console.log("All translate futures have resolved");
@@ -294,7 +294,7 @@ export class Translator {
 
 i18n("hello")
 i18n('hi')
-i18n("@he")
+i18n("const_he")
 i18n("sdf;'")
 i18n("")
 i18n(

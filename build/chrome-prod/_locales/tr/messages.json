@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "Tarayıcı uzantısı başlatıcı",
         "description": "The name of the extension"
     },
-    "@appShortName": {
-        "message": "S OL",
+    "const_appShortName": {
+        "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "Tarayıcı Uzatma Örneği. TypeScript, E2E testleri, simge üretimi, otomatik i18n ve esbuild",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<Div> <p> Merhaba Dünya </p> Bu <strong> dil </strong> Web'in"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Uzatma bu sitelerde çalışmaz. Satır başına bir site girin."
     },
-    "Options": {
-        "message": "Seçenekler"
-    },
-    "Show_Demo": {
-        "message": "Demoyu Göster"
-    },
-    "Report_an_Issue": {
-        "message": "Bir Sorun Bildirin"
+    "Successfully_updated_settings": {
+        "message": "Başarılı bir şekilde güncellenen ayarlar"
     },
     "How_can_we_improve_": {
         "message": "Nasıl gelişebiliriz?"
     },
-    "How_are_we_doing_": {
-        "message": "Nasıl yapıyoruz?"
+    "_appName": {
+        "message": "@Appname"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Beğendiğine sevindim! ❤ood paylaşmamıza yardım edebilir misiniz?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Geri dönüşünüz için teşekkür ederiz!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome web mağazasında oran"
-    },
-    "No": {
-        "message": "HAYIR"
-    },
-    "Submit_Feedback": {
-        "message": "Geri bildirim gönder"
-    },
-    "Successfully_updated_settings": {
-        "message": "Başarılı bir şekilde güncellenen ayarlar"
+    "__extension_id": {
+        "message": "@@ extension_id"
     },
     "Welcome": {
         "message": "Hoş geldin"
@@ -75,16 +54,16 @@
         "message": "Bu sayfaya bakıyorsanız, başarıyla"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "Depoyu klonladı \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           ve tüm bağımlılıkları kurdu."
+        "message": "Depoyu klonladı\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a>\n ve tüm bağımlılıkları kurdu."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "Kaynak kodu oluşturmak için esbuild kullandı ve mağazaya hazır olarak paketlendi \n           biçim."
+        "message": "Kaynak kodu oluşturmak için esbuild kullandı ve mağazaya hazır olarak paketlendi\n format."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Chrome/Firefox'ta Etkin Dev Modu ve paketlenmemiş bir \n           eklenti..."
+        "message": "Chrome/Firefox'ta Etkin Dev Modu ve paketlenmemiş bir\n eklenti..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "Ya da bir kuklacı örneğini başlatabildiniz. \n           Uzatma yüklü."
+        "message": "Ya da bir kuklacı örneğini başlatabildiniz.\n Uzatma yüklü."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "Bunun bir tarayıcı uzantısı oluşturmak için büyük bir ilerleme olduğunu söylüyorum."
@@ -96,21 +75,48 @@
         "message": "<strong> 1. </strong> Uzantılar simgesine tıklayın."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. \n       uzantılar."
+        "message": "<strong> 2.\n uzantılar."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> Bunun sağındaki PIN simgesine tıklayın \n       uzantının simgesi."
+        "message": "<strong> 3. </strong> Bunun sağındaki PIN simgesine tıklayın\n uzantının simgesi."
     },
     "All_done_": {
-        "message": "Hepsi tamam."
+        "message": "Hepsi bitti."
     },
     "Share_the_love_": {
-        "message": "Sevgiyi Paylaş!"
+        "message": "Sevgiyi paylaş!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "Bu uzantıyı yararlı bulduysanız, GitHub sayfasında bir yıldız bırakın \n         veya Chrome webstore'da derecelendirme."
+        "message": "Bu uzantıyı yararlı bulduysanız, GitHub sayfasında bir yıldız bırakın\n veya Chrome webstore'da derecelendirme."
     },
     "Star_on_GitHub": {
         "message": "Github'da yıldız"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome web mağazasında oran"
+    },
+    "Options": {
+        "message": "Seçenekler"
+    },
+    "Show_Demo": {
+        "message": "Demoyu Göster"
+    },
+    "Report_an_Issue": {
+        "message": "Bir Sorun Bildirin"
+    },
+    "How_are_we_doing_": {
+        "message": "Nasıl yapıyoruz?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Beğenmene sevindim! ❤ood paylaşmamıza yardım edebilir misiniz?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Geri bildirim için teşekkürler!"
+    },
+    "No": {
+        "message": "HAYIR"
+    },
+    "Submit_Feedback": {
+        "message": "Geri bildirim gönder"
     }
 }

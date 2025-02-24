@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "Nettleserforlengelsesstarter",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "B.E.S.",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "Eksempel på nettleserutvidelse. TypeScript, E2E Tests, Icon Generation, Automatic I18N og Esbuild",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<div> <p> Hello World </p> Dette er <strong> språket </strong> på nettet </div>"
     },
     "Temporarily_disable_extension": {
@@ -32,41 +32,20 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Utvidelse kjøres ikke på disse nettstedene. Skriv inn ett nettsted per linje."
     },
-    "Options": {
-        "message": "Alternativer"
-    },
-    "Show_Demo": {
-        "message": "Vis demo"
-    },
-    "Report_an_Issue": {
-        "message": "Rapporter et problem"
+    "Successfully_updated_settings": {
+        "message": "Vellykket oppdaterte innstillinger"
     },
     "How_can_we_improve_": {
         "message": "Hvordan kan vi forbedre oss?"
     },
-    "How_are_we_doing_": {
-        "message": "Hvordan har vi det?"
+    "_appName": {
+        "message": "@appname"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Glad du likte det! Kan du hjelpe oss med å dele ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Takk for tilbakemeldingen!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Rate på Chrome Web Store"
-    },
-    "No": {
-        "message": "Nei"
-    },
-    "Submit_Feedback": {
-        "message": "Send inn tilbakemelding"
-    },
-    "Successfully_updated_settings": {
-        "message": "Vellykket oppdaterte innstillinger"
+    "__extension_id": {
+        "message": "@@ Extension_id"
     },
     "Welcome": {
-        "message": "Velkommen"
+        "message": "Velkomst"
     },
     "Hooray____": {
         "message": "Hurra! 🎉"
@@ -75,16 +54,16 @@
         "message": "Hvis du ser på denne siden, er du vellykket"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "Klonet depotet på \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           og installerte alle avhengigheter."
+        "message": "Klonet depotet på\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a>\n og installerte alle avhengigheter."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "Brukte esbuild for å bygge kildekoden og pakket i butikkklar \n           format."
+        "message": "Brukte esbuild for å bygge kildekoden og pakket i butikkklar\n format."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Aktivert Dev -modus på Chrome/Firefox og installerte en utpakket \n           Utvidelse..."
+        "message": "Aktivert Dev -modus på Chrome/Firefox og installerte en utpakket\n forlengelse ..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "eller du klarte å starte en forekomst av dukketeater med \n           utvidelse installert."
+        "message": "eller du klarte å starte en forekomst av dukketeater med\n utvidelse installert."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "Jeg sier at det er stor fremgang mot å opprette en nettleserutvidelse."
@@ -96,21 +75,48 @@
         "message": "<strong> 1. </strong> Klikk på Extensions -ikonet."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> Finn \"nettleserutvidelsesstarter\" på listen over \n       Utvidelser."
+        "message": "<strong> 2. </strong> Finn \"nettleserutvidelsesstarter\" på listen over\n Utvidelser."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> Klikk på PIN -ikonet til høyre for dette \n       Extensions ikon."
+        "message": "<strong> 3. </strong> Klikk på PIN -ikonet til høyre for dette\n Extensions ikon."
     },
     "All_done_": {
-        "message": "Ferdig."
+        "message": "Alt gjort."
     },
     "Share_the_love_": {
-        "message": "Dele kjærligheten!"
+        "message": "Del kjærligheten!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "Hvis du fant denne utvidelsen nyttig, la en stjerne på GitHub -siden \n         eller vurdering på Chrome Webstore."
+        "message": "Hvis du fant denne utvidelsen nyttig, la en stjerne på GitHub -siden\n eller vurdering på Chrome Webstore."
     },
     "Star_on_GitHub": {
         "message": "Stjerne på github"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Rate på Chrome Web Store"
+    },
+    "Options": {
+        "message": "Alternativer"
+    },
+    "Show_Demo": {
+        "message": "Vis demo"
+    },
+    "Report_an_Issue": {
+        "message": "Rapporter et problem"
+    },
+    "How_are_we_doing_": {
+        "message": "Hvordan har vi det?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Glad for at du liker det! Kan du hjelpe oss med å dele ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Takk for tilbakemeldingene!"
+    },
+    "No": {
+        "message": "Ingen"
+    },
+    "Submit_Feedback": {
+        "message": "Send inn tilbakemelding"
     }
 }

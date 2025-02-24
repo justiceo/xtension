@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "ब्राउझर विस्तार स्टार्टर",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "बी.ई.एस.",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
+    "const_appDesc": {
         "message": "ब्राउझर विस्तार उदाहरण. टाइपस्क्रिप्ट, ई 2 ई चाचण्या, आयकॉन जनरेशन, स्वयंचलित आय 18 एन आणि एसबिल्ड",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<div> <p> हॅलो वर्ल्ड </p> ही वेबची </strong> </strong> आहे </div>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "या साइटवर विस्तार चालू होणार नाही. प्रति लाइन एक साइट प्रविष्ट करा."
     },
-    "Options": {
-        "message": "पर्याय"
-    },
-    "Show_Demo": {
-        "message": "डेमो दर्शवा"
-    },
-    "Report_an_Issue": {
-        "message": "एखाद्या समस्येचा अहवाल द्या"
+    "Successfully_updated_settings": {
+        "message": "यशस्वीरित्या अद्यतनित सेटिंग्ज"
     },
     "How_can_we_improve_": {
         "message": "आपण कसे सुधारू शकतो?"
     },
-    "How_are_we_doing_": {
-        "message": "आम्ही कसे करीत आहोत?"
+    "_appName": {
+        "message": "@Appname"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "आपल्याला हे आवडले याचा आनंद! आपण आम्हाला सामायिक करण्यात मदत करू शकता ❤?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "आपल्या अभिप्रायाबद्दल धन्यवाद!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome वेब स्टोअर वर रेट"
-    },
-    "No": {
-        "message": "नाही"
-    },
-    "Submit_Feedback": {
-        "message": "अभिप्राय सबमिट करा"
-    },
-    "Successfully_updated_settings": {
-        "message": "यशस्वीरित्या अद्यतनित सेटिंग्ज"
+    "__extension_id": {
+        "message": "@@ विस्तार_आयडी"
     },
     "Welcome": {
         "message": "आपले स्वागत आहे"
@@ -75,16 +54,16 @@
         "message": "आपण हे पृष्ठ पहात असल्यास, आपण यशस्वीरित्या"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "येथे रेपॉजिटरी क्लोन केले \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtion </a> \n           आणि सर्व अवलंबन स्थापित केले."
+        "message": "येथे रेपॉजिटरी क्लोन केले\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtion </a>\n आणि सर्व अवलंबन स्थापित केले."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "स्त्रोत कोड तयार करण्यासाठी आणि स्टोअर-रेडीमध्ये पॅकेज करण्यासाठी एसबिल्डचा वापर केला \n           स्वरूप."
+        "message": "स्त्रोत कोड तयार करण्यासाठी आणि स्टोअर-रेडीमध्ये पॅकेज करण्यासाठी एसबिल्डचा वापर केला\n स्वरूप."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Chrome/फायरफॉक्सवर देव मोड सक्षम केला आणि एक अनपॅक केलेला स्थापित केला \n           विस्तार ..."
+        "message": "Chrome/फायरफॉक्सवर देव मोड सक्षम केला आणि एक अनपॅक केलेला स्थापित केला\n विस्तार ..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "किंवा आपण कठपुतळीचा एक उदाहरण सुरू करण्यास सक्षम होता \n           विस्तार स्थापित."
+        "message": "किंवा आपण कठपुतळीचा एक उदाहरण सुरू करण्यास सक्षम होता\n विस्तार स्थापित."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "मी म्हणतो की ब्राउझर विस्तार तयार करण्याच्या दिशेने ही मोठी प्रगती आहे."
@@ -96,21 +75,48 @@
         "message": "<strong> 1. </strong> विस्तार चिन्हावर क्लिक करा."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> च्या यादीमध्ये \"ब्राउझर एक्सटेंशन स्टार्टर\" शोधा \n       विस्तार."
+        "message": "<strong> 2. </strong> च्या यादीमध्ये \"ब्राउझर एक्सटेंशन स्टार्टर\" शोधा\n विस्तार."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> या उजवीकडे पिन चिन्हावर क्लिक करा \n       विस्ताराचे चिन्ह."
+        "message": "<strong> 3. </strong> या उजवीकडे पिन चिन्हावर क्लिक करा\n विस्ताराचे चिन्ह."
     },
     "All_done_": {
-        "message": "पूर्ण झाले."
+        "message": "सर्व केले."
     },
     "Share_the_love_": {
         "message": "प्रेम सामायिक करा!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "आपल्याला हा विस्तार उपयुक्त वाटल्यास, गीथब पृष्ठावर एक तारा सोडा \n         किंवा Chrome वेबस्टोअरवर रेटिंग."
+        "message": "आपल्याला हा विस्तार उपयुक्त वाटल्यास, गीथब पृष्ठावर एक तारा सोडा\n किंवा Chrome वेबस्टोअरवर रेटिंग."
     },
     "Star_on_GitHub": {
         "message": "गीथब वर तारा"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome वेब स्टोअर वर रेट"
+    },
+    "Options": {
+        "message": "पर्याय"
+    },
+    "Show_Demo": {
+        "message": "डेमो दर्शवा"
+    },
+    "Report_an_Issue": {
+        "message": "एखाद्या समस्येचा अहवाल द्या"
+    },
+    "How_are_we_doing_": {
+        "message": "आम्ही कसे करीत आहोत?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "आपल्याला हे आवडले याचा आनंद! आपण आम्हाला सामायिक करण्यात मदत करू शकता ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "अभिप्रायाबद्दल धन्यवाद!"
+    },
+    "No": {
+        "message": "नाही"
+    },
+    "Submit_Feedback": {
+        "message": "अभिप्राय सबमिट करा"
     }
 }

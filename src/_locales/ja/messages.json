@@ -1,18 +1,18 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "ブラウザ拡張スターター",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
-        "message": "ブラウザ拡張機能の例。 タイプスクリプト、E2Eテスト、アイコン生成、自動I18Nおよびesbuild",
+    "const_appDesc": {
+        "message": "ブラウザ拡張機能の例。 TypeScript、E2Eテスト、アイコン生成、自動I18NおよびESBUILD",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
-        "message": "<div> <p> hello world </p>これは<strong>言語</strong> </div>"
+    "const_testMarkup": {
+        "message": "<div> <p> hello world </p>これは<strong>言語</strong>です</div>"
     },
     "Temporarily_disable_extension": {
         "message": "拡張機能を一時的に無効にします"
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "これらのサイトでは拡張機能が実行されません。 1行ごとに1つのサイトを入力します。"
     },
-    "Options": {
-        "message": "オプション"
-    },
-    "Show_Demo": {
-        "message": "デモを表示します"
-    },
-    "Report_an_Issue": {
-        "message": "問題を報告する"
+    "Successfully_updated_settings": {
+        "message": "正常に更新された設定"
     },
     "How_can_we_improve_": {
         "message": "どうすれば改善できますか？"
     },
-    "How_are_we_doing_": {
-        "message": "私たちはどのようにやっています？"
+    "_appName": {
+        "message": "@AppName"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "気に入ってくれてうれしいです！ ❤️を共有するのを手伝ってもらえますか？"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "フィードバックをお寄せいただきありがとうございます！"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Chrome Webストアのレート"
-    },
-    "No": {
-        "message": "いいえ"
-    },
-    "Submit_Feedback": {
-        "message": "フィードバックを送信"
-    },
-    "Successfully_updated_settings": {
-        "message": "正常に更新された設定"
+    "__extension_id": {
+        "message": "@@ extension_id"
     },
     "Welcome": {
         "message": "いらっしゃいませ"
@@ -72,19 +51,19 @@
         "message": "hooray！ 🎉"
     },
     "If_you_are_looking_at_this_page__you_successfully": {
-        "message": "このページを見ている場合は、"
+        "message": "このページを見ている場合は、成功してください"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "でリポジトリをクローニングしました \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justice/xtension </a> \n           すべての依存関係をインストールしました。"
+        "message": "でリポジトリをクローニングしました\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a>\n すべての依存関係をインストールしました。"
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "esbuildを使用してソースコードを構築し、ストア対応にパッケージ化しました \n           フォーマット。"
+        "message": "esbuildを使用してソースコードを構築し、ストア対応にパッケージ化しました\n 形式。"
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Chrome/Firefoxで有効な開発モードをインストールし、開梱しました \n           拡大..."
+        "message": "Chrome/firefoxで有効なDEVモードを使用し、開梱したものをインストールしました\n 拡大..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "または、人形師のインスタンスを開始することができました \n           拡張機能インストール。"
+        "message": "または、人形師のインスタンスを開始することができました\n 拡張機能インストール。"
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "私はそれがブラウザー拡張機能の作成に向けた大きな進歩だと言います。"
@@ -96,10 +75,10 @@
         "message": "<strong> 1。</strong>拡張機能アイコンをクリックします。"
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2。</strong>のリストで「ブラウザ拡張スターター」を見つけます \n       拡張機能。"
+        "message": "<strong> 2。</strong>リストで「ブラウザ拡張スターター」を見つけます\n 拡張機能。"
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3。</strong>この右側のピンアイコンをクリックします \n       拡張機能のアイコン。"
+        "message": "<strong> 3。</strong>この右側のピンアイコンをクリックします\n 拡張機能のアイコン。"
     },
     "All_done_": {
         "message": "すべて完了。"
@@ -108,9 +87,36 @@
         "message": "愛を共有してください！"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "この拡張機能が役立つとわかった場合は、githubページに星を残してください \n         またはChrome Webstoreでの評価。"
+        "message": "この拡張機能が役立つとわかった場合は、githubページに星を残してください\n またはChrome Webstoreでの評価。"
     },
     "Star_on_GitHub": {
         "message": "Githubのスター"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome Webストアのレート"
+    },
+    "Options": {
+        "message": "オプション"
+    },
+    "Show_Demo": {
+        "message": "デモを表示します"
+    },
+    "Report_an_Issue": {
+        "message": "問題を報告します"
+    },
+    "How_are_we_doing_": {
+        "message": "私たちは元気ですか？"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "気に入ってくれてうれしいです！ ❤️を共有するのを手伝ってもらえますか？"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "フィードバックをありがとう！"
+    },
+    "No": {
+        "message": "いいえ"
+    },
+    "Submit_Feedback": {
+        "message": "フィードバックを送信します"
     }
 }

@@ -1,17 +1,17 @@
 {
-    "@appName": {
+    "const_appName": {
         "message": "Starter ya Upanuzi wa Kivinjari",
         "description": "The name of the extension"
     },
-    "@appShortName": {
+    "const_appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "@appDesc": {
-        "message": "Mfano wa Upanuzi wa Kivinjari. Vipimo vya Typescript, E2E, Kizazi cha Icon, moja kwa moja I18N na EsBuild",
+    "const_appDesc": {
+        "message": "Mfano wa Upanuzi wa Kivinjari. Typescript, vipimo vya E2E, kizazi cha icon, i18n moja kwa moja na EsBuild",
         "description": "The description of your extension"
     },
-    "@testMarkup": {
+    "const_testMarkup": {
         "message": "<div> <p> Hello World </p> Hii ndio lugha ya <strong> </strong> ya wavuti </div>"
     },
     "Temporarily_disable_extension": {
@@ -32,38 +32,17 @@
     "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
         "message": "Ugani hautaendesha kwenye tovuti hizi. Ingiza tovuti moja kwa kila mstari."
     },
-    "Options": {
-        "message": "Chaguzi"
-    },
-    "Show_Demo": {
-        "message": "Onyesha demo"
-    },
-    "Report_an_Issue": {
-        "message": "Ripoti suala"
+    "Successfully_updated_settings": {
+        "message": "Mipangilio iliyosasishwa kwa mafanikio"
     },
     "How_can_we_improve_": {
         "message": "Tunawezaje kuboresha?"
     },
-    "How_are_we_doing_": {
-        "message": "Tunaendeleaje?"
+    "_appName": {
+        "message": "@AppName"
     },
-    "Glad_you_like_it__Can_you_help_us_share_the____": {
-        "message": "Nimefurahi kuipenda! Je! Unaweza kutusaidia kushiriki ❤️?"
-    },
-    "Thanks_for_the_feedback_": {
-        "message": "Asante kwa maoni!"
-    },
-    "Rate_on_Chrome_Web_Store": {
-        "message": "Kiwango kwenye Duka la Wavuti la Chrome"
-    },
-    "No": {
-        "message": "Hapana"
-    },
-    "Submit_Feedback": {
-        "message": "Wasilisha maoni"
-    },
-    "Successfully_updated_settings": {
-        "message": "Mipangilio iliyosasishwa kwa mafanikio"
+    "__extension_id": {
+        "message": "@@ extension_id"
     },
     "Welcome": {
         "message": "Karibu"
@@ -75,16 +54,16 @@
         "message": "Ikiwa unaangalia ukurasa huu, umefanikiwa"
     },
     "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
-        "message": "Aliweka hazina saa \n           [ \n           na kusanidi utegemezi wote."
+        "message": "Aliweka hazina saa\n <a href = \"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a>\n na kusanidi utegemezi wote."
     },
     "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
-        "message": "Kutumika EsBuild kujenga nambari ya chanzo na vifurushi ndani ya duka tayari \n           muundo."
+        "message": "Kutumika EsBuild kujenga nambari ya chanzo na vifurushi ndani ya duka tayari\n muundo."
     },
     "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
-        "message": "Njia iliyowezeshwa ya Dev kwenye Chrome/Firefox na kusanidi Unpacked \n           Upanuzi ..."
+        "message": "Njia ya Dev iliyowezeshwa kwenye chrome/firefox na kusanidi bila kufunguliwa\n Upanuzi ..."
     },
     "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
-        "message": "au uliweza kuanza mfano wa mtoto wa mbwa na \n           Ugani umewekwa."
+        "message": "au uliweza kuanza mfano wa mtoto wa mbwa na\n Ugani umewekwa."
     },
     "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
         "message": "Ninasema hiyo ni maendeleo makubwa kuelekea kuunda ugani wa kivinjari."
@@ -96,10 +75,10 @@
         "message": "<strong> 1. </strong> Bonyeza kwenye ikoni ya Upanuzi."
     },
     "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
-        "message": "<strong> 2. </strong> Tafuta \"Starter ya Upanuzi wa Kivinjari\" kwenye orodha ya \n       viongezeo."
+        "message": "<strong> 2. </strong> Tafuta \"Starter ya Upanuzi wa Kivinjari\" kwenye orodha ya\n viongezeo."
     },
     "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
-        "message": "<strong> 3. </strong> bonyeza kwenye ikoni ya pini upande wa kulia wa hii \n       Picha ya ugani."
+        "message": "<strong> 3. </strong> bonyeza kwenye ikoni ya pini upande wa kulia wa hii\n Picha ya ugani."
     },
     "All_done_": {
         "message": "Yote yamekamilika."
@@ -108,9 +87,36 @@
         "message": "Shiriki upendo!"
     },
     "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
-        "message": "Ikiwa umepata kiendelezi hiki kinasaidia, acha nyota kwenye ukurasa wa Github \n         au rating kwenye duka la wavuti la Chrome."
+        "message": "Ikiwa umepata kiendelezi hiki kinasaidia, acha nyota kwenye ukurasa wa Github\n au rating kwenye duka la wavuti la Chrome."
     },
     "Star_on_GitHub": {
         "message": "Nyota kwenye GitHub"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Kiwango kwenye Duka la Wavuti la Chrome"
+    },
+    "Options": {
+        "message": "Chaguzi"
+    },
+    "Show_Demo": {
+        "message": "Onyesha demo"
+    },
+    "Report_an_Issue": {
+        "message": "Ripoti suala"
+    },
+    "How_are_we_doing_": {
+        "message": "Tunaendeleaje?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Nimefurahi kuipenda! Je! Unaweza kutusaidia kushiriki ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Asante kwa maoni!"
+    },
+    "No": {
+        "message": "Hapana"
+    },
+    "Submit_Feedback": {
+        "message": "Wasilisha maoni"
     }
 }

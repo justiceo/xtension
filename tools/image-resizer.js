@@ -34,7 +34,7 @@ const PAUSE_ICON_PATH = "src/assets/pause-icon.png";
 export class ImageResizer {
   /**
    * Resize a single image to multiple dimensions.
-   * Also applies greyscale and a pause icon overlay for icon types.
+   * Also applies grayscale and a pause icon overlay for icon types.
    * @param {string} filePath - The path to the image file.
    * @param {Array} dimensions - An array of dimension objects containing width and height.
    * @param {boolean} isIcon - True if the image type is 'icon'.
@@ -62,11 +62,11 @@ export class ImageResizer {
         console.log(`Resized image saved as: ${newFileName}`);
 
         if (isIcon) {
-          // Save greyscale version
-          let greyImage = resizedImage.clone().greyscale();
-          let greyFileName = `${dirname}/${basename}-${width}x${height}-grey${extname}`;
-          await greyImage.writeAsync(greyFileName);
-          console.log(`Greyscale image saved as: ${greyFileName}`);
+          // Save grayscale version
+          let grayImage = resizedImage.clone().grayscale();
+          let grayFileName = `${dirname}/${basename}-${width}x${height}-gray${extname}`;
+          await grayImage.writeAsync(grayFileName);
+          console.log(`grayscale image saved as: ${grayFileName}`);
 
           // Save paused overlay version
           let pauseIcon = await Jimp.read(PAUSE_ICON_PATH);

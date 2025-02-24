@@ -1,14 +1,116 @@
 {
-    "appName": {
+    "@appName": {
         "message": "Extensão do navegador iniciante",
         "description": "The name of the extension"
     },
-    "appShortName": {
+    "@appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "appDesc": {
+    "@appDesc": {
         "message": "Exemplo de extensão do navegador. TypeScript, E2E Testes, Icon Generation, I18N automático e Esbuild",
         "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Olá mundo </p> Esta é a linguagem <strong> </strong> da web </div>"
+    },
+    "Temporarily_disable_extension": {
+        "message": "Desativar temporariamente a extensão"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Desligue a extensão em todos os sites."
+    },
+    "Disable_storage_sync": {
+        "message": "Desative a sincronização de armazenamento"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Suas configurações não se propagam para outros navegadores."
+    },
+    "Disabled_on_Websites": {
+        "message": "Desativado em sites"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "A extensão não será executada nesses sites. Digite um site por linha."
+    },
+    "Options": {
+        "message": "Opções"
+    },
+    "Show_Demo": {
+        "message": "Mostrar demonstração"
+    },
+    "Report_an_Issue": {
+        "message": "Relatar um problema"
+    },
+    "How_can_we_improve_": {
+        "message": "Como podemos melhorar?"
+    },
+    "How_are_we_doing_": {
+        "message": "Como estamos indo?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Estou feliz por ter gostado! Você pode nos ajudar a compartilhar o ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Obrigado pelo feedback!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Taxa na Chrome Web Store"
+    },
+    "No": {
+        "message": "Não"
+    },
+    "Submit_Feedback": {
+        "message": "Enviar feedback"
+    },
+    "Successfully_updated_settings": {
+        "message": "Configurações atualizadas com sucesso"
+    },
+    "Welcome": {
+        "message": "Bem-vindo"
+    },
+    "Hooray____": {
+        "message": "Viva! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Se você está olhando para esta página, você"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Clonou o repositório em \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           e instalou todas as dependências."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Usado Esbuild para construir o código-fonte e embalado em uma loja pronta \n           formatar."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Modo dev ativado no Chrome/Firefox e instalou um Unpacked \n           extensão..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "ou você foi capaz de iniciar uma instância de marionetista com o \n           Extensão instalada."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Eu digo que é um grande progresso para criar uma extensão do navegador."
+    },
+    "Next__Pin_it": {
+        "message": "Próximo: prenda"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Clique no ícone de extensões."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. \n       extensões."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> clique no ícone do pino à direita deste \n       Ícone da extensão."
+    },
+    "All_done_": {
+        "message": "Tudo feito."
+    },
+    "Share_the_love_": {
+        "message": "Compartilhe o amor!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Se você achou essa extensão útil, deixe uma estrela na página do GitHub \n         ou classificação no Chrome Webstore."
+    },
+    "Star_on_GitHub": {
+        "message": "Estrela no Github"
     }
 }

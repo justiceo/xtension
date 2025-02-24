@@ -1,14 +1,116 @@
 {
-    "appName": {
+    "@appName": {
         "message": "Εκκινητής επέκτασης του προγράμματος περιήγησης",
         "description": "The name of the extension"
     },
-    "appShortName": {
+    "@appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "appDesc": {
-        "message": "Παράδειγμα επέκτασης του προγράμματος περιήγησης. TypeScript, δοκιμές E2E, δημιουργία εικονιδίων, αυτόματη I18N και ESBUILD",
+    "@appDesc": {
+        "message": "Παράδειγμα επέκτασης του προγράμματος περιήγησης. TypeScript, E2E Δοκιμές, Δημιουργία εικονιδίων, αυτόματη I18N και ESBUILD",
         "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> hello world </p> Αυτή είναι η <strong> γλώσσα </strong> του ιστού </div>"
+    },
+    "Temporarily_disable_extension": {
+        "message": "Απενεργοποιήστε προσωρινά την επέκταση"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Απενεργοποιεί την επέκταση σε όλους τους ιστότοπους."
+    },
+    "Disable_storage_sync": {
+        "message": "Απενεργοποίηση συγχρονισμού αποθήκευσης"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Οι ρυθμίσεις σας δεν θα διαδοθούν σε άλλα προγράμματα περιήγησης."
+    },
+    "Disabled_on_Websites": {
+        "message": "Απενεργοποιημένη σε ιστότοπους"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Η επέκταση δεν θα εκτελεστεί σε αυτούς τους ιστότοπους. Εισαγάγετε έναν ιστότοπο ανά γραμμή."
+    },
+    "Options": {
+        "message": "Επιλογές"
+    },
+    "Show_Demo": {
+        "message": "Επίδειξη επίδειξης"
+    },
+    "Report_an_Issue": {
+        "message": "Αναφέρετε ένα πρόβλημα"
+    },
+    "How_can_we_improve_": {
+        "message": "Πώς μπορούμε να βελτιώσουμε;"
+    },
+    "How_are_we_doing_": {
+        "message": "ΠΩΣ ΤΑ ΠΑΜΕ?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Χαίρομαι που σου αρέσει! Μπορείτε να μας βοηθήσετε να μοιραστούμε το ❤्;"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Ευχαριστώ για τα σχόλια!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Βαθμολογία στο κατάστημα Web Chrome"
+    },
+    "No": {
+        "message": "Οχι"
+    },
+    "Submit_Feedback": {
+        "message": "Υποβάλετε σχόλια"
+    },
+    "Successfully_updated_settings": {
+        "message": "Ενημερωμένες ρυθμίσεις με επιτυχία"
+    },
+    "Welcome": {
+        "message": "καλως ΗΡΘΑΤΕ"
+    },
+    "Hooray____": {
+        "message": "Ζήτω! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Εάν κοιτάζετε αυτήν τη σελίδα, επιτυχώς"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Κλωνοποίησε το αποθετήριο στο \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           και εγκατέστησε όλες τις εξαρτήσεις."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Χρησιμοποιείται esbuild για να δημιουργήσει τον πηγαίο κώδικα και να συσκευαστεί στο κατάστημα έτοιμο \n           μορφή."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Ενεργοποιημένη λειτουργία dev σε chrome/firefox και εγκατέστησε ένα αποσυσκευασμένο \n           επέκταση..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "ή ήσασταν σε θέση να ξεκινήσετε μια παρουσία του κουταβιού με το \n           Εγκατάσταση επέκτασης."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Λέω ότι είναι μεγάλη πρόοδος προς τη δημιουργία μιας επέκτασης του προγράμματος περιήγησης."
+    },
+    "Next__Pin_it": {
+        "message": "Επόμενο: Κολλήστε το"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1 </strong> Κάντε κλικ στο εικονίδιο επεκτάσεων."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Βρείτε \"εκκίνηση επέκτασης του προγράμματος περιήγησης\" στη λίστα \n       επεκτάσεις."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> Κάντε κλικ στο εικονίδιο PIN στα δεξιά αυτού \n       Το εικονίδιο της επέκτασης."
+    },
+    "All_done_": {
+        "message": "Ολα τελείωσαν."
+    },
+    "Share_the_love_": {
+        "message": "Μοιράσου την αγάπη!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Εάν βρήκατε αυτήν την επέκταση χρήσιμη, αφήστε ένα αστέρι στη σελίδα GitHub \n         ή βαθμολογία στο Chrome Webstore."
+    },
+    "Star_on_GitHub": {
+        "message": "Αστέρι στο github"
     }
 }

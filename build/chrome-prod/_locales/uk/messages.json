@@ -1,14 +1,116 @@
 {
-    "appName": {
+    "@appName": {
         "message": "Стартер для розширення браузера",
         "description": "The name of the extension"
     },
-    "appShortName": {
+    "@appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "appDesc": {
-        "message": "Приклад розширення браузера. TypeScript, E2E тести, генерація значків, автоматичний I18N та Esbuild",
+    "@appDesc": {
+        "message": "Приклад розширення браузера. TypeScript, E2E тести, генерація значків, автоматичний i18n та esbuild",
         "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Hello World </p> Це <strong> мова </strong> веб -сайту </div>"
+    },
+    "Temporarily_disable_extension": {
+        "message": "Тимчасово відключити розширення"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Вимикає розширення на всіх веб -сайтах."
+    },
+    "Disable_storage_sync": {
+        "message": "Вимкнути синхронізацію зберігання"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Ваші налаштування не поширюватимуться на інші браузери."
+    },
+    "Disabled_on_Websites": {
+        "message": "Відключено на веб -сайтах"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Розширення не буде працювати на цих сайтах. Введіть один сайт на рядок."
+    },
+    "Options": {
+        "message": "Варіанти"
+    },
+    "Show_Demo": {
+        "message": "Показати демонстрацію"
+    },
+    "Report_an_Issue": {
+        "message": "Повідомте про питання"
+    },
+    "How_can_we_improve_": {
+        "message": "Як ми можемо вдосконалитись?"
+    },
+    "How_are_we_doing_": {
+        "message": "Як у нас справи?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Радий, що тобі подобається! Чи можете ви допомогти нам поділитися ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Дякую за відгук!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Швидкість у веб -магазині Chrome"
+    },
+    "No": {
+        "message": "Немає"
+    },
+    "Submit_Feedback": {
+        "message": "Надіслати відгук"
+    },
+    "Successfully_updated_settings": {
+        "message": "Успішно оновлені налаштування"
+    },
+    "Welcome": {
+        "message": "Вітати"
+    },
+    "Hooray____": {
+        "message": "Ура! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Якщо ви дивитесь на цю сторінку, ви успішно"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Клонував сховище в \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           і встановили всі залежності."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Використовується Esbuild для створення вихідного коду та упакованого в готовий до магазину \n           формат."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Увімкнено режим розробників на Chrome/Firefox та встановив розпакований \n           розширення ..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "Або ви змогли розпочати екземпляр ляльки з \n           Встановлено розширення."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Я кажу, що це великий прогрес у напрямку створення розширення браузера."
+    },
+    "Next__Pin_it": {
+        "message": "Далі: закріпіть його"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Клацніть на значку розширень."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Знайдіть \"Стартер для розширення браузера\" у списку \n       розширення."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> натисніть на піктограму PIN -коду праворуч від цього \n       Піктограма розширення."
+    },
+    "All_done_": {
+        "message": "Все зроблено."
+    },
+    "Share_the_love_": {
+        "message": "Поділіться коханням!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Якщо ви знайшли це розширення корисним, залиште зірку на сторінці Github \n         або рейтинг на веб -магазині Chrome."
+    },
+    "Star_on_GitHub": {
+        "message": "Зірка на Github"
     }
 }

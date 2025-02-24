@@ -1,14 +1,116 @@
 {
-    "appName": {
+    "@appName": {
         "message": "Starter של סיומת דפדפן",
         "description": "The name of the extension"
     },
-    "appShortName": {
-        "message": "B.E.S",
+    "@appShortName": {
+        "message": "B.E.S.",
         "description": "The short-version name of the extension name"
     },
-    "appDesc": {
+    "@appDesc": {
         "message": "דוגמה להרחבת דפדפן. Typescript, בדיקות E2E, ייצור אייקונים, אוטומטית I18N ו- ESBUILD",
         "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> שלום עולם </p> זוהי שפה <strong> </strong> של האינטרנט </div>"
+    },
+    "Temporarily_disable_extension": {
+        "message": "השבתת סיומת זמנית"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "מכבה את התוסף בכל אתרי האינטרנט."
+    },
+    "Disable_storage_sync": {
+        "message": "השבת סנכרון אחסון"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "ההגדרות שלך לא יתפשטו לדפדפנים אחרים."
+    },
+    "Disabled_on_Websites": {
+        "message": "מושבת באתרים"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "ההרחבה לא תפעל באתרים אלה. הזן אתר אחד בשורה."
+    },
+    "Options": {
+        "message": "אפשרויות"
+    },
+    "Show_Demo": {
+        "message": "להראות הדגמה"
+    },
+    "Report_an_Issue": {
+        "message": "דווח על בעיה"
+    },
+    "How_can_we_improve_": {
+        "message": "איך אנחנו יכולים להשתפר?"
+    },
+    "How_are_we_doing_": {
+        "message": "מה שלומנו?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "שמח שאתה אוהב את זה! אתה יכול לעזור לנו לשתף את ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "תודה על המשוב!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "דרג בחנות האינטרנט של Chrome"
+    },
+    "No": {
+        "message": "לא"
+    },
+    "Submit_Feedback": {
+        "message": "הגש משוב"
+    },
+    "Successfully_updated_settings": {
+        "message": "הגדרות מעודכנות בהצלחה"
+    },
+    "Welcome": {
+        "message": "ברוך הבא"
+    },
+    "Hooray____": {
+        "message": "הידד! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "אם אתה מסתכל על דף זה, אתה בהצלחה"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "שיבט את המאגר בכתובת \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           והתקין את כל התלות."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "השתמשו ב- Esbuild לבניית קוד המקור וארוז לחנות מוכנים לחנות \n           פוּרמָט."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "מופעל מצב DEV ב- Chrome/Firefox והתקין פתיחה \n           סיומת..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "או שהצלחת להתחיל מופע של בובות עם \n           תוסף מותקן."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "אני אומר שזו התקדמות רבה לקראת יצירת סיומת דפדפן."
+    },
+    "Next__Pin_it": {
+        "message": "הבא: הצמיד אותו"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> לחץ על סמל הרחבות."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> מצא את \"Starter של סיומת דפדפן\" ברשימת של \n       הרחבות."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> לחץ על סמל הסיכה מימין זה \n       הסמל של סיומת."
+    },
+    "All_done_": {
+        "message": "הכל בוצע."
+    },
+    "Share_the_love_": {
+        "message": "חלוק את האהבה!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "אם מצאת את סיומת זו מועילה, השאר כוכב בדף GitHub \n         או דירוג בחנות האינטרנט של Chrome."
+    },
+    "Star_on_GitHub": {
+        "message": "כוכב ב- GitHub"
     }
 }

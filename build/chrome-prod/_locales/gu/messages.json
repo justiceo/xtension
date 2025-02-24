@@ -1,14 +1,116 @@
 {
-    "appName": {
+    "@appName": {
         "message": "બ્રાઉઝર એક્સ્ટેંશન સ્ટાર્ટર",
         "description": "The name of the extension"
     },
-    "appShortName": {
-        "message": "B.E.S.",
+    "@appShortName": {
+        "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "appDesc": {
+    "@appDesc": {
         "message": "બ્રાઉઝર એક્સ્ટેંશન ઉદાહરણ. ટાઇપસ્ક્રિપ્ટ, E2E પરીક્ષણો, આયકન જનરેશન, સ્વચાલિત I18N અને ESBild",
         "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<iv> <p> હેલો વર્લ્ડ </p> વેબની આ <strong> ભાષા </strong> છે </div>"
+    },
+    "Temporarily_disable_extension": {
+        "message": "અસ્થાયી રૂપે વિસ્તરણને અક્ષમ કરો"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "બધી વેબસાઇટ્સ પર એક્સ્ટેંશન બંધ કરે છે."
+    },
+    "Disable_storage_sync": {
+        "message": "સ્ટોરેજ સિંકને અક્ષમ કરો"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "તમારી સેટિંગ્સ અન્ય બ્રાઉઝર્સમાં ફેલાય નહીં."
+    },
+    "Disabled_on_Websites": {
+        "message": "વેબસાઇટ્સ પર અક્ષમ"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "આ સાઇટ્સ પર એક્સ્ટેંશન ચાલશે નહીં. લાઇન દીઠ એક સાઇટ દાખલ કરો."
+    },
+    "Options": {
+        "message": "વિકલ્પ"
+    },
+    "Show_Demo": {
+        "message": "ડેમો બતાવો"
+    },
+    "Report_an_Issue": {
+        "message": "એક મુદ્દો જાણ કરો"
+    },
+    "How_can_we_improve_": {
+        "message": "આપણે કેવી રીતે સુધારી શકીએ?"
+    },
+    "How_are_we_doing_": {
+        "message": "આપણે કેવી રીતે કરી રહ્યા છીએ?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "તમને ગમ્યું એના થી હું પ્રસન્ન છું! તમે અમને શેર કરવામાં મદદ કરી શકો છો?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "પ્રતિસાદ માટે આભાર!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "ક્રોમ વેબ સ્ટોર પર દર"
+    },
+    "No": {
+        "message": "કોઈ"
+    },
+    "Submit_Feedback": {
+        "message": "પ્રતિસાદ સબમિટ કરો"
+    },
+    "Successfully_updated_settings": {
+        "message": "સફળતાપૂર્વક અપડેટ સેટિંગ્સ"
+    },
+    "Welcome": {
+        "message": "આવકાર્ય"
+    },
+    "Hooray____": {
+        "message": "હુરે! ."
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "જો તમે આ પૃષ્ઠને જોઈ રહ્યા છો, તો તમે સફળતાપૂર્વક"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "પર ભંડાર ક્લોન કર્યું \n           <a href=\"https://github.com/justiceo/xtance \"> https://github.com/justiceo/xtance </a> \n           અને બધી અવલંબન સ્થાપિત કરી."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "સ્રોત કોડ બનાવવા માટે અને સ્ટોર-તૈયારમાં પેકેજ કરવા માટે ESBild નો ઉપયોગ \n           ફોર્મેટ."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "ક્રોમ/ફાયરફોક્સ પર સક્ષમ દેવ મોડ અને અનપેક્ડ ઇન્સ્ટોલ કર્યું \n           વિસ્તરણ ..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "અથવા તમે સાથે કઠપૂતળીનો દાખલો શરૂ કરવામાં સક્ષમ હતા \n           એક્સ્ટેંશન ઇન્સ્ટોલ કર્યું."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "હું કહું છું કે બ્રાઉઝર એક્સ્ટેંશન બનાવવા તરફ તે મોટી પ્રગતિ છે."
+    },
+    "Next__Pin_it": {
+        "message": "આગળ: તેને પિન કરો"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> એક્સ્ટેંશન આયકન પર ક્લિક કરો."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> ની સૂચિમાં \"બ્રાઉઝર એક્સ્ટેંશન સ્ટાર્ટર\" શોધો \n       એક્સ્ટેંશન."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> આની જમણી બાજુના પિન આયકન પર ક્લિક કરો \n       એક્સ્ટેંશનનું ચિહ્ન."
+    },
+    "All_done_": {
+        "message": "બધુ થઈ ગયું."
+    },
+    "Share_the_love_": {
+        "message": "પ્રેમ શેર કરો!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "જો તમને આ એક્સ્ટેંશન સહાયક લાગ્યું, તો ગિથબ પૃષ્ઠ પર એક તારો છોડી દો \n         અથવા ક્રોમ વેબ સ્ટોર પર રેટિંગ."
+    },
+    "Star_on_GitHub": {
+        "message": "ગિટહબ પર સ્ટાર"
     }
 }

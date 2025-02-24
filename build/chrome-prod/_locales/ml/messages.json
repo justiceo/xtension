@@ -1,14 +1,116 @@
 {
-    "appName": {
+    "@appName": {
         "message": "ബ്ര browser സർ വിപുലീകരണ സ്റ്റാർട്ടർ",
         "description": "The name of the extension"
     },
-    "appShortName": {
+    "@appShortName": {
         "message": "B.E.",
         "description": "The short-version name of the extension name"
     },
-    "appDesc": {
+    "@appDesc": {
         "message": "ബ്ര browser സർ വിപുലീകരണ ഉദാഹരണം. ടൈപ്പ്സ്ക്രിപ്റ്റ്, E2E ടെസ്റ്റുകൾ, ഐക്കൺ ജനറേഷൻ, ഓട്ടോമാറ്റിക് I18N, ESBUILD",
         "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> ഹലോ വേൾഡ് </ p> ഇത് വെബിന്റെ </ dive> ന്റെ </ play> ഇതാണ്"
+    },
+    "Temporarily_disable_extension": {
+        "message": "താൽക്കാലികമായി വിപുലീകരണം അപ്രാപ്തമാക്കുക"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "എല്ലാ വെബ്സൈറ്റുകളിലും വിപുലീകരണം ഓഫുചെയ്യുന്നു."
+    },
+    "Disable_storage_sync": {
+        "message": "സംഭരണ സമന്വയം പ്രവർത്തനരഹിതമാക്കുക"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "നിങ്ങളുടെ ക്രമീകരണങ്ങൾ മറ്റ് ബ്ര rowsers സറുകളിലേക്ക് പ്രചരിപ്പിക്കില്ല."
+    },
+    "Disabled_on_Websites": {
+        "message": "വെബ്സൈറ്റുകളിൽ അപ്രാപ്തമാക്കി"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "ഈ സൈറ്റുകളിൽ വിപുലീകരണം പ്രവർത്തിക്കില്ല. ഒരു വരിയിൽ ഒരു സൈറ്റ് നൽകുക."
+    },
+    "Options": {
+        "message": "ഓപ്ഷനുകൾ"
+    },
+    "Show_Demo": {
+        "message": "ഡെമോ കാണിക്കുക"
+    },
+    "Report_an_Issue": {
+        "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക"
+    },
+    "How_can_we_improve_": {
+        "message": "നമുക്ക് എങ്ങനെ മെച്ചപ്പെടുത്താൻ കഴിയും?"
+    },
+    "How_are_we_doing_": {
+        "message": "ഞങ്ങൾ എങ്ങനെ ചെയ്യുന്നു?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "നിങ്ങൾ ഇത് ഇഷ്ടപ്പെട്ടതിൽ സന്തോഷം! ❤️ പങ്കിടാൻ ഞങ്ങളെ സഹായിക്കാമോ?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "ഫീഡ്ബാക്കിന് നന്ദി!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Chrome വെബ് സ്റ്റോറിലെ നിരക്ക്"
+    },
+    "No": {
+        "message": "ഇല്ല"
+    },
+    "Submit_Feedback": {
+        "message": "ഫീഡ്ബാക്ക് സമർപ്പിക്കുക"
+    },
+    "Successfully_updated_settings": {
+        "message": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റുചെയ്തു"
+    },
+    "Welcome": {
+        "message": "സ്വാഗതം"
+    },
+    "Hooray____": {
+        "message": "ഹൂറേ! പതനം"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "നിങ്ങൾ ഈ പേജ് നോക്കുകയാണെങ്കിൽ, നിങ്ങൾ വിജയകരമായി"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "അകത്തെ ക്ലോൺ ചെയ്തു \n           <a href=\"https://githb.com/justceo/xtenion bl Https://github.com/justexo/xtent </a> \n           ഒപ്പം എല്ലാ ഡിപൻഡൻസികളും ഇൻസ്റ്റാൾ ചെയ്തു."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "സോഴ്സ് കോഡ് നിർമ്മിക്കാൻ ESBUILD ഉപയോഗിക്കുകയും സ്റ്റോർ-തയ്യാറായി പാക്കേജുചെയ്ത് \n           ഫോർമാറ്റ്."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Chrome / Firefox- ൽ DEV മോഡ് പ്രവർത്തനക്ഷമമാക്കി ഒരു പായ്ക്ക് ചെയ്യാത്തത് ഇൻസ്റ്റാൾ ചെയ്തു \n           വിപുലീകരണം ..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "അല്ലെങ്കിൽ നിങ്ങൾക്ക് പപ്പിയേറ്ററിന്റെ ഒരു ഉദാഹരണം ആരംഭിക്കാൻ കഴിഞ്ഞു \n           വിപുലീകരണം ഇൻസ്റ്റാളുചെയ്തു."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "ഒരു ബ്ര browser സർ വിപുലീകരണം സൃഷ്ടിക്കുന്നതിനായി വലിയ പുരോഗതി വളരെ മികച്ചതാണെന്ന് ഞാൻ പറയുന്നു."
+    },
+    "Next__Pin_it": {
+        "message": "അടുത്തത്: പിൻ ചെയ്യുക"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </ strong> വിപുലീകരണ ഐക്കണിൽ ക്ലിക്കുചെയ്യുക."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </ strong> ന്റെ പട്ടികയിൽ \"ബ്ര browser സർ വിപുലീകരണ സ്റ്റാർട്ടർ\" കണ്ടെത്തുക \n       വിപുലീകരണങ്ങൾ."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </ strong> ഇതിന്റെ വലതുവശത്തുള്ള പിൻ ഐക്കണിൽ ക്ലിക്കുചെയ്യുക \n       വിപുലീകരണത്തിന്റെ ഐക്കൺ."
+    },
+    "All_done_": {
+        "message": "എല്ലാം ചെയ്തു."
+    },
+    "Share_the_love_": {
+        "message": "സ്നേഹം പങ്കിടുക!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "ഈ വിപുലീകരണം സഹായകരമാണെന്ന് നിങ്ങൾ കണ്ടെത്തിയിട്ടുണ്ടെങ്കിൽ, GitHub പേജിൽ ഒരു നക്ഷത്രം ഇടുക \n         അല്ലെങ്കിൽ Chrome വെബ്സ്റ്റോറിൽ റേറ്റിംഗ്."
+    },
+    "Star_on_GitHub": {
+        "message": "Github- ലെ നക്ഷത്രം"
     }
 }

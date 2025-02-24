@@ -1,14 +1,116 @@
 {
-    "appName": {
+    "@appName": {
         "message": "Стартер расширения браузера",
         "description": "The name of the extension"
     },
-    "appShortName": {
+    "@appShortName": {
         "message": "Б.Е.",
         "description": "The short-version name of the extension name"
     },
-    "appDesc": {
+    "@appDesc": {
         "message": "Пример расширения браузера. TypeScript, E2E -тесты, генерация значков, автоматический i18n и Esbuild",
         "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> Привет, мир </p> Это язык <strong> </strong> Интернета </div>"
+    },
+    "Temporarily_disable_extension": {
+        "message": "Временно отключить расширение"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Выключает расширение на всех сайтах."
+    },
+    "Disable_storage_sync": {
+        "message": "Отключить синхронизацию хранения"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Ваши настройки не будут распространяться в другие браузеры."
+    },
+    "Disabled_on_Websites": {
+        "message": "Отключено на веб -сайтах"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Расширение не будет работать на этих сайтах. Введите один сайт на строку."
+    },
+    "Options": {
+        "message": "Параметры"
+    },
+    "Show_Demo": {
+        "message": "Показать демонстрацию"
+    },
+    "Report_an_Issue": {
+        "message": "Сообщить о проблеме"
+    },
+    "How_can_we_improve_": {
+        "message": "Как мы можем улучшить?"
+    },
+    "How_are_we_doing_": {
+        "message": "Как у нас дела?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Рад, что вам это нравится! Вы можете помочь нам поделиться ❤?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Спасибо за ответ!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Оценка в веб -магазине Chrome"
+    },
+    "No": {
+        "message": "Нет"
+    },
+    "Submit_Feedback": {
+        "message": "Отправить отзыв"
+    },
+    "Successfully_updated_settings": {
+        "message": "Успешно обновленные настройки"
+    },
+    "Welcome": {
+        "message": "Добро пожаловать"
+    },
+    "Hooray____": {
+        "message": "Ура! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Если вы смотрите на эту страницу, вы успешно"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Клонировал репозиторий в \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           и установил все зависимости."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Использовал Esbuild для создания исходного кода и упакован в готовые к магазину \n           формат."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Включенный режим Dev на Chrome/Firefox и установил распаковку \n           расширение..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "или вы смогли начать экземпляр кукловода с \n           Установлено расширение."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Я говорю, что это большой прогресс в создании расширения браузера."
+    },
+    "Next__Pin_it": {
+        "message": "Далее: прикрепите это"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Нажмите на значок расширения."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> найти «стартер расширения браузера» в списке \n       расширения."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> нажмите на значок PIN \n       Значок расширения."
+    },
+    "All_done_": {
+        "message": "Все сделано."
+    },
+    "Share_the_love_": {
+        "message": "Поделиться любовью!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Если вы нашли это расширение полезным, оставьте звезду на странице GitHub \n         или рейтинг на хромированном веб -магазине."
+    },
+    "Star_on_GitHub": {
+        "message": "Звезда на GitHub"
     }
 }

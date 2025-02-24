@@ -1,14 +1,116 @@
 {
-    "appName": {
+    "@appName": {
         "message": "Starter Peluasan Pelayar",
         "description": "The name of the extension"
     },
-    "appShortName": {
+    "@appShortName": {
         "message": "B.E.S",
         "description": "The short-version name of the extension name"
     },
-    "appDesc": {
+    "@appDesc": {
         "message": "Contoh peluasan penyemak imbas. TypeScript, Ujian E2E, Generasi Ikon, I18N Automatik dan Esbuild",
         "description": "The description of your extension"
+    },
+    "@testMarkup": {
+        "message": "<div> <p> hello world </p> Ini adalah <strong> bahasa </strong> dari web </div>"
+    },
+    "Temporarily_disable_extension": {
+        "message": "Lumpuhkan lanjutan buat sementara waktu"
+    },
+    "Turns_off_the_extension_on_all_websites_": {
+        "message": "Mematikan pelanjutan pada semua laman web."
+    },
+    "Disable_storage_sync": {
+        "message": "Lumpuhkan penyegerakan penyimpanan"
+    },
+    "Your_settings_will_not_propagate_to_other_browsers_": {
+        "message": "Tetapan anda tidak akan disebarkan kepada penyemak imbas lain."
+    },
+    "Disabled_on_Websites": {
+        "message": "Dilumpuhkan di laman web"
+    },
+    "Extension_will_not_run_on_these_sites__Enter_one_site_per_line_": {
+        "message": "Pelanjutan tidak akan berjalan di laman web ini. Masukkan satu tapak setiap baris."
+    },
+    "Options": {
+        "message": "Pilihan"
+    },
+    "Show_Demo": {
+        "message": "Tunjukkan demo"
+    },
+    "Report_an_Issue": {
+        "message": "Melaporkan isu"
+    },
+    "How_can_we_improve_": {
+        "message": "Bagaimana kita dapat memperbaiki?"
+    },
+    "How_are_we_doing_": {
+        "message": "Bagaimana keadaan kita?"
+    },
+    "Glad_you_like_it__Can_you_help_us_share_the____": {
+        "message": "Gembira anda menyukainya! Bolehkah anda membantu kami berkongsi ❤️?"
+    },
+    "Thanks_for_the_feedback_": {
+        "message": "Terima kasih atas maklum balas!"
+    },
+    "Rate_on_Chrome_Web_Store": {
+        "message": "Nilai di kedai web Chrome"
+    },
+    "No": {
+        "message": "Tidak"
+    },
+    "Submit_Feedback": {
+        "message": "Hantar maklum balas"
+    },
+    "Successfully_updated_settings": {
+        "message": "Tetapan yang berjaya dikemas kini"
+    },
+    "Welcome": {
+        "message": "Selamat datang"
+    },
+    "Hooray____": {
+        "message": "Hooray! 🎉"
+    },
+    "If_you_are_looking_at_this_page__you_successfully": {
+        "message": "Sekiranya anda melihat halaman ini, anda berjaya"
+    },
+    "Cloned_the_repository_at____________a_href__https___github_com_justiceo_xtension__https___github_com_justiceo_xtension__a____________and_installed_all_the_dependencies_": {
+        "message": "Mengklonkan repositori di \n           <a href=\"https://github.com/justiceo/xtension\"> https://github.com/justiceo/xtension </a> \n           dan memasang semua kebergantungan."
+    },
+    "Used_ESBuild_to_build_the_source_code_and_packaged_into_store_ready___________format_": {
+        "message": "Esbuild yang digunakan untuk membina kod sumber dan dibungkus ke dalam kedai-siap \n           format."
+    },
+    "Enabled_dev_mode_on_Chrome_Firefox_and_installed_an_unpacked___________extension___": {
+        "message": "Mod dev yang diaktifkan pada krom/firefox dan memasang yang dibongkar \n           sambungan..."
+    },
+    "or_you_were_able_to_start_an_instance_of_Puppeteer_with_the___________extension_installed_": {
+        "message": "atau anda dapat memulakan contoh dalang dengan \n           sambungan dipasang."
+    },
+    "I_say_that_is_great_progress_towards_creating_a_browser_extension_": {
+        "message": "Saya katakan itu adalah kemajuan yang hebat ke arah mewujudkan lanjutan penyemak imbas."
+    },
+    "Next__Pin_it": {
+        "message": "Seterusnya: Pin It"
+    },
+    "_strong_1___strong__Click_on_the_extensions_icon_": {
+        "message": "<strong> 1. </strong> Klik pada ikon sambungan."
+    },
+    "_strong_2___strong__Find__Browser_Extension_Starter__in_the_list_of_______extensions_": {
+        "message": "<strong> 2. </strong> Cari \"starter peluasan penyemak imbas\" dalam senarai \n       sambungan."
+    },
+    "_strong_3___strong__Click_on_the_pin_icon_on_the_right_of_this_______extension_s_icon_": {
+        "message": "<strong> 3. </strong> Klik pada ikon pin di sebelah kanan ini \n       ikon lanjutan."
+    },
+    "All_done_": {
+        "message": "Semua selesai."
+    },
+    "Share_the_love_": {
+        "message": "Kongsi cinta!"
+    },
+    "If_you_found_this_extension_helpful__leave_a_star_on_the_Github_Page_________or_rating_on_Chrome_Webstore_": {
+        "message": "Sekiranya anda menjumpai lanjutan ini membantu, tinggalkan bintang di halaman github \n         atau penarafan di Chrome Webstore."
+    },
+    "Star_on_GitHub": {
+        "message": "Bintang di GitHub"
     }
 }

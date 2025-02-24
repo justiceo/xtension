@@ -95,7 +95,8 @@ export class Analytics {
   async fireErrorEvent(error, additionalParams = {}) {
     // Note: 'error' is a reserved event name and cannot be used
     // see https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference?client_type=gtag#reserved_names
-    return this.fireEvent("extension_error", {
+    return this.fireEvent("exception", {
+      description: error.message,
       ...error,
       ...additionalParams,
     });

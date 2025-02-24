@@ -12,49 +12,18 @@
   <div class="container">
     <div class="header">
       <img class="logo" alt="logo" src="../assets/logo-128x128.png" />
-      <h1 i18n="@appName"></h1>
-      <p i18n="@appDesc"></p>
+      <h1 i18n="const_appName"></h1>
+      <p i18n="const_appDesc"></p>
 
-      <a href="__Manifest__homepage_url" target="_blank" class="button">Homepage</a>
-      <a href="__Manifest__github_url" target="_blank" class="button light">View on GitHub</a>
+      <a href="#" target="_blank" class="button homepage-link">Homepage</a>
+      <a href="#" target="_blank" class="button light github-link">View on GitHub</a>
     </div>
-
-    <h2 i18n>Hooray! 🎉</h2>
-    <p i18n>If you are looking at this page, you successfully</p>
-    <ul>
-      <li>
-        <p i18n>
-          Cloned the repository at
-          <a href="https://github.com/justiceo/xtension">https://github.com/justiceo/xtension</a>
-          and installed all the dependencies.
-        </p>
-      </li>
-      <li>
-        <p i18n>
-          Used ESBuild to build the source code and packaged into store-ready
-          format.
-        </p>
-      </li>
-      <li>
-        <p i18n>
-          Enabled dev mode on Chrome/Firefox and installed an unpacked
-          extension...
-        </p>
-      </li>
-      <li>
-        <p i18n>
-          or you were able to start an instance of Puppeteer with the
-          extension installed.
-        </p>
-      </li>
-    </ul>
-    <p i18n>I say that is great progress towards creating a browser extension.</p>
 
     <h2 i18n>Next: Pin it</h2>
     <img class="pin" src="../assets/pin-extension.gif" alt="Pin Extension" />
     <p i18n><strong>1.</strong> Click on the extensions icon.</p>
     <p i18n>
-      <strong>2.</strong> Find "Browser Extension Starter" in the list of
+      <strong>2.</strong> Find <b i18n="const_appName">it</b> in the list of
       extensions.
     </p>
     <p i18n>
@@ -71,8 +40,9 @@
         or rating on Chrome Webstore.
       </p>
 
-      <a href="https://github.com/justiceo/xtension" target="_blank" class="button light" i18n>Star on GitHub</a>
-      <a href="#" target="_blank" class="button light" i18n>Rate on Chrome Web Store</a>
+      <a href="https://github.com/justiceo/xtension" target="_blank" class="button light github-link" i18n>Star on
+        GitHub</a>
+      <a href="#" target="_blank" class="button light homepage-link" i18n>Rate on Chrome Web Store</a>
 
       <div class="credit">
         Made with ❤️ by <a href="https://justiceo.com">Justice Ogbonna</a>

@@ -3,7 +3,7 @@ import Storage from "../utils/storage";
 import { INSTALL_TIME_MS } from "../utils/storage";
 import { uninstallUrl } from "../const";
 
-const welcomeUrl = chrome.runtime.getURL("welcome/welcome2.html");
+const welcomeUrl = chrome.runtime.getURL("welcome/welcome.html");
 
 const onInstalled = (details: chrome.runtime.InstalledDetails) => {
   // Set the installation time in storage.

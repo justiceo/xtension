@@ -12,16 +12,17 @@
   <div class="container" style="margin-top: 100px">
     <div class="header">
       <img class="logo" alt="logo" src="../assets/logo-48x48.png" />
-      <h1 i18n="@appName"></h1>
-      <p i18n="@appDesc"></p>
+      <h1 i18n="const_appName"></h1>
+      <p i18n="const_appDesc"></p>
     </div>
     <div class="options-container"></div>
     <p class="p-3 d-flex justify-content-evenly">
       <button id="show-preview" class="btn btn-primary" i18n>
         Show Demo
       </button>
-      <a role="button" target="_blank" href="https://github.com/essentialkit/link-previews/issues/new/choose"
-        class="btn btn-outline-primary" i18n>Report an Issue</a>
+      <a id="report-issue" role="button" target="_blank"
+        href="https://github.com/essentialkit/link-previews/issues/new/choose" class="btn btn-outline-primary"
+        i18n>Report an Issue</a>
     </p>
     <br>
     <feedback-form size="inline"></feedback-form>

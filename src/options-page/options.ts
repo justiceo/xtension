@@ -5,6 +5,7 @@ import { configOptions } from "../config";
 import { translateMarkup } from "../utils/i18n";
 import { Logger } from "../utils/logger";
 import { ContentScript } from "../content-script/content-script";
+import { githubLink } from "../const";
 
 class Options {
   logger = new Logger(this);
@@ -14,6 +15,10 @@ class Options {
     this.contentScript.init();
     this.renderSettingsUI();
     this.registerDemoClickHandler();
+
+    document
+      .querySelector("#report-issue")
+      ?.setAttribute("href", githubLink + "/issues/new");
   }
 
   renderSettingsUI() {

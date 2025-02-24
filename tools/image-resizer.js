@@ -1,7 +1,5 @@
 import Jimp from "jimp";
 import path from "path";
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 
 // Sizes for different types of images as defined by Chrome Webstore.
 // Ref - https://developer.chrome.com/docs/webstore/images and
@@ -22,7 +20,8 @@ const IMAGE_SIZES = {
   marquee: [{ width: 1400, height: 560 }],
 };
 
-const PAUSE_ICON_PATH = path.join(dirname(fileURLToPath(import.meta.url)), "pause-icon.png");
+const originalIconPath = "src/assets/logo.png";
+const PAUSE_ICON_PATH = "src/assets/pause-icon.png";
 
 /**
  * Class for resizing images based on predefined sizes for different image types.
@@ -41,6 +40,9 @@ export class ImageResizer {
    * @param {boolean} isIcon - True if the image type is 'icon'.
    */
   async resizeImage(filePath, dimensions, isIcon = false) {
+    console.log(
+      `Resizing image: ${filePath} to dimensions: ${dimensions}. isIcon: ${isIcon}`
+    );
     try {
       const image = await Jimp.read(filePath);
       const extname = path.extname(filePath);
@@ -79,7 +81,7 @@ export class ImageResizer {
               mode: Jimp.BLEND_SOURCE_OVER,
               opacityDest: 1,
               opacitySource: 0.8,
-            },
+            }
           );
           let pauseFileName = `${dirname}/${basename}-${width}x${height}-paused${extname}`;
           await pausedImage.writeAsync(pauseFileName);
@@ -98,7 +100,8 @@ export class ImageResizer {
     for (let key in IMAGE_SIZES) {
       if (args[key]) {
         const isIcon = key === "icon";
-        this.resizeImage(args[key], IMAGE_SIZES[key], isIcon);
+        const imgPath = args.src ?? originalIconPath;
+        this.resizeImage(imgPath, IMAGE_SIZES[key], isIcon);
       }
     }
   }

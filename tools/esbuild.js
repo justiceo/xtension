@@ -24,7 +24,6 @@ class Build {
   // If a spec is in TS, specify the path to the both ts and js versions.
   tsSpecs = ["spec/lib/i18n-spec.ts"];
   testSpecs = ["spec/out/i18n-spec.js", "spec/e2e/e2e-spec.js"];
-  originalIconPath = "src/assets/images/logo.png";
 
   constructor() {
     const args = parse(process.argv);
